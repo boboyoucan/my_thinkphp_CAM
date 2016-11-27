@@ -93,7 +93,7 @@ class Index extends Controller
             $this->redirect('admin/index/academyinfo');
         }
         else{
-            db('academyinfo')->query("update academyinfo set AcademyName='{$_POST['Update_Academy']}' where AcademyId=$AcademyId ");
+            db('academyinfo')->query("update academyinfo set AcademyName='{$_POST['Update_Academy']}' where AcademyId='$AcademyId'");
             $this->redirect('admin/index/academyinfo');
         }
 

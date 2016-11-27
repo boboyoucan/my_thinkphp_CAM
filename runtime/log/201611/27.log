@@ -2126,3 +2126,227 @@
 [ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000308s ]
 
 ---------------------------------------------------------------
+[ 2016-11-27T13:50:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.083107s][吞吐率：12.03req/s] [内存消耗：785.20kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=it491i1gs2tdd8s3la2d32uch2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001360s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000245s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000308s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000240s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:50:52+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/index/academyupdate.html?AcademyId=7
+[ log ] www.myweb.com/index.php/admin/index/academyupdate.html?AcademyId=7 [运行时间：0.370648s][吞吐率：2.70req/s] [内存消耗：481.09kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyupdate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '72',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=it491i1gs2tdd8s3la2d32uch2',
+)
+[ info ] [ PARAM ] array (
+  'AcademyId' => '7',
+  'Update_Academy' => '生态旅游学院123',
+)
+[ info ] [ RUN ] app\admin\controller\Index->AcademyUpdate[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `academyinfo` [ RunTime:0.068480s ]
+[ sql ] [ SQL ] SELECT * FROM `academyinfo` WHERE  `AcademyId` = 7 LIMIT 1    [ RunTime:0.021956s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001610s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] update academyinfo set AcademyName='生态旅游学院123' where AcademyId=7  [ RunTime:0.245526s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:50:52+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.036479s][吞吐率：27.41req/s] [内存消耗：521.22kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=it491i1gs2tdd8s3la2d32uch2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033359s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000318s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000367s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000300s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:50:58+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/index/academyupdate.html?AcademyId=7
+[ log ] www.myweb.com/index.php/admin/index/academyupdate.html?AcademyId=7 [运行时间：0.047074s][吞吐率：21.24req/s] [内存消耗：479.67kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyupdate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '69',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=it491i1gs2tdd8s3la2d32uch2',
+)
+[ info ] [ PARAM ] array (
+  'AcademyId' => '7',
+  'Update_Academy' => '生态旅游学院',
+)
+[ info ] [ RUN ] app\admin\controller\Index->AcademyUpdate[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `academyinfo` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `academyinfo` WHERE  `AcademyId` = 7 LIMIT 1    [ RunTime:0.000330s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000435s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] update academyinfo set AcademyName='生态旅游学院' where AcademyId=7  [ RunTime:0.042559s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:50:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.002605s][吞吐率：383.88req/s] [内存消耗：520.11kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=it491i1gs2tdd8s3la2d32uch2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000388s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000226s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------

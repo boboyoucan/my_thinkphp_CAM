@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480224714;s:24:"public/header/index.html";i:1480218644;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480225438;s:24:"public/header/index.html";i:1480224824;}*/ ?>
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
@@ -736,7 +736,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             <?php else: ?>
                             <li class="prev " ><a href="<?php echo url('admin/index/academyinfo'); ?>?page=<?php echo $page_assign['page']-1; ?>" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            <?php endif; $__FOR_START_1908655740__=1;$__FOR_END_1908655740__=$page_assign['pagemax']+1;for($i=$__FOR_START_1908655740__;$i < $__FOR_END_1908655740__;$i+=1){ if($i == $page_assign['page']): ?>
+                            <?php endif; $__FOR_START_1983183653__=1;$__FOR_END_1983183653__=$page_assign['pagemax']+1;for($i=$__FOR_START_1983183653__;$i < $__FOR_END_1983183653__;$i+=1){ if($i == $page_assign['page']): ?>
                             <li class="active"><a href="<?php echo url('admin/index/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                             <?php else: ?>
                             <li class=""><a href="<?php echo url('admin/index/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
@@ -754,7 +754,6 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
 </div>
 
-adsd
 
         </div>
         <!-- END CONTENT BODY -->
