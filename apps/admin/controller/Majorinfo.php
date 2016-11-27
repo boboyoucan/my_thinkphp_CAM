@@ -8,7 +8,7 @@ class Majorinfo extends Controller
      * 时间：2016年11月26日
      *方法：专业信息页面显示
      *****************************************/
-    public function MajorInfo($page=1){
+    public function majorinfo($page=1){
         //数据库总条数
         $count=db('majorinfo')->query("select count(*) as count from majorinfo");
         //一页显示的多少条

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480230444;s:24:"public/header/index.html";i:1480231124;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480230444;s:24:"public/header/index.html";i:1480254946;}*/ ?>
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
@@ -545,7 +545,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="layout_content_grey.html" class="nav-link ">
+                            <a href="<?php echo url('admin/classinfo/Classinfo'); ?>" class="nav-link ">
                                 <span class="title">班级信息</span>
                             </a>
                         </li>
@@ -736,7 +736,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             <?php else: ?>
                             <li class="prev " ><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']-1; ?>" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            <?php endif; $__FOR_START_1607835174__=1;$__FOR_END_1607835174__=$page_assign['pagemax']+1;for($i=$__FOR_START_1607835174__;$i < $__FOR_END_1607835174__;$i+=1){ if($i == $page_assign['page']): ?>
+                            <?php endif; $__FOR_START_828698825__=1;$__FOR_END_828698825__=$page_assign['pagemax']+1;for($i=$__FOR_START_828698825__;$i < $__FOR_END_828698825__;$i+=1){ if($i == $page_assign['page']): ?>
                             <li class="active"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                             <?php else: ?>
                             <li class=""><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>

@@ -74,10 +74,10 @@
                     <thead>
                     <tr role="row">
                         <th class="sorting_desc" style="width: 163px;" >
-                            学院名称
+                            专业名称
                         </th>
                         <th class="sorting_desc" style="width: 163px;" >
-                            专业名称
+                            班级名称
                         </th>
                         <th class="sorting" style="width: 205px;">
                             操作
@@ -95,7 +95,7 @@
                                 </select>
                              </td>
                             <td class="sorting_1 form-group">
-                                <input type="text" id="add_input" name="Class" class="form-control input-small" value="">
+                                <input type="text" id="add_input" name="class" class="form-control input-small" value="">
                             </td>
                             <td>
                                 <button id="save" type="submit" class="dt-button buttons-print btn green btn-outline">
@@ -107,11 +107,11 @@
                             </td>
                             </form>
                         </tr>
-                        {volist name="ClassInfo" id="vo"}
+                        {volist name="classinfo" id="vo"}
                         <form action="{:url('admin/classinfo/ClassUpdate')}?ClassId={$vo.ClassId}" method="post">
                         <tr role="row" class="even">
-                            <td id="td_row_Academy_{$vo.ClassId}">
-                                {$vo.AcademyName}
+                            <td id="td_row_Major_{$vo.ClassId}">
+                                {$vo.MajorName}
                             </td>
                             <td id="td_row_{$vo.ClassId}">
                                 {$vo.ClassName}
@@ -132,7 +132,7 @@
                                 <a id="update_button_{$vo.ClassId}" class="dt-button buttons-print btn green btn-outline" onclick="change('{$vo.ClassId}')">
                                     <span>更新</span>
                                 </a>
-                                <a id="delete_button_{$vo.ClassId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/ClassInfo/ClassDelete')}?ClassId={$vo.ClassId}" >
+                                <a id="delete_button_{$vo.ClassId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/classinfo/ClassDelete')}?ClassId={$vo.ClassId}" >
                                     <span>删除</span>
                                 </a>
                             </td>
@@ -170,7 +170,7 @@
                             {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
                             <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             {else	/}
-                            <li class="next"><a href="{:url('admin/classinfo/ClassInfo')}?page={$page_assign['page']+1}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
+                            <li class="next"><a href="{:url('admin/classinfo/classInfo')}?page={$page_assign['page']+1}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             {/if}
                         </ul>
                     </div>
