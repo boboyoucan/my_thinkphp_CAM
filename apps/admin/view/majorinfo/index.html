@@ -4,11 +4,11 @@
 <div class="page-bar">
     <ul class="page-breadcrumb">
         <li>
-            <a href="{:url('admin/academyinfo/academyinfo')}">学校相关信息管理</a>
+            <a href="{:url('admin/majorinfo/MajorInfo')}">学校相关信息管理</a>
             <i class="fa fa-circle"></i>
         </li>
         <li>
-            <span>学院信息</span>
+            <span>专业信息</span>
         </li>
     </ul>
     <div class="page-toolbar">
@@ -31,7 +31,7 @@
     <div class="portlet-title">
         <div class="caption font-dark">
             <i class="icon-settings font-dark"></i>
-            <span class="caption-subject bold uppercase">学院信息表</span>
+            <span class="caption-subject bold uppercase">专业信息表</span>
         </div>
         <div class="tools"> </div>
     </div>
@@ -76,18 +76,30 @@
                         <th class="sorting_desc" style="width: 163px;" >
                             学院名称
                         </th>
+                        <th class="sorting_desc" style="width: 163px;" >
+                            专业名称
+                        </th>
                         <th class="sorting" style="width: 205px;">
                             操作
                         </th>
-
                     </tr>
                     </thead>
                     <tbody>
                         <tr role="row" id="add_tr" style="display: none">
-                            <form action="{:url('admin/academyinfo/AcademyAdd')}" method="post">
+                            <form action="{:url('admin/majorinfo/AcademyAdd')}" method="post">
+                            <td>
+                                <select class="form-control" name="academyname">
+                                    <option value="1">计算与信息学院</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                </select>
+                             </td>
                             <td class="sorting_1 form-group">
                                 <input type="text" id="add_input" name="Academy" class="form-control input-small" value="">
                             </td>
+
                             <td>
                                 <button id="save" type="submit" class="dt-button buttons-print btn green btn-outline">
                                     <span>保存</span>
@@ -98,8 +110,8 @@
                             </td>
                             </form>
                         </tr>
-                        {volist name="academyinfo" id="vo"}
-                        <form action="{:url('admin/academyinfo/AcademyUpdate')}?AcademyId={$vo.AcademyId}" method="post">
+                        {volist name="majorinfo" id="vo"}
+                        <form action="{:url('admin/majorinfo/AcademyUpdate')}?AcademyId={$vo.AcademyId}" method="post">
                         <tr role="row" class="even">
                             <td id="td_row_{$vo.AcademyId}">
                                 {$vo.AcademyName}
@@ -146,19 +158,19 @@
                             {if	condition="$page_assign['page'] eq 1"}
                             <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             {else	/}
-                            <li class="prev " ><a href="{:url('admin/academyinfo/academyinfo')}?page={$page_assign['page']-1}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
+                            <li class="prev " ><a href="{:url('admin/majorinfo/MajorInfo')}?page={$page_assign['page']-1}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             {/if}
                             {for start="1"	end="$page_assign['pagemax']+1"}
                             {if	condition="$i eq $page_assign['page']"}
-                            <li class="active"><a href="{:url('admin/academyinfo/academyinfo')}?page={$i}">{$i}</a></li>
+                            <li class="active"><a href="{:url('admin/majorinfo/MajorInfo')}?page={$i}">{$i}</a></li>
                             {else	/}
-                            <li class=""><a href="{:url('admin/academyinfo/academyinfo')}?page={$i}">{$i}</a></li>
+                            <li class=""><a href="{:url('admin/majorinfo/MajorInfo')}?page={$i}">{$i}</a></li>
                             {/if}
                             {/for}
                             {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
                             <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             {else	/}
-                            <li class="next"><a href="{:url('admin/academyinfo/academyinfo')}?page={$page_assign['page']+1}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
+                            <li class="next"><a href="{:url('admin/majorinfo/MajorInfo')}?page={$page_assign['page']+1}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
 
                             {/if}
                         </ul>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1480218644;s:23:"public/header/head.html";i:1480218644;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1480224824;s:23:"public/header/head.html";i:1480224824;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />

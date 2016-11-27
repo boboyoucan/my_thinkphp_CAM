@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480225438;s:24:"public/header/index.html";i:1480224824;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480230444;s:24:"public/header/index.html";i:1480231124;}*/ ?>
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
@@ -535,12 +535,12 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/index/academyinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/academyinfo/academyinfo'); ?>" class="nav-link ">
                                 <span class="title">学院信息</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="layout_light_page_head.html" class="nav-link ">
+                            <a href="<?php echo url('admin/majorinfo/Majorinfo'); ?>" class="nav-link ">
                                 <span class="title">专业信息</span>
                             </a>
                         </li>
@@ -593,7 +593,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="page-bar">
     <ul class="page-breadcrumb">
         <li>
-            <a href="<?php echo url('admin/index/academyinfo'); ?>">学校相关信息管理</a>
+            <a href="<?php echo url('admin/academyinfo/academyinfo'); ?>">学校相关信息管理</a>
             <i class="fa fa-circle"></i>
         </li>
         <li>
@@ -673,7 +673,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </thead>
                     <tbody>
                         <tr role="row" id="add_tr" style="display: none">
-                            <form action="<?php echo url('admin/index/AcademyAdd'); ?>" method="post">
+                            <form action="<?php echo url('admin/academyinfo/AcademyAdd'); ?>" method="post">
                             <td class="sorting_1 form-group">
                                 <input type="text" id="add_input" name="Academy" class="form-control input-small" value="">
                             </td>
@@ -688,7 +688,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </form>
                         </tr>
                         <?php if(is_array($academyinfo) || $academyinfo instanceof \think\Collection): $i = 0; $__LIST__ = $academyinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <form action="<?php echo url('admin/index/AcademyUpdate'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>" method="post">
+                        <form action="<?php echo url('admin/academyinfo/AcademyUpdate'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>" method="post">
                         <tr role="row" class="even">
                             <td id="td_row_<?php echo $vo['AcademyId']; ?>">
                                 <?php echo $vo['AcademyName']; ?>
@@ -709,7 +709,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <a id="update_button_<?php echo $vo['AcademyId']; ?>" class="dt-button buttons-print btn green btn-outline" onclick="change('<?php echo $vo['AcademyId']; ?>')">
                                     <span>更新</span>
                                 </a>
-                                <a id="delete_button_<?php echo $vo['AcademyId']; ?>" class="dt-button buttons-print btn red btn-outline" href="<?php echo url('admin/index/AcademyDelete'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>" >
+                                <a id="delete_button_<?php echo $vo['AcademyId']; ?>" class="dt-button buttons-print btn red btn-outline" href="<?php echo url('admin/academyinfo/AcademyDelete'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>" >
                                     <span>删除</span>
                                 </a>
                             </td>
@@ -735,15 +735,15 @@ License: You must have a valid license purchased only from themeforest(the above
                             <?php if($page_assign['page'] == 1): ?>
                             <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             <?php else: ?>
-                            <li class="prev " ><a href="<?php echo url('admin/index/academyinfo'); ?>?page=<?php echo $page_assign['page']-1; ?>" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            <?php endif; $__FOR_START_1983183653__=1;$__FOR_END_1983183653__=$page_assign['pagemax']+1;for($i=$__FOR_START_1983183653__;$i < $__FOR_END_1983183653__;$i+=1){ if($i == $page_assign['page']): ?>
-                            <li class="active"><a href="<?php echo url('admin/index/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                            <li class="prev " ><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']-1; ?>" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
+                            <?php endif; $__FOR_START_1607835174__=1;$__FOR_END_1607835174__=$page_assign['pagemax']+1;for($i=$__FOR_START_1607835174__;$i < $__FOR_END_1607835174__;$i+=1){ if($i == $page_assign['page']): ?>
+                            <li class="active"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                             <?php else: ?>
-                            <li class=""><a href="<?php echo url('admin/index/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                            <li class=""><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                             <?php endif; } if($page_assign['page'] == $page_assign['pagemax']): ?>
                             <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             <?php else: ?>
-                            <li class="next"><a href="<?php echo url('admin/index/academyinfo'); ?>?page=<?php echo $page_assign['page']+1; ?>" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
+                            <li class="next"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']+1; ?>" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
 
                             <?php endif; ?>
                         </ul>
@@ -753,7 +753,6 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
     </div>
 </div>
-
 
         </div>
         <!-- END CONTENT BODY -->
