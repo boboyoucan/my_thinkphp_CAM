@@ -1,0 +1,2128 @@
+[ 2016-11-27T11:14:23+08:00 ] 10.104.121.54 101.226.35.225 GET /
+[ log ] 119.29.175.92/ [运行时间：0.025439s][吞吐率：39.31req/s] [内存消耗：2,874.83kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/student_apartment/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.175.92',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'referer' => 'http://119.29.175.92:80/',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'cookie' => 'xx=xxx',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/student_apartment/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/student_apartment/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T11:14:23+08:00 ] 10.104.121.54 101.226.35.225 GET /
+[ log ] 119.29.175.92/ [运行时间：0.022638s][吞吐率：44.17req/s] [内存消耗：2,600.20kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/student_apartment/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.175.92',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'python-requests/2.11.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/student_apartment/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/student_apartment/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T11:14:23+08:00 ] 10.104.121.54 101.226.35.225 GET /
+[ log ] 119.29.175.92/ [运行时间：0.021440s][吞吐率：46.64req/s] [内存消耗：2,600.20kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/student_apartment/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.175.92',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'python-requests/2.11.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/student_apartment/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/student_apartment/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T11:48:33+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php
+[ log ] www.boboyoucan.cn/index.php [运行时间：0.676097s][吞吐率：1.48req/s] [内存消耗：2,787.22kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]file_put_contents(/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php): failed to open stream: Permission denied[/mnt/www/html/myphpweb/thinkphp/library/think/template/driver/File.php:32]
+
+---------------------------------------------------------------
+[ 2016-11-27T11:49:01+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php
+[ log ] www.boboyoucan.cn/index.php [运行时间：0.050168s][吞吐率：19.93req/s] [内存消耗：2,869.66kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T11:49:11+08:00 ] 10.104.121.54 14.204.20.157 POST /index.php/index/index/login.html
+[ log ] www.boboyoucan.cn/index.php/index/index/login.html [运行时间：0.044385s][吞吐率：22.53req/s] [内存消耗：3,596.32kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.boboyoucan.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.boboyoucan.cn/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001752s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.005102s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000425s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T11:49:11+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/Admin/index/index.html
+[ log ] www.boboyoucan.cn/index.php/Admin/index/index.html [运行时间：0.029708s][吞吐率：33.66req/s] [内存消耗：3,048.09kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.boboyoucan.cn/index.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T11:51:24+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/Admin/index/index.html
+[ log ] www.boboyoucan.cn/index.php/Admin/index/index.html [运行时间：0.033337s][吞吐率：30.00req/s] [内存消耗：3,047.98kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T11:51:30+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.046189s][吞吐率：21.65req/s] [内存消耗：3,839.11kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.boboyoucan.cn/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001879s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000461s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000321s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T11:52:59+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.048733s][吞吐率：20.52req/s] [内存消耗：3,838.70kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001535s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000501s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000292s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T11:53:00+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.032564s][吞吐率：30.71req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000383s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000268s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T11:57:55+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.040596s][吞吐率：24.63req/s] [内存消耗：3,838.77kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=jkbifniolb5533vvckebnejfe3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001775s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000481s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000236s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000290s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:03:28+08:00 ] 10.104.121.54 23.251.63.45 GET http://fr.cyberpods.net/
+[ log ] fr.cyberpods.nethttp://fr.cyberpods.net/ [运行时间：0.031434s][吞吐率：31.81req/s] [内存消耗：2,868.66kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'fr.cyberpods.net',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'pragma' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 5.1; Trident/5.0)',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T13:03:32+08:00 ] 10.104.121.54 23.251.63.45 CONNECT www.alipay.com:443
+[ log ] www.alipay.com:443www.alipay.com:443 [运行时间：0.023681s][吞吐率：42.23req/s] [内存消耗：2,072.82kb] [文件加载：39]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: connect[/mnt/www/html/myphpweb/thinkphp/library/think/Route.php:815]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:19:59+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php
+[ log ] www.boboyoucan.cn/index.php [运行时间：0.024260s][吞吐率：41.22req/s] [内存消耗：2,596.26kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T13:20:13+08:00 ] 10.104.121.54 14.204.20.157 POST /index.php/index/index/login.html
+[ log ] www.boboyoucan.cn/index.php/index/index/login.html [运行时间：0.036542s][吞吐率：27.37req/s] [内存消耗：3,596.05kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.boboyoucan.cn',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.boboyoucan.cn/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001657s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000438s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:20:13+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/Admin/index/index.html
+[ log ] www.boboyoucan.cn/index.php/Admin/index/index.html [运行时间：0.027005s][吞吐率：37.03req/s] [内存消耗：2,665.16kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.boboyoucan.cn/index.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T13:26:10+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.032265s][吞吐率：30.99req/s] [内存消耗：3,436.60kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.boboyoucan.cn/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000462s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000469s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000250s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000297s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:20+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.037992s][吞吐率：26.32req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001548s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000453s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000274s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:21+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.031739s][吞吐率：31.51req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000401s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000387s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000244s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:22+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.033114s][吞吐率：30.20req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000451s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000401s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000254s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000344s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:22+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.028987s][吞吐率：34.50req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000394s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000264s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:23+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.032982s][吞吐率：30.32req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000411s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000217s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000261s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:23+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.041118s][吞吐率：24.32req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001901s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000446s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000298s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:23+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.035974s][吞吐率：27.80req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000328s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000389s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000295s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:24+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000398s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000229s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000278s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:37+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.032045s][吞吐率：31.21req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000388s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000443s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000310s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:39+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.037828s][吞吐率：26.44req/s] [内存消耗：3,436.48kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.boboyoucan.cn/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000475s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000452s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000258s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000284s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:27:44+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.037818s][吞吐率：26.44req/s] [内存消耗：3,436.27kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001728s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000405s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000280s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:06+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.033376s][吞吐率：29.96req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000432s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000217s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000286s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:07+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.035318s][吞吐率：28.31req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000460s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000421s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000245s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000330s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:07+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.032195s][吞吐率：31.06req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000443s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000306s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:08+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.032861s][吞吐率：30.43req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000402s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000235s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000279s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:08+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.034105s][吞吐率：29.32req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000745s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000448s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000252s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000363s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:09+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.042064s][吞吐率：23.77req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000600s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000444s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000357s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:09+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.044336s][吞吐率：22.55req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000401s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000351s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:10+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.093846s][吞吐率：10.66req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000372s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000251s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000266s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:10+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.031427s][吞吐率：31.82req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000455s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000376s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000216s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000287s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:11+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.036401s][吞吐率：27.47req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000390s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000246s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000330s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:12+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.034344s][吞吐率：29.12req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000387s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000294s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:14+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.031382s][吞吐率：31.87req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000415s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000236s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000261s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:18+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.031099s][吞吐率：32.16req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000426s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000258s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000269s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:29:26+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.031921s][吞吐率：31.33req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000415s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000273s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:30:04+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.050615s][吞吐率：19.76req/s] [内存消耗：3,838.73kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001827s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000474s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000258s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000303s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:30:05+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.035358s][吞吐率：28.28req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000388s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000335s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:31:41+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.038145s][吞吐率：26.22req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001968s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000513s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000301s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000372s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:31:42+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.032910s][吞吐率：30.39req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000508s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000274s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:31:43+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.033015s][吞吐率：30.29req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000411s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:31:56+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.040895s][吞吐率：24.45req/s] [内存消耗：3,838.74kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001732s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000438s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000296s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T13:31:57+08:00 ] 10.104.121.54 14.204.20.157 GET /index.php/admin/index/academyinfo.html
+[ log ] www.boboyoucan.cn/index.php/admin/index/academyinfo.html [运行时间：0.030575s][吞吐率：32.71req/s] [内存消耗：3,436.38kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.boboyoucan.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=sd2osq8erpn245tmv5lod0e122',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000396s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000308s ]
+
+---------------------------------------------------------------

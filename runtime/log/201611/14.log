@@ -1,0 +1,851 @@
+[ 2016-11-14T22:14:36+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001810s][吞吐率：552.46req/s] [内存消耗：313.48kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:14:37+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001044s][吞吐率：958.04req/s] [内存消耗：308.38kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:14:38+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001028s][吞吐率：972.71req/s] [内存消耗：308.38kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:15:41+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.002214s][吞吐率：451.68req/s] [内存消耗：312.64kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:15:42+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001273s][吞吐率：785.45req/s] [内存消耗：307.05kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:15:43+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.000952s][吞吐率：1,050.41req/s] [内存消耗：307.06kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:15:43+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.000867s][吞吐率：1,153.23req/s] [内存消耗：306.64kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:15:43+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.000948s][吞吐率：1,054.91req/s] [内存消耗：306.64kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:16:06+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001862s][吞吐率：537.04req/s] [内存消耗：312.64kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:16:07+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001169s][吞吐率：855.46req/s] [内存消耗：307.05kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:16:52+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.053277s][吞吐率：18.77req/s] [内存消耗：297.33kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::display()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:16:52+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001658s][吞吐率：603.15req/s] [内存消耗：296.16kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::display()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:17:06+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001799s][吞吐率：555.91req/s] [内存消耗：296.73kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::fetch()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:17:06+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.002263s][吞吐率：441.88req/s] [内存消耗：296.16kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::fetch()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:17:06+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001900s][吞吐率：526.33req/s] [内存消耗：296.16kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::fetch()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:17:07+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001547s][吞吐率：646.37req/s] [内存消耗：296.16kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::fetch()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:17:07+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001545s][吞吐率：647.17req/s] [内存消耗：296.16kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::fetch()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:17:08+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001630s][吞吐率：613.47req/s] [内存消耗：296.16kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::fetch()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:17:08+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001238s][吞吐率：807.84req/s] [内存消耗：296.16kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\response\View::fetch()[/mnt/www/html/myphpweb/apps/index/controller/Index.php:16]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:18:54+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001216s][吞吐率：822.25req/s] [内存消耗：308.53kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:18:55+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001331s][吞吐率：751.26req/s] [内存消耗：307.95kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:18:55+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001381s][吞吐率：724.03req/s] [内存消耗：307.95kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:18:56+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.000931s][吞吐率：1,074.09req/s] [内存消耗：307.96kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:21:06+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.055213s][吞吐率：18.11req/s] [内存消耗：295.68kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/mnt/www/html/myphpweb/public/../apps/index/view/index/user.html[/mnt/www/html/myphpweb/thinkphp/library/think/view/driver/Think.php:78]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:21:07+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001912s][吞吐率：522.98req/s] [内存消耗：294.49kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/mnt/www/html/myphpweb/public/../apps/index/view/index/user.html[/mnt/www/html/myphpweb/thinkphp/library/think/view/driver/Think.php:78]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:21:07+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001606s][吞吐率：622.67req/s] [内存消耗：294.49kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/mnt/www/html/myphpweb/public/../apps/index/view/index/user.html[/mnt/www/html/myphpweb/thinkphp/library/think/view/driver/Think.php:78]
+
+---------------------------------------------------------------
+[ 2016-11-14T22:21:40+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.002309s][吞吐率：433.07req/s] [内存消耗：313.72kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/user/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-14T22:21:41+08:00 ] 127.0.1.1 127.0.0.1 GET /myphpweb/public/index.php
+[ log ] www.myweb.com/myphpweb/public/index.php [运行时间：0.001149s][吞吐率：870.19req/s] [内存消耗：308.38kb] [文件加载：43]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=9252161536; pgv_si=s7935459328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/public/../apps/index/view/user/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

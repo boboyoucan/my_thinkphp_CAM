@@ -1,0 +1,2640 @@
+[ 2016-11-24T16:11:30+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php
+[ log ] www.myweb.com/index.php [运行时间：1.288211s][吞吐率：0.78req/s] [内存消耗：393.75kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T16:11:33+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.242272s][吞吐率：4.13req/s] [内存消耗：460.92kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035111s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.113713s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.027829s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T16:11:34+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.120882s][吞吐率：8.27req/s] [内存消耗：547.37kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T16:11:34+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/favicon.ico
+[ log ] www.myweb.com/index.php/Admin/index/favicon.ico [运行时间：0.192835s][吞吐率：5.19req/s] [内存消耗：297.06kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.myweb.com/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T16:11:43+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.023812s][吞吐率：42.00req/s] [内存消耗：379.35kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T16:11:48+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/favicon.ico
+[ log ] www.myweb.com/index.php/admin/index/favicon.ico [运行时间：0.003307s][吞吐率：302.40req/s] [内存消耗：295.86kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T16:11:53+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/favicon.ico
+[ log ] www.myweb.com/index.php/admin/index/favicon.ico [运行时间：0.001252s][吞吐率：798.76req/s] [内存消耗：295.86kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T16:14:36+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.033881s][吞吐率：29.51req/s] [内存消耗：378.90kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T17:29:11+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/layout_search_on_header_1.html
+[ log ] www.myweb.com/index.php/admin/index/layout_search_on_header_1.html [运行时间：0.079873s][吞吐率：12.52req/s] [内存消耗：296.68kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'layout_search_on_header_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T18:26:41+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.033088s][吞吐率：30.22req/s] [内存消耗：378.38kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T18:27:22+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/maps_vector.html
+[ log ] www.myweb.com/index.php/admin/index/maps_vector.html [运行时间：0.017800s][吞吐率：56.18req/s] [内存消耗：296.55kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'maps_vector',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/index/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T18:34:15+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.241329s][吞吐率：4.14req/s] [内存消耗：324.30kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T18:34:16+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/favicon.ico
+[ log ] www.myweb.com/index.php/favicon.ico [运行时间：0.015245s][吞吐率：65.60req/s] [内存消耗：217.73kb] [文件加载：38]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T18:34:35+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.319028s][吞吐率：3.13req/s] [内存消耗：458.78kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.151068s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.142182s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.022363s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T18:34:35+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.013593s][吞吐率：73.57req/s] [内存消耗：375.32kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T18:35:59+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.028037s][吞吐率：35.67req/s] [内存消耗：378.93kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:07+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.432911s][吞吐率：2.31req/s] [内存消耗：374.81kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:08+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.014103s][吞吐率：70.91req/s] [内存消耗：378.93kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:16+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.001371s][吞吐率：729.32req/s] [内存消耗：378.90kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:16+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.002346s][吞吐率：426.25req/s] [内存消耗：378.90kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:17+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.001214s][吞吐率：823.70req/s] [内存消耗：378.90kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:17+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.001240s][吞吐率：806.44req/s] [内存消耗：378.90kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:17+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.001192s][吞吐率：839.03req/s] [内存消耗：378.90kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:17+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.002326s][吞吐率：429.92req/s] [内存消耗：378.90kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T21:55:27+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.003815s][吞吐率：262.13req/s] [内存消耗：378.30kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T22:04:57+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.040571s][吞吐率：24.65req/s] [内存消耗：562.24kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T22:21:00+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.013416s][吞吐率：74.54req/s] [内存消耗：379.32kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:01:41+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] localhost/ [运行时间：0.580968s][吞吐率：1.72req/s] [内存消耗：325.55kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:10:59+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/admin/index/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/index/academyinfo.html [运行时间：0.423554s][吞吐率：2.36req/s] [内存消耗：695.63kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:11:06+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.199009s][吞吐率：5.02req/s] [内存消耗：508.37kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047826s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.019033s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.001082s ]
+[ error ] [0]致命错误: Class 'app\index\controller\Session' not found[/mnt/www/html/myphpweb/apps/index/controller/Index.php:37]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:12:34+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.017018s][吞吐率：58.76req/s] [内存消耗：326.00kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:12:36+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.049667s][吞吐率：20.13req/s] [内存消耗：444.64kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.015522s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000362s ]
+[ error ] [8]未定义数组下标: 1[/mnt/www/html/myphpweb/apps/index/controller/Index.php:37]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:13:35+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.002692s][吞吐率：371.47req/s] [内存消耗：325.89kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:13:36+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.041969s][吞吐率：23.83req/s] [内存消耗：443.52kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000782s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.025092s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.013665s ]
+[ error ] [8]Use of undefined constant AdminName - assumed 'AdminName'[/mnt/www/html/myphpweb/apps/index/controller/Index.php:37]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:13:53+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001431s][吞吐率：698.82req/s] [内存消耗：325.89kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:13:55+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.097652s][吞吐率：10.24req/s] [内存消耗：461.47kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033077s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.010087s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000317s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:13:55+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.077842s][吞吐率：12.85req/s] [内存消耗：546.30kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:14:56+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001901s][吞吐率：526.06req/s] [内存消耗：325.94kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:14:57+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.015283s][吞吐率：65.43req/s] [内存消耗：392.61kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000478s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.012667s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000297s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:15:29+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.002437s][吞吐率：410.32req/s] [内存消耗：314.87kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: username[/mnt/www/html/myphpweb/apps/index/controller/Index.php:48]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:15:43+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001952s][吞吐率：512.31req/s] [内存消耗：325.94kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:15:45+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.037215s][吞吐率：26.87req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.033138s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:15:45+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.002785s][吞吐率：359.07req/s] [内存消耗：546.30kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:16:02+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.004717s][吞吐率：212.00req/s] [内存消耗：469.52kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: session[/mnt/www/html/myphpweb/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php:369]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:16:05+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.004953s][吞吐率：201.89req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000531s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:16:05+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.006325s][吞吐率：158.10req/s] [内存消耗：299.29kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: session[/mnt/www/html/myphpweb/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php:369]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:16:36+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.004627s][吞吐率：216.12req/s] [内存消耗：546.22kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:16:39+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.034997s][吞吐率：28.57req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.017429s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.013159s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:16:39+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.001493s][吞吐率：669.80req/s] [内存消耗：375.37kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:17:46+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.003943s][吞吐率：253.60req/s] [内存消耗：469.52kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: session[/mnt/www/html/myphpweb/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php:369]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:17:48+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001443s][吞吐率：692.93req/s] [内存消耗：324.86kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:17:50+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.036687s][吞吐率：27.26req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000657s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.033169s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000541s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:17:50+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.001948s][吞吐率：513.38req/s] [内存消耗：299.29kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: session[/mnt/www/html/myphpweb/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php:369]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:19+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.004053s][吞吐率：246.72req/s] [内存消耗：547.92kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:22+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001281s][吞吐率：780.63req/s] [内存消耗：324.86kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:24+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.036351s][吞吐率：27.51req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000493s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.033427s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000397s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:24+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.004249s][吞吐率：235.36req/s] [内存消耗：377.07kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:34+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.003284s][吞吐率：304.51req/s] [内存消耗：547.92kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:38+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001419s][吞吐率：704.81req/s] [内存消耗：324.86kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:40+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.021734s][吞吐率：46.01req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.018732s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000469s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:18:40+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.002527s][吞吐率：395.73req/s] [内存消耗：377.07kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:19:10+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.003170s][吞吐率：315.46req/s] [内存消耗：546.22kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:19:13+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.022822s][吞吐率：43.82req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019415s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000270s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:19:13+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.001354s][吞吐率：738.43req/s] [内存消耗：375.37kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:19:21+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.003705s][吞吐率：269.90req/s] [内存消耗：546.22kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:19:24+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001798s][吞吐率：556.13req/s] [内存消耗：324.86kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:19:26+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.005646s][吞吐率：177.12req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000648s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000679s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:19:26+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.001480s][吞吐率：675.63req/s] [内存消耗：375.37kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:20:37+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.002898s][吞吐率：345.07req/s] [内存消耗：548.78kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:20:38+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.001998s][吞吐率：500.45req/s] [内存消耗：376.98kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:20:39+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/
+[ log ] www.myweb.com/index.php/ [运行时间：0.001317s][吞吐率：759.29req/s] [内存消耗：324.86kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:20:41+08:00 ] 127.0.1.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.030051s][吞吐率：33.28req/s] [内存消耗：460.38kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000712s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.026692s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000384s ]
+
+---------------------------------------------------------------
+[ 2016-11-24T23:20:41+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.001497s][吞吐率：667.99req/s] [内存消耗：377.07kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:21:15+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.003404s][吞吐率：293.76req/s] [内存消耗：548.78kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:21:18+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/page_user_login_1.html
+[ log ] www.myweb.com/index.php/Admin/index/page_user_login_1.html [运行时间：0.072556s][吞吐率：13.78req/s] [内存消耗：297.77kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'page_user_login_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-24T23:21:20+08:00 ] 127.0.1.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.002621s][吞吐率：381.54req/s] [内存消耗：376.59kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=ti20btd34radn0bqcb4rreqm90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

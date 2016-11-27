@@ -1,0 +1,2119 @@
+[ 2016-11-21T20:29:05+08:00 ] 127.0.0.1 127.0.0.1 GET //index.php
+[ log ] localhost//index.php [运行时间：1.953733s][吞吐率：0.51req/s] [内存消耗：393.56kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:29:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.002918s][吞吐率：342.70req/s] [内存消耗：324.15kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:29:19+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.621764s][吞吐率：1.61req/s] [内存消耗：474.02kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '39',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'SADD',
+  'password' => 'ADASD',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.136342s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.272040s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'SADD'  AND `AdminPassword` = 'ADASD' LIMIT 1     [ RunTime:0.025634s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:29:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/favicon.ico
+[ log ] localhost/index.php/index/index/favicon.ico [运行时间：0.217157s][吞吐率：4.60req/s] [内存消耗：294.62kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:30:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.005701s][吞吐率：175.41req/s] [内存消耗：408.43kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '44',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'AAASAAS',
+  'password' => 'SAFDASF',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000387s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'AAASAAS'  AND `AdminPassword` = 'SAFDASF' LIMIT 1     [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:30:50+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.069753s][吞吐率：14.34req/s] [内存消耗：399.23kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '27',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'ASDA',
+  'password' => 'AASS',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.067614s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'ASDA'  AND `Password` = 'AASS' LIMIT 1     [ RunTime:0.000327s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:31:22+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.060232s][吞吐率：16.60req/s] [内存消耗：392.41kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/admin/index.html [ array (
+  0 => 'admin_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000246s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:31:40+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/index.html
+[ log ] localhost/index.php/index/index/index.html [运行时间：0.003844s][吞吐率：260.14req/s] [内存消耗：325.02kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'email' => '1233123123123wqeqw@2133123.com',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:36:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/index.html
+[ log ] localhost/index.php/index/index/index.html [运行时间：0.084907s][吞吐率：11.78req/s] [内存消耗：363.38kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:36:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.001515s][吞吐率：660.00req/s] [内存消耗：314.87kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: username[/mnt/www/html/myphpweb/apps/index/controller/Index.php:50]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:36:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.002509s][吞吐率：398.58req/s] [内存消耗：297.87kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:36:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.002390s][吞吐率：418.38req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.003957s][吞吐率：252.71req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001968s][吞吐率：508.15req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.002045s][吞吐率：489.02req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.002115s][吞吐率：472.81req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001828s][吞吐率：547.06req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.004905s][吞吐率：203.87req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.003906s][吞吐率：256.02req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001733s][吞吐率：577.09req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001828s][吞吐率：547.06req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001703s][吞吐率：587.19req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001831s][吞吐率：546.20req/s] [内存消耗：297.45kb] [文件加载：48]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001362s][吞吐率：734.30req/s] [内存消耗：325.65kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => 'student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:37:52+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.004420s][吞吐率：226.24req/s] [内存消耗：399.57kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '31',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'dasdsd',
+  'password' => 'asdasd',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'dasdsd'  AND `Password` = 'asdasd' LIMIT 1     [ RunTime:0.000503s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:38:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001279s][吞吐率：781.79req/s] [内存消耗：323.95kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => 'student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:38:04+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.004132s][吞吐率：242.03req/s] [内存消耗：399.46kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '31',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'qwewqe',
+  'password' => 'qweqwe',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000706s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'qwewqe'  AND `Password` = 'qweqwe' LIMIT 1     [ RunTime:0.000330s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:38:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.003219s][吞吐率：310.67req/s] [内存消耗：325.65kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+  1 => 'student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:38:27+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.003130s][吞吐率：319.49req/s] [内存消耗：454.05kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'eqwewqe',
+  'password' => 'qweqweq',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => '$student_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000368s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'eqwewqe'  AND `Password` = 'qweqweq' LIMIT 1     [ RunTime:0.000301s ]
+[ error ] [8]未定义变量: admin_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:115]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:40:43+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.004475s][吞吐率：223.46req/s] [内存消耗：446.36kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'dasasd',
+  'password' => 'asdas',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'admin_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'dasasd'  AND `AdminPassword` = 'asdas' LIMIT 1     [ RunTime:0.000271s ]
+[ error ] [8]未定义变量: student_nf[/mnt/www/html/myphpweb/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php:116]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:42:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.008892s][吞吐率：112.46req/s] [内存消耗：390.51kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:42:08+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.003645s][吞吐率：274.35req/s] [内存消耗：417.60kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '37',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'ad,sdfsfasa',
+  'password' => 'asdas',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'ad,sdfsfasa'  AND `Password` = 'asdas' LIMIT 1     [ RunTime:0.000384s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:42:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001138s][吞吐率：878.76req/s] [内存消耗：323.99kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:42:56+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.004802s][吞吐率：208.25req/s] [内存消耗：408.30kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '43',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'dssadsa',
+  'password' => 'dasdas',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'dssadsa'  AND `AdminPassword` = 'dasdas' LIMIT 1     [ RunTime:0.000313s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:42:59+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.003916s][吞吐率：255.36req/s] [内存消耗：417.06kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'sadasd',
+  'password' => 'asdas',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.001164s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'sadasd'  AND `Password` = 'asdas' LIMIT 1     [ RunTime:0.000473s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:43:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.000942s][吞吐率：1,061.58req/s] [内存消耗：324.00kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:43:06+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.004149s][吞吐率：241.01req/s] [内存消耗：417.04kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '31',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'dsdsad',
+  'password' => 'asdasd',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'dsdsad'  AND `Password` = 'asdasd' LIMIT 1     [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:43:16+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.004437s][吞吐率：225.37req/s] [内存消耗：391.99kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/admin/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000517s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.000782s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:08+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.001967s][吞吐率：508.40req/s] [内存消耗：314.87kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: username[/mnt/www/html/myphpweb/apps/index/controller/Index.php:49]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.005669s][吞吐率：176.40req/s] [内存消耗：389.74kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.002079s][吞吐率：481.00req/s] [内存消耗：324.96kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:17+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.003476s][吞吐率：287.68req/s] [内存消耗：408.41kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => '213213',
+  'password' => '123123',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000539s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = '213213'  AND `AdminPassword` = '123123' LIMIT 1     [ RunTime:0.000383s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.007430s][吞吐率：134.59req/s] [内存消耗：325.62kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.003499s][吞吐率：285.79req/s] [内存消耗：417.15kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '31',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'dasdasd',
+  'password' => 'sadas',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'dasdasd'  AND `Password` = 'sadas' LIMIT 1     [ RunTime:0.000445s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:48+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.004193s][吞吐率：238.49req/s] [内存消耗：417.17kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'asdasd',
+  'password' => 'asdas',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000494s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentinfo` [ RunTime:0.001527s ]
+[ sql ] [ SQL ] SELECT * FROM `studentinfo` WHERE  `StudentNo` = 'asdasd'  AND `Password` = 'asdas' LIMIT 1     [ RunTime:0.000426s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.001753s][吞吐率：570.42req/s] [内存消耗：314.87kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: username[/mnt/www/html/myphpweb/apps/index/controller/Index.php:49]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:58:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.004508s][吞吐率：221.83req/s] [内存消耗：324.54kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T20:59:01+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.006168s][吞吐率：162.13req/s] [内存消耗：408.41kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => '2313',
+  'password' => '123123',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = '2313'  AND `AdminPassword` = '123123' LIMIT 1     [ RunTime:0.000534s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T20:59:05+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.002918s][吞吐率：342.70req/s] [内存消耗：408.43kb] [文件加载：51]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+  'username' => '123213',
+  'password' => '21321',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = '123213'  AND `AdminPassword` = '21321' LIMIT 1     [ RunTime:0.000311s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T21:00:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.001877s][吞吐率：532.75req/s] [内存消耗：314.32kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: username[/mnt/www/html/myphpweb/apps/index/controller/Index.php:49]
+
+---------------------------------------------------------------
+[ 2016-11-21T21:00:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.003402s][吞吐率：293.95req/s] [内存消耗：323.99kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T21:00:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.000811s][吞吐率：1,233.26req/s] [内存消耗：324.00kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T21:00:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001121s][吞吐率：892.03req/s] [内存消耗：323.99kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T21:06:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.004189s][吞吐率：238.72req/s] [内存消耗：323.99kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T21:06:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001248s][吞吐率：801.20req/s] [内存消耗：323.99kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T22:43:14+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] localhost/index.php/index/index/login.html [运行时间：0.193747s][吞吐率：5.16req/s] [内存消耗：392.94kb] [文件加载：50]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/admin/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029180s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.070917s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.010405s ]
+
+---------------------------------------------------------------
+[ 2016-11-21T22:44:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.244362s][吞吐率：4.09req/s] [内存消耗：389.20kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T22:46:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.005505s][吞吐率：181.65req/s] [内存消耗：389.20kb] [文件加载：46]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T22:50:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.004118s][吞吐率：242.84req/s] [内存消耗：324.41kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-21T22:50:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.001386s][吞吐率：721.54req/s] [内存消耗：324.15kb] [文件加载：44]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-fbbd45af=d1c69aae-a161-45e6-8da2-dab5334b11c4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
