@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1480224824;s:24:"public/header/index.html";i:1480230203;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1480224824;s:24:"public/header/index.html";i:1480231124;}*/ ?>
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
@@ -540,7 +540,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="layout_light_page_head.html" class="nav-link ">
+                            <a href="<?php echo url('admin/majorinfo/Majorinfo'); ?>" class="nav-link ">
                                 <span class="title">专业信息</span>
                             </a>
                         </li>

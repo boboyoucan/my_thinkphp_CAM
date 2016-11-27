@@ -26,7 +26,9 @@ class Majorinfo extends Controller
         $page_assign['count']=$count[0]['count'];
         $page_assign['pagesize']=$pagesize;
         $this->assign('page_assign',$page_assign);
-        $majorinfo=db('majorinfo')->query("select * from majorinfo order by MajorId desc limit $startpage,$pagesize");
+        $academyinfo=db('academyinfo')->query("select * from academyinfo order by AcademyId desc");
+        $this->assign('academyinfo',$academyinfo);
+        $majorinfo=db('majorinfo')->query("select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit $startpage,$pagesize");
         $this->assign('majorinfo',$majorinfo);
         return $this->fetch('majorinfo/index');
     }
@@ -35,18 +37,18 @@ class Majorinfo extends Controller
      * 时间：2016年11月26日
      *方法：学院添加
      *****************************************/
-    public function AcademyAdd(){
-        $Academy=db('majorinfo')->where('AcademyName',$_POST['Academy'])->find();
-        if($Academy == null){
-            $db_Academy=db('majorinfo')->execute('insert into majorinfo (AcademyName) values (:Academy)',['Academy'=>$_POST['Academy']]);
-            if($db_Academy){
-                echo $_POST['Academy'];
+    public function MajorAdd(){
+        $Major=db('majorinfo')->where('MajorName',$_POST['Major'])->find();
+        if($Major == null){
+            $db_Major=db('majorinfo')->execute('insert into majorinfo (AId,MajorName) values (:MajorId,:Major)',['MajorId'=>$_POST['AId'],'Major'=>$_POST['Major']]);
+            if($db_Major){
+                echo $_POST['Major'];
                 echo "插入成功";
 
                 $this->redirect('admin/majorinfo/majorinfo');
             }
             else{
-                echo $_POST['Academy'];
+                echo $_POST['Major'];
                 echo "插入失败";
 
                 $this->redirect('admin/majorinfo/majorinfo');
@@ -64,14 +66,14 @@ class Majorinfo extends Controller
      * 时间：2016年11月26日
      *方法：学院删除
      *****************************************/
-    public function AcademyDelete($AcademyId=''){
-        $Academy=db('majorinfo')->where('AcademyId',$AcademyId)->find();
-        if($Academy == null){
+    public function MajorDelete($MajorId=''){
+        $Major=db('majorinfo')->where('MajorId',$MajorId)->find();
+        if($Major == null){
             echo "<script>alert('不存在');</script>";
             $this->redirect('admin/majorinfo/majorinfo');
         }
         else{
-            db('majorinfo')->execute("delete from majorinfo where AcademyId = '$AcademyId'");
+            db('majorinfo')->execute("delete from majorinfo where MajorId = '$MajorId'");
             $this->redirect('admin/majorinfo/majorinfo');
         }
 
@@ -81,14 +83,14 @@ class Majorinfo extends Controller
      * 时间：2016年11月26日
      *方法：学院名称修改
      *****************************************/
-    public function AcademyUpdate($AcademyId=''){
-        $Academy=db('majorinfo')->where('AcademyId',$AcademyId)->find();
-        if($Academy == null){
+    public function MajorUpdate($MajorId=''){
+        $Major=db('majorinfo')->where('MajorId',$MajorId)->find();
+        if($Major == null){
             echo "<script>alert('不存在');</script>";
             $this->redirect('admin/majorinfo/majorinfo');
         }
         else{
-            db('majorinfo')->execute("update majorinfo set AcademyName='{$_POST['Update_Academy']}' where AcademyId='$AcademyId'");
+            db('majorinfo')->execute("update majorinfo set MajorName='{$_POST['Update_Major']}' where MajorId='$MajorId'");
             $this->redirect('admin/majorinfo/majorinfo');
         }
 

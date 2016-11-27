@@ -7129,3 +7129,2550 @@
 [ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.025386s ]
 
 ---------------------------------------------------------------
+[ 2016-11-27T20:20:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] www.myweb.com/index.php [运行时间：0.653320s][吞吐率：1.53req/s] [内存消耗：393.76kb] [文件加载：45]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/index/view/index/index.html [ array (
+  0 => 'common_nf',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:32+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/index/index/login.html
+[ log ] www.myweb.com/index.php/index/index/login.html [运行时间：0.189149s][吞吐率：5.29req/s] [内存消耗：462.41kb] [文件加载：53]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'remember' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ /mnt/www/html/myphpweb/apps/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018363s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admininfo` [ RunTime:0.074208s ]
+[ sql ] [ SQL ] SELECT * FROM `admininfo` WHERE  `AdminName` = 'admin'  AND `AdminPassword` = 'admin' LIMIT 1     [ RunTime:0.015225s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin/index/index.html
+[ log ] www.myweb.com/index.php/Admin/index/index.html [运行时间：0.112662s][吞吐率：8.88req/s] [内存消耗：549.98kb] [文件加载：49]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /mnt/www/html/myphpweb/apps/admin/controller/Index.php ]
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/index/index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/Admin/index/favicon.ico
+[ log ] www.myweb.com/index.php/Admin/index/favicon.ico [运行时间：0.072085s][吞吐率：13.87req/s] [内存消耗：297.17kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.myweb.com/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/academyinfo/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/academyinfo/academyinfo.html [运行时间：0.081577s][吞吐率：12.26req/s] [内存消耗：521.34kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'academyinfo',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Academyinfo->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Academyinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.007346s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000407s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/academyinfo/favicon.ico
+[ log ] www.myweb.com/index.php/admin/academyinfo/favicon.ico [运行时间：0.003134s][吞吐率：319.08req/s] [内存消耗：296.59kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'academyinfo',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.myweb.com/index.php/admin/academyinfo/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.063159s][吞吐率：15.83req/s] [内存消耗：511.53kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/academyinfo/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.028882s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000250s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/favicon.ico
+[ log ] www.myweb.com/index.php/admin/majorinfo/favicon.ico [运行时间：0.002334s][吞吐率：428.47req/s] [内存消耗：296.55kb] [文件加载：47]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.006413s][吞吐率：155.93req/s] [内存消耗：510.98kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000249s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 4,4 [ RunTime:0.000882s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T20:20:47+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=1
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1 [运行时间：0.005961s][吞吐率：167.76req/s] [内存消耗：510.98kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000229s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000209s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:02:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=1
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1 [运行时间：0.011052s][吞吐率：90.48req/s] [内存消耗：704.00kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000214s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000184s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:02:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.010365s][吞吐率：96.48req/s] [内存消耗：511.44kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001524s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.001436s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001132s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000422s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:02:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/academyinfo/academyinfo.html
+[ log ] www.myweb.com/index.php/admin/academyinfo/academyinfo.html [运行时间：0.006677s][吞吐率：149.76req/s] [内存消耗：520.15kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'academyinfo',
+    2 => 'academyinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Academyinfo->academyinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Academyinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from academyinfo [ RunTime:0.000555s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000721s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc limit 0,4 [ RunTime:0.000668s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:19:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.012611s][吞吐率：79.30req/s] [内存消耗：703.48kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/academyinfo/academyinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001310s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000848s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000343s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:19:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.008921s][吞吐率：112.10req/s] [内存消耗：703.34kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000232s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000210s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:24:41+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.083027s][吞吐率：12.04req/s] [内存消耗：468.83kb] [文件加载：56]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '88',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'MajorId' => '1',
+  'Major' => '计算机科学与技术',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '计算机科学与技术' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001434s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'AId' doesn't have a default value[/mnt/www/html/myphpweb/thinkphp/library/think/db/Connection.php:405]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:25:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.003991s][吞吐率：250.56req/s] [内存消耗：511.00kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000296s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000198s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:25:16+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.004980s][吞吐率：200.81req/s] [内存消耗：467.44kb] [文件加载：56]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '88',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'MajorId' => '1',
+  'Major' => '计算机科学与技术',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '计算机科学与技术' LIMIT 1    [ RunTime:0.000276s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'AId' doesn't have a default value[/mnt/www/html/myphpweb/thinkphp/library/think/db/Connection.php:405]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:26:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.008775s][吞吐率：113.96req/s] [内存消耗：703.04kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000276s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000248s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:26:41+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.005143s][吞吐率：194.44req/s] [内存消耗：511.39kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000496s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000320s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000370s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:26:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.129021s][吞吐率：7.75req/s] [内存消耗：481.98kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '84',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '1',
+  'Major' => '计算机科学与技术',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000418s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '计算机科学与技术' LIMIT 1    [ RunTime:0.000343s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('1','计算机科学与技术')   [ RunTime:0.123819s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:26:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.003838s][吞吐率：260.55req/s] [内存消耗：516.34kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000243s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000278s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc limit 0,4 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:31:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.011680s][吞吐率：85.62req/s] [内存消耗：517.22kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000238s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.008589s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:32:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.010524s][吞吐率：95.02req/s] [内存消耗：713.27kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000258s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.001139s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:33:11+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.120560s][吞吐率：8.29req/s] [内存消耗：481.80kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '48',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '1',
+  'Major' => '信心工程',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '信心工程' LIMIT 1    [ RunTime:0.000372s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000435s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('1','信心工程')   [ RunTime:0.115659s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:33:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.003145s][吞吐率：317.94req/s] [内存消耗：517.94kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000353s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000220s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000261s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:35:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.012151s][吞吐率：82.30req/s] [内存消耗：780.79kb] [文件加载：54]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000394s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000515s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000595s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:35:56+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.081386s][吞吐率：12.29req/s] [内存消耗：481.75kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '2',
+  'Major' => '林学',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '林学' LIMIT 1    [ RunTime:0.000412s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000527s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('2','林学')   [ RunTime:0.073301s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:35:56+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.005076s][吞吐率：197.01req/s] [内存消耗：581.26kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000249s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000372s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:36:38+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.127070s][吞吐率：7.87req/s] [内存消耗：481.80kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '48',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '8',
+  'Major' => '车辆工程',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '车辆工程' LIMIT 1    [ RunTime:0.000319s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('8','车辆工程')   [ RunTime:0.122131s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:36:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.119263s][吞吐率：8.38req/s] [内存消耗：584.72kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000217s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000206s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000186s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000186s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.116532s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:36:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.050993s][吞吐率：19.61req/s] [内存消耗：481.80kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '48',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '5',
+  'Major' => '土木工程',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000451s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '土木工程' LIMIT 1    [ RunTime:0.000394s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001445s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('5','土木工程')   [ RunTime:0.045759s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:36:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.006644s][吞吐率：150.51req/s] [内存消耗：584.70kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001257s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000968s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000289s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000225s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000259s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:36:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.005026s][吞吐率：198.96req/s] [内存消耗：575.59kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000264s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000380s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 4,4 [ RunTime:0.000329s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=1
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1 [运行时间：0.002881s][吞吐率：347.10req/s] [内存消耗：585.27kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000291s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000175s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000203s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000199s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000236s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.005792s][吞吐率：172.65req/s] [内存消耗：575.59kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000361s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000342s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 4,4 [ RunTime:0.000640s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:08+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=1
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1 [运行时间：0.005771s][吞吐率：173.28req/s] [内存消耗：585.27kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000361s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000492s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000416s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000520s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:18+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.207314s][吞吐率：4.82req/s] [内存消耗：481.75kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '3',
+  'Major' => '英语',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '英语' LIMIT 1    [ RunTime:0.000412s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('3','英语')   [ RunTime:0.202787s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.002871s][吞吐率：348.31req/s] [内存消耗：584.80kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000227s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000204s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000179s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000208s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000298s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:28+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.078980s][吞吐率：12.66req/s] [内存消耗：481.75kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '3',
+  'Major' => '泰语',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '泰语' LIMIT 1    [ RunTime:0.000408s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('3','泰语')   [ RunTime:0.075277s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.002959s][吞吐率：337.95req/s] [内存消耗：584.67kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000200s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000184s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000189s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:29+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.003425s][吞吐率：291.96req/s] [内存消耗：580.73kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000236s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000237s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 4,4 [ RunTime:0.000303s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:41+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.125452s][吞吐率：7.97req/s] [内存消耗：481.77kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '39',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '1',
+  'Major' => '大数据',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000496s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '大数据' LIMIT 1    [ RunTime:0.000422s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000387s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('1','大数据')   [ RunTime:0.121023s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:41+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.004462s][吞吐率：224.11req/s] [内存消耗：584.80kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000323s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000348s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000280s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000235s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:51+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majoradd.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majoradd.html [运行时间：0.100729s][吞吐率：9.93req/s] [内存消耗：481.80kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majoradd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '48',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'AId' => '4',
+  'Major' => '家具工程',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorAdd[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorName` = '家具工程' LIMIT 1    [ RunTime:0.000303s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into majorinfo (AId,MajorName) values ('4','家具工程')   [ RunTime:0.097445s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.003681s][吞吐率：271.67req/s] [内存消耗：584.68kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000266s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000318s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000351s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:56+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.006847s][吞吐率：146.05req/s] [内存消耗：585.27kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000357s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000743s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 4,4 [ RunTime:0.000615s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=1
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1 [运行时间：0.005242s][吞吐率：190.77req/s] [内存消耗：585.26kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000494s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000361s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000319s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000503s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:37:59+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.004485s][吞吐率：222.97req/s] [内存消耗：585.27kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000679s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000265s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000317s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000243s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 4,4 [ RunTime:0.000270s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:38:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=3
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=3 [运行时间：0.005357s][吞吐率：186.68req/s] [内存消耗：575.59kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000514s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000344s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000280s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 8,4 [ RunTime:0.000776s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:38:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majordelete.html?MajorId=1
+[ log ] www.myweb.com/index.php/admin/majorinfo/majordelete.html?MajorId=1 [运行时间：0.097995s][吞吐率：10.20req/s] [内存消耗：480.49kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majordelete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'MajorId' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorDelete[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorId` = 1 LIMIT 1    [ RunTime:0.000303s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000353s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] delete from majorinfo where MajorId = '1' [ RunTime:0.092865s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:38:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.003117s][吞吐率：320.81req/s] [内存消耗：584.60kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000348s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000296s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000259s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000190s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000192s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:38:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.005270s][吞吐率：189.75req/s] [内存消耗：585.27kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000367s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000382s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000283s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000275s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 4,4 [ RunTime:0.000569s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:38:41+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/majorinfo/majorupdate.html?MajorId=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorupdate.html?MajorId=2 [运行时间：0.202961s][吞吐率：4.93req/s] [内存消耗：480.23kb] [文件加载：55]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorupdate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.myweb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'MajorId' => '2',
+  'Update_Major' => '信息工程',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorUpdate[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `majorinfo` [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT * FROM `majorinfo` WHERE  `MajorId` = 2 LIMIT 1    [ RunTime:0.000393s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] update majorinfo set MajorName='信息工程' where MajorId='2' [ RunTime:0.198444s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:38:41+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.003389s][吞吐率：295.06req/s] [内存消耗：584.80kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000230s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000325s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000196s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.000329s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T21:38:44+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html?page=2
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html?page=2 [运行时间：0.002956s][吞吐率：338.30req/s] [内存消耗：585.27kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->MajorInfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.000258s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000223s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000160s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 4,4 [ RunTime:0.000264s ]
+
+---------------------------------------------------------------

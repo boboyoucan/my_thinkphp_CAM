@@ -25,7 +25,7 @@
 <div class="portlet light bordered">
     <div class="common-alert alert alert-danger display-hide" >
         <button class="close" data-close="alert"></button>
-        <span>请填写学院名称</span>
+        <span>请填写专业名称</span>
     </div>
 
     <div class="portlet-title">
@@ -86,20 +86,17 @@
                     </thead>
                     <tbody>
                         <tr role="row" id="add_tr" style="display: none">
-                            <form action="{:url('admin/majorinfo/AcademyAdd')}" method="post">
+                            <form action="{:url('admin/majorinfo/MajorAdd')}" method="post">
                             <td>
-                                <select class="form-control" name="academyname">
-                                    <option value="1">计算与信息学院</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="4">Option 4</option>
-                                    <option value="5">Option 5</option>
+                                <select class="form-control" name="AId">
+                                    {volist name="academyinfo" id="vo"}
+                                    <option value="{$vo.AcademyId}">{$vo.AcademyName}</option>
+                                    {/volist}
                                 </select>
                              </td>
                             <td class="sorting_1 form-group">
-                                <input type="text" id="add_input" name="Academy" class="form-control input-small" value="">
+                                <input type="text" id="add_input" name="Major" class="form-control input-small" value="">
                             </td>
-
                             <td>
                                 <button id="save" type="submit" class="dt-button buttons-print btn green btn-outline">
                                     <span>保存</span>
@@ -111,28 +108,31 @@
                             </form>
                         </tr>
                         {volist name="majorinfo" id="vo"}
-                        <form action="{:url('admin/majorinfo/AcademyUpdate')}?AcademyId={$vo.AcademyId}" method="post">
+                        <form action="{:url('admin/majorinfo/MajorUpdate')}?MajorId={$vo.MajorId}" method="post">
                         <tr role="row" class="even">
-                            <td id="td_row_{$vo.AcademyId}">
+                            <td id="td_row_Academy_{$vo.MajorId}">
                                 {$vo.AcademyName}
                             </td>
+                            <td id="td_row_{$vo.MajorId}">
+                                {$vo.MajorName}
+                            </td>
                             <!--默认隐藏 更新时显示input标签-->
-                            <td id="td_update_row_{$vo.AcademyId}" style="display:none">
-                                <input type="text" id="update_input" class="form-control input-small" name="Update_Academy" value="{$vo.AcademyName}">
+                            <td id="td_update_row_{$vo.MajorId}" style="display:none">
+                                <input type="text" id="update_input" class="form-control input-small" name="Update_Major" value="{$vo.MajorName}">
                             </td>
                             <td>
                                 <!--默认隐藏 更新时显示按钮-->
-                                <button id="update_save_button_{$vo.AcademyId}" type="submit" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
+                                <button id="update_save_button_{$vo.MajorId}" type="submit" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
                                     <span>保存</span>
                                 </button>
-                                <a id="update_cal_button_{$vo.AcademyId}"class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel('{$vo.AcademyId}')" >
+                                <a id="update_cal_button_{$vo.MajorId}"class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel('{$vo.MajorId}')" >
                                     <span>取消</span>
                                 </a>
                             <!--默认隐藏-->
-                                <a id="update_button_{$vo.AcademyId}" class="dt-button buttons-print btn green btn-outline" onclick="change('{$vo.AcademyId}')">
+                                <a id="update_button_{$vo.MajorId}" class="dt-button buttons-print btn green btn-outline" onclick="change('{$vo.MajorId}')">
                                     <span>更新</span>
                                 </a>
-                                <a id="delete_button_{$vo.AcademyId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/academyinfo/AcademyDelete')}?AcademyId={$vo.AcademyId}" >
+                                <a id="delete_button_{$vo.MajorId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/Majorinfo/MajorDelete')}?MajorId={$vo.MajorId}" >
                                     <span>删除</span>
                                 </a>
                             </td>
@@ -171,7 +171,6 @@
                             <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             {else	/}
                             <li class="next"><a href="{:url('admin/majorinfo/MajorInfo')}?page={$page_assign['page']+1}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-
                             {/if}
                         </ul>
                     </div>
@@ -181,3 +180,4 @@
     </div>
 </div>
 {/block}
+
