@@ -8,11 +8,15 @@ class Academyinfo extends Controller
      * 时间：2016年11月26日
      *方法：学院信息页面显示
      *****************************************/
-    public function academyinfo($page=1){
+    public function academyinfo($page=1, $pagesize=5,$AcademyName=''){
         //数据库总条数
-        $count=db('academyinfo')->query("select count(*) as count from academyinfo");
+        if($AcademyName != ''){
+            $count=db('academyinfo')->query("select count(*) as count from academyinfo where AcademyName like '%$AcademyName%'");
+        }else{
+            $count=db('academyinfo')->query("select count(*) as count from academyinfo ");
+        }
         //一页显示的多少条
-        $pagesize=4;
+//        $pagesize=5;
         //最大页数
         //echo ($count[0]['count']);
         $pagemax=$count[0]['count']/$pagesize;
@@ -26,7 +30,12 @@ class Academyinfo extends Controller
         $page_assign['count']=$count[0]['count'];
         $page_assign['pagesize']=$pagesize;
         $this->assign('page_assign',$page_assign);
-        $academyinfo=db('academyinfo')->query("select * from academyinfo order by AcademyId desc limit $startpage,$pagesize");
+        if($AcademyName != ''){
+            $sql="select * from academyinfo where AcademyName like '%$AcademyName%' order by AcademyId desc limit $startpage,$pagesize";
+        }else{
+            $sql="select * from academyinfo order by AcademyId desc limit $startpage,$pagesize";
+        }
+        $academyinfo=db('academyinfo')->query($sql);
         $this->assign('academyinfo',$academyinfo);
         return $this->fetch('academyinfo/index');
     }

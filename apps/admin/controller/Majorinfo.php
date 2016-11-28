@@ -8,11 +8,16 @@ class Majorinfo extends Controller
      * 时间：2016年11月26日
      *方法：专业信息页面显示
      *****************************************/
-    public function majorinfo($page=1){
+    public function majorinfo($page=1,$pagesize=5,$Name=''){
         //数据库总条数
-        $count=db('majorinfo')->query("select count(*) as count from majorinfo");
+        if($Name != ''){
+            $count=db('majorinfo')->query("select count(*) as count from majorinfo  where MajorName like '%$Name%' ");
+        }else{
+            $count=db('majorinfo')->query("select count(*) as count from majorinfo");
+        }
+
         //一页显示的多少条
-        $pagesize=4;
+        //$pagesize=4;
         //最大页数
         //echo ($count[0]['count']);
         $pagemax=$count[0]['count']/$pagesize;
@@ -28,7 +33,11 @@ class Majorinfo extends Controller
         $this->assign('page_assign',$page_assign);
         $academyinfo=db('academyinfo')->query("select * from academyinfo order by AcademyId desc");
         $this->assign('academyinfo',$academyinfo);
-        $majorinfo=db('majorinfo')->query("select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit $startpage,$pagesize");
+        if($Name != ''){
+        $majorinfo=db('majorinfo')->query("select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId and M.MajorName like '%$Name%' or M.AId=A.AcademyId and A.AcademyName like '%$Name%' order by MajorId desc limit $startpage,$pagesize");
+        }else{
+            $majorinfo=db('majorinfo')->query("select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit $startpage,$pagesize");
+        }
         $this->assign('majorinfo',$majorinfo);
         return $this->fetch('majorinfo/index');
     }

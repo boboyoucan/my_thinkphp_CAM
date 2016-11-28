@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480230444;s:24:"public/header/index.html";i:1480254946;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480342987;s:24:"public/header/index.html";i:1480254946;}*/ ?>
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
@@ -624,7 +624,11 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
         <div class="tools"> </div>
     </div>
+
+
+
     <div class="portlet-body">
+
         <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
             <div class="row">
                 <div class="col-md-12">
@@ -654,6 +658,32 @@ License: You must have a valid license purchased only from themeforest(the above
                             <span>生成CSV</span>
                         </a>
 
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="dataTables_length" id="sample_1_length">
+                        <label>
+                            <select name="select_page" onchange="select_page()" id="select_page" class="form-control input-sm input-xsmall input-inline">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="-1">All</option>
+                            </select> 行
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div id="sample_1_filter" class="dataTables_filter">
+                        <label>
+                            <form action="<?php echo url('admin/academyinfo/academyinfo'); ?>" method="post">
+                            <input type="search" class="form-control input-sm input-small input-inline" name="AcademyName" placeholder="请输入学院名称" aria-controls="sample_1">
+                            <button type="submit" class="btn">搜索</button>
+                            </form>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -735,15 +765,15 @@ License: You must have a valid license purchased only from themeforest(the above
                             <?php if($page_assign['page'] == 1): ?>
                             <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             <?php else: ?>
-                            <li class="prev " ><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']-1; ?>" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            <?php endif; $__FOR_START_828698825__=1;$__FOR_END_828698825__=$page_assign['pagemax']+1;for($i=$__FOR_START_828698825__;$i < $__FOR_END_828698825__;$i+=1){ if($i == $page_assign['page']): ?>
-                            <li class="active"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                            <li class="prev " ><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']-1; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
+                            <?php endif; $__FOR_START_1264245754__=1;$__FOR_END_1264245754__=$page_assign['pagemax']+1;for($i=$__FOR_START_1264245754__;$i < $__FOR_END_1264245754__;$i+=1){ if($i == $page_assign['page']): ?>
+                            <li class="active"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>"><?php echo $i; ?></a></li>
                             <?php else: ?>
-                            <li class=""><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                            <li class=""><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>"><?php echo $i; ?></a></li>
                             <?php endif; } if($page_assign['page'] == $page_assign['pagemax']): ?>
                             <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             <?php else: ?>
-                            <li class="next"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']+1; ?>" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
+                            <li class="next"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']+1; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
 
                             <?php endif; ?>
                         </ul>
@@ -753,6 +783,26 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    /*
+     * 页码显示函数
+     */
+    //获取select对象
+    var se = document.getElementById("select_page");
+    function select_page() {
+        var select_page_v=se.value;
+        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
+        localStorage.value = se.value;
+        localStorage.index = se.selectedIndex;
+        window.location.href="<?php echo url('admin/academyinfo/academyinfo'); ?>?pagesize="+select_page_v;
+    }
+    //页面重新加载时从localStorage读取select所在位置
+    window.onload = function(){
+//    alert( localStorage.index +";"+ localStorage.value );
+        se.options[ localStorage.index ].selected = true;
+    }
+
+</script>
 
         </div>
         <!-- END CONTENT BODY -->

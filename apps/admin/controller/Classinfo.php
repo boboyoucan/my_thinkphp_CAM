@@ -8,11 +8,11 @@ class Classinfo extends Controller
      * 时间：2016年11月26日
      *方法：专业信息页面显示
      *****************************************/
-    public function classinfo($page=1){
+    public function classinfo($page=1,$pagesize=5){
         //数据库总条数
         $count=db('classinfo')->query("select count(*) as count from classinfo");
         //一页显示的多少条
-        $pagesize=4;
+//        $pagesize=4;
         //最大页数
         //echo ($count[0]['count']);
         $pagemax=$count[0]['count']/$pagesize;
@@ -26,9 +26,11 @@ class Classinfo extends Controller
         $page_assign['count']=$count[0]['count'];
         $page_assign['pagesize']=$pagesize;
         $this->assign('page_assign',$page_assign);
-        $majorinfo=db('majorinfo')->query("select * from majorinfo order by MajorId desc");
-        $this->assign('majorinfo',$majorinfo);
-        $classinfo=db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName from classinfo as C JOIN majorinfo as M where C.MId=M.MajorId order by ClassId desc limit $startpage,$pagesize");
+//        $majorinfo=db('majorinfo')->query("select * from majorinfo order by MajorId desc");
+        $academyinfo=db('academyinfo')->query("select * from academyinfo order by AcademyId desc");
+        $this->assign('academyinfo',$academyinfo);
+//        $this->assign('majorinfo',$majorinfo);
+        $classinfo=db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName,A.AcademyName from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId order by ClassId desc limit $startpage,$pagesize");
         $this->assign('classinfo',$classinfo);
         return $this->fetch('classinfo/index');
     }

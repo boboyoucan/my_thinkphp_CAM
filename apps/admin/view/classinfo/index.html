@@ -68,11 +68,38 @@
                     </div>
                 </div>
             </div>
-
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="dataTables_length" id="sample_1_length">
+                        <label>
+                            <select name="select_page_Class" onchange="select_page()" id="select_page_Class" class="form-control input-sm input-xsmall input-inline">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="-1">All</option>
+                            </select> 行
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div id="sample_1_filter" class="dataTables_filter">
+                        <label>
+                            <form action="{:url('admin/majorinfo/MajorInfo')}" method="post">
+                                <input type="search" class="form-control input-sm input-small input-inline" name="Name" placeholder="请输入学院或专业名称" aria-controls="sample_1">
+                                <button type="submit" class="btn">搜索</button>
+                            </form>
+                        </label>
+                    </div>
+                </div>
+            </div>
             <div class="table-scrollable">
                 <table class="table">
                     <thead>
                     <tr role="row">
+                        <th class="sorting_desc" style="width: 163px;" >
+                            学院名称
+                        </th>
                         <th class="sorting_desc" style="width: 163px;" >
                             专业名称
                         </th>
@@ -87,11 +114,16 @@
                     <tbody>
                         <tr role="row" id="add_tr" style="display: none">
                             <form action="{:url('admin/classinfo/ClassAdd')}" method="post">
+                            <td><select id="an_se" class="form-control" onchange="chage_Major()" name="AId">
+                                <option value="0">请选择学院</option>
+                                {volist name="academyinfo" id="vo"}
+                                <option value="{$vo.AcademyId}">{$vo.AcademyName}</option>
+                                {/volist}
+                            </select>
+                            </td>
                             <td>
-                                <select class="form-control" name="MId">
-                                    {volist name="majorinfo" id="vo"}
-                                    <option value="{$vo.MajorId}">{$vo.MajorName}</option>
-                                    {/volist}
+                                <select id="mj_se" class="form-control" name="MId">
+
                                 </select>
                              </td>
                             <td class="sorting_1 form-group">
@@ -110,6 +142,9 @@
                         {volist name="classinfo" id="vo"}
                         <form action="{:url('admin/classinfo/ClassUpdate')}?ClassId={$vo.ClassId}" method="post">
                         <tr role="row" class="even">
+                            <td id="td_row_Academy_{$vo.ClassId}">
+                                {$vo.AcademyName}
+                            </td>
                             <td id="td_row_Major_{$vo.ClassId}">
                                 {$vo.MajorName}
                             </td>
@@ -158,19 +193,19 @@
                             {if	condition="$page_assign['page'] eq 1"}
                             <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             {else	/}
-                            <li class="prev " ><a href="{:url('admin/classinfo/ClassInfo')}?page={$page_assign['page']-1}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
+                            <li class="prev " ><a href="{:url('admin/classinfo/ClassInfo')}?page={$page_assign['page']-1}?pagesize={$page_assign['pagesize']}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
                             {/if}
                             {for start="1"	end="$page_assign['pagemax']+1"}
                             {if	condition="$i eq $page_assign['page']"}
-                            <li class="active"><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}">{$i}</a></li>
+                            <li class="active"><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
                             {else	/}
-                            <li class=""><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}">{$i}</a></li>
+                            <li class=""><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
                             {/if}
                             {/for}
                             {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
                             <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             {else	/}
-                            <li class="next"><a href="{:url('admin/classinfo/classInfo')}?page={$page_assign['page']+1}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
+                            <li class="next"><a href="{:url('admin/classinfo/classInfo')}?page={$page_assign['page']+1}?pagesize={$page_assign['pagesize']}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
                             {/if}
                         </ul>
                     </div>
@@ -179,5 +214,53 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    /*
+     * 页码显示函数
+     */
+    //获取select对象
+    var se = document.getElementById("select_page_Class");
+    function select_page() {
+        var select_page_v=se.value;
+        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
+        localStorage.value_Class = se.value;
+        localStorage.index_Class = se.selectedIndex;
+        window.location.href="{:url('admin/classinfo/classInfo')}?pagesize="+select_page_v;
+    }
+    //页面重新加载时从localStorage读取select所在位置
+    window.onload = function(){
+//    alert( localStorage.index +";"+ localStorage.value );
+        se.options[ localStorage.index_Class ].selected = true;
+    }
+
+function chage_Major() {
+    var academy=document.getElementById("an_se").value;
+    $.ajax({
+        cache:false,
+        type:"POST",
+        url:"{:url('admin/common/MajorInfo')}?academy="+academy,
+        dataType:"json",
+        data:['academy','$academy'],
+        timeout:30000,
+        error:function(){
+            alert('admin/Common/MajorInfo?academy='+academy);
+        },
+        success:function(data){
+            $("#mj_se").empty();
+            var count = data.length;
+            alert(count);
+            var i = 0;
+            var b="";
+            for(i=0;i<count;i++){
+                b+="<option value='"+data[i].MajorId+"'>"+data[i].MajorName+"</option>";
+            }
+            $("#mj_se").append(b);
+        }
+    });
+}
+
+</script>
+
 {/block}
+
 
