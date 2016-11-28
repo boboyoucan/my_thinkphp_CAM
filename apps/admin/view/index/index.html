@@ -1,14 +1,15 @@
 
 {extend name="public/header/index.html" /}
 {block name="content"}
+
 <div class="page-bar">
     <ul class="page-breadcrumb">
         <li>
-            <a href="{:url('admin/classinfo/ClassInfo')}">学校相关信息管理</a>
+            <a href="index.html">Home</a>
             <i class="fa fa-circle"></i>
         </li>
         <li>
-            <span>班级信息</span>
+            <span>Dashboard</span>
         </li>
     </ul>
     <div class="page-toolbar">
@@ -20,164 +21,76 @@
     </div>
 </div>
 
+<h3 class="page-title"> Dashboard
+    <small>dashboard &amp; statistics</small>
+</h3>
 
 
-<div class="portlet light bordered">
-    <div class="common-alert alert alert-danger display-hide" >
-        <button class="close" data-close="alert"></button>
-        <span>请填写班级名称</span>
-    </div>
 
-    <div class="portlet-title">
-        <div class="caption font-dark">
-            <i class="icon-settings font-dark"></i>
-            <span class="caption-subject bold uppercase">班级信息表</span>
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="dashboard-stat blue">
+            <div class="visual">
+                <i class="fa fa-comments"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    <span data-counter="counterup" data-value="1349">1349</span>
+                </div>
+                <div class="desc"> New Feedbacks </div>
+            </div>
+            <a class="more" href="javascript:;"> View more
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
         </div>
-        <div class="tools"> </div>
     </div>
-    <div class="portlet-body">
-        <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="dt-buttons">
-                        <a class="dt-button buttons-print btn purple btn-outline" id="add">
-                            <span>添加</span>
-                        </a>
-                        <a class="dt-button buttons-print btn dark btn-outline" >
-                            <span>打印</span>
-                        </a>
-                        <a class="dt-button buttons-copy buttons-flash btn red btn-outline" >
-                            <span>复制</span>
-                            <div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">
-                                <embed id="ZeroClipboard_TableToolsMovie_1" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=55&amp;height=31" wmode="transparent">
-                            </div>
-                        </a>
-                        <a class="dt-button buttons-pdf buttons-html5 btn green btn-outline" >
-                            <span>生成PDF</span>
-                        </a>
-                        <a class="dt-button buttons-excel buttons-flash btn yellow btn-outline" >
-                            <span>生成Excel</span>
-                            <div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">
-                                <embed id="ZeroClipboard_TableToolsMovie_2" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=55&amp;height=31" wmode="transparent">
-                            </div>
-                        </a>
-                        <a class="dt-button buttons-csv buttons-html5 btn purple btn-outline" >
-                            <span>生成CSV</span>
-                        </a>
-
-                    </div>
-                </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="dashboard-stat red">
+            <div class="visual">
+                <i class="fa fa-bar-chart-o"></i>
             </div>
-
-            <div class="table-scrollable">
-                <table class="table">
-                    <thead>
-                    <tr role="row">
-                        <th class="sorting_desc" style="width: 163px;" >
-                            学院名称
-                        </th>
-                        <th class="sorting_desc" style="width: 163px;" >
-                            专业名称
-                        </th>
-                        <th class="sorting" style="width: 205px;">
-                            操作
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr role="row" id="add_tr" style="display: none">
-                            <form action="{:url('admin/classinfo/ClassAdd')}" method="post">
-                            <td>
-                                <select class="form-control" name="MId">
-                                    {volist name="majorinfo" id="vo"}
-                                    <option value="{$vo.MajorId}">{$vo.MajorName}</option>
-                                    {/volist}
-                                </select>
-                             </td>
-                            <td class="sorting_1 form-group">
-                                <input type="text" id="add_input" name="Class" class="form-control input-small" value="">
-                            </td>
-                            <td>
-                                <button id="save" type="submit" class="dt-button buttons-print btn green btn-outline">
-                                    <span>保存</span>
-                                </button>
-                                <a id="cancel" class="dt-button buttons-print btn red btn-outline">
-                                    <span>取消</span>
-                                </a>
-                            </td>
-                            </form>
-                        </tr>
-                        {volist name="ClassInfo" id="vo"}
-                        <form action="{:url('admin/classinfo/ClassUpdate')}?ClassId={$vo.ClassId}" method="post">
-                        <tr role="row" class="even">
-                            <td id="td_row_Academy_{$vo.ClassId}">
-                                {$vo.AcademyName}
-                            </td>
-                            <td id="td_row_{$vo.ClassId}">
-                                {$vo.ClassName}
-                            </td>
-                            <!--默认隐藏 更新时显示input标签-->
-                            <td id="td_update_row_{$vo.ClassId}" style="display:none">
-                                <input type="text" id="update_input" class="form-control input-small" name="Update_Class" value="{$vo.ClassName}">
-                            </td>
-                            <td>
-                                <!--默认隐藏 更新时显示按钮-->
-                                <button id="update_save_button_{$vo.ClassId}" type="submit" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
-                                    <span>保存</span>
-                                </button>
-                                <a id="update_cal_button_{$vo.ClassId}"class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel('{$vo.ClassId}')" >
-                                    <span>取消</span>
-                                </a>
-                            <!--默认隐藏-->
-                                <a id="update_button_{$vo.ClassId}" class="dt-button buttons-print btn green btn-outline" onclick="change('{$vo.ClassId}')">
-                                    <span>更新</span>
-                                </a>
-                                <a id="delete_button_{$vo.ClassId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/ClassInfo/ClassDelete')}?ClassId={$vo.ClassId}" >
-                                    <span>删除</span>
-                                </a>
-                            </td>
-                        </tr>
-                            </form>
-                        {/volist}
-                    </tbody>
-                </table>
+            <div class="details">
+                <div class="number">
+                    <span data-counter="counterup" data-value="12,5">12,5</span>M$ </div>
+                <div class="desc"> Total Profit </div>
             </div>
-            <div class="row">
-                <div class="col-md-5 col-sm-12">
-                    <div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
-                        {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
-                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条
-                        {else	/}
-                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['page']*$page_assign['pagesize']} 条 共 {$page_assign['count']} 条
-                        {/if}
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12">
-                    <div class="dataTables_paginate paging_bootstrap_number" >
-                        <ul class="pagination" style="visibility: visible;">
-                            {if	condition="$page_assign['page'] eq 1"}
-                            <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            {else	/}
-                            <li class="prev " ><a href="{:url('admin/classinfo/ClassInfo')}?page={$page_assign['page']-1}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            {/if}
-                            {for start="1"	end="$page_assign['pagemax']+1"}
-                            {if	condition="$i eq $page_assign['page']"}
-                            <li class="active"><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}">{$i}</a></li>
-                            {else	/}
-                            <li class=""><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}">{$i}</a></li>
-                            {/if}
-                            {/for}
-                            {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
-                            <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-                            {else	/}
-                            <li class="next"><a href="{:url('admin/classinfo/ClassInfo')}?page={$page_assign['page']+1}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-                            {/if}
-                        </ul>
-                    </div>
-                </div>
+            <a class="more" href="javascript:;"> View more
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="dashboard-stat green">
+            <div class="visual">
+                <i class="fa fa-shopping-cart"></i>
             </div>
+            <div class="details">
+                <div class="number">
+                    <span data-counter="counterup" data-value="549">549</span>
+                </div>
+                <div class="desc"> New Orders </div>
+            </div>
+            <a class="more" href="javascript:;"> View more
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="dashboard-stat purple">
+            <div class="visual">
+                <i class="fa fa-globe"></i>
+            </div>
+            <div class="details">
+                <div class="number"> +
+                    <span data-counter="counterup" data-value="89">89</span>% </div>
+                <div class="desc"> Brand Popularity </div>
+            </div>
+            <a class="more" href="javascript:;"> View more
+                <i class="m-icon-swapright m-icon-white"></i>
+            </a>
         </div>
     </div>
 </div>
-{/block}
 
+
+{/block}

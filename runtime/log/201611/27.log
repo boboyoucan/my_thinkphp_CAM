@@ -14042,3 +14042,103 @@
 [ sql ] [ SQL ] select C.ClassId,C.MId,C.ClassName,M.MajorName from classinfo as C JOIN majorinfo as M where C.MId=M.MajorId order by ClassId desc limit 0,4 [ RunTime:0.000344s ]
 
 ---------------------------------------------------------------
+[ 2016-11-27T22:26:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/majorinfo/majorinfo.html
+[ log ] www.myweb.com/index.php/admin/majorinfo/majorinfo.html [运行时间：0.008622s][吞吐率：115.98req/s] [内存消耗：585.47kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'majorinfo',
+    2 => 'majorinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/classinfo/classinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Majorinfo->majorinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Majorinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'academyinfo',
+  2 => 'majorinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000669s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from majorinfo [ RunTime:0.001006s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001331s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from academyinfo order by AcademyId desc [ RunTime:0.000911s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000782s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select M.MajorId,M.AId,M.MajorName,A.AcademyName from majorinfo as M JOIN academyinfo as A where M.AId=A.AcademyId order by MajorId desc limit 0,4 [ RunTime:0.001105s ]
+
+---------------------------------------------------------------
+[ 2016-11-27T22:26:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/classinfo/classinfo.html
+[ log ] www.myweb.com/index.php/admin/classinfo/classinfo.html [运行时间：0.004441s][吞吐率：225.17req/s] [内存消耗：586.05kb] [文件加载：52]
+[ info ] [ LANG ] /mnt/www/html/myphpweb/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'classinfo',
+    2 => 'classinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myweb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.myweb.com/index.php/admin/majorinfo/majorinfo.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6623753216; PHPSESSID=38v32nbp7ovt1ba7a705r3bt04',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Classinfo->classinfo[ /mnt/www/html/myphpweb/apps/admin/controller/Classinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /mnt/www/html/myphpweb/apps/admin/view/classinfo/index.html [ array (
+  0 => 'page_assign',
+  1 => 'majorinfo',
+  2 => 'classinfo',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000436s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select count(*) as count from classinfo [ RunTime:0.000262s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from majorinfo order by MajorId desc [ RunTime:0.000346s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:dbname=student_apartment_info;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] select C.ClassId,C.MId,C.ClassName,M.MajorName from classinfo as C JOIN majorinfo as M where C.MId=M.MajorId order by ClassId desc limit 0,4 [ RunTime:0.000401s ]
+
+---------------------------------------------------------------
