@@ -1,0 +1,385 @@
+
+{extend name="public/header/index.html" /}
+{block name="content"}
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/dormitoryinfo/dormitoryinfo')}">学校相关信息管理</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>宿舍信息</span>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
+            <i class="icon-calendar"></i>&nbsp;
+            <span class="thin uppercase hidden-xs">October 25, 2016 - November 23, 2016</span>&nbsp;
+            <i class="fa fa-angle-down"></i>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="portlet light bordered">
+    <div class="common-alert alert alert-danger display-hide" >
+        <button class="close" data-close="alert"></button>
+        <span>请填写宿舍名称</span>
+    </div>
+
+    <div class="portlet-title">
+        <div class="caption font-dark">
+            <i class="icon-settings font-dark"></i>
+            <span class="caption-subject bold uppercase">学院信息表</span>
+        </div>
+        <div class="tools"> </div>
+    </div>
+
+
+
+    <div class="portlet-body">
+
+        <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="dt-buttons">
+                        <a class="dt-button buttons-print btn purple btn-outline" id="add">
+                            <span>添加</span>
+                        </a>
+                        <a class="dt-button buttons-print btn dark btn-outline" >
+                            <span>打印</span>
+                        </a>
+                        <a class="dt-button buttons-copy buttons-flash btn red btn-outline" >
+                            <span>复制</span>
+                            <div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">
+                                <embed id="ZeroClipboard_TableToolsMovie_1" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=55&amp;height=31" wmode="transparent">
+                            </div>
+                        </a>
+                        <a class="dt-button buttons-pdf buttons-html5 btn green btn-outline" >
+                            <span>生成PDF</span>
+                        </a>
+                        <a class="dt-button buttons-excel buttons-flash btn yellow btn-outline" >
+                            <span>生成Excel</span>
+                            <div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">
+                                <embed id="ZeroClipboard_TableToolsMovie_2" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=55&amp;height=31" wmode="transparent">
+                            </div>
+                        </a>
+                        <a class="dt-button buttons-csv buttons-html5 btn purple btn-outline" >
+                            <span>生成CSV</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="dataTables_length" id="sample_1_length">
+                        <label>
+                            <select name="select_page" onchange="select_page()" id="select_page" class="form-control input-sm input-xsmall input-inline">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="-1">All</option>
+                            </select> 行
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div id="sample_1_filter" class="dataTables_filter">
+                        <label>
+                            <form action="{:url('admin/dormitoryinfo/dormitoryinfo')}" method="post">
+                            <input type="search" class="form-control input-sm input-small input-inline" name="DormitoryName" placeholder="请输入学院名称" aria-controls="sample_1">
+                            <button type="submit" class="btn">搜索</button>
+                            </form>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-scrollable">
+                <table class="table">
+                    <thead>
+                    <tr role="row">
+                        <th class="sorting_desc" style="width: 163px;" >
+                            栋
+                        </th>
+                        <th class="sorting_desc" style="width: 163px;" >
+                            单元
+                        </th>
+                        <th class="sorting_desc" style="width: 163px;" >
+                            宿舍号
+                        </th>
+                        <th class="sorting_desc" style="width: 163px;" >
+                        宿舍类型
+                        </th>
+                        <th class="sorting_desc" style="width: 163px;" >
+                         宿舍人数
+                        </th>
+                        <th class="sorting_desc" style="width: 163px;" >
+                            宿舍号码
+                        </th>
+                        <th class="sorting" style="width: 205px;">
+                            操作
+                        </th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr role="row" id="add_tr" style="display: none">
+                            <form action="{:url('admin/dormitoryinfo/DormitoryAdd')}" method="post">
+                                <td class="sorting_1 form-group">
+                                    <input type="text" id="add_input_Building" name="Building" class="form-control input-small" value="">
+                                </td>
+                                <td class="sorting_1 form-group">
+                                    <input type="text" id="add_input_Unit" name="Unit" class="form-control input-small" value="">
+                                </td>
+                                <td class="sorting_1 form-group">
+                                    <input type="text" id="add_input_DormitoryNo" name="DormitoryNo" class="form-control input-small" value="">
+                                </td>
+                                <td class="sorting_1 form-group">
+                                    <input type="text" id="add_input_DormitoryType" name="DormitoryType" class="form-control input-small" value="">
+                                </td>
+                                <td class="sorting_1 form-group">
+                                    <input type="text" id="add_input_DormitoryPeopleNo" name="DormitoryPeopleNo" class="form-control input-small" value="">
+                                </td>
+                                <td class="sorting_1 form-group">
+                                    <input type="text" id="add_input_DormitoryPhone" name="DormitoryPhone" class="form-control input-small" value="">
+                                </td>
+                            <td>
+                                <button id="save" type="submit" class="dt-button buttons-print btn green btn-outline">
+                                    <span>保存</span>
+                                </button>
+                                <a id="cancel" class="dt-button buttons-print btn red btn-outline">
+                                    <span>取消</span>
+                                </a>
+                            </td>
+                            </form>
+                        </tr>
+                        {volist name="dormitoryinfo" id="vo"}
+                        <form action="{:url('admin/dormitoryinfo/DormitoryUpdate')}?DormitoryId={$vo.DormitoryId}" method="post">
+                        <tr role="row" class="even" >
+                            <td id="td_row_Building_{$vo.DormitoryId}">
+                                {$vo.Building}
+                            </td>
+                            <td id="td_row_Unit_{$vo.DormitoryId}">
+                                {$vo.Unit}
+                            </td>
+                            <td id="td_row_DormitoryNo_{$vo.DormitoryId}">
+                                {$vo.DormitoryNo}
+                            </td>
+                            <td id="td_row_DormitoryType_{$vo.DormitoryId}">
+                                {$vo.DormitoryType}
+                            </td>
+                            <td id="td_row_DormitoryPeopleNo_{$vo.DormitoryId}">
+                                {$vo.DormitoryPeopleNo}
+                            </td>
+                            <td id="td_row_Dormitory_Phone_{$vo.DormitoryId}">
+                                {$vo.DormitoryPhone}
+                            </td>
+                            <!--默认隐藏 更新时显示input标签-->
+                            <td id="td_update_row_Building_{$vo.DormitoryId}" style="display:none">
+                                <input type="text" id="update_input_Building" class="form-control input-small" name="Update_Dormitory_Building" value="{$vo.Building}">
+                            </td>
+                            <td id="td_update_row_Unit_{$vo.DormitoryId}" style="display:none">
+                                <input type="text" id="update_input_Unit" class="form-control input-small" name="Update_Dormitory_Unit" value="{$vo.Unit}">
+                            </td>
+                            <td id="td_update_row_DormitoryNo_{$vo.DormitoryId}" style="display:none">
+                                <input type="text" id="update_input_DormitoryNo" class="form-control input-small" name="Update_Dormitory_DormitoryNo" value="{$vo.DormitoryNo}">
+                            </td>
+                            <td id="td_update_row_DormitoryType_{$vo.DormitoryId}" style="display:none">
+                                <input type="text" id="update_input_DormitoryType" class="form-control input-small" name="Update_Dormitory_DormitoryType" value="{$vo.DormitoryType}">
+                            </td>
+                            <td id="td_update_row_DormitoryPeopleNo_{$vo.DormitoryId}" style="display:none">
+                                <input type="text" id="update_input_DormitoryPeopleNo" class="form-control input-small" name="Update_Dormitory_DormitoryPeopleNo" value="{$vo.DormitoryPeopleNo}">
+                            </td>
+                            <td id="td_update_row_DormitoryPhone_{$vo.DormitoryId}" style="display:none">
+                                <input type="text" id="update_input_DormitoryPhone" class="form-control input-small" name="Update_Dormitory_DormitoryPhone" value="{$vo.DormitoryPhone}">
+                            </td>
+                            <td>
+                                <!--默认隐藏 更新时显示按钮-->
+                                <button id="update_save_button_{$vo.DormitoryId}" type="submit" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
+                                    <span>保存</span>
+                                </button>
+                                <a id="update_cal_button_{$vo.DormitoryId}"class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel_Dormitory('{$vo.DormitoryId}')" >
+                                    <span>取消</span>
+                                </a>
+                            <!--默认隐藏-->
+                                <a id="update_button_{$vo.DormitoryId}" class="dt-button buttons-print btn green btn-outline" onclick="change_Dormitory('{$vo.DormitoryId}')">
+                                    <span>更新</span>
+                                </a>
+                                <a id="delete_button_{$vo.DormitoryId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/dormitoryinfo/DormitoryDelete')}?DormitoryId={$vo.DormitoryId}" >
+                                    <span>删除</span>
+                                </a>
+                            </td>
+                        </tr>
+                            </form>
+                        {/volist}
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
+                        {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
+                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条
+                        {else	/}
+                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['page']*$page_assign['pagesize']} 条 共 {$page_assign['count']} 条
+                        {/if}
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="dataTables_paginate paging_bootstrap_number" >
+                        <ul class="pagination" style="visibility: visible;">
+                            {if	condition="$page_assign['page'] eq 1"}
+                            <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
+                            {else	/}
+                            <li class="prev " ><a href="{:url('admin/dormitoryinfo/dormitoryinfo')}?page={$page_assign['page']-1}?pagesize={$page_assign['pagesize']}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
+                            {/if}
+                            {for start="1"	end="$page_assign['pagemax']+1"}
+                            {if	condition="$i eq $page_assign['page']"}
+                            <li class="active"><a href="{:url('admin/dormitoryinfo/dormitoryinfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
+                            {else	/}
+                            <li class=""><a href="{:url('admin/dormitoryinfo/dormitoryinfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
+                            {/if}
+                            {/for}
+                            {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
+                            <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
+                            {else	/}
+                            <li class="next"><a href="{:url('admin/dormitoryinfo/dormitoryinfo')}?page={$page_assign['page']+1}?pagesize={$page_assign['pagesize']}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
+
+                            {/if}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    /*
+     * 页码显示函数
+     */
+    //获取select对象
+    var se = document.getElementById("select_page");
+    function select_page() {
+        var select_page_v=se.value;
+        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
+        localStorage.value = se.value;
+        localStorage.index = se.selectedIndex;
+        window.location.href="{:url('admin/dormitoryinfo/dormitoryinfo')}?pagesize="+select_page_v;
+    }
+    //页面重新加载时从localStorage读取select所在位置
+    window.onload = function(){
+//    alert( localStorage.index +";"+ localStorage.value );
+        se.options[ localStorage.index ].selected = true;
+    }
+
+    function change_Dormitory(i) {
+        //更新按钮--隐藏
+        var up_bt_i=document.getElementById('update_button_'+i);
+        up_bt_i.style.display='none';
+        //删除按钮--隐藏
+        var de_bt_i=document.getElementById('delete_button_'+i);
+        de_bt_i.style.display='none';
+        //更新保存按钮--显示’保存‘按钮
+        var up_sa_bt_i=document.getElementById('update_save_button_'+i);
+        up_sa_bt_i.style.display='';
+        //更新取消按钮--显示‘取消’按钮
+        var up_ca_bt_i=document.getElementById('update_cal_button_'+i);
+        up_ca_bt_i.style.display='';
+        //表格中一列 --隐藏显示的表格一列
+        var td_update_row_Building_i=document.getElementById('td_update_row_Building_'+i);
+        td_update_row_Building_i.style.display='';
+
+        var td_update_row_Unit_i=document.getElementById('td_update_row_Unit_'+i);
+        td_update_row_Unit_i.style.display='';
+
+        var td_update_row_DormitoryNo_i=document.getElementById('td_update_row_DormitoryNo_'+i);
+        td_update_row_DormitoryNo_i.style.display='';
+
+        var td_update_row_DormitoryType_i=document.getElementById('td_update_row_DormitoryType_'+i);
+        td_update_row_DormitoryType_i.style.display='';
+        var td_update_row_DormitoryPeopleNo_i=document.getElementById('td_update_row_DormitoryPeopleNo_'+i);
+        td_update_row_DormitoryPeopleNo_i.style.display='';
+
+        var td_update_row_DormitoryPhone_i=document.getElementById('td_update_row_DormitoryPhone_'+i);
+        td_update_row_DormitoryPhone_i.style.display='';
+
+
+        //把表格的一列转换为input标签的样式显示
+        var td_row_Building_i=document.getElementById('td_row_Building_'+i);
+        td_row_Building_i.style.display='none';
+
+        var td_row_Unit_i=document.getElementById('td_row_Unit_'+i);
+        td_row_Unit_i.style.display='none';
+
+        var td_row_DormitoryNo_i=document.getElementById('td_row_DormitoryNo_'+i);
+        td_row_DormitoryNo_i.style.display='none';
+
+        var td_row_DormitoryType_i=document.getElementById('td_row_DormitoryType_'+i);
+        td_row_DormitoryType_i.style.display='none';
+        var td_row_DormitoryPeopleNo_i=document.getElementById('td_row_DormitoryPeopleNo_'+i);
+        td_row_DormitoryPeopleNo_i.style.display='none';
+
+        var td_row_Dormitory_Phone_i=document.getElementById('td_row_Dormitory_Phone_'+i);
+        td_row_Dormitory_Phone_i.style.display='none';
+
+
+    }
+
+    function cancel_Dormitory(i){
+        //更新按钮--显示
+        var up_bt_i=document.getElementById('update_button_'+i);
+        up_bt_i.style.display='';
+        //删除按钮--显示
+        var de_bt_i=document.getElementById('delete_button_'+i);
+        de_bt_i.style.display='';
+        //更新保存按钮--隐藏’保存‘按钮
+        var up_sa_bt_i=document.getElementById('update_save_button_'+i);
+        up_sa_bt_i.style.display='none';
+        //更新取消按钮--隐藏‘取消’按钮
+        var up_ca_bt_i=document.getElementById('update_cal_button_'+i);
+        up_ca_bt_i.style.display='none';
+
+        //表格中一列 --隐藏显示的表格一列
+        var td_update_row_Building_i=document.getElementById('td_update_row_Building_'+i);
+        td_update_row_Building_i.style.display='none';
+
+        var td_update_row_Unit_i=document.getElementById('td_update_row_Unit_'+i);
+        td_update_row_Unit_i.style.display='none';
+
+        var td_update_row_DormitoryNo_i=document.getElementById('td_update_row_DormitoryNo_'+i);
+        td_update_row_DormitoryNo_i.style.display='none';
+
+        var td_update_row_DormitoryType_i=document.getElementById('td_update_row_DormitoryType_'+i);
+        td_update_row_DormitoryType_i.style.display='none';
+        var td_update_row_DormitoryPeopleNo_i=document.getElementById('td_update_row_DormitoryPeopleNo_'+i);
+        td_update_row_DormitoryPeopleNo_i.style.display='none';
+
+        var td_update_row_DormitoryPhone_i=document.getElementById('td_update_row_DormitoryPhone_'+i);
+        td_update_row_DormitoryPhone_i.style.display='none';
+
+
+        //把表格的一列转换为input标签的样式显示
+        var td_row_Building_i=document.getElementById('td_row_Building_'+i);
+        td_row_Building_i.style.display='';
+
+        var td_row_Unit_i=document.getElementById('td_row_Unit_'+i);
+        td_row_Unit_i.style.display='';
+
+        var td_row_DormitoryNo_i=document.getElementById('td_row_DormitoryNo_'+i);
+        td_row_DormitoryNo_i.style.display='';
+
+        var td_row_DormitoryType_i=document.getElementById('td_row_DormitoryType_'+i);
+        td_row_DormitoryType_i.style.display='';
+        var td_row_DormitoryPeopleNo_i=document.getElementById('td_row_DormitoryPeopleNo_'+i);
+        td_row_DormitoryPeopleNo_i.style.display='';
+
+        var td_row_Dormitory_Phone_i=document.getElementById('td_row_Dormitory_Phone_'+i);
+        td_row_Dormitory_Phone_i.style.display='';
+    }
+</script>
+{/block}
