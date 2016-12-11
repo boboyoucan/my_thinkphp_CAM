@@ -25,27 +25,6 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />-->
-    <!--<link href="../myphpweb/public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
-    <!--<link href="../myphpweb/public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />-->
-    <!--<link href="../myphpweb/public/static/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
-    <!--<link href="../myphpweb/public/static/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />-->
-    <!--<link href="../myphpweb/public/static/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />-->
-    <!--&lt;!&ndash; END GLOBAL MANDATORY STYLES &ndash;&gt;-->
-    <!--&lt;!&ndash; BEGIN PAGE LEVEL PLUGINS &ndash;&gt;-->
-    <!--<link href="../myphpweb/public/static/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />-->
-    <!--<link href="../myphpweb/public/static/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />-->
-    <!--&lt;!&ndash; END PAGE LEVEL PLUGINS &ndash;&gt;-->
-    <!--&lt;!&ndash; BEGIN THEME GLOBAL STYLES &ndash;&gt;-->
-    <!--<link href="../myphpweb/public/static/assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />-->
-    <!--<link href="../myphpweb/public/static/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />-->
-    <!--&lt;!&ndash; END THEME GLOBAL STYLES &ndash;&gt;-->
-    <!--&lt;!&ndash; BEGIN PAGE LEVEL STYLES &ndash;&gt;-->
-    <!--<link href="../myphpweb/public/static/assets/pages/css/login-4.min.css" rel="stylesheet" type="text/css" />-->
-    <!-- END PAGE LEVEL STYLES -->
-    <!-- BEGIN THEME LAYOUT STYLES -->
-    <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="favicon.ico" /> </head>
 <!-- END HEAD -->
 
@@ -89,23 +68,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 <input type="checkbox" name="remember" value="1" /> 管理员登录 </label>
             <button type="submit" class="btn green pull-right"> 登录 </button>
         </div>
-        <!--<div class="login-options">-->
-            <!--<h4>Or login with</h4>-->
-            <!--<ul class="social-icons">-->
-                <!--<li>-->
-                    <!--<a class="facebook" data-original-title="facebook" href="javascript:;"> </a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="twitter" data-original-title="Twitter" href="javascript:;"> </a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="googleplus" data-original-title="Goole Plus" href="javascript:;"> </a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="linkedin" data-original-title="Linkedin" href="javascript:;"> </a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
         <div class="forget-password">
             <h4>忘记登录密码 ?</h4>
             <p> 不用担心, 点击
@@ -138,302 +100,126 @@ License: You must have a valid license purchased only from themeforest(the above
         <h3>注册</h3>
         <p> 在下方输入您的个人信息进行注册： </p>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Full Name</label>
+            <label class="control-label visible-ie8 visible-ie9">姓名</label>
             <div class="input-icon">
                 <i class="fa fa-font"></i>
-                <input class="form-control placeholder-no-fix" type="text" placeholder="Full Name" name="fullname" /> </div>
+                <input class="form-control placeholder-no-fix" type="text" placeholder="姓名" name="name" /> </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">性别</label>
+            <div class="input-icon">
+                <i class="fa fa-odnoklassniki"></i>
+                <select name="sex" id="sex_list" class="select2 form-control">
+                    <option value="">选择性别</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">民族</label>
+            <div class="input-icon">
+                <i class="fa fa-user-secret"></i>
+                <input class="form-control placeholder-no-fix" type="text" placeholder="民族" name="Nationality" /> </div>
         </div>
         <div class="form-group">
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-            <label class="control-label visible-ie8 visible-ie9">Email</label>
+            <label class="control-label visible-ie8 visible-ie9">生日</label>
+            <div class="input-icon">
+                <i class="fa fa-calendar-check-o"></i>
+                <input class="form-control placeholder-no-fix" type="text" onfocus="(this.type='date')" placeholder="生日" name="Birthday" /></div>
+        </div>
+        <div class="form-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">电话</label>
+            <div class="input-icon">
+                <i class="fa fa-phone"></i>
+                <input class="form-control placeholder-no-fix" type="text" placeholder="电话" name="PhoneNo" /> </div>
+        </div>
+        <div class="form-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">邮箱</label>
             <div class="input-icon">
                 <i class="fa fa-envelope"></i>
-                <input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email" /> </div>
+                <input class="form-control placeholder-no-fix" type="text" placeholder="邮箱" name="email" /> </div>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Address</label>
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">贵重物品</label>
             <div class="input-icon">
-                <i class="fa fa-check"></i>
-                <input class="form-control placeholder-no-fix" type="text" placeholder="Address" name="address" /> </div>
+                <i class="fa fa-cubes"></i>
+                <input class="form-control placeholder-no-fix" type="text" placeholder="贵重物品" name="Valuables" /> </div>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">City/Town</label>
+            <label class="control-label visible-ie8 visible-ie9">宿舍</label>
             <div class="input-icon">
-                <i class="fa fa-location-arrow"></i>
-                <input class="form-control placeholder-no-fix" type="text" placeholder="City/Town" name="city" /> </div>
+                <i class="fa fa-institution"></i>
+                <select name="dormitory" id="dormitory_list" class="select2 form-control">
+                    <option value="">选择宿舍</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select></div>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Country</label>
-            <select name="country" id="country_list" class="select2 form-control">
-                <option value=""></option>
-                <option value="AF">Afghanistan</option>
-                <option value="AL">Albania</option>
-                <option value="DZ">Algeria</option>
-                <option value="AS">American Samoa</option>
-                <option value="AD">Andorra</option>
-                <option value="AO">Angola</option>
-                <option value="AI">Anguilla</option>
-                <option value="AR">Argentina</option>
-                <option value="AM">Armenia</option>
-                <option value="AW">Aruba</option>
-                <option value="AU">Australia</option>
-                <option value="AT">Austria</option>
-                <option value="AZ">Azerbaijan</option>
-                <option value="BS">Bahamas</option>
-                <option value="BH">Bahrain</option>
-                <option value="BD">Bangladesh</option>
-                <option value="BB">Barbados</option>
-                <option value="BY">Belarus</option>
-                <option value="BE">Belgium</option>
-                <option value="BZ">Belize</option>
-                <option value="BJ">Benin</option>
-                <option value="BM">Bermuda</option>
-                <option value="BT">Bhutan</option>
-                <option value="BO">Bolivia</option>
-                <option value="BA">Bosnia and Herzegowina</option>
-                <option value="BW">Botswana</option>
-                <option value="BV">Bouvet Island</option>
-                <option value="BR">Brazil</option>
-                <option value="IO">British Indian Ocean Territory</option>
-                <option value="BN">Brunei Darussalam</option>
-                <option value="BG">Bulgaria</option>
-                <option value="BF">Burkina Faso</option>
-                <option value="BI">Burundi</option>
-                <option value="KH">Cambodia</option>
-                <option value="CM">Cameroon</option>
-                <option value="CA">Canada</option>
-                <option value="CV">Cape Verde</option>
-                <option value="KY">Cayman Islands</option>
-                <option value="CF">Central African Republic</option>
-                <option value="TD">Chad</option>
-                <option value="CL">Chile</option>
-                <option value="CN">China</option>
-                <option value="CX">Christmas Island</option>
-                <option value="CC">Cocos (Keeling) Islands</option>
-                <option value="CO">Colombia</option>
-                <option value="KM">Comoros</option>
-                <option value="CG">Congo</option>
-                <option value="CD">Congo, the Democratic Republic of the</option>
-                <option value="CK">Cook Islands</option>
-                <option value="CR">Costa Rica</option>
-                <option value="CI">Cote d'Ivoire</option>
-                <option value="HR">Croatia (Hrvatska)</option>
-                <option value="CU">Cuba</option>
-                <option value="CY">Cyprus</option>
-                <option value="CZ">Czech Republic</option>
-                <option value="DK">Denmark</option>
-                <option value="DJ">Djibouti</option>
-                <option value="DM">Dominica</option>
-                <option value="DO">Dominican Republic</option>
-                <option value="EC">Ecuador</option>
-                <option value="EG">Egypt</option>
-                <option value="SV">El Salvador</option>
-                <option value="GQ">Equatorial Guinea</option>
-                <option value="ER">Eritrea</option>
-                <option value="EE">Estonia</option>
-                <option value="ET">Ethiopia</option>
-                <option value="FK">Falkland Islands (Malvinas)</option>
-                <option value="FO">Faroe Islands</option>
-                <option value="FJ">Fiji</option>
-                <option value="FI">Finland</option>
-                <option value="FR">France</option>
-                <option value="GF">French Guiana</option>
-                <option value="PF">French Polynesia</option>
-                <option value="TF">French Southern Territories</option>
-                <option value="GA">Gabon</option>
-                <option value="GM">Gambia</option>
-                <option value="GE">Georgia</option>
-                <option value="DE">Germany</option>
-                <option value="GH">Ghana</option>
-                <option value="GI">Gibraltar</option>
-                <option value="GR">Greece</option>
-                <option value="GL">Greenland</option>
-                <option value="GD">Grenada</option>
-                <option value="GP">Guadeloupe</option>
-                <option value="GU">Guam</option>
-                <option value="GT">Guatemala</option>
-                <option value="GN">Guinea</option>
-                <option value="GW">Guinea-Bissau</option>
-                <option value="GY">Guyana</option>
-                <option value="HT">Haiti</option>
-                <option value="HM">Heard and Mc Donald Islands</option>
-                <option value="VA">Holy See (Vatican City State)</option>
-                <option value="HN">Honduras</option>
-                <option value="HK">Hong Kong</option>
-                <option value="HU">Hungary</option>
-                <option value="IS">Iceland</option>
-                <option value="IN">India</option>
-                <option value="ID">Indonesia</option>
-                <option value="IR">Iran (Islamic Republic of)</option>
-                <option value="IQ">Iraq</option>
-                <option value="IE">Ireland</option>
-                <option value="IL">Israel</option>
-                <option value="IT">Italy</option>
-                <option value="JM">Jamaica</option>
-                <option value="JP">Japan</option>
-                <option value="JO">Jordan</option>
-                <option value="KZ">Kazakhstan</option>
-                <option value="KE">Kenya</option>
-                <option value="KI">Kiribati</option>
-                <option value="KP">Korea, Democratic People's Republic of</option>
-                <option value="KR">Korea, Republic of</option>
-                <option value="KW">Kuwait</option>
-                <option value="KG">Kyrgyzstan</option>
-                <option value="LA">Lao People's Democratic Republic</option>
-                <option value="LV">Latvia</option>
-                <option value="LB">Lebanon</option>
-                <option value="LS">Lesotho</option>
-                <option value="LR">Liberia</option>
-                <option value="LY">Libyan Arab Jamahiriya</option>
-                <option value="LI">Liechtenstein</option>
-                <option value="LT">Lithuania</option>
-                <option value="LU">Luxembourg</option>
-                <option value="MO">Macau</option>
-                <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
-                <option value="MG">Madagascar</option>
-                <option value="MW">Malawi</option>
-                <option value="MY">Malaysia</option>
-                <option value="MV">Maldives</option>
-                <option value="ML">Mali</option>
-                <option value="MT">Malta</option>
-                <option value="MH">Marshall Islands</option>
-                <option value="MQ">Martinique</option>
-                <option value="MR">Mauritania</option>
-                <option value="MU">Mauritius</option>
-                <option value="YT">Mayotte</option>
-                <option value="MX">Mexico</option>
-                <option value="FM">Micronesia, Federated States of</option>
-                <option value="MD">Moldova, Republic of</option>
-                <option value="MC">Monaco</option>
-                <option value="MN">Mongolia</option>
-                <option value="MS">Montserrat</option>
-                <option value="MA">Morocco</option>
-                <option value="MZ">Mozambique</option>
-                <option value="MM">Myanmar</option>
-                <option value="NA">Namibia</option>
-                <option value="NR">Nauru</option>
-                <option value="NP">Nepal</option>
-                <option value="NL">Netherlands</option>
-                <option value="AN">Netherlands Antilles</option>
-                <option value="NC">New Caledonia</option>
-                <option value="NZ">New Zealand</option>
-                <option value="NI">Nicaragua</option>
-                <option value="NE">Niger</option>
-                <option value="NG">Nigeria</option>
-                <option value="NU">Niue</option>
-                <option value="NF">Norfolk Island</option>
-                <option value="MP">Northern Mariana Islands</option>
-                <option value="NO">Norway</option>
-                <option value="OM">Oman</option>
-                <option value="PK">Pakistan</option>
-                <option value="PW">Palau</option>
-                <option value="PA">Panama</option>
-                <option value="PG">Papua New Guinea</option>
-                <option value="PY">Paraguay</option>
-                <option value="PE">Peru</option>
-                <option value="PH">Philippines</option>
-                <option value="PN">Pitcairn</option>
-                <option value="PL">Poland</option>
-                <option value="PT">Portugal</option>
-                <option value="PR">Puerto Rico</option>
-                <option value="QA">Qatar</option>
-                <option value="RE">Reunion</option>
-                <option value="RO">Romania</option>
-                <option value="RU">Russian Federation</option>
-                <option value="RW">Rwanda</option>
-                <option value="KN">Saint Kitts and Nevis</option>
-                <option value="LC">Saint LUCIA</option>
-                <option value="VC">Saint Vincent and the Grenadines</option>
-                <option value="WS">Samoa</option>
-                <option value="SM">San Marino</option>
-                <option value="ST">Sao Tome and Principe</option>
-                <option value="SA">Saudi Arabia</option>
-                <option value="SN">Senegal</option>
-                <option value="SC">Seychelles</option>
-                <option value="SL">Sierra Leone</option>
-                <option value="SG">Singapore</option>
-                <option value="SK">Slovakia (Slovak Republic)</option>
-                <option value="SI">Slovenia</option>
-                <option value="SB">Solomon Islands</option>
-                <option value="SO">Somalia</option>
-                <option value="ZA">South Africa</option>
-                <option value="GS">South Georgia and the South Sandwich Islands</option>
-                <option value="ES">Spain</option>
-                <option value="LK">Sri Lanka</option>
-                <option value="SH">St. Helena</option>
-                <option value="PM">St. Pierre and Miquelon</option>
-                <option value="SD">Sudan</option>
-                <option value="SR">Suriname</option>
-                <option value="SJ">Svalbard and Jan Mayen Islands</option>
-                <option value="SZ">Swaziland</option>
-                <option value="SE">Sweden</option>
-                <option value="CH">Switzerland</option>
-                <option value="SY">Syrian Arab Republic</option>
-                <option value="TW">Taiwan, Province of China</option>
-                <option value="TJ">Tajikistan</option>
-                <option value="TZ">Tanzania, United Republic of</option>
-                <option value="TH">Thailand</option>
-                <option value="TG">Togo</option>
-                <option value="TK">Tokelau</option>
-                <option value="TO">Tonga</option>
-                <option value="TT">Trinidad and Tobago</option>
-                <option value="TN">Tunisia</option>
-                <option value="TR">Turkey</option>
-                <option value="TM">Turkmenistan</option>
-                <option value="TC">Turks and Caicos Islands</option>
-                <option value="TV">Tuvalu</option>
-                <option value="UG">Uganda</option>
-                <option value="UA">Ukraine</option>
-                <option value="AE">United Arab Emirates</option>
-                <option value="GB">United Kingdom</option>
-                <option value="US">United States</option>
-                <option value="UM">United States Minor Outlying Islands</option>
-                <option value="UY">Uruguay</option>
-                <option value="UZ">Uzbekistan</option>
-                <option value="VU">Vanuatu</option>
-                <option value="VE">Venezuela</option>
-                <option value="VN">Viet Nam</option>
-                <option value="VG">Virgin Islands (British)</option>
-                <option value="VI">Virgin Islands (U.S.)</option>
-                <option value="WF">Wallis and Futuna Islands</option>
-                <option value="EH">Western Sahara</option>
-                <option value="YE">Yemen</option>
-                <option value="ZM">Zambia</option>
-                <option value="ZW">Zimbabwe</option>
-            </select>
+            <label class="control-label visible-ie8 visible-ie9">学院</label>
+            <div class="input-icon">
+                <i class="fa fa-mortar-board"></i>
+                <select name="academy" id="academy_list" class="select2 form-control">
+                    <option value="">选择学院</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select></div>
         </div>
-        <p> Enter your account details below: </p>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Username</label>
+            <label class="control-label visible-ie8 visible-ie9">专业</label>
+            <div class="input-icon">
+                <i class="fa fa-mortar-board"></i>
+                <select name="major" id="major_list" class="select2 form-control">
+                    <option value="">选择专业</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">班级</label>
+            <div class="input-icon">
+                <i class="fa fa-mortar-board"></i>
+                <select name="class" id="class_list" class="select2 form-control">
+                    <option value="">选择班级</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select></div>
+        </div>
+        <div class="form-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">入学时间</label>
+            <div class="input-icon">
+                <i class="fa fa-calendar-check-o"></i>
+                <input class="form-control placeholder-no-fix" type="text" onfocus="(this.type='date')"  placeholder="入学时间" name="EntranceTime" /> </div>
+        </div>
+        <p> 输入您的登录用户信息: </p>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">学号</label>
             <div class="input-icon">
                 <i class="fa fa-user"></i>
-                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username" /> </div>
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="学号" name="StudentNo" /> </div>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Password</label>
+            <label class="control-label visible-ie8 visible-ie9">密码</label>
             <div class="input-icon">
                 <i class="fa fa-lock"></i>
-                <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password" /> </div>
+                <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="Password" placeholder="密码" id="Password" name="Password" /> </div>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Re-type Your Password</label>
+            <label class="control-label visible-ie8 visible-ie9">再次输入密码</label>
             <div class="controls">
                 <div class="input-icon">
                     <i class="fa fa-check"></i>
-                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="rpassword" /> </div>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="再次输入密码" name="rpassword" /> </div>
             </div>
         </div>
-        <div class="form-group">
-            <label>
-                <input type="checkbox" name="tnc" /> I agree to the
-                <a href="javascript:;"> Terms of Service </a> and
-                <a href="javascript:;"> Privacy Policy </a>
-            </label>
-            <div id="register_tnc_error"> </div>
-        </div>
         <div class="form-actions">
-            <button id="register-back-btn" type="button" class="btn red btn-outline"> Back </button>
-            <button type="submit" id="register-submit-btn" class="btn green pull-right"> Sign Up </button>
+            <button id="register-back-btn" type="button" class="btn red btn-outline"> 返回 </button>
+            <button type="submit" id="register-submit-btn" class="btn green pull-right"> 注册 </button>
         </div>
     </form>
     <!-- END REGISTRATION FORM -->
@@ -441,35 +227,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END LOGIN -->
 <!-- BEGIN COPYRIGHT -->
 <div class="copyright"> 2016 &copy; wangbowen - 高校公寓管理系统. </div>
-<!-- END COPYRIGHT -->
-<!--[if lt IE 9]>
-<!--<script src="../myphpweb/public/static/assets/global/plugins/respond.min.js"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/excanvas.min.js"></script>-->
-<!--<![endif]&ndash;&gt;-->
-<!--&lt;!&ndash; BEGIN CORE PLUGINS &ndash;&gt;-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/jquery.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>-->
-<!--&lt;!&ndash; END CORE PLUGINS &ndash;&gt;-->
-<!--&lt;!&ndash; BEGIN PAGE LEVEL PLUGINS &ndash;&gt;-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>-->
-<!--<script src="../myphpweb/public/static/assets/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>-->
-<!--&lt;!&ndash; END PAGE LEVEL PLUGINS &ndash;&gt;-->
-<!--&lt;!&ndash; BEGIN THEME GLOBAL SCRIPTS &ndash;&gt;-->
-<!--<script src="../myphpweb/public/static/assets/global/scripts/app.min.js" type="text/javascript"></script>-->
-<!--&lt;!&ndash; END THEME GLOBAL SCRIPTS &ndash;&gt;-->
-<!--&lt;!&ndash; BEGIN PAGE LEVEL SCRIPTS &ndash;&gt;-->
-<!--<script src="../myphpweb/public/static/assets/pages/scripts/login-4.js" type="text/javascript"></script>-->
-<!-- END PAGE LEVEL SCRIPTS -->
-<!-- BEGIN THEME LAYOUT SCRIPTS -->
-<!-- END THEME LAYOUT SCRIPTS -->
 </body>
 
 </html>

@@ -124,102 +124,110 @@ var Login = function () {
 
 	var handleRegister = function () {
 
-		        function format(state) {
-            if (!state.id) { return state.text; }
-            var $state = $(
-             '<span><img src="../assets/global/img/flags/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
-            );
-            
-            return $state;
-        }
-
-        if (jQuery().select2 && $('#country_list').size() > 0) {
-            $("#country_list").select2({
-	            placeholder: '<i class="fa fa-map-marker"></i>&nbsp;Select a Country',
-	            templateResult: format,
-                templateSelection: format,
-                width: 'auto', 
-	            escapeMarkup: function(m) {
-	                return m;
-	            }
-	        });
-
-	        $('#country_list').change(function() {
-	            $('.register-form').validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
-	        });
-    	}
-
          $('.register-form').validate({
+			    doNotHideMessage: true,
 	            errorElement: 'span', //default input error message container
-	            errorClass: 'help-block', // default input error message class
-	            focusInvalid: false, // do not focus the last invalid input
+	            errorClass: 'help-block class-danger', // default input error message class
+	            focusInvalid: true, // do not focus the last invalid input
 	            ignore: "",
 	            rules: {
-	                
-	                fullname: {
+	                name: {
 	                    required: true
 	                },
 	                email: {
 	                    required: true,
-	                    email: true
+						email: true
 	                },
-	                address: {
+	                sex: {
 	                    required: true
 	                },
-	                city: {
+					Nationality: {
 	                    required: true
 	                },
-	                country: {
+					Birthday: {
+	                    required: false
+	                },
+					PhoneNo:{
+						required: true,
+						maxlength:11,
+						minlength:11,
+					},
+					Valuables:{
+						required: true
+					},
+					dormitory:{
+						required: true
+					},
+					academy:{
+						required: true
+					},
+					major:{
+						required: true
+					},
+					class:{
+						required: true
+					},
+					EntranceTime:{
+						required: true
+					},
+					StudentNo: {
 	                    required: true
 	                },
-
-	                username: {
-	                    required: true
-	                },
-	                password: {
+	                Password: {
 	                    required: true
 	                },
 	                rpassword: {
-	                    equalTo: "#register_password"
-	                },
-
-	                tnc: {
-	                    required: true
+						required: true,
+	                    equalTo: "#Password"
 	                }
 	            },
-
 	            messages: { // custom messages for radio buttons and checkboxes
-	                tnc: {
-	                    required: "Please accept TNC first."
-	                }
-	            },
-
-	            invalidHandler: function (event, validator) { //display error alert on form submit   
-
-	            },
-
-	            highlight: function (element) { // hightlight error inputs
-	                $(element)
-	                    .closest('.form-group').addClass('has-error'); // set error class to the control group
-	            },
-
-	            success: function (label) {
-	                label.closest('.form-group').removeClass('has-error');
-	                label.remove();
-	            },
-
-	            errorPlacement: function (error, element) {
-	                if (element.attr("name") == "tnc") { // insert checkbox errors after the container                  
-	                    error.insertAfter($('#register_tnc_error'));
-	                } else if (element.closest('.input-icon').size() === 1) {
-	                    error.insertAfter(element.closest('.input-icon'));
-	                } else {
-	                	error.insertAfter(element);
-	                }
-	            },
-
-	            submitHandler: function (form) {
-	                form.submit();
+					name:{
+						required:'请输入姓名',
+					},
+					sex:{
+						required:'请选择性别',
+					},
+					Nationality:{
+						required:'请输入民族',
+					},
+					PhoneNo:{
+						required:'请输入电话号码',
+						minlength:'电话号码为11位',
+						maxlength:'电话号码为11位',
+					},
+					email:{
+						required:'请输入邮箱地址',
+						email:'请检查您输入的邮箱',
+					},
+					Valuables:{
+						required:'请输入贵重物品',
+					},
+					dormitory:{
+						required:'请选择宿舍',
+					},
+					academy:{
+						required: '请选择学院',
+					},
+					major:{
+						required: '请选择专业',
+					},
+					class:{
+						required: '请选择班级',
+					},
+					EntranceTime:{
+						required: '请输入入学年份',
+					},
+					StudentNo: {
+						required: '请输入学号',
+					},
+					Password: {
+						required: '请输入密码',
+					},
+					rpassword: {
+						required:'请再次输入密码',
+						equalTo: '两次密码不一致'
+					}
 	            }
 	        });
 
