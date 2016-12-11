@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1480342987;s:24:"public/header/index.html";i:1480254946;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1481446155;s:24:"public/header/index.html";i:1481445076;}*/ ?>
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
@@ -49,7 +49,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END THEME GLOBAL STYLES -->
     <!-- BEGIN THEME LAYOUT STYLES -->
     <link href="/../public/static/assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
-    <link href="/../public/static/assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="/../public/static/assets/layouts/layout/css/themes/light2.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <link href="/../public/static/assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="favicon.ico" /> </head>
@@ -535,22 +535,22 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/academyinfo/academyinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/academyinfo/index'); ?>" class="nav-link ">
                                 <span class="title">学院信息</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/majorinfo/Majorinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/majorinfo/index'); ?>" class="nav-link ">
                                 <span class="title">专业信息</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/classinfo/Classinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/classinfo/index'); ?>" class="nav-link ">
                                 <span class="title">班级信息</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="layout_search_on_header_1.html" class="nav-link ">
+                            <a href="<?php echo url('admin/dormitoryinfo/index'); ?>" class="nav-link ">
                                 <span class="title">宿舍信息</span>
                             </a>
                         </li>
@@ -616,6 +616,12 @@ License: You must have a valid license purchased only from themeforest(the above
         <button class="close" data-close="alert"></button>
         <span>请填写学院名称</span>
     </div>
+    <div class="error-alert_danger alert alert-danger display-hide" id="error_log_danger">
+
+    </div>
+    <div class="error-alert_warning alert alert-warning display-hide" id="error_log_warning">
+
+    </div>
 
     <div class="portlet-title">
         <div class="caption font-dark">
@@ -633,7 +639,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="row">
                 <div class="col-md-12">
                     <div class="dt-buttons">
-                        <a class="dt-button buttons-print btn purple btn-outline" id="add">
+                        <a class="dt-button buttons-print btn purple btn-outline" id="add" onclick="add_row()">
                             <span>添加</span>
                         </a>
                         <a class="dt-button buttons-print btn dark btn-outline" >
@@ -666,7 +672,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="col-md-6 col-sm-12">
                     <div class="dataTables_length" id="sample_1_length">
                         <label>
-                            <select name="select_page" onchange="select_page()" id="select_page" class="form-control input-sm input-xsmall input-inline">
+                            <select name="select_page" onchange="select_page('','')" id="select_page" class="form-control input-sm input-xsmall input-inline">
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="15">15</option>
@@ -679,10 +685,10 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="col-md-6 col-sm-12">
                     <div id="sample_1_filter" class="dataTables_filter">
                         <label>
-                            <form action="<?php echo url('admin/academyinfo/academyinfo'); ?>" method="post">
-                            <input type="search" class="form-control input-sm input-small input-inline" name="AcademyName" placeholder="请输入学院名称" aria-controls="sample_1">
-                            <button type="submit" class="btn">搜索</button>
-                            </form>
+                            <!--<form action="<?php echo url('admin/academyinfo/academyinfo'); ?>" method="post">-->
+                            <input type="search" class="form-control input-sm input-small input-inline" id="AcademyName" name="AcademyName" placeholder="请输入学院名称" aria-controls="sample_1">
+                            <button class="btn" id="find" onclick="search_an()">搜索</button>
+                            <!--</form>-->
                         </label>
                     </div>
                 </div>
@@ -701,9 +707,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
                     </tr>
                     </thead>
-                    <tbody>
-                        <tr role="row" id="add_tr" style="display: none">
-                            <form action="<?php echo url('admin/academyinfo/AcademyAdd'); ?>" method="post">
+                    <tr role="row" id="add_tr" style="display: none">
+                        <form action="<?php echo url('admin/academyinfo/AcademyAdd'); ?>" method="post">
                             <td class="sorting_1 form-group">
                                 <input type="text" id="add_input" name="Academy" class="form-control input-small" value="">
                             </td>
@@ -715,11 +720,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <span>取消</span>
                                 </a>
                             </td>
-                            </form>
-                        </tr>
+                        </form>
+                    </tr>
+                    <tbody id="Academy_row">
                         <?php if(is_array($academyinfo) || $academyinfo instanceof \think\Collection): $i = 0; $__LIST__ = $academyinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <form action="<?php echo url('admin/academyinfo/AcademyUpdate'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>" method="post">
-                        <tr role="row" class="even">
+                        <!--<form action="<?php echo url('admin/academyinfo/AcademyUpdate'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>" method="post">-->
+                        <tr role="row" class="even" >
                             <td id="td_row_<?php echo $vo['AcademyId']; ?>">
                                 <?php echo $vo['AcademyName']; ?>
                             </td>
@@ -729,7 +735,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </td>
                             <td>
                                 <!--默认隐藏 更新时显示按钮-->
-                                <button id="update_save_button_<?php echo $vo['AcademyId']; ?>" type="submit" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
+                                <button id="update_save_button_<?php echo $vo['AcademyId']; ?>" onclick="save_change('<?php echo $vo['AcademyId']; ?>')" class="dt-button buttons-print btn green btn-outline" style="display: none" >
                                     <span>保存</span>
                                 </button>
                                 <a id="update_cal_button_<?php echo $vo['AcademyId']; ?>"class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel('<?php echo $vo['AcademyId']; ?>')" >
@@ -739,44 +745,26 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <a id="update_button_<?php echo $vo['AcademyId']; ?>" class="dt-button buttons-print btn green btn-outline" onclick="change('<?php echo $vo['AcademyId']; ?>')">
                                     <span>更新</span>
                                 </a>
-                                <a id="delete_button_<?php echo $vo['AcademyId']; ?>" class="dt-button buttons-print btn red btn-outline" href="<?php echo url('admin/academyinfo/AcademyDelete'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>" >
+                                <a id="delete_button_<?php echo $vo['AcademyId']; ?>" class="dt-button buttons-print btn red btn-outline" onclick="Delete('<?php echo $vo['AcademyId']; ?>')"  >
+                                    <!--href="<?php echo url('admin/academyinfo/AcademyDelete'); ?>?AcademyId=<?php echo $vo['AcademyId']; ?>"-->
                                     <span>删除</span>
                                 </a>
                             </td>
                         </tr>
-                            </form>
+                            <!--</form>-->
                         <?php endforeach; endif; else: echo "" ;endif; ?>
                     </tbody>
                 </table>
             </div>
             <div class="row">
                 <div class="col-md-5 col-sm-12">
-                    <div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
-                        <?php if($page_assign['page'] == $page_assign['pagemax']): ?>
-                        显示 第 <?php echo $page_assign['pagestart']+1; ?> 条 到 <?php echo $page_assign['count']; ?> 条 共 <?php echo $page_assign['count']; ?> 条
-                        <?php else: ?>
-                        显示 第 <?php echo $page_assign['pagestart']+1; ?> 条 到 <?php echo $page_assign['page']*$page_assign['pagesize']; ?> 条 共 <?php echo $page_assign['count']; ?> 条
-                        <?php endif; ?>
+                    <div class="dataTables_info" role="status" aria-live="polite" id="page_all" >
+                        <?php echo $page_assign['page_all']; ?>
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-12">
-                    <div class="dataTables_paginate paging_bootstrap_number" >
-                        <ul class="pagination" style="visibility: visible;">
-                            <?php if($page_assign['page'] == 1): ?>
-                            <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            <?php else: ?>
-                            <li class="prev " ><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']-1; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            <?php endif; $__FOR_START_1264245754__=1;$__FOR_END_1264245754__=$page_assign['pagemax']+1;for($i=$__FOR_START_1264245754__;$i < $__FOR_END_1264245754__;$i+=1){ if($i == $page_assign['page']): ?>
-                            <li class="active"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>"><?php echo $i; ?></a></li>
-                            <?php else: ?>
-                            <li class=""><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $i; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>"><?php echo $i; ?></a></li>
-                            <?php endif; } if($page_assign['page'] == $page_assign['pagemax']): ?>
-                            <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-                            <?php else: ?>
-                            <li class="next"><a href="<?php echo url('admin/academyinfo/academyinfo'); ?>?page=<?php echo $page_assign['page']+1; ?>?pagesize=<?php echo $page_assign['pagesize']; ?>" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-
-                            <?php endif; ?>
-                        </ul>
+                    <div class="dataTables_paginate paging_bootstrap_number" id="paging" >
+                        <?php echo $page_assign['page_content']; ?>
                     </div>
                 </div>
             </div>
@@ -785,23 +773,149 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 <script type="text/javascript">
     /*
+    *添加按钮事件
+    */
+    function add_row(){
+        var add_tr=document.getElementById("add_tr");
+        add_tr.style.display='';
+    }
+    /*
      * 页码显示函数
      */
     //获取select对象
     var se = document.getElementById("select_page");
-    function select_page() {
+    //选择页码及页面一页显示行数
+    function select_page(page,pagesize) {
         var select_page_v=se.value;
-        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
-        localStorage.value = se.value;
-        localStorage.index = se.selectedIndex;
-        window.location.href="<?php echo url('admin/academyinfo/academyinfo'); ?>?pagesize="+select_page_v;
+        if(page =='' && pagesize==''){
+            //定义一夜显示多少条
+            var search=document.getElementById("AcademyName").value;
+            if(search ==''){
+                data_trans={pagesize:select_page_v};
+            }else{
+                data_trans={pagesize:select_page_v,AcademyName:search};
+            }
+        }else{
+            data_trans={pagesize:pagesize,page:page};
+        }
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"<?php echo url('admin/academyinfo/academyinfo'); ?>",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("出错");
+            },
+            success:function(data){
+                $("#Academy_row").empty();
+                var count = data.length;
+                var i = 0;
+                var b="";
+                 for(i=0;i<count;i++){
+                    //数据
+                     b+="<tr role='row' class='even'><td id='td_row_"+data[i].AcademyId+"'>"+data[i].AcademyName+"</td>"
+                    //操作按钮
+                     b+="<td id='td_update_row_"+data[i].AcademyId+"' style='display:none'><input type='text' id='update_input' class='form-control input-small' name='Update_Academy' value='"+data[i].AcademyName+"'></td><td><!--默认隐藏 更新时显示按钮--><button id='update_save_button_"+data[i].AcademyId+"' onclick='save_change("+data[i].AcademyId+")' class='dt-button buttons-print btn green btn-outline' style='display: none' href='' ><span>保存</span></button><a id='update_cal_button_"+data[i].AcademyId+"'class='dt-button buttons-print btn red btn-outline' style='display:none' onclick='cancel("+data[i].AcademyId+")' ><span>取消</span></a><!--默认隐藏--><a id='update_button_"+data[i].AcademyId+"' class='dt-button buttons-print btn green btn-outline' onclick='change("+data[i].AcademyId+")'><span>更新</span></a><a id='delete_button_"+data[i].AcademyId+"' class='dt-button buttons-print btn red btn-outline' onclick='Delete("+data[i].AcademyId+")'><span>删除</span></a></td></tr>"
+                }
+                //从新加载数据
+                $("#Academy_row").append(b);
+                //清空页码显示div
+                $("#paging").empty();
+                //重新加载页码div
+                $("#paging").append(data[0].paging);
+                //清空总页码
+                $("#page_all").empty();
+                //重新加载总页码div
+                $("#page_all").append(data[0].pageall);
+            }
+        });
     }
-    //页面重新加载时从localStorage读取select所在位置
-    window.onload = function(){
-//    alert( localStorage.index +";"+ localStorage.value );
-        se.options[ localStorage.index ].selected = true;
+    //点击搜索动作
+    function search_an() {
+        select_page('','');
+    }
+    /**
+     * 更新处理函数
+     */
+    function save_change(AcademyId) {
+        var AcademyName =document.getElementById('update_input').value;
+        //alert(AcademyName);
+        data_trans={AcademyId:AcademyId,AcademyName:AcademyName};
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"<?php echo url('admin/academyinfo/AcademyUpdate'); ?>",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("系统出错，请联系我们！");
+            },
+            success:function(data){
+                select_page('','');
+                var m="";
+                //显示更新成功对话框
+                if(data.flag ==1){
+                    $("#error_log_warning").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_warning").append(m);
+                    $(".error-alert_warning").show(100);
+                }
+                //显示更新失败对话框
+                else{
+                    $("#error_log_danger").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_danger").append(m);
+                    $(".error-alert_danger").show(100);
+                }
+            }
+
+
+        });
     }
 
+    /*
+    *删除方法
+     */
+    function Delete(AcademyId) {
+        if(confirm("此操作不可逆，您真的要删除吗？")){
+            data_trans={AcademyId:AcademyId};
+            //alert(AcademyId);
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"<?php echo url('admin/academyinfo/AcademyDelete'); ?>",
+                dataType:"json",
+                data: data_trans,
+                timeout:30000,
+                error:function(){
+                    alert("系统出错，请联系我们！");
+                },
+                success:function(data){
+                    select_page('','');
+                    var m="";
+                    //显示更新成功对话框
+                    if(data.flag ==1){
+                        $("#error_log_warning").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_warning").append(m);
+                        $(".error-alert_warning").show(100);
+                    }
+                    //显示更新失败对话框
+                    else{
+                        $("#error_log_danger").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_danger").append(m);
+                        $(".error-alert_danger").show(100);
+                    }
+                }
+
+
+            });
+        }
+    }
 </script>
 
         </div>

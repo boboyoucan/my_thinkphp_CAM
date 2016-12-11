@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1480333312;s:24:"public/header/index.html";i:1480424186;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1480333312;s:24:"public/header/index.html";i:1480864927;}*/ ?>
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
@@ -535,22 +535,22 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/academyinfo/academyinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/academyinfo/index'); ?>" class="nav-link ">
                                 <span class="title">学院信息</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/majorinfo/Majorinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/majorinfo/index'); ?>" class="nav-link ">
                                 <span class="title">专业信息</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/classinfo/Classinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/classinfo/index'); ?>" class="nav-link ">
                                 <span class="title">班级信息</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="<?php echo url('admin/dormitoryinfo/dormitoryinfo'); ?>" class="nav-link ">
+                            <a href="<?php echo url('admin/dormitoryinfo/index'); ?>" class="nav-link ">
                                 <span class="title">宿舍信息</span>
                             </a>
                         </li>

@@ -27,6 +27,12 @@
         <button class="close" data-close="alert"></button>
         <span>请填写专业名称</span>
     </div>
+    <div class="error-alert_danger alert alert-danger display-hide" id="error_log_danger">
+
+    </div>
+    <div class="error-alert_warning alert alert-warning display-hide" id="error_log_warning">
+
+    </div>
 
     <div class="portlet-title">
         <div class="caption font-dark">
@@ -72,7 +78,7 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="dataTables_length" id="sample_1_length">
                         <label>
-                            <select name="select_page_Major" onchange="select_page()" id="select_page_Major" class="form-control input-sm input-xsmall input-inline">
+                            <select name="select_page_Major" onchange="select_page('','')" id="select_page_Major" class="form-control input-sm input-xsmall input-inline">
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="15">15</option>
@@ -85,10 +91,8 @@
                 <div class="col-md-6 col-sm-12">
                     <div id="sample_1_filter" class="dataTables_filter">
                         <label>
-                            <form action="{:url('admin/majorinfo/MajorInfo')}" method="post">
-                                <input type="search" class="form-control input-sm input-small input-inline" name="Name" placeholder="请输入学院或专业名称" aria-controls="sample_1">
-                                <button type="submit" class="btn">搜索</button>
-                            </form>
+                            <input type="search" class="form-control input-sm input-small input-inline" id="MajorName" name="Name" placeholder="请输入学院或专业名称" aria-controls="sample_1">
+                            <button class="btn" onclick="search_mj()">搜索</button>
                         </label>
                     </div>
                 </div>
@@ -108,16 +112,15 @@
                         </th>
                     </tr>
                     </thead>
-                    <tbody>
-                        <tr role="row" id="add_tr" style="display: none">
-                            <form action="{:url('admin/majorinfo/MajorAdd')}" method="post">
+                    <tr role="row" id="add_tr" style="display: none">
+                        <form action="{:url('admin/majorinfo/MajorAdd')}" method="post">
                             <td>
                                 <select class="form-control" name="AId">
                                     {volist name="academyinfo" id="vo"}
                                     <option value="{$vo.AcademyId}">{$vo.AcademyName}</option>
                                     {/volist}
                                 </select>
-                             </td>
+                            </td>
                             <td class="sorting_1 form-group">
                                 <input type="text" id="add_input" name="Major" class="form-control input-small" value="">
                             </td>
@@ -129,10 +132,11 @@
                                     <span>取消</span>
                                 </a>
                             </td>
-                            </form>
-                        </tr>
+                        </form>
+                    </tr>
+                    <tbody id="Major_row">
                         {volist name="majorinfo" id="vo"}
-                        <form action="{:url('admin/majorinfo/MajorUpdate')}?MajorId={$vo.MajorId}" method="post">
+                        <!--<form action="{:url('admin/majorinfo/MajorUpdate')}?MajorId={$vo.MajorId}" method="post">-->
                         <tr role="row" class="even">
                             <td id="td_row_Academy_{$vo.MajorId}">
                                 {$vo.AcademyName}
@@ -146,57 +150,36 @@
                             </td>
                             <td>
                                 <!--默认隐藏 更新时显示按钮-->
-                                <button id="update_save_button_{$vo.MajorId}" type="submit" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
+                                <button id="update_save_button_{$vo.MajorId}" onclick="save_change('{$vo.MajorId}')" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
                                     <span>保存</span>
                                 </button>
-                                <a id="update_cal_button_{$vo.MajorId}"class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel('{$vo.MajorId}')" >
+                                <a id="update_cal_button_{$vo.MajorId}" class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel('{$vo.MajorId}')" >
                                     <span>取消</span>
                                 </a>
                             <!--默认隐藏-->
                                 <a id="update_button_{$vo.MajorId}" class="dt-button buttons-print btn green btn-outline" onclick="change('{$vo.MajorId}')">
                                     <span>更新</span>
                                 </a>
-                                <a id="delete_button_{$vo.MajorId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/Majorinfo/MajorDelete')}?MajorId={$vo.MajorId}" >
+                                <a id="delete_button_{$vo.MajorId}" class="dt-button buttons-print btn red btn-outline" onclick="Delete('{$vo.MajorId}')">
                                     <span>删除</span>
                                 </a>
                             </td>
                         </tr>
-                            </form>
+                            <!--</form>-->
                         {/volist}
                     </tbody>
                 </table>
             </div>
             <div class="row">
                 <div class="col-md-5 col-sm-12">
-                    <div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
-                        {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
-                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条
-                        {else	/}
-                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['page']*$page_assign['pagesize']} 条 共 {$page_assign['count']} 条
-                        {/if}
+                    <div class="dataTables_info" role="status" aria-live="polite" id="page_all">
+                        {$page_assign['page_all']}
+
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-12">
-                    <div class="dataTables_paginate paging_bootstrap_number" >
-                        <ul class="pagination" style="visibility: visible;">
-                            {if	condition="$page_assign['page'] eq 1"}
-                            <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            {else	/}
-                            <li class="prev " ><a href="{:url('admin/majorinfo/MajorInfo')}?page={$page_assign['page']-1}?pagesize={$page_assign['pagesize']}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            {/if}
-                            {for start="1"	end="$page_assign['pagemax']+1"}
-                            {if	condition="$i eq $page_assign['page']"}
-                            <li class="active"><a href="{:url('admin/majorinfo/MajorInfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
-                            {else	/}
-                            <li class=""><a href="{:url('admin/majorinfo/MajorInfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
-                            {/if}
-                            {/for}
-                            {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
-                            <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-                            {else	/}
-                            <li class="next"><a href="{:url('admin/majorinfo/MajorInfo')}?page={$page_assign['page']+1}?pagesize={$page_assign['pagesize']}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-                            {/if}
-                        </ul>
+                    <div class="dataTables_paginate paging_bootstrap_number" id="paging" >
+                        {$page_assign['page_content']}
                     </div>
                 </div>
             </div>
@@ -210,17 +193,145 @@
      */
     //获取select对象
     var se = document.getElementById("select_page_Major");
-    function select_page() {
+    function select_page(page,pagesize) {
         var select_page_v=se.value;
-        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
-        localStorage.value_Major = se.value;
-        localStorage.index_Major = se.selectedIndex;
-        window.location.href="{:url('admin/majorinfo/MajorInfo')}?pagesize="+select_page_v;
+        if(page =='' && pagesize==''){
+            //定义一页显示多少条
+            var search=document.getElementById("MajorName").value;
+            if(search ==''){
+                data_trans={pagesize:select_page_v};
+            }else{
+                data_trans={pagesize:select_page_v,Name:search};
+            }
+        }else{
+            data_trans={pagesize:pagesize,page:page};
+        }
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/majorinfo/majorinfo')}",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("出错");
+            },
+            success:function(data){
+                $("#Major_row").empty();
+                var count = data.length;
+                var i = 0;
+                var b="";
+                for(i=0;i<count;i++){
+                    //数据
+                    b+="<tr role='row' class='even' ><td id='td_row_Academy_"+data[i].MajorId+"'>"+data[i].AcademyName+"</td><td id='td_row_"+data[i].MajorId+"'>"+data[i].MajorName+"</td>"
+                    //操作按钮
+                    b+="<td id='td_update_row_"+data[i].MajorId+"' style='display:none'><input type='text' id='update_input' class='form-control input-small' name='Update_Major' value='"+data[i].MajorName+"'> </td><td> <!--默认隐藏 更新时显示按钮--> <button id='update_save_button_"+data[i].MajorId+"' onclick='save_change("+data[i].MajorId+")' class='dt-button buttons-print btn green btn-outline' style='display: none'><span>保存</span></button><a id='update_cal_button_"+data[i].MajorId+"' class='dt-button buttons-print btn red btn-outline' style='display:none' onclick='cancel("+data[i].MajorId+")'><span>取消</span></a> <!--默认隐藏--> <a id='update_button_"+data[i].MajorId+"' class='dt-button buttons-print btn green btn-outline' onclick='change("+data[i].MajorId+")'><span>更新</span> </a> <a id='delete_button_"+data[i].MajorId+"' class='dt-button buttons-print btn red btn-outline' onclick='Delete("+data[i].MajorId+")'> <span>删除</span></a></td></tr>"
+                }
+                //从新加载数据
+                $("#Major_row").append(b);
+                //清空页码显示div
+                $("#paging").empty();
+                //重新加载页码div
+                $("#paging").append(data[0].paging);
+                //清空总页码
+                $("#page_all").empty();
+                //重新加载总页码div
+                $("#page_all").append(data[0].pageall);
+            }
+        });
+//        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
+//        localStorage.value = se.value;
+//        localStorage.index = se.selectedIndex;
+//        window.location.href="{:url('admin/academyinfo/academyinfo')}?pagesize="+select_page_v;
     }
     //页面重新加载时从localStorage读取select所在位置
-    window.onload = function(){
-//    alert( localStorage.index +";"+ localStorage.value );
-        se.options[ localStorage.index_Major ].selected = true;
+    //    window.onload = function(){
+    ////    alert( localStorage.index +";"+ localStorage.value );
+    //        se.options[ localStorage.index ].selected = true;
+    //    }
+    //var search;
+    function search_mj() {
+        //var search=document.getElementById("search").value;
+        select_page('','');
+    }
+    /**
+     * 更新处理函数
+     */
+    function save_change(MajorId) {
+        var MajorName =document.getElementById('update_input').value;
+        //alert(MajorName);
+        data_trans={MajorId:MajorId,MajorName:MajorName};
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/majorinfo/MajorUpdate')}",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("系统出错，请联系我们！");
+            },
+            success:function(data){
+                select_page('','');
+                var m="";
+                //显示更新成功对话框
+                if(data.flag ==1){
+                    $("#error_log_warning").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_warning").append(m);
+                    $(".error-alert_warning").show(100);
+                }
+                //显示更新失败对话框
+                else{
+                    $("#error_log_danger").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_danger").append(m);
+                    $(".error-alert_danger").show(100);
+                }
+            }
+
+
+        });
+    }
+    /*
+     *删除方法
+     */
+    function Delete(MajorId) {
+        if(confirm("此操作不可逆，您真的要删除吗？")){
+            data_trans={MajorId:MajorId};
+            //alert(AcademyId);
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"{:url('admin/Majorinfo/MajorDelete')}",
+                dataType:"json",
+                data: data_trans,
+                timeout:30000,
+                error:function(){
+                    alert("系统出错，请联系我们！");
+                },
+                success:function(data){
+                    select_page('','');
+                    var m="";
+                    //显示更新成功对话框
+                    if(data.flag ==1){
+                        $("#error_log_warning").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_warning").append(m);
+                        $(".error-alert_warning").show(100);
+                    }
+                    //显示更新失败对话框
+                    else{
+                        $("#error_log_danger").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_danger").append(m);
+                        $(".error-alert_danger").show(100);
+                    }
+                }
+
+
+            });
+        }
     }
 
 </script>

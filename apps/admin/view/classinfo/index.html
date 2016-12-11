@@ -27,6 +27,12 @@
         <button class="close" data-close="alert"></button>
         <span>请填写班级名称</span>
     </div>
+    <div class="error-alert_danger alert alert-danger display-hide" id="error_log_danger">
+
+    </div>
+    <div class="error-alert_warning alert alert-warning display-hide" id="error_log_warning">
+
+    </div>
 
     <div class="portlet-title">
         <div class="caption font-dark">
@@ -72,7 +78,7 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="dataTables_length" id="sample_1_length">
                         <label>
-                            <select name="select_page_Class" onchange="select_page()" id="select_page_Class" class="form-control input-sm input-xsmall input-inline">
+                            <select name="select_page_Class" onchange="select_page('','')" id="select_page_Class" class="form-control input-sm input-xsmall input-inline">
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="15">15</option>
@@ -85,10 +91,9 @@
                 <div class="col-md-6 col-sm-12">
                     <div id="sample_1_filter" class="dataTables_filter">
                         <label>
-                            <form action="{:url('admin/majorinfo/MajorInfo')}" method="post">
-                                <input type="search" class="form-control input-sm input-small input-inline" name="Name" placeholder="请输入学院或专业名称" aria-controls="sample_1">
-                                <button type="submit" class="btn">搜索</button>
-                            </form>
+                            <input type="search" class="form-control input-sm input-small input-inline" id="ClassName" name="Name" placeholder="请输入学院或专业名称" aria-controls="sample_1">
+                            <button  class="btn" onclick="search_cl()">搜索</button>
+
                         </label>
                     </div>
                 </div>
@@ -111,9 +116,8 @@
                         </th>
                     </tr>
                     </thead>
-                    <tbody>
-                        <tr role="row" id="add_tr" style="display: none">
-                            <form action="{:url('admin/classinfo/ClassAdd')}" method="post">
+                    <tr role="row" id="add_tr" style="display: none">
+                        <form action="{:url('admin/classinfo/ClassAdd')}" method="post">
                             <td><select id="an_se" class="form-control" onchange="chage_Major()" name="AId">
                                 <option value="0">请选择学院</option>
                                 {volist name="academyinfo" id="vo"}
@@ -125,7 +129,7 @@
                                 <select id="mj_se" class="form-control" name="MId">
 
                                 </select>
-                             </td>
+                            </td>
                             <td class="sorting_1 form-group">
                                 <input type="text" id="add_input" name="class" class="form-control input-small" value="">
                             </td>
@@ -137,10 +141,11 @@
                                     <span>取消</span>
                                 </a>
                             </td>
-                            </form>
-                        </tr>
+                        </form>
+                    </tr>
+                    <tbody id="Class_row">
                         {volist name="classinfo" id="vo"}
-                        <form action="{:url('admin/classinfo/ClassUpdate')}?ClassId={$vo.ClassId}" method="post">
+                        <!--<form action="{:url('admin/classinfo/ClassUpdate')}?ClassId={$vo.ClassId}" method="post">-->
                         <tr role="row" class="even">
                             <td id="td_row_Academy_{$vo.ClassId}">
                                 {$vo.AcademyName}
@@ -157,7 +162,7 @@
                             </td>
                             <td>
                                 <!--默认隐藏 更新时显示按钮-->
-                                <button id="update_save_button_{$vo.ClassId}" type="submit" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
+                                <button id="update_save_button_{$vo.ClassId}" onclick="save_change('{$vo.ClassId}')" class="dt-button buttons-print btn green btn-outline" style="display: none" href="" >
                                     <span>保存</span>
                                 </button>
                                 <a id="update_cal_button_{$vo.ClassId}"class="dt-button buttons-print btn red btn-outline" style="display:none" onclick="cancel('{$vo.ClassId}')" >
@@ -167,47 +172,25 @@
                                 <a id="update_button_{$vo.ClassId}" class="dt-button buttons-print btn green btn-outline" onclick="change('{$vo.ClassId}')">
                                     <span>更新</span>
                                 </a>
-                                <a id="delete_button_{$vo.ClassId}" class="dt-button buttons-print btn red btn-outline" href="{:url('admin/classinfo/ClassDelete')}?ClassId={$vo.ClassId}" >
+                                <a id="delete_button_{$vo.ClassId}" class="dt-button buttons-print btn red btn-outline" onclick="Delete('{$vo.ClassId}')">
                                     <span>删除</span>
                                 </a>
                             </td>
                         </tr>
-                            </form>
+                            <!--</form>-->
                         {/volist}
                     </tbody>
                 </table>
             </div>
             <div class="row">
                 <div class="col-md-5 col-sm-12">
-                    <div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
-                        {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
-                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条
-                        {else	/}
-                        显示 第 {$page_assign['pagestart']+1} 条 到 {$page_assign['page']*$page_assign['pagesize']} 条 共 {$page_assign['count']} 条
-                        {/if}
+                    <div class="dataTables_info" role="status" aria-live="polite" id="page_all">
+                        {$page_assign['page_all']}
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-12">
-                    <div class="dataTables_paginate paging_bootstrap_number" >
-                        <ul class="pagination" style="visibility: visible;">
-                            {if	condition="$page_assign['page'] eq 1"}
-                            <li class="prev disabled" ><a href="#" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            {else	/}
-                            <li class="prev " ><a href="{:url('admin/classinfo/ClassInfo')}?page={$page_assign['page']-1}?pagesize={$page_assign['pagesize']}" title="Prev" style="height: 33px"><i class="fa fa-angle-left"></i></a></li>
-                            {/if}
-                            {for start="1"	end="$page_assign['pagemax']+1"}
-                            {if	condition="$i eq $page_assign['page']"}
-                            <li class="active"><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
-                            {else	/}
-                            <li class=""><a href="{:url('admin/classinfo/ClassInfo')}?page={$i}?pagesize={$page_assign['pagesize']}">{$i}</a></li>
-                            {/if}
-                            {/for}
-                            {if	condition="$page_assign['page'] eq $page_assign['pagemax']"}
-                            <li class="next disabled"><a href="#" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-                            {else	/}
-                            <li class="next"><a href="{:url('admin/classinfo/classInfo')}?page={$page_assign['page']+1}?pagesize={$page_assign['pagesize']}" title="Next" style="height: 33px"><i class="fa fa-angle-right"></i></a></li>
-                            {/if}
-                        </ul>
+                    <div class="dataTables_paginate paging_bootstrap_number" id="paging">
+                        {$page_assign['page_content']}
                     </div>
                 </div>
             </div>
@@ -220,20 +203,58 @@
     */
     //获取select对象
     var se = document.getElementById("select_page_Class");
-    function select_page() {
+    //选择页码及页面一页显示行数
+    function select_page(page,pagesize) {
         var select_page_v=se.value;
-        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
-        localStorage.value_Class = se.value;
-        localStorage.index_Class = se.selectedIndex;
-        window.location.href="{:url('admin/classinfo/classInfo')}?pagesize="+select_page_v;
+        if(page =='' && pagesize==''){
+            //定义一夜显示多少条
+            var search=document.getElementById("ClassName").value;
+            if(search ==''){
+                data_trans={pagesize:select_page_v};
+            }else{
+                data_trans={pagesize:select_page_v,ClassName:search};
+            }
+        }else{
+            data_trans={pagesize:pagesize,page:page};
+        }
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/classinfo/classinfo')}",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("出错");
+            },
+            success:function(data){
+                $("#Class_row").empty();
+                var count = data.length;
+                var i = 0;
+                var b="";
+                for(i=0;i<count;i++){
+                    //数据
+                    b+="<tr role='row' class='even' ><td id='td_row_"+data[i].ClassId+"'>"+data[i].AcademyName+"</td><td id='td_row_Major_"+data[i].ClassId+"'>"+data[i].MajorName+"</td><td id='td_row_"+data[i].ClassId+"'>"+data[i].ClassName+"</td>"
+                    //操作按钮
+                    b+="<td id='td_update_row_"+data[i].ClassId+"' style='display:none'><input type='text' id='update_input' class='form-control input-small' name='Update_Academy' value='"+data[i].ClassName+"'> </td><td> <!--默认隐藏 更新时显示按钮--> <button id='update_save_button_"+data[i].ClassId+"' onclick='save_change("+data[i].ClassId+")' class='dt-button buttons-print btn green btn-outline' style='display: none' href=''><span>保存</span></button><a id='update_cal_button_"+data[i].ClassId+"' class='dt-button buttons-print btn red btn-outline' style='display:none' onclick='cancel("+data[i].ClassId+")'><span>取消</span> </a> <!--默认隐藏--> <a id='update_button_"+data[i].ClassId+"' class='dt-button buttons-print btn green btn-outline' onclick='change("+data[i].ClassId+")'><span>更新</span> </a> <a id='delete_button_"+data[i].ClassId+"' class='dt-button buttons-print btn red btn-outline' onclick='Delete("+data[i].classId+")'> <span>删除</span> </a> </td></tr>"
+                }
+                //从新加载数据
+                $("#Class_row").append(b);
+                //清空页码显示div
+                $("#paging").empty();
+                //重新加载页码div
+                $("#paging").append(data[0].paging);
+                //清空总页码
+                $("#page_all").empty();
+                //重新加载总页码div
+                $("#page_all").append(data[0].pageall);
+            }
+        });
     }
-    //页面重新加载时从localStorage读取select所在位置
-    window.onload = function(){
-//    alert( localStorage.index +";"+ localStorage.value );
-        se.options[ localStorage.index_Class ].selected = true;
-    }
-
-function chage_Major() {
+    /**
+     * 选择学院时触发学院对应的专业
+     */
+    function chage_Major() {
     var academy=document.getElementById("an_se").value;
     $.ajax({
         cache:false,
@@ -258,7 +279,91 @@ function chage_Major() {
         }
     });
 }
+    /**
+     * 搜索时触发
+     */
+    function search_cl() {
+        select_page('','');
+    }
+    /**
+     * 更新处理函数
+     */
+    function save_change(ClassId) {
+        var ClassName =document.getElementById('update_input').value;
+        alert(ClassName);
+        data_trans={ClassId:ClassId,ClassName:ClassName};
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/classinfo/ClassUpdate')}",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("系统出错，请联系我们！");
+            },
+            success:function(data){
+                select_page('','');
+                var m="";
+                //显示更新成功对话框
+                if(data.flag ==1){
+                    $("#error_log_warning").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_warning").append(m);
+                    $(".error-alert_warning").show(100);
+                }
+                //显示更新失败对话框
+                else{
+                    $("#error_log_danger").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_danger").append(m);
+                    $(".error-alert_danger").show(100);
+                }
+            }
 
+
+        });
+    }
+    /*
+     *删除方法
+     */
+    function Delete(ClassId) {
+        if(confirm("此操作不可逆，您真的要删除吗？")){
+            data_trans={ClassId:ClassId};
+            //alert(AcademyId);
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"{:url('admin/classinfo/ClassDelete')}",
+                dataType:"json",
+                data: data_trans,
+                timeout:30000,
+                error:function(){
+                    alert("系统出错，请联系我们！");
+                },
+                success:function(data){
+                    select_page('','');
+                    var m="";
+                    //显示更新成功对话框
+                    if(data.flag ==1){
+                        $("#error_log_warning").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_warning").append(m);
+                        $(".error-alert_warning").show(100);
+                    }
+                    //显示更新失败对话框
+                    else{
+                        $("#error_log_danger").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_danger").append(m);
+                        $(".error-alert_danger").show(100);
+                    }
+                }
+
+
+            });
+        }
+    }
 </script>
 
 {/block}

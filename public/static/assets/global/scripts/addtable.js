@@ -31,6 +31,11 @@ jQuery(document).ready(function() {
         $('.common-alert').hide();
     });
 });
+
+function add_row(){
+    var add_tr=document.getElementById("add_tr");
+    add_tr.style.display='';
+}
 /*
 * 点击更新学院名称时的动作
  */
