@@ -4,6 +4,10 @@ use think\Controller;
 class Academyinfo extends Controller
 {
     public function index(){
+        //判断是否登录
+        if(session('name')=='' || session('type')==''){
+            $this->redirect('index/index/index');
+        }
         //数据库总条数
         $count=db('academyinfo')->query("select count(*) as count from academyinfo ");
         $page=1;

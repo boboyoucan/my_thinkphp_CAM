@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1481466522;s:23:"public/header/head.html";i:1480224824;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1481557505;s:23:"public/header/head.html";i:1480224824;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -201,28 +201,30 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="fa fa-institution"></i>
                 <select name="dormitory" id="dormitory_list" class="select2 form-control">
                     <option value="">选择宿舍</option>
-                    <option value="男">男</option>
-                    <option value="女">女</option>
+                    <?php if(is_array($dormitoryinfo) || $dormitoryinfo instanceof \think\Collection): $i = 0; $__LIST__ = $dormitoryinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if($vo['Unit'] == ''): ?>
+                    <option value="<?php echo $vo['DormitoryId']; ?>"><?php echo $vo['Building']; ?>栋<?php echo $vo['DormitoryNo']; ?>室</option>
+                    <?php else: ?>
+                    <option value="<?php echo $vo['DormitoryId']; ?>"><?php echo $vo['Building']; ?>栋<?php echo $vo['Unit']; ?>单元<?php echo $vo['DormitoryNo']; ?>室</option>
+                    <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                 </select></div>
         </div>
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">学院</label>
             <div class="input-icon">
                 <i class="fa fa-mortar-board"></i>
-                <select name="academy" id="academy_list" class="select2 form-control">
+                <select name="academy" id="academy_list" class="select2 form-control" onchange="chage_Major()" >
                     <option value="">选择学院</option>
-                    <option value="男">男</option>
-                    <option value="女">女</option>
+                    <?php if(is_array($academyinfo) || $academyinfo instanceof \think\Collection): $i = 0; $__LIST__ = $academyinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                    <option value="<?php echo $vo['AcademyId']; ?>"><?php echo $vo['AcademyName']; ?></option>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select></div>
         </div>
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">专业</label>
             <div class="input-icon">
                 <i class="fa fa-mortar-board"></i>
-                <select name="major" id="major_list" class="select2 form-control">
+                <select name="major" id="major_list" class="select2 form-control" onchange="chage_Class()">
                     <option value="">选择专业</option>
-                    <option value="男">男</option>
-                    <option value="女">女</option>
                 </select></div>
         </div>
         <div class="form-group">
@@ -231,8 +233,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="fa fa-mortar-board"></i>
                 <select name="class" id="class_list" class="select2 form-control">
                     <option value="">选择班级</option>
-                    <option value="男">男</option>
-                    <option value="女">女</option>
                 </select></div>
         </div>
         <div class="form-group">
@@ -276,4 +276,60 @@ License: You must have a valid license purchased only from themeforest(the above
 </body>
 
 </html>
+<script>
+    /**
+     * 选择学院时触发学院对应的专业
+     */
+    function chage_Major() {
+        var academy=document.getElementById("academy_list").value;
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"<?php echo url('admin/common/MajorInfo'); ?>?academy="+academy,
+            dataType:"json",
+            data:['academy','$academy'],
+            timeout:30000,
+            error:function(){
+                alert('admin/Common/MajorInfo?academy='+academy);
+            },
+            success:function(data){
+                $("#major_list").empty();
+                var count = data.length;
+//            alert(count);
+                var i = 0;
+                var b="<option value=''>选择专业</option>";
+                for(i=0;i<count;i++){
+                    b+="<option value='"+data[i].MajorId+"'>"+data[i].MajorName+"</option>";
+                }
+                $("#major_list").append(b);
+            }
+        });
+    }
+    function chage_Class() {
+
+        var major=document.getElementById("major_list").value;
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"<?php echo url('admin/common/ClassInfo'); ?>?major="+major,
+            dataType:"json",
+            data:{'major':major},
+            timeout:30000,
+            error:function(){
+                alert('admin/Common/MajorInfo?academy='+major);
+            },
+            success:function(data){
+                $("#class_list").empty();
+                var count = data.length;
+//            alert(count);
+                var i = 0;
+                var b="<option value=''>选择班级</option>";
+                for(i=0;i<count;i++){
+                    b+="<option value='"+data[i].ClassId+"'>"+data[i].ClassName+"</option>";
+                }
+                $("#class_list").append(b);
+            }
+        });
+    }
+</script>
 

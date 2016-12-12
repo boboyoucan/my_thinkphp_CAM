@@ -125,10 +125,9 @@ var Login = function () {
 	var handleRegister = function () {
 
          $('.register-form').validate({
-			    doNotHideMessage: true,
 	            errorElement: 'span', //default input error message container
-	            errorClass: 'help-block class-danger', // default input error message class
-	            focusInvalid: true, // do not focus the last invalid input
+	            errorClass: 'help-block', // default input error message class
+	            focusInvalid: false, // do not focus the last invalid input
 	            ignore: "",
 	            rules: {
 	                name: {
@@ -228,8 +227,34 @@ var Login = function () {
 						required:'请再次输入密码',
 						equalTo: '两次密码不一致'
 					}
-	            }
+	            },
+				 invalidHandler: function (event, validator) { //display error alert on form submit
+
+				 },
+
+				 highlight: function (element) { // hightlight error inputs
+					 $(element)
+						 .closest('.form-group').addClass('has-error'); // set error class to the control group
+				 },
+
+				 success: function (label) {
+					 label.closest('.form-group').removeClass('has-error');
+					 label.remove();
+				 },
+
+				 errorPlacement: function (error, element) {
+					 if (element.closest('.input-icon').size() === 1) {
+						 error.insertAfter(element.closest('.input-icon'));
+					 } else {
+						 error.insertAfter(element);
+					 }
+				 },
+
+				 submitHandler: function (form) {
+					 form.submit();
+				 }
 	        });
+
 
 			$('.register-form input').keypress(function (e) {
 	            if (e.which == 13) {

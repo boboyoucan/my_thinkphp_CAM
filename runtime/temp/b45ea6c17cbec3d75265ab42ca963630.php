@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1481446155;s:24:"public/header/index.html";i:1481445076;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1481446155;s:24:"public/header/index.html";i:1481553562;}*/ ?>
+
 <!DOCTYPE html>
 <!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
