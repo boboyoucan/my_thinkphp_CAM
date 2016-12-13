@@ -49,7 +49,7 @@ class Index extends Controller
         else{
             $db_student=db('studentinfo')
                 ->where('StudentNo',$_POST['username'])
-                ->where('Password',$_POST['password'])
+                ->where('Password',md5($_POST['password']))
                 ->find();
             if($db_student == null){
                 $this->assign('common_nf','0');
@@ -57,12 +57,47 @@ class Index extends Controller
                 echo "用户不存在";
             }
             else{
-                session('name',$db_student['StudentNo']);
+                session('name',$db_student['StudentName']);
                 session('type','3');
                 $this->assign('common_nf','1');
+                $this->redirect("admin/index/index");
                 echo "用户存在";
             }
         }
+
+    }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2016年11月16日
+     *方法：退出方法
+     *****************************************/
+    public function logout()
+    {
+        //清空session
+        session('name',null);
+        session('type',null);
+        //退回登界面
+        return $this->redirect('index/index');
+    }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2016年12月13日
+     *方法：注册方法（包括学生注册）
+     *****************************************/
+    public function register(){
+        if($_POST){
+            $db_student=db('studentinfo')->execute("insert into studentinfo (StudentNo, StudentName, Password, Sex, Nationality, Birthday, PhoneNo, Email, Valuables, DId, CId, EntranceTime, Role) values ('{$_POST['StudentNo']}','{$_POST['Name']}',md5({$_POST['Password']}),'{$_POST['Sex']}','{$_POST['Nationality']}','{$_POST['Birthday']}','{$_POST['PhoneNo']}','{$_POST['Email']}','{$_POST['Valuables']}','{$_POST['Dormitory']}','{$_POST['Class']}','{$_POST['EntranceTime']}','{$_POST['Role']}')");
+            if($db_student){
+                session('name',$_POST['Name']);
+                session('type','3');
+                $this->redirect("admin/index/index");
+            }else{
+                echo "注册失败";
+            }
+        }else{
+            echo "非法访问";
+        }
+
 
     }
 }

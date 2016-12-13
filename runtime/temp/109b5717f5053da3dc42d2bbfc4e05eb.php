@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1480333312;s:24:"public/header/index.html";i:1481553562;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1480333312;s:24:"public/header/index.html";i:1481642844;}*/ ?>
 
 <!DOCTYPE html>
 <!--
@@ -396,7 +396,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <i class="icon-lock"></i> Lock Screen </a>
                         </li>
                         <li>
-                            <a href="page_user_login_1.html">
+                            <a href="<?php echo url('index/index/logout'); ?>">
                                 <i class="icon-key"></i> 退出 </a>
                         </li>
                     </ul>

@@ -4,6 +4,10 @@ use think\Controller;
 class Dormitoryinfo extends Controller
 {
     public function index(){
+        //判断是否登录
+        if(session('name')=='' || session('type')==''){
+            $this->redirect('index/index/index');
+        }
 
         $count=db('dormitoryinfo')->query("select count(*) as count from dormitoryinfo ");
         $page=1;

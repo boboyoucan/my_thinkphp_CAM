@@ -5,6 +5,10 @@ class Classinfo extends Controller
 {
     public function index(){
 
+        //判断是否登录
+        if(session('name')=='' || session('type')==''){
+            $this->redirect('index/index/index');
+        }
         $count=db('classinfo')->query("select count(*) as count from classinfo");
         $page=1;
         $pagesize=5;

@@ -5,6 +5,10 @@ class Majorinfo extends Controller
 {
 
     public function index(){
+        //判断是否登录
+        if(session('name')=='' || session('type')==''){
+            $this->redirect('index/index/index');
+        }
         $page=1;
         $pagesize=5;
         $count=db('majorinfo')->query("select count(*) as count from majorinfo");
