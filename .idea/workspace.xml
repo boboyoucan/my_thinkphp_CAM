@@ -1,21 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex1.jpg" afterPath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex4.jpg" afterPath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex5.jpg" afterPath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex7.jpeg" afterPath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex7.jpeg" />
+    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="总体实现管理员登录，学生注册登录，学院、专业、班级、宿舍信息管理，实现角色判断，整理整体框架，去除多余js等">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.all.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/Sorting icons.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_asc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_both.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_desc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/area-as-line.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/area.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/bar-colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/bar-no-axes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/bar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/days.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/decimal-custom-hover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/diagonal-xlabels-bar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/diagonal-xlabels.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/donut-colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/donut-formatter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/donut.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/dst.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/goals.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/lib/example.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/lib/example.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/months-no-smooth.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/negative.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/no-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/non-continuous.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/non-date.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/quarters.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/resize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/stacked_bars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/timestamps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/updating.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/weeks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/examples/years.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/less/morris.core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/lib/morris.area.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/lib/morris.bar.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/lib/morris.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/lib/morris.donut.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/lib/morris.grid.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/lib/morris.hover.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/lib/morris.line.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/morris.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/morris.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/morris.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/raphael-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/area/area_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/bar/bar_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/bar/colours.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/commas_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/donut/donut_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/grid/auto_grid_lines_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/grid/set_data_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/grid/y_label_format_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/hover_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/label_series_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/line/line_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/pad_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/lib/parse_time_spec.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/specs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/support/placeholder.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/examples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/exemplary/area0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/exemplary/bar0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/exemplary/line0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/exemplary/stacked_bar0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/run.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/morris/spec/viz/visual_specs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/scripts/datatable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/global/scripts/datatable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar1_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/avatar9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/photo2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/layouts/layout/img/photo3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex6.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/media/bg/xuex8.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/scripts/table-datatables-buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/scripts/table-datatables-buttons.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/scripts/table-datatables-editable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/scripts/table-datatables-editable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/19.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/23.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/24.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/25.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/26.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201611/27.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/313e88385aeea40e72ab81cc9e95bbdc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/687c9235a6f83b9d2a3a3a4ea85197e3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/6a992d5529f459a44fee58c733255e86.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/76f41420f13507654c987ad9778ab27d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/78a53fa67d2d6ee0f54b91c24a3d9d48.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/95f3ab645fd5d213941fc10082f2aa5e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/98be63d3a04e51db03519798fb07e140.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/a1a8fd312d5736c4d1e9b578c68e2a00.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/b45ea6c17cbec3d75265ab42ca963630.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/db32ff542b916786d1a6a65b3d97c411.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Classinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Classinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Index.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Majorinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Majorinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/controller/Index.php" afterPath="$PROJECT_DIR$/apps/index/controller/Index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/academyinfo/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/academyinfo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/classinfo/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/classinfo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/dormitoryinfo/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/dormitoryinfo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/index/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/majorinfo/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/majorinfo/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/view/index/index.html" afterPath="$PROJECT_DIR$/apps/index/view/index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/header/head.html" afterPath="$PROJECT_DIR$/public/header/head.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/header/index.html" afterPath="$PROJECT_DIR$/public/header/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php" afterPath="$PROJECT_DIR$/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php" afterPath="$PROJECT_DIR$/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php" />
     </list>
     <ignored path="myphpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,176 +166,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/header/index.html">
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/header/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="397" column="50" selection-start-line="397" selection-start-column="50" selection-end-line="397" selection-end-column="50" />
+            <state relative-caret-position="175">
+              <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/index/view/index/index.html">
+        <entry file="file://$PROJECT_DIR$/apps/admin/view/academyinfo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="98" column="64" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/admin/view/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/admin/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Classinfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/admin/controller/Classinfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="-1685">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
               <folding>
-                <marker date="1481643008415" expanded="true" signature="299:338" ph="select count... " />
-                <marker date="1481643008415" expanded="true" signature="950:970" ph="..." />
-                <marker date="1481643008415" expanded="true" signature="3213:3262" ph="select * fro... academyinfo" />
-                <marker date="1481643008415" expanded="true" signature="3409:3615" ph="select C.Cla... classinfo" />
-                <marker date="1481643008415" expanded="true" signature="4033:4072" ph="select count... " />
-                <marker date="1481643008415" expanded="true" signature="4134:4300" ph="select count... " />
-                <marker date="1481643008415" expanded="true" signature="4134:4303" ph="select count... " />
-                <marker date="1481643008415" expanded="true" signature="4134:4382" ph="select count... " />
-                <marker date="1481643008415" expanded="true" signature="4134:4456" ph="select count... " />
-                <marker date="1481643008415" expanded="true" signature="5054:5074" ph="..." />
-                <marker date="1481643008415" expanded="true" signature="7170:7215" ph="select * fro... majorinfo" />
-                <marker date="1481643008415" expanded="true" signature="7266:7315" ph="select * fro... academyinfo" />
-                <marker date="1481643008415" expanded="true" signature="7495:7701" ph="select C.Cla... classinfo" />
-                <marker date="1481643008415" expanded="true" signature="7779:7788" ph="select M.Maj... classinfo" />
-                <marker date="1481643008415" expanded="true" signature="7779:8177" ph="select C.Cla... classinfo" />
-                <marker date="1481643008415" expanded="true" signature="8788:8850" ph="insert into classinfo... " />
-                <marker date="1481643008415" expanded="true" signature="9849:9897" ph="delete from " />
-                <marker date="1481643008415" expanded="true" signature="10624:10692" ph="update class... " />
-                <marker date="1481643008415" expanded="true" signature="10689:10692" ph="update class... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Common.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/admin/controller/Common.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-              <folding>
-                <marker date="1481556904658" expanded="true" signature="199:276" ph="select M.Maj... majorinfo" />
-                <marker date="1481556904658" expanded="true" signature="199:280" ph="select Major... majorinfo" />
-                <marker date="1481556904658" expanded="true" signature="421:500" ph="select Major... majorinfo" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
-              <folding>
-                <marker date="1481643499080" expanded="true" signature="252:301" ph="select * fro... academyinfo" />
-                <marker date="1481643499080" expanded="true" signature="424:526" ph="select Dormi... dormitoryinfo" />
-                <marker date="1481643499080" expanded="true" signature="3721:3899" ph="insert into studentinfo... " />
-                <marker date="1481643499080" expanded="true" signature="3721:3916" ph="insert into studentinfo... " />
-                <marker date="1481643499080" expanded="true" signature="3721:4165" ph="insert into studentinfo... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Academyinfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/admin/controller/Academyinfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="6" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
-              <folding>
-                <marker date="1481553933439" expanded="true" signature="319:360" ph="select count... " />
-                <marker date="1481553933439" expanded="true" signature="896:963" ph="select * fro... academyinfo" />
-                <marker date="1481553933439" expanded="true" signature="1169:1189" ph="..." />
-                <marker date="1481553933439" expanded="true" signature="3706:3753" ph="select count... " />
-                <marker date="1481553933439" expanded="true" signature="3706:3787" ph="select count... " />
-                <marker date="1481553933439" expanded="true" signature="3851:3892" ph="select count... " />
-                <marker date="1481553933439" expanded="true" signature="3851:3893" ph="select count... " />
-                <marker date="1481553933439" expanded="true" signature="4477:4497" ph="..." />
-                <marker date="1481553933439" expanded="true" signature="6598:6646" ph="select * fro... academyinfo" />
-                <marker date="1481553933439" expanded="true" signature="6598:6705" ph="select * fro... academyinfo" />
-                <marker date="1481553933439" expanded="true" signature="6750:6817" ph="select * fro... academyinfo" />
-                <marker date="1481553933439" expanded="true" signature="7477:7532" ph="insert into academyinfo... " />
-                <marker date="1481553933439" expanded="true" signature="8657:8711" ph="delete from " />
-                <marker date="1481553933439" expanded="true" signature="9502:9580" ph="update acade... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dormitoryinfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-              <folding>
-                <marker date="1481643019722" expanded="true" signature="307:350" ph="select count... " />
-                <marker date="1481643019722" expanded="true" signature="922:942" ph="..." />
-                <marker date="1481643019722" expanded="true" signature="3058:3129" ph="select * fro... dormitoryinfo" />
-                <marker date="1481643019722" expanded="true" signature="3629:3712" ph="select count... " />
-                <marker date="1481643019722" expanded="true" signature="3778:3821" ph="select count... " />
-                <marker date="1481643019722" expanded="true" signature="4406:4426" ph="..." />
-                <marker date="1481643019722" expanded="true" signature="6578:6689" ph="select * fro... dormitoryinfo" />
-                <marker date="1481643019722" expanded="true" signature="6734:6805" ph="select * fro... dormitoryinfo" />
-                <marker date="1481643019722" expanded="true" signature="7398:7664" ph="insert into dormitoryinfo... " />
-                <marker date="1481643019722" expanded="true" signature="7771:8037" ph="insert into dormitoryinfo... " />
-                <marker date="1481643019722" expanded="true" signature="9060:9120" ph="delete from " />
-                <marker date="1481643019722" expanded="true" signature="10051:10152" ph="update dormi... " />
-                <marker date="1481643019722" expanded="true" signature="10051:10272" ph="update dormi... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Majorinfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/admin/controller/Majorinfo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding>
-                <marker date="1481643029254" expanded="true" signature="337:376" ph="select count... " />
-                <marker date="1481643029254" expanded="true" signature="835:884" ph="select * fro... academyinfo" />
-                <marker date="1481643029254" expanded="true" signature="1007:1027" ph="..." />
-                <marker date="1481643029254" expanded="true" signature="3121:3275" ph="select M.Maj... majorinfo" />
-                <marker date="1481643029254" expanded="true" signature="3735:3900" ph="select count... " />
-                <marker date="1481643029254" expanded="true" signature="3735:3910" ph="select count... " />
-                <marker date="1481643029254" expanded="true" signature="3972:4011" ph="select count... " />
-                <marker date="1481643029254" expanded="true" signature="4574:4623" ph="select * fro... academyinfo" />
-                <marker date="1481643029254" expanded="true" signature="4746:4766" ph="..." />
-                <marker date="1481643029254" expanded="true" signature="6889:7128" ph="select * fro... majorinfo" />
-                <marker date="1481643029254" expanded="true" signature="7203:7357" ph="select M.Maj... majorinfo" />
-                <marker date="1481643029254" expanded="true" signature="7988:8050" ph="insert into majorinfo... " />
-                <marker date="1481643029254" expanded="true" signature="9053:9101" ph="delete from " />
-                <marker date="1481643029254" expanded="true" signature="9887:9955" ph="update major... " />
-                <marker date="1481643029254" expanded="true" signature="9952:9955" ph="update major... " />
+                <marker date="1481725543456" expanded="true" signature="10684:10696" ph="..." />
+                <marker date="1481725543456" expanded="true" signature="11010:11023" ph="..." />
+                <marker date="1481725543456" expanded="true" signature="11164:11176" ph="..." />
               </folding>
             </state>
           </provider>
@@ -219,22 +198,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/public/static/assets/global/scripts/addtable.js" />
-        <option value="$PROJECT_DIR$/apps/admin/view/academyinfo/index.html" />
-        <option value="$PROJECT_DIR$/apps/admin/view/majorinfo/index.html" />
-        <option value="$PROJECT_DIR$/apps/admin/view/dormitoryinfo/index.html" />
         <option value="$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.js" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Academyinfo.php" />
-        <option value="$PROJECT_DIR$/apps/admin/view/classinfo/index.html" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Common.php" />
-        <option value="$PROJECT_DIR$/apps/index/view/index/index.html" />
-        <option value="$PROJECT_DIR$/public/header/index.html" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Classinfo.php" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Majorinfo.php" />
         <option value="$PROJECT_DIR$/apps/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/apps/admin/view/index/index.html" />
+        <option value="$PROJECT_DIR$/apps/admin/view/majorinfo/index.html" />
+        <option value="$PROJECT_DIR$/apps/admin/view/academyinfo/index.html" />
+        <option value="$PROJECT_DIR$/apps/admin/view/classinfo/index.html" />
+        <option value="$PROJECT_DIR$/apps/admin/view/dormitoryinfo/index.html" />
+        <option value="$PROJECT_DIR$/apps/index/view/index/index.html" />
+        <option value="$PROJECT_DIR$/public/header/index.html" />
+        <option value="$PROJECT_DIR$/public/header/head.html" />
       </list>
     </option>
   </component>
@@ -247,9 +227,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="y" value="24" />
     <option name="width" value="1368" />
-    <option name="height" value="720" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -276,6 +255,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -580,6 +560,36 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="global" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myphpweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myphpweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="header" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -737,6 +747,10 @@
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dormitoryinfo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -815,7 +829,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -917,7 +930,8 @@
       <workItem from="1481458320809" duration="8656000" />
       <workItem from="1481551718878" duration="59000" />
       <workItem from="1481666506741" duration="476000" />
-      <workItem from="1481638214463" duration="5329000" />
+      <workItem from="1481638214463" duration="6007000" />
+      <workItem from="1481721608999" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -1038,19 +1052,26 @@
       <option name="project" value="LOCAL" />
       <updated>1481557813493</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="实现注册，已经退出系统">
+      <created>1481643583300</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1481643583300</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127806000" />
+    <option name="totallyTimeSpent" value="136383000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1368" height="720" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31495467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3194864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13621262" sideWeight="0.5030211" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.136" sideWeight="0.5030211" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1096,14 +1117,15 @@
     <MESSAGE value="页面换成部分加载" />
     <MESSAGE value="所以页面换成异步加载，包括更新和添加方法" />
     <MESSAGE value="注册页面学院，专业，班级，宿舍信息显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册页面学院，专业，班级，宿舍信息显示" />
+    <MESSAGE value="实现注册，已经退出系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现注册，已经退出系统" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/apps/index/view/index/index.html</url>
-          <line>288</line>
+          <line>291</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -1291,27 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/header/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="81" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/dormitoryinfo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="216" column="161" selection-start-line="216" selection-start-column="161" selection-end-line="216" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/academyinfo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="328" column="5" selection-start-line="289" selection-start-column="4" selection-end-line="328" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/assets/pages/scripts/form-wizard.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1394,90 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3675">
           <caret line="245" column="20" selection-start-line="245" selection-start-column="20" selection-end-line="245" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/classinfo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1233">
-          <caret line="120" column="96" selection-start-line="120" selection-start-column="72" selection-end-line="120" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/majorinfo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3990">
-          <caret line="266" column="16" selection-start-line="266" selection-start-column="16" selection-end-line="266" selection-end-column="16" />
-          <folding>
-            <marker date="1481447350721" expanded="true" signature="11492:11504" ph="..." />
-            <marker date="1481447350721" expanded="true" signature="11813:11826" ph="..." />
-            <marker date="1481447350721" expanded="true" signature="11957:11969" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/header/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="397" column="50" selection-start-line="397" selection-start-column="50" selection-end-line="397" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/index/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="98" column="64" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Classinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <marker date="1481643008415" expanded="true" signature="299:338" ph="select count... " />
-            <marker date="1481643008415" expanded="true" signature="950:970" ph="..." />
-            <marker date="1481643008415" expanded="true" signature="3213:3262" ph="select * fro... academyinfo" />
-            <marker date="1481643008415" expanded="true" signature="3409:3615" ph="select C.Cla... classinfo" />
-            <marker date="1481643008415" expanded="true" signature="4033:4072" ph="select count... " />
-            <marker date="1481643008415" expanded="true" signature="4134:4300" ph="select count... " />
-            <marker date="1481643008415" expanded="true" signature="4134:4303" ph="select count... " />
-            <marker date="1481643008415" expanded="true" signature="4134:4382" ph="select count... " />
-            <marker date="1481643008415" expanded="true" signature="4134:4456" ph="select count... " />
-            <marker date="1481643008415" expanded="true" signature="5054:5074" ph="..." />
-            <marker date="1481643008415" expanded="true" signature="7170:7215" ph="select * fro... majorinfo" />
-            <marker date="1481643008415" expanded="true" signature="7266:7315" ph="select * fro... academyinfo" />
-            <marker date="1481643008415" expanded="true" signature="7495:7701" ph="select C.Cla... classinfo" />
-            <marker date="1481643008415" expanded="true" signature="7779:7788" ph="select M.Maj... classinfo" />
-            <marker date="1481643008415" expanded="true" signature="7779:8177" ph="select C.Cla... classinfo" />
-            <marker date="1481643008415" expanded="true" signature="8788:8850" ph="insert into classinfo... " />
-            <marker date="1481643008415" expanded="true" signature="9849:9897" ph="delete from " />
-            <marker date="1481643008415" expanded="true" signature="10624:10692" ph="update class... " />
-            <marker date="1481643008415" expanded="true" signature="10689:10692" ph="update class... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding>
-            <marker date="1481556904658" expanded="true" signature="199:276" ph="select M.Maj... majorinfo" />
-            <marker date="1481556904658" expanded="true" signature="199:280" ph="select Major... majorinfo" />
-            <marker date="1481556904658" expanded="true" signature="421:500" ph="select Major... majorinfo" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1504,9 +1421,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <marker date="1481556904658" expanded="true" signature="199:276" ph="select M.Maj... majorinfo" />
+            <marker date="1481556904658" expanded="true" signature="199:280" ph="select Major... majorinfo" />
+            <marker date="1481556904658" expanded="true" signature="421:500" ph="select Major... majorinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/majorinfo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <marker date="1481725499626" expanded="false" signature="2066:2146" ph="..." />
+            <marker date="1481725499626" expanded="true" signature="11605:11617" ph="..." />
+            <marker date="1481725499626" expanded="true" signature="11926:11939" ph="..." />
+            <marker date="1481725499626" expanded="true" signature="12070:12082" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/classinfo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="68" column="32" selection-start-line="66" selection-start-column="28" selection-end-line="68" selection-end-column="32" />
+          <folding>
+            <marker date="1481725584722" expanded="false" signature="2066:2146" ph="..." />
+            <marker date="1481725584722" expanded="true" signature="12216:12228" ph="..." />
+            <marker date="1481725584722" expanded="true" signature="12539:12552" ph="..." />
+            <marker date="1481725584722" expanded="true" signature="12691:12703" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/dormitoryinfo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <marker date="1481726964810" expanded="false" signature="2070:2150" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="15839:15851" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="16085:16097" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="16326:16338" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="16588:16600" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="16862:16874" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="17145:17157" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="17534:17547" ph="..." />
+            <marker date="1481726964810" expanded="true" signature="17682:17694" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Classinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding>
+            <marker date="1481643008415" expanded="true" signature="299:338" ph="select count... " />
+            <marker date="1481643008415" expanded="true" signature="950:970" ph="..." />
+            <marker date="1481643008415" expanded="true" signature="3213:3262" ph="select * fro... academyinfo" />
+            <marker date="1481643008415" expanded="true" signature="3409:3615" ph="select C.Cla... classinfo" />
+            <marker date="1481643008415" expanded="true" signature="4033:4072" ph="select count... " />
+            <marker date="1481643008415" expanded="true" signature="4134:4300" ph="select count... " />
+            <marker date="1481643008415" expanded="true" signature="4134:4303" ph="select count... " />
+            <marker date="1481643008415" expanded="true" signature="4134:4382" ph="select count... " />
+            <marker date="1481643008415" expanded="true" signature="4134:4456" ph="select count... " />
+            <marker date="1481643008415" expanded="true" signature="5054:5074" ph="..." />
+            <marker date="1481643008415" expanded="true" signature="7170:7215" ph="select * fro... majorinfo" />
+            <marker date="1481643008415" expanded="true" signature="7266:7315" ph="select * fro... academyinfo" />
+            <marker date="1481643008415" expanded="true" signature="7495:7701" ph="select C.Cla... classinfo" />
+            <marker date="1481643008415" expanded="true" signature="7779:7788" ph="select M.Maj... classinfo" />
+            <marker date="1481643008415" expanded="true" signature="7779:8177" ph="select C.Cla... classinfo" />
+            <marker date="1481643008415" expanded="true" signature="8788:8850" ph="insert into classinfo... " />
+            <marker date="1481643008415" expanded="true" signature="9849:9897" ph="delete from " />
+            <marker date="1481643008415" expanded="true" signature="10624:10692" ph="update class... " />
+            <marker date="1481643008415" expanded="true" signature="10689:10692" ph="update class... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="29" />
+          <folding>
+            <marker date="1481643499080" expanded="true" signature="252:301" ph="select * fro... academyinfo" />
+            <marker date="1481643499080" expanded="true" signature="424:526" ph="select Dormi... dormitoryinfo" />
+            <marker date="1481643499080" expanded="true" signature="3721:3899" ph="insert into studentinfo... " />
+            <marker date="1481643499080" expanded="true" signature="3721:3916" ph="insert into studentinfo... " />
+            <marker date="1481643499080" expanded="true" signature="3721:4165" ph="insert into studentinfo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-315">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           <folding>
             <marker date="1481643019722" expanded="true" signature="307:350" ph="select count... " />
@@ -1528,7 +1559,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/admin/controller/Majorinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="-2630">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <marker date="1481643029254" expanded="true" signature="337:376" ph="select count... " />
@@ -1550,25 +1581,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/apps/index/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="3375">
+          <caret line="246" column="31" selection-start-line="246" selection-start-column="31" selection-end-line="246" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/public/header/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+        <state relative-caret-position="15">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/academyinfo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1685">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
           <folding>
-            <marker date="1481643499080" expanded="true" signature="252:301" ph="select * fro... academyinfo" />
-            <marker date="1481643499080" expanded="true" signature="424:526" ph="select Dormi... dormitoryinfo" />
-            <marker date="1481643499080" expanded="true" signature="3721:3899" ph="insert into studentinfo... " />
-            <marker date="1481643499080" expanded="true" signature="3721:3916" ph="insert into studentinfo... " />
-            <marker date="1481643499080" expanded="true" signature="3721:4165" ph="insert into studentinfo... " />
+            <marker date="1481725543456" expanded="true" signature="10684:10696" ph="..." />
+            <marker date="1481725543456" expanded="true" signature="11010:11023" ph="..." />
+            <marker date="1481725543456" expanded="true" signature="11164:11176" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/header/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>

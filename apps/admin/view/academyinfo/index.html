@@ -1,4 +1,3 @@
-
 {extend name="public/header/index.html" /}
 {block name="content"}
 <div class="page-bar">
@@ -14,19 +13,17 @@
     <div class="page-toolbar">
         <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
             <i class="icon-calendar"></i>&nbsp;
-            <span class="thin uppercase hidden-xs">October 25, 2016 - November 23, 2016</span>&nbsp;
+            <span class="thin uppercase hidden-xs"><?php echo date('Y-m-d- H:m:s');?></span>&nbsp;
             <i class="fa fa-angle-down"></i>
         </div>
     </div>
 </div>
-
-
-
 <div class="portlet light bordered">
     <div class="common-alert alert alert-danger display-hide" >
         <button class="close" data-close="alert"></button>
         <span>请填写学院名称</span>
     </div>
+
     <div class="error-alert_danger alert alert-danger display-hide" id="error_log_danger">
 
     </div>
@@ -39,46 +36,38 @@
             <i class="icon-settings font-dark"></i>
             <span class="caption-subject bold uppercase">学院信息表</span>
         </div>
-        <div class="tools"> </div>
-    </div>
-
-
-
-    <div class="portlet-body">
-
-        <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
+        <div class="tools">
             <div class="row">
                 <div class="col-md-12">
                     <div class="dt-buttons">
                         <a class="dt-button buttons-print btn purple btn-outline" id="add" onclick="add_row()">
                             <span>添加</span>
                         </a>
-                        <a class="dt-button buttons-print btn dark btn-outline" >
-                            <span>打印</span>
-                        </a>
-                        <a class="dt-button buttons-copy buttons-flash btn red btn-outline" >
-                            <span>复制</span>
-                            <div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">
-                                <embed id="ZeroClipboard_TableToolsMovie_1" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=55&amp;height=31" wmode="transparent">
-                            </div>
-                        </a>
-                        <a class="dt-button buttons-pdf buttons-html5 btn green btn-outline" >
-                            <span>生成PDF</span>
-                        </a>
+                        <!--<a class="dt-button buttons-print btn dark btn-outline" >-->
+                        <!--<span>打印</span>-->
+                        <!--</a>-->
+                        <!--<a class="dt-button buttons-copy buttons-flash btn red btn-outline" >-->
+                        <!--<span>复制</span>-->
+                        <!--<div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">-->
+                        <!--<embed id="ZeroClipboard_TableToolsMovie_1" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=55&amp;height=31" wmode="transparent">-->
+                        <!--</div>-->
+                        <!--</a>-->
+                        <!--<a class="dt-button buttons-pdf buttons-html5 btn green btn-outline" >-->
+                        <!--<span>生成PDF</span>-->
+                        <!--</a>-->
                         <a class="dt-button buttons-excel buttons-flash btn yellow btn-outline" >
                             <span>生成Excel</span>
-                            <div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">
-                                <embed id="ZeroClipboard_TableToolsMovie_2" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=55&amp;height=31" wmode="transparent">
-                            </div>
                         </a>
-                        <a class="dt-button buttons-csv buttons-html5 btn purple btn-outline" >
-                            <span>生成CSV</span>
-                        </a>
-
+                        <!--<a class="dt-button buttons-csv buttons-html5 btn purple btn-outline" >-->
+                        <!--<span>生成CSV</span>-->
+                        <!--</a>-->
                     </div>
                 </div>
-
             </div>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="dataTables_length" id="sample_1_length">
