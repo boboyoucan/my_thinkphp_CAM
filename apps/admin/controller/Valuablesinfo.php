@@ -18,9 +18,11 @@ class Valuablesinfo extends Controller
         return $this->fetch('valuablesinfo/index');
        }
        public function qrcode(){
-           $value="admin/classinfo/index";
+           $value="http://{$_SERVER['HTTP_HOST']}/index.php/admin/index/index";
+           // 纠错级别：L、M、Q、H
            $errorCorrectionLevel = 'L';
-           $matrixPointSize = 20;
+           // 点的大小：1到10,用于手机端4就可以了
+           $matrixPointSize = 7;
            \QRcode::png($value, false, $errorCorrectionLevel, $matrixPointSize);
            exit;
        }
