@@ -1,7 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
+    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="添加扫码">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_10.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_11.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_12.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_13.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_14.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_15.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_16.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_17.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_18.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_19.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_20.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_21.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_22.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_22.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_23.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_24.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_25.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_25.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_26.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_26.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_27.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_27.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_28.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_28.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_29.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_30.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_31.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_32.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_33.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_33.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_34.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_34.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_35.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_35.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_36.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_37.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_37.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_38.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_38.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_39.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_39.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_40.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_8.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_9.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/frame_9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_101_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_105_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_109_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_113_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_117_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_121_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_125_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_129_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_133_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_137_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_141_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_145_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_149_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_153_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_157_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_161_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_165_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_169_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_173_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_177_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_21_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_25_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_29_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_33_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_37_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_41_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_45_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_49_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_53_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_57_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_61_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_65_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_69_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_73_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_77_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_81_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_85_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_89_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_93_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_0/mask_97_0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_101_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_105_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_109_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_113_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_117_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_121_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_125_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_129_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_133_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_137_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_141_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_145_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_149_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_153_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_157_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_161_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_165_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_169_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_173_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_177_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_21_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_25_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_29_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_33_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_37_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_41_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_45_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_49_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_53_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_57_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_61_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_65_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_69_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_73_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_77_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_81_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_85_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_89_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_93_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_1/mask_97_1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_101_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_105_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_109_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_113_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_117_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_121_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_125_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_129_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_133_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_137_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_141_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_145_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_149_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_153_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_157_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_161_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_165_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_169_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_173_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_177_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_21_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_25_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_29_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_33_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_37_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_41_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_45_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_49_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_53_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_57_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_61_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_65_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_69_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_73_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_77_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_81_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_85_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_89_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_93_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_2/mask_97_2.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_101_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_105_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_109_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_113_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_117_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_121_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_125_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_129_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_133_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_137_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_141_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_145_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_149_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_153_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_157_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_161_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_165_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_169_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_173_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_177_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_21_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_25_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_29_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_33_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_37_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_41_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_45_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_49_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_53_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_57_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_61_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_65_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_69_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_73_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_77_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_81_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_85_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_89_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_93_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_3/mask_97_3.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_101_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_105_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_109_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_113_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_117_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_121_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_125_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_129_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_133_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_137_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_141_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_145_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_149_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_153_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_157_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_161_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_165_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_169_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_173_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_177_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_21_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_25_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_29_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_33_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_37_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_41_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_45_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_49_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_53_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_57_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_61_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_65_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_69_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_73_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_77_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_81_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_85_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_89_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_93_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_4/mask_97_4.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_101_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_105_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_109_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_113_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_117_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_121_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_125_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_129_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_133_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_137_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_141_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_145_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_149_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_153_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_157_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_161_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_165_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_169_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_173_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_177_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_21_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_25_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_29_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_33_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_37_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_41_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_45_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_49_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_53_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_57_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_61_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_65_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_69_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_73_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_77_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_81_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_85_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_89_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_93_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_5/mask_97_5.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_101_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_105_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_109_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_113_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_117_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_121_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_125_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_129_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_133_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_137_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_141_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_145_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_149_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_153_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_157_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_161_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_165_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_169_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_173_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_177_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_21_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_25_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_29_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_33_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_37_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_41_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_45_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_49_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_53_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_57_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_61_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_65_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_69_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_73_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_77_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_81_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_85_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_89_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_93_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_6/mask_97_6.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_101_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_105_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_109_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_113_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_117_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_121_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_125_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_129_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_133_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_137_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_141_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_145_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_149_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_153_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_157_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_161_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_165_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_169_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_173_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_177_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_21_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_25_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_29_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_33_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_37_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_41_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_45_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_49_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_53_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_57_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_61_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_65_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_69_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_73_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_77_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_81_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_85_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_89_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_93_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/cache/mask_7/mask_97_7.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/temp/test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/temp/test55d34e39de9027b9e29eeff19ac79b18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/temp/test8c861c22b919a86b6caffdae9f56108a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/temp/test9d9859ebb4e825179a00a36b2d734ca0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/temp/testde39d755a09ede28638e42452c658e62.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/CHANGELOG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/INSTALL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/VERSION" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/bindings/tcpdf/qrcode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/phpqrcode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrbitstream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrconfig.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrconst.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrencode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrimage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrinput.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrlib.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrmask.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrrscode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrspec.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrsplit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/qrtools.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merge.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merge.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merged_config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merged_header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myphpweb.iws" />
@@ -500,7 +930,7 @@
       <workItem from="1481638214463" duration="6007000" />
       <workItem from="1481721608999" duration="47000" />
       <workItem from="1481809257786" duration="8000" />
-      <workItem from="1481809733398" duration="4525000" />
+      <workItem from="1481809733398" duration="4726000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -670,21 +1100,28 @@
       <option name="project" value="LOCAL" />
       <updated>1481814825272</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="添加扫码">
+      <created>1481814972509</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1481814972509</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141550000" />
+    <option name="totallyTimeSpent" value="141751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.136" sideWeight="0.5030211" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5030211" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.49697885" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -730,7 +1167,8 @@
     <MESSAGE value="实现注册，已经退出系统" />
     <MESSAGE value="总体实现管理员登录，学生注册登录，学院、专业、班级、宿舍信息管理，实现角色判断，整理整体框架，去除多余js等" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="添加扫码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加扫码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
