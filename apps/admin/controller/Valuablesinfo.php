@@ -18,7 +18,7 @@ class Valuablesinfo extends Controller
         return $this->fetch('valuablesinfo/index');
        }
        public function qrcode(){
-           $value="{:url('admin/classinfo/index')}";
+           $value="admin/classinfo/index";
            $errorCorrectionLevel = 'L';
            $matrixPointSize = 20;
            \QRcode::png($value, false, $errorCorrectionLevel, $matrixPointSize);
