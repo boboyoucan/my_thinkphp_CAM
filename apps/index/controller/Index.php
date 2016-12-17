@@ -97,7 +97,23 @@ class Index extends Controller
         }else{
             echo "非法访问";
         }
-
+    }
+    public function forget($email){
+        echo $email;
+        //
+        $yanz=rand(1000,9999);
+        $headers = 'From: wbw<wbw@boboypucan.cn>';
+        $body = "您好！您的邮箱验证码为：$yanz";
+        $subject = "test mail";
+        $to = "1319723770@qq.com";
+        if (mail($to, $subject, $body, $headers))
+        {
+            echo 'success!';
+        }
+        else
+        {
+            echo 'fail';
+        }
 
     }
 }

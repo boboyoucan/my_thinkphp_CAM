@@ -39,7 +39,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="content">
     <!-- BEGIN LOGIN FORM -->
     <form class="login-form" action="{:url('index/login')}" method="post">
-        <h3 class="form-title">请输入账号登录</h3>
+        <h3 class="form-title" style="text-align: center">请输入账号登录</h3>
         <div class="login-alert alert alert-danger display-hide">
             <button class="close" data-close="alert"></button>
             <span> 请输入用户名和密码. </span>
@@ -78,16 +78,19 @@ License: You must have a valid license purchased only from themeforest(the above
                 <a href="javascript:;" id="register-btn"> 注册 </a>
             </p>
         </div>
+        <!--&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp   &nbsp<p style="font-size: small">违规登记</p><br>-->
+        <div style="width: 100%"><p style="font-size: small;margin:0 0;"><label>贵重物品登记 </label><label style="float: right">违规登记</label></p><img src="{:url('admin/Valuablesinfo/qrcode')}">
+        <img src="{:url('admin/Valuablesinfo/qrcode')}" style="float: right"></div>
     </form>
     <!-- END LOGIN FORM -->
     <!-- BEGIN FORGOT PASSWORD FORM -->
-    <form class="forget-form" action="index.html" method="post">
-        <h3>忘记密码 ?</h3>
+    <form class="forget-form" action="{:url('index/forget')}" method="post">
+        <h3 >忘记密码 ?</h3>
         <p> 请输入邮箱地址. </p>
         <div class="form-group">
             <div class="input-icon">
                 <i class="fa fa-envelope"></i>
-                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" /> </div>
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="请输入注册预留邮箱" name="email" /> </div>
         </div>
         <div class="form-actions">
             <button type="button" id="back-btn" class="btn red btn-outline">返回 </button>
@@ -97,7 +100,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END FORGOT PASSWORD FORM -->
     <!-- BEGIN REGISTRATION FORM -->
     <form class="register-form" action="{:url('index/register')}" method="post">
-        <h3>注册</h3>
+        <h3 style="text-align: center">注册</h3>
         <p> 在下方输入您的个人信息进行注册： </p>
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">姓名</label>

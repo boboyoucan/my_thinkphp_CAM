@@ -74,7 +74,8 @@ var Login = function () {
 
 	            messages: {
 	                email: {
-	                    required: "Email is required."
+	                    required: "请输入注册预留邮箱.",
+						email: "请输入正确的邮箱格式"
 	                }
 	            },
 

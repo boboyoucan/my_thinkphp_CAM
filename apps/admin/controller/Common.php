@@ -17,5 +17,11 @@ class Common extends Controller
         return $Classinfo;
 
     }
+    //公共方法 班级列表
+    public function ValuablesInfo($StudentNo){
+        $valuables=db('studentinfo')->query("select Valuables from studentinfo where StudentNo='$StudentNo'");
+        return $valuables;
+    }
+
 }
 
