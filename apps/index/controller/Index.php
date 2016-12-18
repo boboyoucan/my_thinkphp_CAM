@@ -113,6 +113,7 @@ class Index extends Controller
             $to = "$email";
             echo $to;
             exit;
+            
             if (mail($to, $subject, $body, $headers))
             {
                 $common_forget['mes']='邮件发送成功';
