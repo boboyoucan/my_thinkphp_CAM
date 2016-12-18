@@ -111,9 +111,8 @@ class Index extends Controller
             $body = "尊敬的{$student[0]['StudentName']}您好！\n您的邮箱验证码为：$yanz";
             $subject = "邮箱验证";
             $to = "$email";
-            echo $to;
+            echo $headers;
             exit;
-            
             if (mail($to, $subject, $body, $headers))
             {
                 $common_forget['mes']='邮件发送成功';
