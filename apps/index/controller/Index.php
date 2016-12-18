@@ -107,7 +107,7 @@ class Index extends Controller
         if($student){
             //生成随机验证码
             $yanz=rand(1000,9999);
-            $headers = 'From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan.cn>';
+            $headers = "From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan.cn>";
             $body = "尊敬的{$student[0]['StudentName']}您好！\n您的邮箱验证码为：$yanz";
             $subject = "邮箱验证";
             $to = "$email";
@@ -126,7 +126,7 @@ class Index extends Controller
             }
         }else{
             //没有注册，本邮件问测试邮件，督促注册
-            $headers = 'From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan.cn>';
+            $headers = "From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan.cn>";
             $body = "您好！\n您的邮箱暂时未关联我们的网站，本邮件为测试邮件，请先到我们的网站注册，网站地址：http://{$_SERVER['HTTP_HOST']}/index.php";
             $subject = "测试邮件";
             $to = "$email";
