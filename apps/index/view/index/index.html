@@ -84,18 +84,23 @@ License: You must have a valid license purchased only from themeforest(the above
     </form>
     <!-- END LOGIN FORM -->
     <!-- BEGIN FORGOT PASSWORD FORM -->
-    <form class="forget-form" action="{:url('index/forget')}" method="post">
+    <!--action="{:url('index/forget')}" method="post"-->
+    <form class="forget-form">
         <h3 >忘记密码 ?</h3>
-        <p> 请输入邮箱地址. </p>
+        <p> 请输入邮箱地址;如未注册,请先返回注册 </p>
+        <!--信息提示区-->
+        <div class="common-alert alert alert-info display-hide" id="forget_alert">
+        </div>
         <div class="form-group">
             <div class="input-icon">
                 <i class="fa fa-envelope"></i>
-                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="请输入注册预留邮箱" name="email" /> </div>
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="请输入注册预留邮箱" id="email" name="email" /> </div>
         </div>
         <div class="form-actions">
             <button type="button" id="back-btn" class="btn red btn-outline">返回 </button>
-            <button type="submit" class="btn green pull-right"> 提交 </button>
+            <button type="button" onclick="forget_password()" class="btn green pull-right"> 提交 </button>
         </div>
+        <p>注：如未收到邮件,参考<a href="/../public/static/assets/helppic/help_qqmail.png">这里</a>并重新提交本页面</p>
     </form>
     <!-- END FORGOT PASSWORD FORM -->
     <!-- BEGIN REGISTRATION FORM -->
@@ -293,7 +298,6 @@ License: You must have a valid license purchased only from themeforest(the above
             success:function(data){
                 $("#class_list").empty();
                 var count = data.length;
-//            alert(count);
                 var i = 0;
                 var b="<option value=''>选择班级</option>";
                 for(i=0;i<count;i++){
@@ -302,6 +306,37 @@ License: You must have a valid license purchased only from themeforest(the above
                 $("#class_list").append(b);
             }
         });
+    }
+    function forget_password(){
+        var email=document.getElementById("email").value;
+        alert(email);
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('index/forget')}",
+            dataType:"json",
+            data:{email: email},
+            timeout:30000,
+            error:function(){
+                alert('出错');
+            },
+            success:function(data){
+                $("#forget_alert").empty();
+                var b="";
+                alert(data.mes);
+                b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
+                $("#forget_alert").append(b);
+                $("#forget_alert").show();
+
+            }
+        });
+
+//        $.post("{:url('index/forget')}",{'email':'1319723770@qq.com'},function(json){
+//            var datajson=eval('(' + json + ')');
+//            var data=datajson.data;
+//            alert(data);
+//            alert('123');
+//        });
     }
 </script>
 

@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="添加扫码">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/student/controller/Studentvaluablesinfo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/student/view/studentvaluablesinfo/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/pages/scripts/form-wizard.min.js" afterPath="" />
+    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Common.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/controller/Index.php" afterPath="$PROJECT_DIR$/apps/index/controller/Index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/view/index/index.html" afterPath="$PROJECT_DIR$/apps/index/view/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/pages/css/login-4.css" afterPath="$PROJECT_DIR$/public/static/assets/pages/css/login-4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/pages/css/login-4.min.css" afterPath="$PROJECT_DIR$/public/static/assets/pages/css/login-4.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.js" afterPath="$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/CHANGELOG" afterPath="$PROJECT_DIR$/public/static/phpqrcode/CHANGELOG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/INSTALL" afterPath="$PROJECT_DIR$/public/static/phpqrcode/INSTALL" />
@@ -61,8 +53,8 @@
       <file leaf-file-name="Valuablesinfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="56">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -71,12 +63,36 @@
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
+            <state relative-caret-position="297">
+              <caret line="128" column="65" selection-start-line="128" selection-start-column="65" selection-end-line="128" selection-end-column="65" />
               <folding>
-                <marker date="1481983752113" expanded="true" signature="252:301" ph="select * fro... academyinfo" />
-                <marker date="1481983752113" expanded="true" signature="424:526" ph="select Dormi... dormitoryinfo" />
-                <marker date="1481983752113" expanded="true" signature="3721:4165" ph="insert into studentinfo... " />
+                <marker date="1482039949802" expanded="true" signature="396:445" ph="select * fro... academyinfo" />
+                <marker date="1482039949802" expanded="true" signature="568:670" ph="select Dormi... dormitoryinfo" />
+                <marker date="1482039949802" expanded="true" signature="3865:4309" ph="insert into studentinfo... " />
+                <marker date="1482039949802" expanded="true" signature="4678:4734" ph="select * fro... studentinfo" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dormitoryinfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-588">
+              <caret line="144" column="67" selection-start-line="144" selection-start-column="56" selection-end-line="144" selection-end-column="67" />
+              <folding>
+                <marker date="1481643019722" expanded="true" signature="307:350" ph="select count... " />
+                <marker date="1481643019722" expanded="true" signature="922:942" ph="..." />
+                <marker date="1481643019722" expanded="true" signature="3058:3129" ph="select * fro... dormitoryinfo" />
+                <marker date="1481643019722" expanded="true" signature="3629:3712" ph="select count... " />
+                <marker date="1481643019722" expanded="true" signature="3778:3821" ph="select count... " />
+                <marker date="1481643019722" expanded="true" signature="4406:4426" ph="..." />
+                <marker date="1481643019722" expanded="true" signature="6578:6689" ph="select * fro... dormitoryinfo" />
+                <marker date="1481643019722" expanded="true" signature="6734:6805" ph="select * fro... dormitoryinfo" />
+                <marker date="1481643019722" expanded="true" signature="7398:7664" ph="insert into dormitoryinfo... " />
+                <marker date="1481643019722" expanded="true" signature="7771:8037" ph="insert into dormitoryinfo... " />
+                <marker date="1481643019722" expanded="true" signature="9060:9120" ph="delete from " />
+                <marker date="1481643019722" expanded="true" signature="10051:10272" ph="update dormi... " />
               </folding>
             </state>
           </provider>
@@ -85,8 +101,8 @@
       <file leaf-file-name="Studentvaluablesinfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/student/controller/Studentvaluablesinfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="267">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <marker date="1481973020732" expanded="true" signature="457:512" ph="select id fr... studentinfo" />
                 <marker date="1481973020732" expanded="true" signature="612:683" ph="insert into valuablesinfo... " />
@@ -101,8 +117,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/index/view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="92" column="129" selection-start-line="92" selection-start-column="124" selection-end-line="92" selection-end-column="129" />
+            <state relative-caret-position="12">
+              <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -115,15 +131,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/student/view/studentvaluablesinfo/index.html">
+      <file leaf-file-name="login-4.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="32" column="38" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="38" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="2154">
+              <caret line="308" column="5" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +165,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/public/header/index.html" />
         <option value="$PROJECT_DIR$/apps/admin/view/valuablesinfo/index.html" />
-        <option value="$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.js" />
         <option value="$PROJECT_DIR$/public/static/assets/global/scripts/app.js" />
         <option value="$PROJECT_DIR$/public/static/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" />
         <option value="$PROJECT_DIR$/apps/student/controller/Valuablesinfo.php" />
@@ -163,6 +175,7 @@
         <option value="$PROJECT_DIR$/public/static/assets/pages/css/login-4.min.css" />
         <option value="$PROJECT_DIR$/public/static/assets/pages/css/login-4.css" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php" />
+        <option value="$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.js" />
         <option value="$PROJECT_DIR$/apps/index/view/index/index.html" />
         <option value="$PROJECT_DIR$/apps/index/controller/Index.php" />
       </list>
@@ -205,6 +218,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,6 +235,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="myphpweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myphpweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myphpweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,6 +389,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myphpweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myphpweb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helppic" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -707,8 +762,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,11 +770,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/static/assets/helppic" />
       <recent name="$PROJECT_DIR$/apps/student/view" />
       <recent name="$PROJECT_DIR$/apps/student/controller" />
       <recent name="$PROJECT_DIR$/apps/admin/view" />
       <recent name="$PROJECT_DIR$/apps/admin/view/index" />
-      <recent name="$PROJECT_DIR$/apps/admin/controller" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Academyinfo.php">
@@ -814,7 +867,9 @@
       <workItem from="1481721608999" duration="47000" />
       <workItem from="1481809257786" duration="8000" />
       <workItem from="1481809733398" duration="11511000" />
-      <workItem from="1481956142400" duration="21776000" />
+      <workItem from="1481956142400" duration="23048000" />
+      <workItem from="1481986509062" duration="2826000" />
+      <workItem from="1482022044035" duration="12204000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -1012,34 +1067,41 @@
       <option name="project" value="LOCAL" />
       <updated>1481816780444</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="添加贵重物品扫码登记，找回密码邮箱验证码&#10;">
+      <created>1481983876591</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1481983876591</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170312000" />
+    <option name="totallyTimeSpent" value="186613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23413897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24018127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3248" sideWeight="0.5060423" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248" sideWeight="0.5120846" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3248" sideWeight="0.4939577" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3248" sideWeight="0.4879154" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.49697885" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264" sideWeight="0.49697885" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1073,35 +1135,16 @@
     <MESSAGE value="总体实现管理员登录，学生注册登录，学院、专业、班级、宿舍信息管理，实现角色判断，整理整体框架，去除多余js等" />
     <MESSAGE value="1" />
     <MESSAGE value="添加扫码" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加扫码" />
+    <MESSAGE value="添加贵重物品扫码登记，找回密码邮箱验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加贵重物品扫码登记，找回密码邮箱验证码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/apps/index/view/index/index.html</url>
-          <line>294</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/addtable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/assets/pages/scripts/table-datatables-buttons.min.js" />
     <entry file="file://$PROJECT_DIR$/public/static/assets/pages/scripts/table-datatables-buttons.js" />
     <entry file="file://$PROJECT_DIR$/public/static/assets/layouts/layout/scripts/layout.js">
@@ -1165,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="46" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,7 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="0" column="8146" selection-start-line="0" selection-start-column="8146" selection-end-line="0" selection-end-column="8146" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,7 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,9 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="328" column="51" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="51" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,7 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,7 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="117" column="31" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,19 +1342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481812708993" expanded="true" signature="501:520" ph="..." />
-            <marker date="1481812708993" expanded="true" signature="567:581" ph="..." />
-            <marker date="1481812708993" expanded="true" signature="629:644" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/valuablesinfo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,7 +1349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,7 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1348,7 +1363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="103" column="56" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1356,16 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6480">
           <caret line="432" column="56" selection-start-line="429" selection-start-column="17" selection-end-line="432" selection-end-column="56" />
-          <folding>
-            <marker date="1481726964810" expanded="true" signature="15839:15851" ph="..." />
-            <marker date="1481726964810" expanded="true" signature="16085:16097" ph="..." />
-            <marker date="1481726964810" expanded="true" signature="16326:16338" ph="..." />
-            <marker date="1481726964810" expanded="true" signature="16588:16600" ph="..." />
-            <marker date="1481726964810" expanded="true" signature="16862:16874" ph="..." />
-            <marker date="1481726964810" expanded="true" signature="17145:17157" ph="..." />
-            <marker date="1481726964810" expanded="true" signature="17534:17547" ph="..." />
-            <marker date="1481726964810" expanded="true" signature="17682:17694" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1405,9 +1409,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Academyinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2700">
+          <caret line="9" column="9" selection-start-line="6" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/academyinfo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2655">
+          <caret line="15" column="82" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/assets/pages/css/login-4.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="164" selection-start-line="0" selection-start-column="164" selection-end-line="0" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/assets/pages/css/login-4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/student/view/studentvaluablesinfo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="46" column="79" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="79" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/valuablesinfo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/traits/model/SoftDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="-588">
           <caret line="144" column="67" selection-start-line="144" selection-start-column="56" selection-end-line="144" selection-end-column="67" />
           <folding>
             <marker date="1481643019722" expanded="true" signature="307:350" ph="select count... " />
@@ -1426,30 +1499,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Academyinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2700">
-          <caret line="9" column="9" selection-start-line="6" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/academyinfo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2655">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="82" />
-          <folding>
-            <marker date="1481810703097" expanded="true" signature="10684:10696" ph="..." />
-            <marker date="1481810703097" expanded="true" signature="11010:11023" ph="..." />
-            <marker date="1481810703097" expanded="true" signature="11164:11176" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/student/controller/Studentvaluablesinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="267">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="34" />
           <folding>
             <marker date="1481973020732" expanded="true" signature="457:512" ph="select id fr... studentinfo" />
             <marker date="1481973020732" expanded="true" signature="612:683" ph="insert into valuablesinfo... " />
@@ -1462,59 +1515,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/static/assets/pages/scripts/login-4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="297" column="14" selection-start-line="288" selection-start-column="9" selection-end-line="297" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/pages/css/login-4.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="164" selection-start-line="0" selection-start-column="164" selection-end-line="0" selection-end-column="164" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/pages/css/login-4.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/student/view/studentvaluablesinfo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="2154">
+          <caret line="308" column="5" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/index/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="92" column="129" selection-start-line="92" selection-start-column="124" selection-end-line="92" selection-end-column="129" />
+        <state relative-caret-position="12">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1526,14 +1536,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="104" column="47" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
+        <state relative-caret-position="297">
+          <caret line="128" column="65" selection-start-line="128" selection-start-column="65" selection-end-line="128" selection-end-column="65" />
           <folding>
-            <marker date="1481983752113" expanded="true" signature="252:301" ph="select * fro... academyinfo" />
-            <marker date="1481983752113" expanded="true" signature="424:526" ph="select Dormi... dormitoryinfo" />
-            <marker date="1481983752113" expanded="true" signature="3721:4165" ph="insert into studentinfo... " />
+            <marker date="1482039949802" expanded="true" signature="396:445" ph="select * fro... academyinfo" />
+            <marker date="1482039949802" expanded="true" signature="568:670" ph="select Dormi... dormitoryinfo" />
+            <marker date="1482039949802" expanded="true" signature="3865:4309" ph="insert into studentinfo... " />
+            <marker date="1482039949802" expanded="true" signature="4678:4734" ph="select * fro... studentinfo" />
           </folding>
         </state>
       </provider>

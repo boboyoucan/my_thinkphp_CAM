@@ -307,5 +307,4 @@ jQuery(document).ready(function() {
 	if($common == '0'){
 		$('.common-alert', $('.login-form')).show();
 	}
-
 });
