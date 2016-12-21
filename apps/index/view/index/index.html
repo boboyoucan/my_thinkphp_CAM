@@ -74,7 +74,7 @@
     <!-- END LOGIN FORM -->
     <!-- BEGIN FORGOT PASSWORD FORM -->
     <!--action="{:url('index/forget')}" method="post"-->
-    <form class="forget-form">
+    <form class="forget-form" onkeydown="if(event.keyCode==13)return false;">
         <h3 >忘记密码 ?</h3>
         <p> 请输入邮箱地址;如未注册,请先返回注册 </p>
         <!--信息提示区-->
@@ -89,35 +89,37 @@
             <button type="button" id="back-btn" class="btn red btn-outline">返回 </button>
             <button type="button" onclick="forget_password()" class="btn green pull-right"> 提交 </button>
         </div>
-        <!--隐藏的-->
-        <div id="forget_div" class="display-hide">
-            <div class="form-group">
-                <label class="control-label visible-ie8 visible-ie9">邮箱验证码</label>
-                <div class="input-icon">
-                    <i class="fa fa-envelope-square"></i>
-                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off"  placeholder="邮箱验证码" id="Qrcode" name="Qrcode" /> </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label visible-ie8 visible-ie9">密码</label>
-                <div class="input-icon">
-                    <i class="fa fa-lock"></i>
-                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off"  placeholder="密码" id="forget_Password" name="forget_Password" /> </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label visible-ie8 visible-ie9">再次输入密码</label>
-                <div class="controls">
-                    <div class="input-icon">
-                        <i class="fa fa-check"></i>
-                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="再次输入密码" name="forget_rpassword" /> </div>
-                </div>
-            </div>
-            <div class="form-actions">
-                <button type="button" onclick="forget_password()" class="btn-block btn green pull-right"> 提交 </button>
-            </div>
-        </div>
-
         <p>注：如未收到邮件,参考<a href="/../public/static/assets/helppic/help_qqmail.png">这里</a>并重新提交本页面</p>
     </form>
+    <!--重置密码-->
+    <!--隐藏的-->
+    <form class="reset-form" id="forget_div" style="display: none" onkeydown="if(event.keyCode==13)return false;">
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">邮箱验证码</label>
+            <div class="input-icon">
+                <i class="fa fa-envelope-square"></i>
+                <input type="text" name="code" id="code" style="display: none"/>
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off"  placeholder="邮箱验证码" id="Qrcode" name="Qrcode" /> </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">密码</label>
+            <div class="input-icon">
+                <i class="fa fa-lock"></i>
+                <input class="form-control placeholder-no-fix" type="password" autocomplete="off"  placeholder="密码" id="forget_Password" name="forget_Password" /> </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">再次输入密码</label>
+            <div class="controls">
+                <div class="input-icon">
+                    <i class="fa fa-check"></i>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="forget_rpassword" placeholder="再次输入密码" name="forget_rpassword" /> </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="button" id="reset" onclick="reset_password()" class="btn-block btn green pull-right"> 提交 </button>
+        </div>
+    </form>
+
     <!-- END FORGOT PASSWORD FORM -->
     <!-- BEGIN REGISTRATION FORM -->
     <form class="register-form" action="{:url('index/register')}" method="post">
@@ -179,13 +181,6 @@
                 <i class="fa fa-institution"></i>
                 <select name="Dormitory" id="dormitory_list" class="select2 form-control">
                     <option value="">选择宿舍</option>
-                    {volist name="dormitoryinfo" id="vo"}
-                    {if	condition="$vo.Unit eq ''"}
-                    <option value="{$vo.DormitoryId}">{$vo.Building}栋{$vo.DormitoryNo}室</option>
-                    {else	/}
-                    <option value="{$vo.DormitoryId}">{$vo.Building}栋{$vo.Unit}单元{$vo.DormitoryNo}室</option>
-                    {/if}
-                   {/volist}
                 </select></div>
         </div>
         <div class="form-group">
@@ -373,35 +368,70 @@
             }
         });
     }
+    //发送邮箱验证码
     function forget_password(){
-        var email=document.getElementById("email").value;
-        alert(email);
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"{:url('index/forget')}",
-            dataType:"json",
-            data:{email: email},
-            timeout:500000,
-            error:function(){
-                alert('出错');
-            },
-            success:function(data){
-                $("#forget_alert").empty();
-                var b="";
-                alert(data.mes);
-                b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
-                $("#forget_alert").append(b);
-                $("#forget_alert").show();
-                if(data.flag ==1 ){
-                    $("#email_send").hide();
-                    $("#forget_div").show();
+        if($('.forget-form').validate().form()){
+            var email=document.getElementById("email").value;
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"{:url('index/sendMail')}",
+                dataType:"json",
+                data:{email: email},
+                timeout:500000,
+                error:function(){
+                    alert('出错');
+                },
+                success:function(data){
+                    $("#forget_alert").empty();
+                    var b="";
+                    alert(data.mes);
+                    b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
+                    $("#forget_alert").append(b);
+                    $("#forget_alert").show();
+                    if(data.flag ==1 ){
+                        //$("#email_send").hide();
+                        document.getElementById("code").value=data.code;
+                        //显示重置密码框
+                        $("#forget_div").show();
+                    }
                 }
+            });
+        }
 
-
-
-            }
-        });
+    }
+    //重置密码
+    function reset_password() {
+        if($('.reset-form').validate().form()){
+            var email=document.getElementById("email").value;
+            var code= document.getElementById("code").value;
+            var qrcode=document.getElementById("Qrcode").value;
+            var forget_Password=document.getElementById("forget_Password").value;
+            alert("123");
+            data_json={email:email,code:code,qrcode:qrcode,forget_Password:forget_Password};
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"{:url('index/forget')}",
+                dataType:"json",
+                data:data_json,
+                timeout:30000,
+                error:function(){
+                    alert('出错');
+                },
+                success:function(data){
+                    $("#forget_alert").empty();
+                    var b="";
+                    alert(data.mes);
+                    b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
+                    $("#forget_alert").append(b);
+                    $("#forget_alert").show();
+                    if(data.flag == 1 ){
+                       window.location.href="{:url('index/index')}";
+                    }
+                }
+            });
+        }
 
     }
 </script>

@@ -121,6 +121,67 @@ var Login = function () {
 	            jQuery('.forget-form').hide();
 	        });
 
+
+
+	}
+	var resetPassword = function () {
+		//重置密码验证两次密码相等
+		$('.reset-form').validate({
+			errorElement: 'span', //default input error message container
+			errorClass: 'help-block', // default input error message class
+			focusInvalid: false, // do not focus the last invalid input
+			ignore: "",
+			rules: {
+				Qrcode: {
+					required: true,
+					maxlength:5,
+					minlength:5,
+					number:true
+				},
+				forget_Password: {
+					required: true
+				},
+				forget_rpassword: {
+					required: true,
+					equalTo: "#forget_Password"
+				}
+			},
+			messages: {
+				Qrcode: {
+					required: "请输入邮箱验证码.",
+					maxlength:"邮箱验证码为5位",
+					minlength:"邮箱验证码为5位",
+					number:"邮箱验证码为5位数字"
+				},
+				forget_Password: {
+					required: '请输入密码',
+				},
+				forget_rpassword: {
+					required:'请再次输入密码',
+					equalTo: '两次密码不一致'
+				}
+			},
+			invalidHandler: function (event, validator) { //display error alert on form submit
+
+			},
+			highlight: function (element) { // hightlight error inputs
+				$(element)
+					.closest('.form-group').addClass('has-error'); // set error class to the control group
+			},
+
+			success: function (label) {
+				label.closest('.form-group').removeClass('has-error');
+				label.remove();
+			},
+
+			errorPlacement: function (error, element) {
+				error.insertAfter(element.closest('.input-icon'));
+			},
+
+			submitHandler: function (form) {
+				form.submit();
+			}
+		});
 	}
 
 	var handleRegister = function () {
@@ -255,8 +316,6 @@ var Login = function () {
 					 form.submit();
 				 }
 	        });
-
-
 			$('.register-form input').keypress(function (e) {
 	            if (e.which == 13) {
 	                if ($('.register-form').validate().form()) {
@@ -283,7 +342,8 @@ var Login = function () {
         	
             handleLogin();
             handleForgetPassword();
-            handleRegister();    
+            handleRegister();
+			resetPassword();
 
             // init background slide images
             $.backstretch([

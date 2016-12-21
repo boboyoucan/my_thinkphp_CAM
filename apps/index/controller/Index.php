@@ -9,7 +9,6 @@ class Index extends Controller
     {
 //      老师和学生通用的标记
         $this->assign('common_nf','1');
-
         //传递宿舍信息
         $dormitoryinfo=db('dormitoryinfo')->query("select DormitoryId,Building,Unit,DormitoryNo from dormitoryinfo order by Building,Unit,DormitoryNo ASC");
         $this->assign('dormitoryinfo',$dormitoryinfo);
@@ -96,11 +95,11 @@ class Index extends Controller
             echo "非法访问";
         }
     }
-    public function forget($email){
+    public function sendMail($email){
         $student=db('studentinfo')->query("select StudentName from studentinfo where Email='$email'");
         if($student){
             //生成随机验证码
-            $yanz=rand(1000,9999);
+            $yanz=rand(10000,99999);
             $headers = "From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan1.cn>";
             $body = "尊敬的{$student[0]['StudentName']}您好！\n您的邮箱验证码为：$yanz";
             $subject = "邮箱验证";
@@ -109,6 +108,7 @@ class Index extends Controller
             {
                 $common_forget['mes']='邮件发送成功';
                 $common_forget['flag']=1;
+                $common_forget['code']=md5(md5($yanz));
                 $this->assign('common_forget','$common_forget');
                 return $common_forget;
                 //return $this->fetch('index');
@@ -140,6 +140,33 @@ class Index extends Controller
                 $this->assign('common_forget','$common_forget');
                 return $common_forget;
             }
+        }
+    }
+    public function forget($email,$code,$qrcode,$forget_Password){
+        //判断两次验证码是否一致
+        if($code == md5(md5($qrcode))){
+            $student=db('studentinfo')->query("select id from studentinfo where Email='$email'");
+            if($student){
+
+                $reset=db('studentinfo')->execute("update studentinfo set Password=md5('$forget_Password') where id= '{$student[0]['id']}'");
+                if($reset){
+                    $reset_pa['flag']=1;
+                    $reset_pa['mes']='密码修改成功';
+                    return $reset_pa;
+                }else{
+                    $reset_pa['flag']=0;
+                    $reset_pa['mes']='很抱歉！系统出错,密码修改失败！';
+                    return $reset_pa;
+                }
+            }else{
+                $reset_pa['flag']=0;
+                $reset_pa['mes']='很抱歉！该学生不存在';
+                return $reset_pa;
+            }
+        }else{
+            $reset_pa['flag']=0;
+            $reset_pa['mes']='很抱歉！ 验证码有误，请确认！';
+            return $reset_pa;
         }
     }
 }
