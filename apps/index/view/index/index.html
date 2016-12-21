@@ -268,9 +268,10 @@
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
     /**
-     * 点击注册按钮出发加载学院
+     * 点击注册按钮出发加载学院、宿舍
      */
     function get_Academy_Dormitory() {
+        //加载学院
         $.ajax({
             cache:false,
             type:"POST",
@@ -292,6 +293,7 @@
                 $("#academy_list").append(b);
             }
         });
+        //加载宿舍
         $.ajax({
             cache:false,
             type:"POST",
@@ -337,7 +339,6 @@
             success:function(data){
                 $("#major_list").empty();
                 var count = data.length;
-//            alert(count);
                 var i = 0;
                 var b="<option value=''>选择专业</option>";
                 for(i=0;i<count;i++){
