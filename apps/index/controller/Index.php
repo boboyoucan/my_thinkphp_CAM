@@ -9,13 +9,7 @@ class Index extends Controller
     {
 //      老师和学生通用的标记
         $this->assign('common_nf','1');
-        //忘记密码信息提示标志
-        $common_forget['flag']=1;
-        $common_forget['mes']='';
-        $this->assign('common_forget',$common_forget);
-        //传递学院信息
-        $academyinfo=db('academyinfo')->query("select * from academyinfo order by AcademyId desc");
-        $this->assign('academyinfo',$academyinfo);
+
         //传递宿舍信息
         $dormitoryinfo=db('dormitoryinfo')->query("select DormitoryId,Building,Unit,DormitoryNo from dormitoryinfo order by Building,Unit,DormitoryNo ASC");
         $this->assign('dormitoryinfo',$dormitoryinfo);
@@ -107,13 +101,14 @@ class Index extends Controller
         if($student){
             //生成随机验证码
             $yanz=rand(1000,9999);
-            $headers = "From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan.cn>";
+            $headers = "From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan1.cn>";
             $body = "尊敬的{$student[0]['StudentName']}您好！\n您的邮箱验证码为：$yanz";
             $subject = "邮箱验证";
             $to = "$email";
             if (mail($to, $subject, $body, $headers))
             {
                 $common_forget['mes']='邮件发送成功';
+                $common_forget['flag']=1;
                 $this->assign('common_forget','$common_forget');
                 return $common_forget;
                 //return $this->fetch('index');
@@ -121,24 +116,27 @@ class Index extends Controller
             else
             {
                 $common_forget['mes']='邮件发送失败';
+                $common_forget['flag']=0;
                 $this->assign('common_forget','$common_forget');
                 return $common_forget;
             }
         }else{
             //没有注册，本邮件问测试邮件，督促注册
-            $headers = "From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan.cn>";
+            $headers = "From: 西南林业大学宿舍公寓管理系统官方邮件<wbw@boboyoucan1.cn>";
             $body = "您好！\n您的邮箱暂时未关联我们的网站，本邮件为测试邮件，请先到我们的网站注册，网站地址：http://{$_SERVER['HTTP_HOST']}/index.php";
             $subject = "测试邮件";
             $to = "$email";
             if (mail($to, $subject, $body, $headers))
             {
                 $common_forget['mes']='您尚未注册,我们已发送一封测试邮件给您，请先进行注册！!';
+                $common_forget['flag']=0;
                 $this->assign('common_forget','$common_forget');
                 return $common_forget;
             }
             else
             {
                 $common_forget['mes']='您尚未注册,我们本来准备发送一份测试邮件给您，但系统出现错误！请先进行注册！';
+                $common_forget['flag']=0;
                 $this->assign('common_forget','$common_forget');
                 return $common_forget;
             }

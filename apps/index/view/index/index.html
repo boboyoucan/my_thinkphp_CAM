@@ -1,16 +1,5 @@
 {include file="public/header/head.html" /}
 <!DOCTYPE html>
-<!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
-Version: 4.5.2
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
@@ -75,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
         <div class="create-account">
             <p> 还没有账号 ?&nbsp;
-                <a href="javascript:;" id="register-btn"> 注册 </a>
+                <a onclick="get_Academy_Dormitory()" id="register-btn"> 注册 </a>
             </p>
         </div>
         <!--&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp   &nbsp<p style="font-size: small">违规登记</p><br>-->
@@ -96,10 +85,37 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="fa fa-envelope"></i>
                 <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="请输入注册预留邮箱" id="email" name="email" /> </div>
         </div>
-        <div class="form-actions">
+        <div class="form-actions" id="email_send">
             <button type="button" id="back-btn" class="btn red btn-outline">返回 </button>
             <button type="button" onclick="forget_password()" class="btn green pull-right"> 提交 </button>
         </div>
+        <!--隐藏的-->
+        <div id="forget_div" class="display-hide">
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">邮箱验证码</label>
+                <div class="input-icon">
+                    <i class="fa fa-envelope-square"></i>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off"  placeholder="邮箱验证码" id="Qrcode" name="Qrcode" /> </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">密码</label>
+                <div class="input-icon">
+                    <i class="fa fa-lock"></i>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off"  placeholder="密码" id="forget_Password" name="forget_Password" /> </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">再次输入密码</label>
+                <div class="controls">
+                    <div class="input-icon">
+                        <i class="fa fa-check"></i>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="再次输入密码" name="forget_rpassword" /> </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" onclick="forget_password()" class="btn-block btn green pull-right"> 提交 </button>
+            </div>
+        </div>
+
         <p>注：如未收到邮件,参考<a href="/../public/static/assets/helppic/help_qqmail.png">这里</a>并重新提交本页面</p>
     </form>
     <!-- END FORGOT PASSWORD FORM -->
@@ -178,9 +194,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="fa fa-mortar-board"></i>
                 <select name="Academy" id="academy_list" class="select2 form-control" onchange="chage_Major()" >
                     <option value="">选择学院</option>
-                    {volist name="academyinfo" id="vo"}
-                    <option value="{$vo.AcademyId}">{$vo.AcademyName}</option>
-                    {/volist}
                 </select></div>
         </div>
         <div class="form-group">
@@ -255,6 +268,58 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
     /**
+     * 点击注册按钮出发加载学院
+     */
+    function get_Academy_Dormitory() {
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/common/AcademyInfo')}",
+            dataType:"json",
+            //data:['academy','$academy'],
+            timeout:30000,
+            error:function(){
+                alert('admin/Common/AcademyInfo');
+            },
+            success:function(data){
+                $("#academy_list").empty();
+                var count = data.length;
+                var i = 0;
+                var b="<option value=''>选择学院</option>";
+                for(i=0;i<count;i++){
+                    b+="<option value='"+data[i].AcademyId+"'>"+data[i].AcademyName+"</option>";
+                }
+                $("#academy_list").append(b);
+            }
+        });
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/common/DormitoryInfo')}",
+            dataType:"json",
+            //data:['academy','$academy'],
+            timeout:30000,
+            error:function(){
+                alert('admin/Common/DormitoryInfo');
+            },
+            success:function(data){
+                $("#dormitory_list").empty();
+                var count = data.length;
+                var i = 0;
+                var b="<option value=''>选择宿舍</option>";
+                for(i=0;i<count;i++){
+                    if(data[i].Unit ==''){
+                        b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].DormitoryNo+"室</option>";
+                    }else{
+                        b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].Unit+"单元"+data[i].DormitoryNo+"室</option>";
+                    }
+                }
+                $("#dormitory_list").append(b);
+            }
+        });
+
+    }
+    /**
      * 选择学院时触发学院对应的专业
      */
     function chage_Major() {
@@ -327,16 +392,16 @@ License: You must have a valid license purchased only from themeforest(the above
                 b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
                 $("#forget_alert").append(b);
                 $("#forget_alert").show();
+                if(data.flag ==1 ){
+                    $("#email_send").hide();
+                    $("#forget_div").show();
+                }
+
+
 
             }
         });
 
-//        $.post("{:url('index/forget')}",{'email':'1319723770@qq.com'},function(json){
-//            var datajson=eval('(' + json + ')');
-//            var data=datajson.data;
-//            alert(data);
-//            alert('123');
-//        });
     }
 </script>
 
