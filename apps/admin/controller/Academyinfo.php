@@ -169,7 +169,7 @@ class Academyinfo extends Checklogin
     /*****************************************
      * 作者：王波文
      * 时间：2016年11月26日
-     *方法：学院删除
+     * 方法：学院删除
      *****************************************/
     public function AcademyDelete($AcademyId=''){
         $Academy=db('academyinfo')->where('AcademyId',$AcademyId)->find();

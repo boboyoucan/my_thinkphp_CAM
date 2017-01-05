@@ -2,10 +2,12 @@
 namespace app\admin\controller;
 use think\Controller;
 include 'public/static/phpqrcode/phpqrcode.php';
-class Valuablesinfo extends Checklogin
+class Valuablesinfo extends Checklogin 
 {
     public function index()
     {
+        $valuables=db('valuablesinfo')->query("select ST.StudentName,MA.MajorName,CL.ClassName,DO.Building,DO.Unit,DO.DormitoryNo,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA  JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId order by VA.RegistrationTime DESC");
+       $this->assign('valuables',$valuables);
         return $this->fetch('valuablesinfo/index');
        }
 
@@ -27,6 +29,7 @@ class Valuablesinfo extends Checklogin
            \QRcode::png($value, false, $errorCorrectionLevel, $matrixPointSize);
            exit;
        }
+       public function qwe(){}
 
 }
 

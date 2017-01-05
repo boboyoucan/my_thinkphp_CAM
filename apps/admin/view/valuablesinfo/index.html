@@ -1,5 +1,315 @@
 
 {extend name="public/header/index.html" /}
 {block name="content"}
-<img src="{:url('admin/Valuablesinfo/qrcode')}">
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/majorinfo/MajorInfo')}">贵重物品管理</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>贵重物品登记信息</span>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
+            <i class="icon-calendar"></i>&nbsp;
+            <span class="thin uppercase hidden-xs">October 25, 2016 - November 23, 2016</span>&nbsp;
+            <i class="fa fa-angle-down"></i>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="portlet light bordered">
+    <div class="common-alert alert alert-danger display-hide" >
+        <button class="close" data-close="alert"></button>
+        <span>请填写专业名称</span>
+    </div>
+    <div class="error-alert_danger alert alert-danger display-hide" id="error_log_danger">
+
+    </div>
+    <div class="error-alert_warning alert alert-warning display-hide" id="error_log_warning">
+
+    </div>
+
+    <div class="portlet-title">
+        <div class="caption font-dark">
+            <i class="icon-settings font-dark"></i>
+            <span class="caption-subject bold uppercase">贵重物品登记信息表</span>
+        </div>
+        <div class="tools">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="dt-buttons">
+                        <a class="dt-button buttons-print btn purple btn-outline" id="add">
+                            <span>添加</span>
+                        </a>
+                        <!--<a class="dt-button buttons-print btn dark btn-outline" >-->
+                        <!--<span>打印</span>-->
+                        <!--</a>-->
+                        <!--<a class="dt-button buttons-copy buttons-flash btn red btn-outline" >-->
+                        <!--<span>复制</span>-->
+                        <!--<div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">-->
+                        <!--<embed id="ZeroClipboard_TableToolsMovie_1" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=55&amp;height=31" wmode="transparent">-->
+                        <!--</div>-->
+                        <!--</a>-->
+                        <!--<a class="dt-button buttons-pdf buttons-html5 btn green btn-outline" >-->
+                        <!--<span>生成PDF</span>-->
+                        <!--</a>-->
+                        <a class="dt-button buttons-excel buttons-flash btn yellow btn-outline" >
+                            <span>生成Excel</span>
+                            <div style="position: absolute; left: 0px; top: 0px; width: 55px; height: 31px; z-index: 99;">
+                                <embed id="ZeroClipboard_TableToolsMovie_2" src="//cdn.datatables.net/buttons/1.0.0/swf/flashExport.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="55" height="31" name="ZeroClipboard_TableToolsMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=55&amp;height=31" wmode="transparent">
+                            </div>
+                        </a>
+                        <!--<a class="dt-button buttons-csv buttons-html5 btn purple btn-outline" >-->
+                        <!--<span>生成CSV</span>-->
+                        <!--</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <div id="sample_1_wrapper" class="dataTables_wrapper no-footer">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="dataTables_length" id="sample_1_length">
+                        <label>
+                            <select name="select_page_Major" onchange="select_page('','')" id="select_page_Major" class="form-control input-sm input-xsmall input-inline">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="-1">All</option>
+                            </select> 行
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div id="sample_1_filter" class="dataTables_filter">
+                        <label>
+                            <input type="search" class="form-control input-sm input-small input-inline" id="MajorName" name="Name" placeholder="请输入学院或专业名称" aria-controls="sample_1">
+                            <button class="btn" onclick="search_mj()">搜索</button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="table-scrollable">
+                <table class="table">
+                    <thead>
+                    <tr >
+                        <th class="sorting_desc" style="width: 8%;" >
+                            姓名
+                        </th>
+                        <th class="sorting_desc" style="width: 25%;" >
+                            专业-班级
+                        </th>
+                        <th class="sorting" style="width: 10%;" >
+                            宿舍
+                        </th>
+                        <th class="sorting" style="width: 24%;" >
+                            贵重物品
+                        </th>
+                        <th class="sorting" style="width: 20%;" >
+                            登记时间
+                        </th>
+                        <th class="sorting" style="width: 13%;" >
+                            联系电话
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody id="Major_row">
+                    {volist name="valuables" id="vo"}
+                   <tr role="row" class="even" >
+                       <td id="td_row_StudentName_{$vo.ValuablesId}">
+                            {$vo.StudentName}
+                       </td>
+                       <td id="td_row_Major_{$vo.ValuablesId}">
+                           {$vo.MajorName}-{$vo.ClassName}
+                       </td>
+                       <td id="td_row_Dormitory_{$vo.ValuablesId}">
+                           {$vo.Building}-{$vo.Unit}-{$vo.DormitoryNo}
+                       </td>
+                       <td id="td_row_Valuables_{$vo.ValuablesId}">
+                           {$vo.ValuablesName}
+                       </td>
+                       <td id="td_row_RegistrationTime_{$vo.ValuablesId}">
+                           {$vo.RegistrationTime}
+                       </td>
+                       <td id="td_row_PhoneNo_{$vo.ValuablesId}">
+                           {$vo.PhoneNo}
+                       </td>
+                    </tr>
+                    {/volist}
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="dataTables_info" role="status" aria-live="polite" id="page_all">
+
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="dataTables_paginate paging_bootstrap_number" id="paging" >
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    /*
+     * 页码显示函数
+     */
+    //获取select对象
+    var se = document.getElementById("select_page_Major");
+    function select_page(page,pagesize) {
+        var select_page_v=se.value;
+        if(page =='' && pagesize==''){
+            //定义一页显示多少条
+            var search=document.getElementById("MajorName").value;
+            if(search ==''){
+                data_trans={pagesize:select_page_v};
+            }else{
+                data_trans={pagesize:select_page_v,Name:search};
+            }
+        }else{
+            data_trans={pagesize:pagesize,page:page};
+        }
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/majorinfo/majorinfo')}",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("出错");
+            },
+            success:function(data){
+                $("#Major_row").empty();
+                var count = data.length;
+                var i = 0;
+                var b="";
+                for(i=0;i<count;i++){
+                    //数据
+                    b+="<tr role='row' class='even' ><td id='td_row_Academy_"+data[i].MajorId+"'>"+data[i].AcademyName+"</td><td id='td_row_"+data[i].MajorId+"'>"+data[i].MajorName+"</td>"
+                    //操作按钮
+                    b+="<td id='td_update_row_"+data[i].MajorId+"' style='display:none'><input type='text' id='update_input' class='form-control input-small' name='Update_Major' value='"+data[i].MajorName+"'> </td><td> <!--默认隐藏 更新时显示按钮--> <button id='update_save_button_"+data[i].MajorId+"' onclick='save_change("+data[i].MajorId+")' class='dt-button buttons-print btn green btn-outline' style='display: none'><span>保存</span></button><a id='update_cal_button_"+data[i].MajorId+"' class='dt-button buttons-print btn red btn-outline' style='display:none' onclick='cancel("+data[i].MajorId+")'><span>取消</span></a> <!--默认隐藏--> <a id='update_button_"+data[i].MajorId+"' class='dt-button buttons-print btn green btn-outline' onclick='change("+data[i].MajorId+")'><span>更新</span> </a> <a id='delete_button_"+data[i].MajorId+"' class='dt-button buttons-print btn red btn-outline' onclick='Delete("+data[i].MajorId+")'> <span>删除</span></a></td></tr>"
+                }
+                //从新加载数据
+                $("#Major_row").append(b);
+                //清空页码显示div
+                $("#paging").empty();
+                //重新加载页码div
+                $("#paging").append(data[0].paging);
+                //清空总页码
+                $("#page_all").empty();
+                //重新加载总页码div
+                $("#page_all").append(data[0].pageall);
+            }
+        });
+//        //使用localStorage存储当前select的值和位置，便于刷新的时候从新获取
+//        localStorage.value = se.value;
+//        localStorage.index = se.selectedIndex;
+//        window.location.href="{:url('admin/academyinfo/academyinfo')}?pagesize="+select_page_v;
+    }
+    //页面重新加载时从localStorage读取select所在位置
+    //    window.onload = function(){
+    ////    alert( localStorage.index +";"+ localStorage.value );
+    //        se.options[ localStorage.index ].selected = true;
+    //    }
+    //var search;
+    function search_mj() {
+        //var search=document.getElementById("search").value;
+        select_page('','');
+    }
+    /**
+     * 更新处理函数
+     */
+    function save_change(MajorId) {
+        var MajorName =document.getElementById('update_input').value;
+        //alert(MajorName);
+        data_trans={MajorId:MajorId,MajorName:MajorName};
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"{:url('admin/majorinfo/MajorUpdate')}",
+            dataType:"json",
+            data: data_trans,
+            timeout:30000,
+            error:function(){
+                alert("系统出错，请联系我们！");
+            },
+            success:function(data){
+                select_page('','');
+                var m="";
+                //显示更新成功对话框
+                if(data.flag ==1){
+                    $("#error_log_warning").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_warning").append(m);
+                    $(".error-alert_warning").show(100);
+                }
+                //显示更新失败对话框
+                else{
+                    $("#error_log_danger").empty();
+                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                    $("#error_log_danger").append(m);
+                    $(".error-alert_danger").show(100);
+                }
+            }
+
+
+        });
+    }
+    /*
+     *删除方法
+     */
+    function Delete(MajorId) {
+        if(confirm("此操作不可逆，您真的要删除吗？")){
+            data_trans={MajorId:MajorId};
+            //alert(AcademyId);
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"{:url('admin/Majorinfo/MajorDelete')}",
+                dataType:"json",
+                data: data_trans,
+                timeout:30000,
+                error:function(){
+                    alert("系统出错，请联系我们！");
+                },
+                success:function(data){
+                    select_page('','');
+                    var m="";
+                    //显示更新成功对话框
+                    if(data.flag ==1){
+                        $("#error_log_warning").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_warning").append(m);
+                        $(".error-alert_warning").show(100);
+                    }
+                    //显示更新失败对话框
+                    else{
+                        $("#error_log_danger").empty();
+                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
+                        $("#error_log_danger").append(m);
+                        $(".error-alert_danger").show(100);
+                    }
+                }
+
+
+            });
+        }
+    }
+
+</script>
 {/block}
+

@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="邮箱验证码优化">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/admin/controller/Checklogin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/student/controller/Checklogin.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201612/18.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/85a46f270497c4df6d88664aa0f57a37.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/temp/b45ea6c17cbec3d75265ab42ca963630.php" afterPath="" />
+    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Academyinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Academyinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Classinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Classinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Dormitoryinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Index.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Majorinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Majorinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/controller/Index.php" afterPath="$PROJECT_DIR$/apps/index/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/view/index/index.html" afterPath="$PROJECT_DIR$/apps/index/view/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/student/controller/Index.php" afterPath="$PROJECT_DIR$/apps/student/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/header/index.html" afterPath="$PROJECT_DIR$/public/header/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/CHANGELOG" afterPath="$PROJECT_DIR$/public/static/phpqrcode/CHANGELOG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/INSTALL" afterPath="$PROJECT_DIR$/public/static/phpqrcode/INSTALL" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/LICENSE" afterPath="$PROJECT_DIR$/public/static/phpqrcode/LICENSE" />
@@ -42,8 +27,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/tools/merge.sh" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merge.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/tools/merged_config.php" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merged_config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/phpqrcode/tools/merged_header.php" afterPath="$PROJECT_DIR$/public/static/phpqrcode/tools/merged_header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php" afterPath="$PROJECT_DIR$/runtime/temp/109b5717f5053da3dc42d2bbfc4e05eb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/cea1803e76392394e25097893593f635.php" afterPath="$PROJECT_DIR$/runtime/temp/cea1803e76392394e25097893593f635.php" />
     </list>
     <ignored path="myphpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -723,7 +706,7 @@
       <workItem from="1482322072635" duration="12314000" />
       <workItem from="1482334549925" duration="1283000" />
       <workItem from="1482406409559" duration="8213000" />
-      <workItem from="1483620727735" duration="869000" />
+      <workItem from="1483620727735" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -956,15 +939,22 @@
       <option name="project" value="LOCAL" />
       <updated>1482334697873</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="邮箱验证码优化">
+      <created>1483621643054</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1483621643054</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213771000" />
+    <option name="totallyTimeSpent" value="213967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25439882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1021,10 +1011,10 @@
     <MESSAGE value="1" />
     <MESSAGE value="添加扫码" />
     <MESSAGE value="添加贵重物品扫码登记，找回密码邮箱验证码" />
-    <MESSAGE value="邮箱验证码优化" />
     <MESSAGE value="测试提交" />
     <MESSAGE value="实现找回密码功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现找回密码功能" />
+    <MESSAGE value="邮箱验证码优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="邮箱验证码优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1304,6 +1294,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

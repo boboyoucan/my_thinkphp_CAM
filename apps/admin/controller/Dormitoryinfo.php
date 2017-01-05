@@ -141,13 +141,11 @@ class Dormitoryinfo extends Checklogin
             if($db_Dormitory){
                 echo $_POST['DormitoryNo'];
                 echo "插入成功";
-
                 $this->redirect('admin/dormitoryinfo/index');
             }
             else{
                 echo $_POST['DormitoryNo'];
                 echo "插入失败";
-
                 $this->redirect('admin/dormitoryinfo/index');
             }
         }
