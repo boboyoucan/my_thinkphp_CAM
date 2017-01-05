@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:59:"/mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html";i:1481725499;s:24:"public/header/index.html";i:1481728970;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:59:"/mnt/www/html/myphpweb/apps/admin/view/majorinfo/index.html";i:1481725499;s:24:"public/header/index.html";i:1481813415;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -164,30 +164,30 @@
                     <h3 class="uppercase">功能</h3>
                 </li>
                 <li class="nav-item  ">
-                    <a href="javascript:;" class="nav-link nav-toggle">
+                    <a href="<?php echo url('admin/Valuablesinfo/index'); ?>" class="nav-link nav-toggle">
                         <i class="icon-diamond"></i>
                         <span class="title">贵重物品管理</span>
-                        <span class="arrow"></span>
+                        <!--<span class="arrow"></span>-->
                     </a>
-                    <ul class="sub-menu">
-                        <li class="nav-item  ">
-                            <a href="ui_colors.html" class="nav-link ">
-                                <span class="title">Color Library</span>
-                            </a>
-                        </li>
+                    <!--<ul class="sub-menu">-->
+                        <!--<li class="nav-item  ">-->
+                            <!--<a href="ui_colors.html" class="nav-link ">-->
+                                <!--<span class="title">Color Library</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
 
-                        <li class="nav-item  ">
-                            <a href="javascript:;" class="nav-link nav-toggle">
-                                <span class="title">Page Progress Bar</span>
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="nav-item ">
-                                    <a href="ui_page_progress_style_1.html" class="nav-link "> Flash </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                        <!--<li class="nav-item  ">-->
+                            <!--<a href="javascript:;" class="nav-link nav-toggle">-->
+                                <!--<span class="title">Page Progress Bar</span>-->
+                                <!--<span class="arrow"></span>-->
+                            <!--</a>-->
+                            <!--<ul class="sub-menu">-->
+                                <!--<li class="nav-item ">-->
+                                    <!--<a href="ui_page_progress_style_1.html" class="nav-link "> Flash </a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    <!--</ul>-->
                 </li>
                 <li class="nav-item  ">
                     <a href="javascript:;" class="nav-link nav-toggle">

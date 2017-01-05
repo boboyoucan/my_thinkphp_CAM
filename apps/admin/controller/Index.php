@@ -1,14 +1,10 @@
 <?php
 namespace app\admin\controller;
 use think\Controller;
-class Index extends Controller
+class Index extends Checklogin
 {
     public function index()
     {
-        //判断是否登录
-        if(session('name')=='' || session('type')==''){
-            $this->redirect('index/index/index');
-        }
         return $this->fetch('index');
 
     }

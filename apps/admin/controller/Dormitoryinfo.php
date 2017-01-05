@@ -1,14 +1,9 @@
 <?php
 namespace app\admin\controller;
 use think\Controller;
-class Dormitoryinfo extends Controller
+class Dormitoryinfo extends Checklogin
 {
     public function index(){
-        //判断是否登录
-        if(session('name')=='' || session('type')==''){
-            $this->redirect('index/index/index');
-        }
-
         $count=db('dormitoryinfo')->query("select count(*) as count from dormitoryinfo ");
         $page=1;
         $pagesize=5;

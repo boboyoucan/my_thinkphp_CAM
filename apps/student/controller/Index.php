@@ -1,6 +1,6 @@
 <?php
 namespace app\student\controller;
-
+use think\Controller;
 class Index
 {
     public function index()

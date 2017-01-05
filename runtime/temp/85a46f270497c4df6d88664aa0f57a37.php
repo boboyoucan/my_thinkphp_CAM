@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1482039515;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1483620968;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -51,17 +51,6 @@
 <script src="/../public/static/assets/global/scripts/addtable.js" type="text/javascript"></script>
 
 <!DOCTYPE html>
-<!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
-Version: 4.5.2
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
@@ -126,7 +115,7 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
         <div class="create-account">
             <p> 还没有账号 ?&nbsp;
-                <a href="javascript:;" id="register-btn"> 注册 </a>
+                <a onclick="get_Academy_Dormitory()" id="register-btn"> 注册 </a>
             </p>
         </div>
         <!--&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp   &nbsp<p style="font-size: small">违规登记</p><br>-->
@@ -136,7 +125,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END LOGIN FORM -->
     <!-- BEGIN FORGOT PASSWORD FORM -->
     <!--action="<?php echo url('index/forget'); ?>" method="post"-->
-    <form class="forget-form">
+    <form class="forget-form" onkeydown="if(event.keyCode==13)return false;">
         <h3 >忘记密码 ?</h3>
         <p> 请输入邮箱地址;如未注册,请先返回注册 </p>
         <!--信息提示区-->
@@ -147,12 +136,41 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="fa fa-envelope"></i>
                 <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="请输入注册预留邮箱" id="email" name="email" /> </div>
         </div>
-        <div class="form-actions">
+        <div class="form-actions" id="email_send">
             <button type="button" id="back-btn" class="btn red btn-outline">返回 </button>
             <button type="button" onclick="forget_password()" class="btn green pull-right"> 提交 </button>
         </div>
         <p>注：如未收到邮件,参考<a href="/../public/static/assets/helppic/help_qqmail.png">这里</a>并重新提交本页面</p>
     </form>
+    <!--重置密码-->
+    <!--隐藏的-->
+    <form class="reset-form" id="forget_div" style="display: none" onkeydown="if(event.keyCode==13)return false;">
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">邮箱验证码</label>
+            <div class="input-icon">
+                <i class="fa fa-envelope-square"></i>
+                <input type="text" name="code" id="code" style="display: none"/>
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off"  placeholder="邮箱验证码" id="Qrcode" name="Qrcode" /> </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">密码</label>
+            <div class="input-icon">
+                <i class="fa fa-lock"></i>
+                <input class="form-control placeholder-no-fix" type="password" autocomplete="off"  placeholder="密码" id="forget_Password" name="forget_Password" /> </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">再次输入密码</label>
+            <div class="controls">
+                <div class="input-icon">
+                    <i class="fa fa-check"></i>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="forget_rpassword" placeholder="再次输入密码" name="forget_rpassword" /> </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="button" id="reset" onclick="reset_password()" class="btn-block btn green pull-right"> 提交 </button>
+        </div>
+    </form>
+
     <!-- END FORGOT PASSWORD FORM -->
     <!-- BEGIN REGISTRATION FORM -->
     <form class="register-form" action="<?php echo url('index/register'); ?>" method="post">
@@ -214,11 +232,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="fa fa-institution"></i>
                 <select name="Dormitory" id="dormitory_list" class="select2 form-control">
                     <option value="">选择宿舍</option>
-                    <?php if(is_array($dormitoryinfo) || $dormitoryinfo instanceof \think\Collection): $i = 0; $__LIST__ = $dormitoryinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if($vo['Unit'] == ''): ?>
-                    <option value="<?php echo $vo['DormitoryId']; ?>"><?php echo $vo['Building']; ?>栋<?php echo $vo['DormitoryNo']; ?>室</option>
-                    <?php else: ?>
-                    <option value="<?php echo $vo['DormitoryId']; ?>"><?php echo $vo['Building']; ?>栋<?php echo $vo['Unit']; ?>单元<?php echo $vo['DormitoryNo']; ?>室</option>
-                    <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                 </select></div>
         </div>
         <div class="form-group">
@@ -227,9 +240,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 <i class="fa fa-mortar-board"></i>
                 <select name="Academy" id="academy_list" class="select2 form-control" onchange="chage_Major()" >
                     <option value="">选择学院</option>
-                    <?php if(is_array($academyinfo) || $academyinfo instanceof \think\Collection): $i = 0; $__LIST__ = $academyinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                    <option value="<?php echo $vo['AcademyId']; ?>"><?php echo $vo['AcademyName']; ?></option>
-                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </select></div>
         </div>
         <div class="form-group">
@@ -304,6 +314,60 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
     /**
+     * 点击注册按钮出发加载学院、宿舍
+     */
+    function get_Academy_Dormitory() {
+        //加载学院
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"<?php echo url('admin/common/AcademyInfo'); ?>",
+            dataType:"json",
+            //data:['academy','$academy'],
+            timeout:30000,
+            error:function(){
+                alert('admin/Common/AcademyInfo');
+            },
+            success:function(data){
+                $("#academy_list").empty();
+                var count = data.length;
+                var i = 0;
+                var b="<option value=''>选择学院</option>";
+                for(i=0;i<count;i++){
+                    b+="<option value='"+data[i].AcademyId+"'>"+data[i].AcademyName+"</option>";
+                }
+                $("#academy_list").append(b);
+            }
+        });
+        //加载宿舍
+        $.ajax({
+            cache:false,
+            type:"POST",
+            url:"<?php echo url('admin/common/DormitoryInfo'); ?>",
+            dataType:"json",
+            //data:['academy','$academy'],
+            timeout:30000,
+            error:function(){
+                alert('admin/Common/DormitoryInfo');
+            },
+            success:function(data){
+                $("#dormitory_list").empty();
+                var count = data.length;
+                var i = 0;
+                var b="<option value=''>选择宿舍</option>";
+                for(i=0;i<count;i++){
+                    if(data[i].Unit ==''){
+                        b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].DormitoryNo+"室</option>";
+                    }else{
+                        b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].Unit+"单元"+data[i].DormitoryNo+"室</option>";
+                    }
+                }
+                $("#dormitory_list").append(b);
+            }
+        });
+
+    }
+    /**
      * 选择学院时触发学院对应的专业
      */
     function chage_Major() {
@@ -321,7 +385,6 @@ License: You must have a valid license purchased only from themeforest(the above
             success:function(data){
                 $("#major_list").empty();
                 var count = data.length;
-//            alert(count);
                 var i = 0;
                 var b="<option value=''>选择专业</option>";
                 for(i=0;i<count;i++){
@@ -332,7 +395,6 @@ License: You must have a valid license purchased only from themeforest(the above
         });
     }
     function chage_Class() {
-
         var major=document.getElementById("major_list").value;
         $.ajax({
             cache:false,
@@ -356,36 +418,71 @@ License: You must have a valid license purchased only from themeforest(the above
             }
         });
     }
+    //发送邮箱验证码
     function forget_password(){
-        var email=document.getElementById("email").value;
-        alert(email);
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"<?php echo url('index/forget'); ?>",
-            dataType:"json",
-            data:{email: email},
-            timeout:30000,
-            error:function(){
-                alert('出错');
-            },
-            success:function(data){
-                $("#forget_alert").empty();
-                var b="";
-                alert(data.mes);
-                b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
-                $("#forget_alert").append(b);
-                $("#forget_alert").show();
+        if($('.forget-form').validate().form()){
+            var email=document.getElementById("email").value;
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"<?php echo url('index/sendMail'); ?>",
+                dataType:"json",
+                data:{email: email},
+                timeout:500000,
+                error:function(){
+                    alert('出错');
+                },
+                success:function(data){
+                    $("#forget_alert").empty();
+                    var b="";
+                    alert(data.mes);
+                    b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
+                    $("#forget_alert").append(b);
+                    $("#forget_alert").show();
+                    if(data.flag ==1 ){
+                        //$("#email_send").hide();
+                        document.getElementById("code").value=data.code;
+                        //显示重置密码框
+                        $("#forget_div").show();
+                    }
+                }
+            });
+        }
 
-            }
-        });
+    }
+    //重置密码
+    function reset_password() {
+        if($('.reset-form').validate().form()){
+            var email=document.getElementById("email").value;
+            var code= document.getElementById("code").value;
+            var qrcode=document.getElementById("Qrcode").value;
+            var forget_Password=document.getElementById("forget_Password").value;
+            alert("123");
+            data_json={email:email,code:code,qrcode:qrcode,forget_Password:forget_Password};
+            $.ajax({
+                cache:false,
+                type:"POST",
+                url:"<?php echo url('index/forget'); ?>",
+                dataType:"json",
+                data:data_json,
+                timeout:30000,
+                error:function(){
+                    alert('出错');
+                },
+                success:function(data){
+                    $("#forget_alert").empty();
+                    var b="";
+                    alert(data.mes);
+                    b+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
+                    $("#forget_alert").append(b);
+                    $("#forget_alert").show();
+                    if(data.flag == 1 ){
+                       window.location.href="<?php echo url('index/index'); ?>";
+                    }
+                }
+            });
+        }
 
-//        $.post("<?php echo url('index/forget'); ?>",{'email':'1319723770@qq.com'},function(json){
-//            var datajson=eval('(' + json + ')');
-//            var data=datajson.data;
-//            alert(data);
-//            alert('123');
-//        });
     }
 </script>
 
