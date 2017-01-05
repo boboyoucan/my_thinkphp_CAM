@@ -35,7 +35,7 @@ class Index extends Controller
             else{
                 session('name',$db_admin['AdminName']);
                 session('type',$db_admin['AdminType']);
-                session('wb',$db_admin['WhichBuilding']);
+                //session('wb',$db_admin['WhichBuilding']);
                 return $this->redirect('Admin/index/index');
                }
         }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1483621563;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1483623074;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -164,14 +164,14 @@
                     <h3 class="uppercase">功能</h3>
                 </li>
                 <li class="nav-item  ">
-                    <a href="<?php echo url('admin/Valuablesinfo/index'); ?>" class="nav-link nav-toggle">
+                    <a href="#" class="nav-link nav-toggle">
                         <i class="icon-diamond"></i>
                         <span class="title">贵重物品管理</span>
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item  ">
-                            <a href="ui_colors.html" class="nav-link ">
+                            <a href="<?php echo url('admin/Valuablesinfo/index'); ?>" class="nav-link ">
                                 <span class="title">贵重物品登记管理</span>
                             </a>
                         </li>

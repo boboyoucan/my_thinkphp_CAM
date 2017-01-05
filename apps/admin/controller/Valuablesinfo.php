@@ -2,7 +2,7 @@
 namespace app\admin\controller;
 use think\Controller;
 include 'public/static/phpqrcode/phpqrcode.php';
-class Valuablesinfo extends Checklogin 
+class Valuablesinfo extends Checklogin
 {
     public function index()
     {
