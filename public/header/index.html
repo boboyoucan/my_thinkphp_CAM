@@ -216,7 +216,28 @@
                         </li>
                     </ul>
                 </li>
-
+             {if ($Think.session.type eq 0)}
+             <li class="nav-item  ">
+                 <a href="javascript:;" class="nav-link nav-toggle">
+                     <i class="icon-user"></i>
+                     <span class="title">角色管理</span>
+                     <span class="arrow"></span>
+                 </a>
+                 <ul class="sub-menu">
+                     <li class="nav-item  ">
+                         <a href="components_date_time_pickers.html" class="nav-link ">
+                             <span class="title">宿舍违规</span>
+                         </a>
+                     </li>
+                     <li class="nav-item  ">
+                         <a href="components_color_pickers.html" class="nav-link ">
+                             <span class="title">晚归</span>
+                             <span class="badge badge-danger">2</span>
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             {/if}
             </ul>
             <!-- END SIDEBAR MENU -->
             <!-- END SIDEBAR MENU -->

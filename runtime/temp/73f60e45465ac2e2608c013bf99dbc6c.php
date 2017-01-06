@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"/mnt/www/html/myphpweb/apps/admin/view/valuablesinfo/index.html";i:1483626947;s:24:"public/header/index.html";i:1483623074;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"/mnt/www/html/myphpweb/apps/admin/view/valuablesinfo/index.html";i:1483705683;s:24:"public/header/index.html";i:1483703557;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -267,7 +267,28 @@
                         </li>
                     </ul>
                 </li>
-
+             <?php if((\think\Session::get('type') == 0)): ?>
+             <li class="nav-item  ">
+                 <a href="javascript:;" class="nav-link nav-toggle">
+                     <i class="icon-user"></i>
+                     <span class="title">角色管理</span>
+                     <span class="arrow"></span>
+                 </a>
+                 <ul class="sub-menu">
+                     <li class="nav-item  ">
+                         <a href="components_date_time_pickers.html" class="nav-link ">
+                             <span class="title">宿舍违规</span>
+                         </a>
+                     </li>
+                     <li class="nav-item  ">
+                         <a href="components_color_pickers.html" class="nav-link ">
+                             <span class="title">晚归</span>
+                             <span class="badge badge-danger">2</span>
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             <?php endif; ?>
             </ul>
             <!-- END SIDEBAR MENU -->
             <!-- END SIDEBAR MENU -->
@@ -301,7 +322,7 @@
 
 
 
-<div class="portlet light bordered">
+<div class="portlet light bordered" >
     <div class="common-alert alert alert-danger display-hide" >
         <button class="close" data-close="alert"></button>
         <span>请填写专业名称</span>

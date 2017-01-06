@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1481810703;s:24:"public/header/index.html";i:1483623074;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1483707487;s:24:"public/header/index.html";i:1483703557;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -267,7 +267,28 @@
                         </li>
                     </ul>
                 </li>
-
+             <?php if((\think\Session::get('type') == 0)): ?>
+             <li class="nav-item  ">
+                 <a href="javascript:;" class="nav-link nav-toggle">
+                     <i class="icon-user"></i>
+                     <span class="title">角色管理</span>
+                     <span class="arrow"></span>
+                 </a>
+                 <ul class="sub-menu">
+                     <li class="nav-item  ">
+                         <a href="components_date_time_pickers.html" class="nav-link ">
+                             <span class="title">宿舍违规</span>
+                         </a>
+                     </li>
+                     <li class="nav-item  ">
+                         <a href="components_color_pickers.html" class="nav-link ">
+                             <span class="title">晚归</span>
+                             <span class="badge badge-danger">2</span>
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             <?php endif; ?>
             </ul>
             <!-- END SIDEBAR MENU -->
             <!-- END SIDEBAR MENU -->
@@ -378,10 +399,10 @@
                 <table class="table">
                     <thead>
                     <tr role="row">
-                        <th class="sorting_desc" style="width: 163px;" >
+                        <th class="sorting_desc" style="width: 50%;" >
                             学院名称
                         </th>
-                        <th class="sorting" style="width: 205px;">
+                        <th class="sorting" style="width: 50%;">
                             操作
                         </th>
 
