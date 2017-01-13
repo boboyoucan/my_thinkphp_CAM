@@ -53,6 +53,7 @@ class Index extends Controller
             else{
                 session('name',$db_student['StudentName']);
                 session('type','3');
+                session('id',$db_student['id']);
                 $this->assign('common_nf','1');
                 $this->redirect("admin/index/index");
                 echo "用户存在";
@@ -70,6 +71,7 @@ class Index extends Controller
         //清空session
         session('name',null);
         session('type',null);
+        session('id',null);
         //退回登界面
         return $this->redirect('index/index');
     }

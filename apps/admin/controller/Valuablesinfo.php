@@ -6,8 +6,13 @@ class Valuablesinfo extends Checklogin
 {
     public function index()
     {
-        $valuables=db('valuablesinfo')->query("select ST.StudentName,MA.MajorName,CL.ClassName,DO.Building,DO.Unit,DO.DormitoryNo,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA  JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId order by VA.RegistrationTime DESC");
-       $this->assign('valuables',$valuables);
+        if(session('type')==3){
+            $where=session('id');
+        }
+//        echo $where;
+//        exit;
+        $valuables=db('valuablesinfo')->query("select ST.StudentName,MA.MajorName,CL.ClassName,DO.Building,DO.Unit,DO.DormitoryNo,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and ST.id=$where  order by VA.RegistrationTime DESC");
+        $this->assign('valuables',$valuables);
         return $this->fetch('valuablesinfo/index');
        }
 
