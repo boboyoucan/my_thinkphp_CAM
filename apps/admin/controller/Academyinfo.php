@@ -1,67 +1,19 @@
 <?php
 namespace app\admin\controller;
 use think\Controller;
-class Academyinfo extends Checklogin
+class Academyinfo extends Common
 {
     public function index(){
-
         //数据库总条数
         $count=db('academyinfo')->query("select count(*) as count from academyinfo ");
         $page=1;
         //一页显示的多少条
         $pagesize=5;
-        //最大页数
-        //echo ($count[0]['count']);
-        $pagemax=$count[0]['count']/$pagesize;
-        $pgmx=ceil($pagemax);
-        if($page>=$pagemax &&$pagemax !=0 )
-        {$page=ceil($pagemax);}
-        $startpage=$pagesize*($page-1);
-        $page_assign['pagemax']=$pgmx;
-        $page_assign['pagestart']=$startpage;
-        $page_assign['page']=$page;
-        $page_assign['count']=$count[0]['count'];
-        $page_assign['pagesize']=$pagesize;
-        $sql="select * from academyinfo order by AcademyId desc limit $startpage,$pagesize";
+        //调用公共方法的分页算法 $count:总数;$page:第几页；$pagesize:每页显示的条数
+        $page_assign=$this->paging($count,$page,$pagesize);
+        $sql="select * from academyinfo order by AcademyId desc limit {$page_assign['pagestart']},$pagesize";
         $academyinfo=db('academyinfo')->query($sql);
         $this->assign('academyinfo',$academyinfo);
-        //拼接页码的html代码
-        $page_assign['page_content']="<ul class='pagination' style='visibility: visible;'>";
-        //判断是不是第一页
-        if($page_assign['page'] ==1 ){
-            $page_assign['page_content']=$page_assign['page_content']."  <li class='prev disabled' ><a href='#' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']." <li class='prev' ><a onclick='select_page(1,{$page_assign['pagesize']})' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-
-        }
-        //循环输出页码
-        for($i=1;$i<=$page_assign['pagemax'];$i++){
-            if($i == $page_assign['page']){
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i} active' id='page_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-
-            }else{
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-
-            }
-        }
-        //判断是不是最后一页
-        if($page_assign['page'] ==$page_assign['pagemax'] ){
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next disabled'><a  title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next'><a onclick='select_page({$page_assign['pagemax']},{$page_assign['pagesize']})' title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-        }
-        $page_assign['page_content']=$page_assign['page_content']."</ul>";
-        //共多少条显示
-        if($page_assign['page'] == $page_assign['pagemax'] ){
-            $pg=$page_assign['pagestart']+1;
-            $page_assign['page_all']="显示 第 $pg 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条";
-        }else{
-            $pg=$page_assign['pagestart']+1;
-            $pg_end=$page_assign['page']*$page_assign['pagesize'];
-            $page_assign['page_all']="显示 第 $pg 条 到 $pg_end 条 共 {$page_assign['count']} 条";
-
-        }
         $this->assign('page_assign',$page_assign);
         return $this->fetch('academyinfo/index');
     }
@@ -78,65 +30,18 @@ class Academyinfo extends Checklogin
         }else{
             $count=db('academyinfo')->query("select count(*) as count from academyinfo ");
         }
-        //一页显示的多少条
-//        $pagesize=5;
-        //最大页数
-        //echo ($count[0]['count']);
-        $pagemax=$count[0]['count']/$pagesize;
-        $pgmx=ceil($pagemax);
-        if($page>=$pagemax &&$pagemax !=0 )
-        {$page=ceil($pagemax);}
-        $startpage=$pagesize*($page-1);
-        $page_assign['pagemax']=$pgmx;
-        $page_assign['pagestart']=$startpage;
-        $page_assign['page']=$page;
-        $page_assign['count']=$count[0]['count'];
-        $page_assign['pagesize']=$pagesize;
-        $page_assign['page_content']="<ul class='pagination' style='visibility: visible;'>";
-        if($page_assign['page'] ==1 ){
-            $page_assign['page_content']=$page_assign['page_content']."  <li class='prev disabled' ><a href='#' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']." <li class='prev' ><a onclick='select_page(1,{$page_assign['pagesize']})' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-
-        }
-        for($i=1;$i<=$page_assign['pagemax'];$i++){
-            if($i == $page_assign['page']){
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i} active' id='page_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-
-            }else{
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-            }
-        }
-        if($page_assign['page'] ==$page_assign['pagemax'] ){
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next disabled'><a  title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next'><a onclick='select_page({$page_assign['pagemax']},{$page_assign['pagesize']})' title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-        }
-        //页码显示
-        $page_assign['page_content']=$page_assign['page_content']."</ul>";
-        //共多少条显示
-        if($page_assign['page'] == $page_assign['pagemax'] ){
-            $pg=$page_assign['pagestart']+1;
-            $page_assign['page_all']="显示 第 $pg 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条";
-        }else{
-            $pg=$page_assign['pagestart']+1;
-            $pg_end=$page_assign['page']*$page_assign['pagesize'];
-            $page_assign['page_all']="显示 第 $pg 条 到 $pg_end 条 共 {$page_assign['count']} 条";
-        }
+        //调用公共方法的分页算法 $count:总数;$page:第几页；$pagesize:每页显示的条数
+        $page_assign=$this->paging($count,$page,$pagesize);
         if($AcademyName != ''){
-            $sql="select * from academyinfo where AcademyName like '%$AcademyName%' order by AcademyId desc limit $startpage,$pagesize";
+            $sql="select * from academyinfo where AcademyName like '%$AcademyName%' order by AcademyId desc limit {$page_assign['pagestart']},$pagesize";
         }else{
-            $sql="select * from academyinfo order by AcademyId desc limit $startpage,$pagesize";
+            $sql="select * from academyinfo order by AcademyId desc limit {$page_assign['pagestart']},$pagesize";
         }
         $academyinfo=db('academyinfo')->query($sql);
         $paging=$page_assign['page_content'];
         $academyinfo[0]['paging']=$paging;
         $academyinfo[0]['pageall']=$page_assign['page_all'];
         return $academyinfo;
-
-        //$this->assign('academyinfo',$academyinfo);
-
     }
     /*****************************************
      * 作者：王波文

@@ -79,7 +79,7 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="dataTables_length" id="sample_1_length">
                         <label>
-                            <select name="select_page" onchange="select_page()" id="select_page_dormitory" class="form-control input-sm input-xsmall input-inline">
+                            <select name="select_page" onchange="select_page('','')" id="select_page_dormitory" class="form-control input-sm input-xsmall input-inline">
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="15">15</option>
@@ -157,7 +157,7 @@
                             </td>
                         </form>
                     </tr>
-                    <tbody id="Drmitory_row">
+                    <tbody id="Dormitory_row">
 
                         {volist name="dormitoryinfo" id="vo"}
                         <!--<form action="{:url('admin/dormitoryinfo/DormitoryUpdate')}?DormitoryId={$vo.DormitoryId}" method="post">-->
@@ -250,6 +250,7 @@
             var search=document.getElementById("DormitoryName").value;
             if(search ==''){
                 data_trans={pagesize:select_page_v};
+
             }else{
                 data_trans={pagesize:select_page_v,DormitoryName:search};
             }
@@ -267,7 +268,7 @@
                 alert("出错");
             },
             success:function(data){
-                $("#Drmitory_row").empty();
+                $("#Dormitory_row").empty();
                 var count = data.length;
                 var i = 0;
                 var b="";
@@ -278,7 +279,7 @@
                     b+="<td id='td_update_row_Building_"+data[i].DormitoryId+"' style='display:none'> <input type='text' id='update_input_Building_"+data[i].DormitoryId+"' class='form-control input-small' name='Update_Dormitory_Building' value='"+data[i].Building+"'> </td> <td id='td_update_row_Unit_"+data[i].DormitoryId+"' style='display:none'> <input type='text' id='update_input_Unit_"+data[i].DormitoryId+"' class='form-control input-small' name='Update_Dormitory_Unit' value='"+data[i].Unit+"'> </td> <td id='td_update_row_DormitoryNo_"+data[i].DormitoryId+"' style='display:none'> <input type='text' id='update_input_DormitoryNo_"+data[i].DormitoryId+"' class='form-control input-small' name='Update_Dormitory_DormitoryNo' value='"+data[i].DormitoryNo+"'></td><td id='td_update_row_DormitoryType_"+data[i].DormitoryId+"' style='display:none'> <input type='text' id='update_input_DormitoryType_"+data[i].DormitoryId+"' class='form-control input-small' name='Update_Dormitory_DormitoryType' value='"+data[i].DormitoryType+"'> </td> <td id='td_update_row_DormitoryPeopleNo_"+data[i].DormitoryId+"' style='display:none'> <input type='text' id='update_input_DormitoryPeopleNo_"+data[i].DormitoryId+"' class='form-control input-small' name='Update_Dormitory_DormitoryPeopleNo' value='"+data[i].DormitoryPeopleNo+"'> </td> <td id='td_update_row_DormitoryPhone_"+data[i].DormitoryId+"' style='display:none'><input type='text' id='update_input_DormitoryPhone_"+data[i].DormitoryId+"' class='form-control input-small' name='Update_Dormitory_DormitoryPhone' value='"+data[i].DormitoryPhone+"'></td><td><!--默认隐藏 更新时显示按钮--><button id='update_save_button_"+data[i].DormitoryId+"' onclick='save_change("+data[i].DormitoryId+")' class='dt-button buttons-print btn green btn-outline' style='display: none'><span>保存</span></button><a id='update_cal_button_"+data[i].DormitoryId+"' class='dt-button buttons-print btn red btn-outline' style='display:none' onclick='cancel_Dormitory("+data[i].DormitoryId+")'><span>取消</span></a><!--默认隐藏--><a id='update_button_"+data[i].DormitoryId+"' class='dt-button buttons-print btn green btn-outline' onclick='change_Dormitory("+data[i].DormitoryId+")'><span>更新</span></a><a id='delete_button_"+data[i].DormitoryId+"' class='dt-button buttons-print btn red btn-outline' onclick='Delete("+data[i].DormitoryId+")'><span>删除</span></a></td></tr>"
                 }
                 //从新加载数据
-                $("#Drmitory_row").append(b);
+                $("#Dormitory_row").append(b);
                 //清空页码显示div
                 $("#paging").empty();
                 //重新加载页码div

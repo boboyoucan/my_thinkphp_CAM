@@ -1,65 +1,19 @@
 <?php
 namespace app\admin\controller;
 use think\Controller;
-class Classinfo extends Checklogin
+class Classinfo extends Common
 {
     public function index(){
         $count=db('classinfo')->query("select count(*) as count from classinfo");
         $page=1;
         $pagesize=5;
-        //一页显示的多少条
-//        $pagesize=4;
-        //最大页数
-        //echo ($count[0]['count']);
-        $pagemax=$count[0]['count']/$pagesize;
-        $pgmx=ceil($pagemax);
-        if($page>=$pagemax &&$pagemax !=0 )
-        {$page=ceil($pagemax);}
-        $startpage=$pagesize*($page-1);
-        $page_assign['pagemax']=$pgmx;
-        $page_assign['pagestart']=$startpage;
-        $page_assign['page']=$page;
-        $page_assign['count']=$count[0]['count'];
-        $page_assign['pagesize']=$pagesize;
-        $page_assign['page_content']="<ul class='pagination' style='visibility: visible;'>";
-        if($page_assign['page'] ==1 ){
-            $page_assign['page_content']=$page_assign['page_content']."  <li class='prev disabled' ><a href='#' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']." <li class='prev' ><a onclick='select_page(1,{$page_assign['pagesize']})' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-
-        }
-        for($i=1;$i<=$page_assign['pagemax'];$i++){
-            if($i == $page_assign['page']){
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i} active' id='page_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-
-            }else{
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-            }
-        }
-        if($page_assign['page'] ==$page_assign['pagemax'] ){
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next disabled'><a  title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next'><a onclick='select_page({$page_assign['pagemax']},{$page_assign['pagesize']})' title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-        }
-        //页码显示
-        $page_assign['page_content']=$page_assign['page_content']."</ul>";
-        //共多少条显示
-        if($page_assign['page'] == $page_assign['pagemax'] ){
-            $pg=$page_assign['pagestart']+1;
-            $page_assign['page_all']="显示 第 $pg 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条";
-        }else{
-            $pg=$page_assign['pagestart']+1;
-            $pg_end=$page_assign['page']*$page_assign['pagesize'];
-            $page_assign['page_all']="显示 第 $pg 条 到 $pg_end 条 共 {$page_assign['count']} 条";
-        }
-        $this->assign('page_assign',$page_assign);
-//        $majorinfo=db('majorinfo')->query("select * from majorinfo order by MajorId desc");
+        //调用公共方法的分页算法 $count:总数;$page:第几页；$pagesize:每页显示的条数
+        $page_assign=$this->paging($count,$page,$pagesize);
         $academyinfo=db('academyinfo')->query("select * from academyinfo order by AcademyId desc");
         $this->assign('academyinfo',$academyinfo);
-//        $this->assign('majorinfo',$majorinfo);
-        $classinfo=db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName,A.AcademyName from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId order by ClassId desc limit $startpage,$pagesize");
+        $classinfo=db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName,A.AcademyName from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId order by ClassId desc limit {$page_assign['pagestart']},$pagesize");
         $this->assign('classinfo',$classinfo);
+        $this->assign('page_assign',$page_assign);
         return $this->fetch('classinfo/index');
     }
     /*****************************************
@@ -74,68 +28,21 @@ class Classinfo extends Checklogin
         }else{
             $count=db('classinfo')->query("select count(*) as count from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId and C.ClassName like '%$ClassName%' or C.MId=M.MajorId and M.AId=A.AcademyId and A.AcademyName like '%$ClassName%' or C.MId=M.MajorId and M.AId=A.AcademyId and M.MajorName like '%$ClassName%'");
         }
-         //一页显示的多少条
-//        $pagesize=4;
-        //最大页数
-        //echo ($count[0]['count']);
-        $pagemax=$count[0]['count']/$pagesize;
-        $pgmx=ceil($pagemax);
-        if($page>=$pagemax &&$pagemax !=0 )
-        {$page=ceil($pagemax);}
-        $startpage=$pagesize*($page-1);
-        $page_assign['pagemax']=$pgmx;
-        $page_assign['pagestart']=$startpage;
-        $page_assign['page']=$page;
-        $page_assign['count']=$count[0]['count'];
-        $page_assign['pagesize']=$pagesize;
-        //页码
-        $page_assign['page_content']="<ul class='pagination' style='visibility: visible;'>";
-        if($page_assign['page'] ==1 ){
-            $page_assign['page_content']=$page_assign['page_content']."  <li class='prev disabled' ><a href='#' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']." <li class='prev' ><a onclick='select_page(1,{$page_assign['pagesize']})' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
+        //调用公共方法的分页算法 $count:总数;$page:第几页；$pagesize:每页显示的条数
+        $page_assign=$this->paging($count,$page,$pagesize);
 
-        }
-        for($i=1;$i<=$page_assign['pagemax'];$i++){
-            if($i == $page_assign['page']){
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i} active' id='page_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-
-            }else{
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-            }
-        }
-        if($page_assign['page'] ==$page_assign['pagemax'] ){
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next disabled'><a  title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next'><a onclick='select_page({$page_assign['pagemax']},{$page_assign['pagesize']})' title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-        }
-        //页码显示
-        $page_assign['page_content']=$page_assign['page_content']."</ul>";
-        //共多少条显示
-        if($page_assign['page'] == $page_assign['pagemax'] ){
-            $pg=$page_assign['pagestart']+1;
-            $page_assign['page_all']="显示 第 $pg 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条";
-        }else{
-            $pg=$page_assign['pagestart']+1;
-            $pg_end=$page_assign['page']*$page_assign['pagesize'];
-            $page_assign['page_all']="显示 第 $pg 条 到 $pg_end 条 共 {$page_assign['count']} 条";
-        }
-//        $majorinfo=db('majorinfo')->query("select * from majorinfo order by MajorId desc");
         $academyinfo=db('academyinfo')->query("select * from academyinfo order by AcademyId desc");
         $this->assign('academyinfo',$academyinfo);
-//        $this->assign('majorinfo',$majorinfo);
         if($ClassName ==''){
-            $classinfo=db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName,A.AcademyName from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId order by ClassId desc limit $startpage,$pagesize");
+            $classinfo=db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName,A.AcademyName from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId order by ClassId desc limit {$page_assign['pagestart']},$pagesize");
         }else {
-            $classinfo = db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName,A.AcademyName from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId and C.ClassName like '%$ClassName%' or C.MId=M.MajorId and M.AId=A.AcademyId and A.AcademyName like '%$ClassName%' or C.MId=M.MajorId and M.AId=A.AcademyId and M.MajorName like '%$ClassName%' order by ClassId desc limit $startpage,$pagesize");
+            $classinfo = db('classinfo')->query("select C.ClassId,C.MId,C.ClassName,M.MajorName,A.AcademyName from classinfo as C JOIN majorinfo as M JOIN academyinfo as A where C.MId=M.MajorId and M.AId=A.AcademyId and C.ClassName like '%$ClassName%' or C.MId=M.MajorId and M.AId=A.AcademyId and A.AcademyName like '%$ClassName%' or C.MId=M.MajorId and M.AId=A.AcademyId and M.MajorName like '%$ClassName%' order by ClassId desc limit {$page_assign['pagestart']},$pagesize");
         }
         $this->assign('page_assign',$page_assign);
         $paging=$page_assign['page_content'];
         $classinfo[0]['paging']=$paging;
         $classinfo[0]['pageall']=$page_assign['page_all'];
         return $classinfo;
-
     }
     /*****************************************
      * 作者：王波文

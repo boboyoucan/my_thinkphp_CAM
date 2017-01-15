@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1483707487;s:24:"public/header/index.html";i:1483703557;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"/mnt/www/html/myphpweb/apps/admin/view/academyinfo/index.html";i:1484484996;s:24:"public/header/index.html";i:1483703557;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -405,7 +405,6 @@
                         <th class="sorting" style="width: 50%;">
                             操作
                         </th>
-
                     </tr>
                     </thead>
                     <tr role="row" id="add_tr" style="display: none">
@@ -489,7 +488,7 @@
     function select_page(page,pagesize) {
         var select_page_v=se.value;
         if(page =='' && pagesize==''){
-            //定义一夜显示多少条
+            //定义一页显示多少条
             var search=document.getElementById("AcademyName").value;
             if(search ==''){
                 data_trans={pagesize:select_page_v};

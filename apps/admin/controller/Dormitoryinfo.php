@@ -1,57 +1,18 @@
 <?php
 namespace app\admin\controller;
 use think\Controller;
-class Dormitoryinfo extends Checklogin
+
+include "Common.php";
+class Dormitoryinfo extends Common
 {
     public function index(){
         $count=db('dormitoryinfo')->query("select count(*) as count from dormitoryinfo ");
         $page=1;
         $pagesize=5;
-        $pagemax=$count[0]['count']/$pagesize;
-        $pgmx=ceil($pagemax);
-        if($page>=$pagemax &&$pagemax !=0 )
-        {$page=ceil($pagemax);}
-        $startpage=$pagesize*($page-1);
-        $page_assign['pagemax']=$pgmx;
-        $page_assign['pagestart']=$startpage;
-        $page_assign['page']=$page;
-        $page_assign['count']=$count[0]['count'];
-        $page_assign['pagesize']=$pagesize;
-        //$this->assign('academyinfo',$academyinfo);
-        $page_assign['page_content']="<ul class='pagination' style='visibility: visible;'>";
-        if($page_assign['page'] ==1 ){
-            $page_assign['page_content']=$page_assign['page_content']."  <li class='prev disabled' ><a href='#' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']." <li class='prev' ><a onclick='select_page(1,{$page_assign['pagesize']})' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-
-        }
-        for($i=1;$i<=$page_assign['pagemax'];$i++){
-            if($i == $page_assign['page']){
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i} active' id='page_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-
-            }else{
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-            }
-        }
-        if($page_assign['page'] ==$page_assign['pagemax'] ){
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next disabled'><a  title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next'><a onclick='select_page({$page_assign['pagemax']},{$page_assign['pagesize']})' title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-        }
-        //页码显示
-        $page_assign['page_content']=$page_assign['page_content']."</ul>";
-        //共多少条显示
-        if($page_assign['page'] == $page_assign['pagemax'] ){
-            $pg=$page_assign['pagestart']+1;
-            $page_assign['page_all']="显示 第 $pg 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条";
-        }else{
-            $pg=$page_assign['pagestart']+1;
-            $pg_end=$page_assign['page']*$page_assign['pagesize'];
-            $page_assign['page_all']="显示 第 $pg 条 到 $pg_end 条 共 {$page_assign['count']} 条";
-        }
+        //调用公共方法的分页算法 $count:总数;$page:第几页；$pagesize:每页显示的条数
+        $page_assign=$this->paging($count,$page,$pagesize);
+        $sql="select * from dormitoryinfo order by DormitoryNo desc limit {$page_assign['pagestart']},$pagesize";
         $this->assign('page_assign',$page_assign);
-        $sql="select * from dormitoryinfo order by DormitoryNo desc limit $startpage,$pagesize";
         $dormitoryinfo=db('dormitoryinfo')->query($sql);
         $this->assign('dormitoryinfo',$dormitoryinfo);
         return $this->fetch('dormitoryinfo/index');
@@ -61,64 +22,19 @@ class Dormitoryinfo extends Checklogin
      * 时间：2016年11月26日
      *方法：宿舍信息页面显示
      *****************************************/
-    public function dormitoryinfo($page=1, $pagesize=5,$DormitoryNo=''){
+    public function dormitoryinfo($page=1,$pagesize=5,$DormitoryName=''){
         //数据库总条数
-        if($DormitoryNo != ''){
-            $count=db('dormitoryinfo')->query("select count(*) as count from dormitoryinfo where DormitoryNo like '%$DormitoryNo%'");
+        if($DormitoryName != ''){
+            $count=db('dormitoryinfo')->query("select count(*) as count from dormitoryinfo where DormitoryNo like '%$DormitoryName%'");
         }else{
             $count=db('dormitoryinfo')->query("select count(*) as count from dormitoryinfo ");
         }
-        //一页显示的多少条
-//        $pagesize=5;
-        //最大页数
-        //echo ($count[0]['count']);
-        $pagemax=$count[0]['count']/$pagesize;
-        $pgmx=ceil($pagemax);
-        if($page>=$pagemax &&$pagemax !=0 )
-        {$page=ceil($pagemax);}
-        $startpage=$pagesize*($page-1);
-        $page_assign['pagemax']=$pgmx;
-        $page_assign['pagestart']=$startpage;
-        $page_assign['page']=$page;
-        $page_assign['count']=$count[0]['count'];
-        $page_assign['pagesize']=$pagesize;
-        $page_assign['page_content']="<ul class='pagination' style='visibility: visible;'>";
-        if($page_assign['page'] ==1 ){
-            $page_assign['page_content']=$page_assign['page_content']."  <li class='prev disabled' ><a href='#' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
+        //调用公共方法的分页算法 $count:总数;$page:第几页；$pagesize:每页显示的条数
+        $page_assign=$this->paging($count,$page,$pagesize);
+        if($DormitoryName != ''){
+            $sql="select * from dormitoryinfo where DormitoryName like '%$DormitoryName%' order by DormitoryNo desc limit  {$page_assign['pagestart']},$pagesize";
         }else{
-            $page_assign['page_content']=$page_assign['page_content']." <li class='prev' ><a onclick='select_page(1,{$page_assign['pagesize']})' title='Prev' style='height: 33px'><i class='fa fa-angle-left'></i></a></li>";
-
-        }
-        for($i=1;$i<=$page_assign['pagemax'];$i++){
-            if($i == $page_assign['page']){
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i} active' id='page_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-
-            }else{
-                $page_assign['page_content']=$page_assign['page_content']."<li class='pages_{$i}'><a onclick='select_page({$i},{$page_assign['pagesize']})'>{$i}</a></li>";
-            }
-        }
-        if($page_assign['page'] ==$page_assign['pagemax'] ){
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next disabled'><a  title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-
-        }else{
-            $page_assign['page_content']=$page_assign['page_content']."<li class='next'><a onclick='select_page({$page_assign['pagemax']},{$page_assign['pagesize']})' title='Next' style='height: 33px'><i class='fa fa-angle-right'></i></a></li>";
-        }
-        //页码显示
-        $page_assign['page_content']=$page_assign['page_content']."</ul>";
-        //共多少条显示
-        if($page_assign['page'] == $page_assign['pagemax'] ){
-            $pg=$page_assign['pagestart']+1;
-            $page_assign['page_all']="显示 第 $pg 条 到 {$page_assign['count']} 条 共 {$page_assign['count']} 条";
-        }else{
-            $pg=$page_assign['pagestart']+1;
-            $pg_end=$page_assign['page']*$page_assign['pagesize'];
-            $page_assign['page_all']="显示 第 $pg 条 到 $pg_end 条 共 {$page_assign['count']} 条";
-        }
-        $this->assign('page_assign',$page_assign);
-        if($DormitoryNo != ''){
-            $sql="select * from dormitoryinfo where DormitoryNo like '%$DormitoryNo%' order by DormitoryNo desc limit $startpage,$pagesize";
-        }else{
-            $sql="select * from dormitoryinfo order by DormitoryNo desc limit $startpage,$pagesize";
+            $sql="select * from dormitoryinfo order by DormitoryNo desc limit {$page_assign['pagestart']},$pagesize";
         }
         $dormitoryinfo=db('dormitoryinfo')->query($sql);
         $paging=$page_assign['page_content'];

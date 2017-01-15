@@ -4,14 +4,27 @@ use think\Controller;
 include 'public/static/phpqrcode/phpqrcode.php';
 class Valuablesinfo extends Checklogin
 {
+/*****************************************
+ * 作者：王波文
+ * 时间：2017年1月15日
+ *方法：贵重物品登记管理页面
+ *****************************************/
     public function index()
     {
+        //判断为学生时的动作
         if(session('type')==3){
-            $where=session('id');
+            $where="ST.id=".''.session('id');
         }
-//        echo $where;
-//        exit;
-        $valuables=db('valuablesinfo')->query("select ST.StudentName,MA.MajorName,CL.ClassName,DO.Building,DO.Unit,DO.DormitoryNo,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and ST.id=$where  order by VA.RegistrationTime DESC");
+        //判断为管理员动作
+        elseif(session('type')==0){
+            $where="1=1";
+        }
+        //判断为宿舍管理员的动作
+        elseif (session('type')==1){
+            $do=db('admininfo')->query("select WhichBuilding from admininfo where id=".''.session('id'));
+            $where="DO.Building=".''.$do[0]['WhichBuilding'];
+        }
+        $valuables=db('valuablesinfo')->query("select ST.StudentName,MA.MajorName,CL.ClassName,DO.Building,DO.Unit,DO.DormitoryNo,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and $where order by VA.RegistrationTime DESC");
         $this->assign('valuables',$valuables);
         return $this->fetch('valuablesinfo/index');
        }
