@@ -19,10 +19,10 @@ class Index extends Controller
  *****************************************/
     public function login()
     {
-//        获取post的值$_POST['username'];
-//        $_POST['password'];
-//        $_POST['remember'];
-//        remember等于1表示登录类型为管理员
+        //获取post的值$_POST['username'];
+        //$_POST['password'];
+        //$_POST['remember'];
+        //remember等于1表示登录类型为管理员
         if( isset($_POST['remember']) && $_POST['remember'] == 1 ){
             $db_admin=db('admininfo')
                 ->where('AdminName',$_POST['username'])
@@ -40,8 +40,8 @@ class Index extends Controller
                 return $this->redirect('Admin/index/index');
                }
         }
-//        remember没设置表示登录类型为学生
-        else{
+        //remember=3没设置表示登录类型为学生
+        elseif(isset($_POST['remember']) && $_POST['remember'] == 3 ){
             $db_student=db('studentinfo')
                 ->where('StudentNo',$_POST['username'])
                 ->where('Password',md5($_POST['password']))
@@ -59,6 +59,10 @@ class Index extends Controller
                 $this->redirect("admin/index/index");
                 echo "用户存在";
             }
+        }
+        //remember=2没设置表示登录类型为老师
+        elseif(isset($_POST['remember']) && $_POST['remember'] == 2 ){
+
         }
 
     }

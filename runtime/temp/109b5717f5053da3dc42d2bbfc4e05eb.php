@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1483703557;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1484568712;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -177,15 +177,10 @@
                         </li>
 
                         <li class="nav-item  ">
-                            <a href="javascript:;" class="nav-link nav-toggle">
+                            <a href="<?php echo url('admin/Valuablesinfo/ValuablesView'); ?>" class="nav-link nav-toggle">
                                 <span class="title">贵重物品查看</span>
-                                <span class="arrow"></span>
                             </a>
-                            <ul class="sub-menu">
-                                <li class="nav-item ">
-                                    <a href="ui_page_progress_style_1.html" class="nav-link "> Flash </a>
-                                </li>
-                            </ul>
+
                         </li>
                     </ul>
                 </li>
@@ -277,12 +272,18 @@
                  <ul class="sub-menu">
                      <li class="nav-item  ">
                          <a href="components_date_time_pickers.html" class="nav-link ">
-                             <span class="title">宿舍违规</span>
+                             <span class="title">宿舍管理员信息</span>
                          </a>
                      </li>
                      <li class="nav-item  ">
                          <a href="components_color_pickers.html" class="nav-link ">
-                             <span class="title">晚归</span>
+                             <span class="title">老师信息</span>
+                             <span class="badge badge-danger">2</span>
+                         </a>
+                     </li>
+                     <li class="nav-item  ">
+                         <a href="components_color_pickers.html" class="nav-link ">
+                             <span class="title">学生信息</span>
                              <span class="badge badge-danger">2</span>
                          </a>
                      </li>

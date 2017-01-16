@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1483620968;s:23:"public/header/head.html";i:1481729668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1484574598;s:23:"public/header/head.html";i:1481729668;}*/ ?>
 
 <link href="/../public/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="/../public/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -105,7 +105,11 @@
         </div>
         <div class="form-actions">
             <label class="checkbox">
-                <input type="checkbox" name="remember" value="1" /> 管理员登录 </label>
+                <input type="radio" name="remember" value="1" /> 管理员 </label>
+            <label class="checkbox">
+                <input type="radio" name="remember" value="2" /> 教师 </label>
+            <label class="checkbox">
+                <input type="radio" name="remember" value="3" checked="checked" /> 学生 </label>
             <button type="submit" class="btn green pull-right"> 登录 </button>
         </div>
         <div class="forget-password">
@@ -119,8 +123,8 @@
             </p>
         </div>
         <!--&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp   &nbsp<p style="font-size: small">违规登记</p><br>-->
-        <div style="width: 100%"><p style="font-size: small;margin:0 0;"><label>贵重物品登记 </label><label style="float: right">违规登记</label></p><img src="<?php echo url('admin/Valuablesinfo/qrcode'); ?>">
-        <img src="<?php echo url('admin/Valuablesinfo/qrcode'); ?>" style="float: right"></div>
+        <!--<div style="width: 100%"><p style="font-size: small;margin:0 0;"><label>贵重物品登记 </label><label style="float: right">违规登记</label></p><img src="<?php echo url('admin/Valuablesinfo/qrcode'); ?>">-->
+        <!--<img src="<?php echo url('admin/Valuablesinfo/qrcode'); ?>" style="float: right"></div>-->
     </form>
     <!-- END LOGIN FORM -->
     <!-- BEGIN FORGOT PASSWORD FORM -->
