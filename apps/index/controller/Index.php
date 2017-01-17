@@ -78,7 +78,7 @@ class Index extends Controller
         session('type',null);
         session('id',null);
         //退回登界面
-        return $this->redirect('index/index');
+        return $this->redirect('index/index/index');
     }
     /*****************************************
      * 作者：王波文
