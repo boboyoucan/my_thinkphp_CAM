@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1484568712;s:23:"public/header/head.html";i:1484659718;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1484664552;s:23:"public/header/head.html";i:1484752477;}*/ ?>
 
 <link href="__PUBLIC__/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -14,7 +14,7 @@
 <link href="__PUBLIC__/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN THEME GLOBAL STYLES -->
-<link href="__PUBLIC__/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
+<link href="__PUBLIC__/global/css/components-rounded.css" rel="stylesheet" id="style_components" type="text/css" />
 <link href="__PUBLIC__/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
 <!-- END THEME GLOBAL STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
@@ -264,14 +264,14 @@
                 </li>
              <?php if((\think\Session::get('type') == 0)): ?>
              <li class="nav-item  ">
-                 <a href="javascript:;" class="nav-link nav-toggle">
+                 <a href="<?php echo url('admin/Rolemanagement/index'); ?>" class="nav-link nav-toggle">
                      <i class="icon-user"></i>
                      <span class="title">角色管理</span>
                      <span class="arrow"></span>
                  </a>
                  <ul class="sub-menu">
                      <li class="nav-item  ">
-                         <a href="components_date_time_pickers.html" class="nav-link ">
+                         <a href="<?php echo url('admin/Rolemanagement/index'); ?>" class="nav-link ">
                              <span class="title">宿舍管理员信息</span>
                          </a>
                      </li>

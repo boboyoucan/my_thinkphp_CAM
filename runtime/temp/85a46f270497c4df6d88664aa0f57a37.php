@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1484574598;s:23:"public/header/head.html";i:1484659718;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1484574598;s:23:"public/header/head.html";i:1484752477;}*/ ?>
 
 <link href="__PUBLIC__/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -14,7 +14,7 @@
 <link href="__PUBLIC__/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN THEME GLOBAL STYLES -->
-<link href="__PUBLIC__/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
+<link href="__PUBLIC__/global/css/components-rounded.css" rel="stylesheet" id="style_components" type="text/css" />
 <link href="__PUBLIC__/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
 <!-- END THEME GLOBAL STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->

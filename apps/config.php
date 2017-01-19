@@ -231,6 +231,4 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
-    //伪静态
-    'url_html_suffix' => false,
 ];
