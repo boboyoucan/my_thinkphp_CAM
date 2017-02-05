@@ -106,10 +106,20 @@
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label">用户角色</label>
                                                         <div class="col-md-6">
-                                                            <select class="form-control">
+                                                            <select class="form-control" id="AdminType" onchange="if(this.value ==1) document.getElementById('WhichBuilding').style.display='';else document.getElementById('WhichBuilding').style.display='none';">
                                                                 <option value="0">超级管理员</option>
                                                                 <option value="1">宿舍管理员</option>
                                                                 <option value="2">老师</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" id="WhichBuilding" style="display: none">
+                                                        <label class="col-md-3 control-label">宿舍楼</label>
+                                                        <div class="col-md-6">
+                                                            <select class="form-control">
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">10</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -146,7 +156,7 @@
                 <th class="table-checkbox sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 45px;">
                 <div class="check">
                     <span>
-                        <input type="checkbox" class="group-checkable" data-set="#sample_2 .checkboxes">
+                        <input type="checkbox" class="group-checkable" onclick="swapCheck()">
                     </span>
                 </div>
                 </th>
@@ -174,16 +184,19 @@
                 <td>
                     <div class="check">
                         <span>
-                            <input type="checkbox" class="checkboxes" value="1">
+                            <input type="checkbox" name="checkboxes" class="checkboxes" value="{$vo.AdminId}">
                         </span>
                     </div>
                 </td>
                 <td class="sorting_1"> {$vo.AdminName} </td>
                 <td>
-                    <a href="mailto:userwow@gmail.com"> {$vo.PhoneNo} </a>
+                    <a href="tel:{$vo.PhoneNo}"> {$vo.PhoneNo} </a>
+
+
                 </td>
                 <td>
-                    <span class="label label-sm label-success"> {$vo.Email} </span>
+                    <a href="mailto:{$vo.Email}"> {$vo.Email}  </a>
+
                 </td>
                 <td>
                     {if ($vo.AdminType eq 0)}
@@ -243,15 +256,28 @@
 
 
 
-
-
-
-
-
-
-
-
 <script type="text/javascript">
+
+    //checkbox 全选/取消全选
+    var isCheckAll = false;
+    function swapCheck(){
+        if (isCheckAll) {
+            $("input[type='checkbox']").each(function() {
+                this.checked = false;
+            });
+            isCheckAll = false;
+        } else {
+            $("input[type='checkbox']").each(function() {
+                alert($(this).val());
+                this.checked = true;
+            });
+            isCheckAll = true;
+        }
+    }
+
+
+
+
     /*
     *添加按钮事件
     */

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1484664552;s:23:"public/header/head.html";i:1484752477;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:55:"/mnt/www/html/myphpweb/apps/admin/view/index/index.html";i:1481724633;s:24:"public/header/index.html";i:1486196191;s:23:"public/header/head.html";i:1484752477;}*/ ?>
 
 <link href="__PUBLIC__/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -391,7 +391,7 @@
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
-    <div class="page-footer-inner"> <?php echo date('Y');?> &copy; 学生公寓管理系统 by wangbowen.
+    <div class="page-footer-inner"> 2016-<?php echo date('Y');?> &copy; 学生公寓管理系统 by wangbowen.
         <a href="http://weibo.com/u/3640108854" title="my weibo" target="_blank">我的微博</a>
     </div>
     <div class="scroll-to-top">
