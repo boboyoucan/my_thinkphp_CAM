@@ -69857,7 +69857,7 @@ window.pdfMake = window.pdfMake || {}; window.pdfMake.vfs = {"LICENSE.txt":"DQog
 			features = settings.aanFeatures;
 	
 		if ( ! modern ) {
-			plugin.fnInit( settings, node, redraw );
+			//plugin.fnInit( settings, node, redraw );
 		}
 	
 		/* Add a draw callback for the pagination on first instance, to update the paging display */

@@ -34,7 +34,7 @@
                         </button>
                     </div>
                         <!--begin 添加的model-->
-                    <form class="form-horizontal" role="form" action="#">
+                    <form class="form-horizontal" role="form" action="#" method="post">
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog"  style="height:400px;">
                                 <div class="modal-content" >
@@ -57,7 +57,7 @@
                                                         <span class="input-group-addon">
                                                             <i class="fa fa-user"></i>
                                                         </span>
-                                                                <input type="text" class="form-control" placeholder="用户名"> </div>
+                                                                <input type="text" class="form-control" maxlength="11" placeholder="至多11个字符" required name="UserName" > </div>
                                                         </div>
                                                     </div>
 
@@ -68,14 +68,14 @@
                                                         <span class="input-group-addon">
                                                             <i class="fa fa-phone"></i>
                                                         </span>
-                                                                <input type="text" class="form-control" placeholder="手机号码"> </div>
+                                                                <input type="text" class="form-control" name="PhoneNo" placeholder="手机号码"> </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label">登录密码</label>
                                                         <div class="col-md-6">
                                                             <div class="input-group">
-                                                                <input type="password" class="form-control" placeholder="登录密码">
+                                                                <input type="password" name="Password" class="form-control" placeholder="登录密码">
                                                                 <span class="input-group-addon">
                                                             <i class="fa fa-lock"></i>
                                                         </span>
@@ -86,7 +86,7 @@
                                                         <label class="col-md-3 control-label">确认密码</label>
                                                         <div class="col-md-6">
                                                             <div class="input-group">
-                                                                <input type="password" class="form-control" placeholder="确认密码">
+                                                                <input type="password"  name="RePassword" class="form-control" placeholder="确认密码">
                                                                 <span class="input-group-addon">
                                                             <i class="fa fa-lock"></i>
                                                         </span>
@@ -100,13 +100,13 @@
                                                         <span class="input-group-addon">
                                                             <i class="fa fa-envelope"></i>
                                                         </span>
-                                                                <input type="email" class="form-control" placeholder="邮箱"> </div>
+                                                                <input type="email" class="form-control" placeholder="邮箱" name="Email"> </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label">用户角色</label>
                                                         <div class="col-md-6">
-                                                            <select class="form-control" id="AdminType" onchange="if(this.value ==1) document.getElementById('WhichBuilding').style.display='';else document.getElementById('WhichBuilding').style.display='none';">
+                                                            <select class="form-control" name="AdminType" id="AdminType" onchange="if(this.value ==1) document.getElementById('WhichBuilding').style.display='';else document.getElementById('WhichBuilding').style.display='none';">
                                                                 <option value="0">超级管理员</option>
                                                                 <option value="1">宿舍管理员</option>
                                                                 <option value="2">老师</option>
@@ -116,7 +116,7 @@
                                                     <div class="form-group" id="WhichBuilding" style="display: none">
                                                         <label class="col-md-3 control-label">宿舍楼</label>
                                                         <div class="col-md-6">
-                                                            <select class="form-control">
+                                                            <select class="form-control" name="WhichBuilding">
                                                                 <option value="11">11</option>
                                                                 <option value="12">12</option>
                                                                 <option value="13">10</option>
@@ -131,7 +131,7 @@
                                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                                         </button>
                                         <button type="submit" class="btn btn-primary">
-                                            提交更改
+                                            添加
                                         </button>
                                     </div>
                                 </div>
@@ -141,286 +141,126 @@
                     <!--end 添加的model-->
                 </div>
 
-                <div class="col-md-6 col-sm-6">
-                    <div id="sample_2_filter" class="dataTables_filter">
-                        <label>查找:
-                            <input type="search" class="form-control input-sm input-small input-inline" placeholder="" aria-controls="sample_2">
-                        </label>
-                    </div>
-                </div>
             </div>
             <div class="table-scrollable">
-                <table class="table table-striped table-bordered table-hover table-checkable order-column dataTable no-footer" id="sample_2" role="grid" aria-describedby="sample_2_info">
-            <thead>
-            <tr role="row">
-                <th class="table-checkbox sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 45px;">
-                <div class="check">
-                    <span>
-                        <input type="checkbox" class="group-checkable" onclick="swapCheck()">
-                    </span>
-                </div>
-                </th>
-                <th class="sorting_asc" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-sort="ascending" aria-label=" Username : activate to sort column descending" style="width: 85px;">
-                    用户名
-                </th>
-                <th class="sorting" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-label=" Email : activate to sort column ascending" style="width: 137px;">
-                    手机号码
-                </th>
-                <th class="sorting" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-label=" Email : activate to sort column ascending" style="width: 137px;">
-                    电子邮箱
-                </th>
-                <th class="sorting" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-label=" Email : activate to sort column ascending" style="width: 137px;">
-                    角色
-                </th>
-                <th class="sorting" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-label=" Email : activate to sort column ascending" style="width: 137px;">
-                    几栋管理员
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            {volist name="data" id="vo"}
-            <tr class="gradeX odd" role="row">
-
-                <td>
-                    <div class="check">
-                        <span>
-                            <input type="checkbox" name="checkboxes" class="checkboxes" value="{$vo.AdminId}">
-                        </span>
-                    </div>
-                </td>
-                <td class="sorting_1"> {$vo.AdminName} </td>
-                <td>
-                    <a href="tel:{$vo.PhoneNo}"> {$vo.PhoneNo} </a>
-
-
-                </td>
-                <td>
-                    <a href="mailto:{$vo.Email}"> {$vo.Email}  </a>
-
-                </td>
-                <td>
-                    {if ($vo.AdminType eq 0)}
-                    <span class="label label-sm label-success">
-                        超级管理员</span>
-                    {elseif ($vo.AdminType eq 1)/}
-                    <span class="label label-sm label-success"> 宿舍管理员</span>
-                    {elseif ($vo.AdminType eq 2)/}
-                    <span class="label label-sm label-success"> 老师</span>
-                    {/if}
-                </td>
-                <td>
-                    <span class="label label-sm label-success"> {$vo.WhichBuilding} </span>
-                </td>
-            </tr>
-            {/volist}
-            </tbody>
-        </table></div>
-            <div class="row">
-                <div class="col-md-5 col-sm-5">
-                    <div class="dataTables_info" id="sample_2_info" role="status" aria-live="polite">
-                        显示 11 到 12 总共 12 条
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-7">
-                    <div class="dataTables_paginate paging_bootstrap_extended" id="sample_2_paginate">
-                        <div class="pagination-panel">
-                             <span class="page-list">每页显示
-                                <span class="btn-group dropup">
-                                    <select name="select-page" onchange="select_page('','')" id="select_page" class="form-control input-sm input-inline ">
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                        <option value="20">20</option>
-                                        <option value="-1">All</option>
-                                    </select>
-                                </span>
-                            </span>
-                            <a href="#" class="btn btn-sm default prev disabled">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-
-                            <input type="text" class="pagination-panel-input form-control input-sm input-inline input-mini" maxlenght="5" style="text-align:center; margin: 0 5px;">
-                            <a href="#" class="btn btn-sm default next">
-                                <i class="fa fa-angle-right">
-
-                                </i>
-                            </a> 共 <span class="pagination-panel-total">3页</span>
-                        </div>
-                    </div>
-
-                </div>
+               <table class="table table-striped table-bordered table-hover table-checkable order-column dataTable no-footer" id="DataTable">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"  name="checkboxes" id="checkall" class="group-checkable"></th>
+                        <th>用户名</th>
+                        <th>手机号码</th>
+                        <th>电子邮箱</th>
+                        <th>角色</th>
+                        <th>几栋管理员</th>
+                    </tr>
+                    </thead>
+                </table>
             </div>
         </div>
     </div>
 </div>
-
-
-
 <script type="text/javascript">
+    $(function() {
 
-    //checkbox 全选/取消全选
-    var isCheckAll = false;
-    function swapCheck(){
-        if (isCheckAll) {
-            $("input[type='checkbox']").each(function() {
-                this.checked = false;
-            });
-            isCheckAll = false;
-        } else {
-            $("input[type='checkbox']").each(function() {
-                alert($(this).val());
-                this.checked = true;
-            });
-            isCheckAll = true;
-        }
-    }
+        /******初始化DataTable*****************************************************************************/
+        var table = $('#DataTable').DataTable({
+            "processing": true,		//显示加载信息
+            "serverSide": true,		//开启服务器模式
+            "searching": false,		//开启搜索功能
+            "autoWidth": true, 	//让Datatables自动计算宽度
+            "searching": true,		//开启全局搜索功能
+            "lengthMenu": [[5, 10, 20, 30, -1], ["5", "10", "20", "30" , "all"]],//改变每页显示条数列表的选项
+            "pagingType": "full_numbers",		//分页按钮种类显示选项
+            "order": [[1, "asc"]],
+            "bFilter": true, //搜索栏
+            //表格初始化排序【全选框不用排序】
+            "language": {
+                "processing": "玩命加载中...",
+                "lengthMenu": "显示 _MENU_ 项结果",
+                "zeroRecords": "没有匹配结果",
 
+                "search": "搜索:",
+                "url": "",
+                "emptyTable": "表中数据为空",
+                "loadingRecords": "正在加载数据...",
 
+                //下面三者构成了总体的左下角的内容。
+                "info": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "infoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "infoFiltered": "(由 _MAX_ 项结果过滤)",
+                //"infoPostFix": "",
 
-
-    /*
-    *添加按钮事件
-    */
-    function add_row(){
-        var add_tr=document.getElementById("add_tr");
-        add_tr.style.display='';
-    }
-    /*
-     * 页码显示函数
-     */
-    //获取select对象
-    var se = document.getElementById("select_page");
-    //选择页码及页面一页显示行数
-    function select_page(page,pagesize) {
-        var select_page_v=se.value;
-        if(page =='' && pagesize==''){
-            //定义一页显示多少条
-            var search=document.getElementById("AcademyName").value;
-            if(search ==''){
-                data_trans={pagesize:select_page_v};
-            }else{
-                data_trans={pagesize:select_page_v,AcademyName:search};
-            }
-        }else{
-            data_trans={pagesize:pagesize,page:page};
-        }
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"{:url('admin/academyinfo/academyinfo')}",
-            dataType:"json",
-            data: data_trans,
-            timeout:30000,
-            error:function(){
-                alert("出错");
-            },
-            success:function(data){
-                $("#Academy_row").empty();
-                var count = data.length;
-                var i = 0;
-                var b="";
-                 for(i=0;i<count;i++){
-                    //数据
-                     b+="<tr role='row' class='even'><td id='td_row_"+data[i].AcademyId+"'>"+data[i].AcademyName+"</td>"
-                    //操作按钮
-                     b+="<td id='td_update_row_"+data[i].AcademyId+"' style='display:none'><input type='text' id='update_input' class='form-control input-small' name='Update_Academy' value='"+data[i].AcademyName+"'></td><td><!--默认隐藏 更新时显示按钮--><button id='update_save_button_"+data[i].AcademyId+"' onclick='save_change("+data[i].AcademyId+")' class='dt-button buttons-print btn green btn-outline' style='display: none' href='' ><span>保存</span></button><a id='update_cal_button_"+data[i].AcademyId+"'class='dt-button buttons-print btn red btn-outline' style='display:none' onclick='cancel("+data[i].AcademyId+")' ><span>取消</span></a><!--默认隐藏--><a id='update_button_"+data[i].AcademyId+"' class='dt-button buttons-print btn green btn-outline' onclick='change("+data[i].AcademyId+")'><span>更新</span></a><a id='delete_button_"+data[i].AcademyId+"' class='dt-button buttons-print btn red btn-outline' onclick='Delete("+data[i].AcademyId+")'><span>删除</span></a></td></tr>"
-                }
-                //从新加载数据
-                $("#Academy_row").append(b);
-                //清空页码显示div
-                $("#paging").empty();
-                //重新加载页码div
-                $("#paging").append(data[0].paging);
-                //清空总页码
-                $("#page_all").empty();
-                //重新加载总页码div
-                $("#page_all").append(data[0].pageall);
-            }
-        });
-    }
-    //点击搜索动作
-    function search_an() {
-        select_page('','');
-    }
-    /**
-     * 更新处理函数
-     */
-    function save_change(AcademyId) {
-        var AcademyName =document.getElementById('update_input').value;
-        //alert(AcademyName);
-        data_trans={AcademyId:AcademyId,AcademyName:AcademyName};
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"{:url('admin/academyinfo/AcademyUpdate')}",
-            dataType:"json",
-            data: data_trans,
-            timeout:30000,
-            error:function(){
-                alert("系统出错，请联系我们！");
-            },
-            success:function(data){
-                select_page('','');
-                var m="";
-                //显示更新成功对话框
-                if(data.flag ==1){
-                    $("#error_log_warning").empty();
-                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
-                    $("#error_log_warning").append(m);
-                    $(".error-alert_warning").show(100);
-                }
-                //显示更新失败对话框
-                else{
-                    $("#error_log_danger").empty();
-                    m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
-                    $("#error_log_danger").append(m);
-                    $(".error-alert_danger").show(100);
-                }
-            }
-
-
-        });
-    }
-
-    /*
-    *删除方法
-     */
-    function Delete(AcademyId) {
-        if(confirm("此操作不可逆，您真的要删除吗？")){
-            data_trans={AcademyId:AcademyId};
-            //alert(AcademyId);
-            $.ajax({
-                cache:false,
-                type:"POST",
-                url:"{:url('admin/academyinfo/AcademyDelete')}",
-                dataType:"json",
-                data: data_trans,
-                timeout:30000,
-                error:function(){
-                    alert("系统出错，请联系我们！");
+                "paginate": {
+                    "first": "首页",
+                    "previous": "上一页",
+                    "next": "下一页",
+                    "last": "尾页"
                 },
-                success:function(data){
-                    select_page('','');
-                    var m="";
-                    //显示更新成功对话框
-                    if(data.flag ==1){
-                        $("#error_log_warning").empty();
-                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
-                        $("#error_log_warning").append(m);
-                        $(".error-alert_warning").show(100);
+            },
+            "ajax": {
+                "url": "{:url('admin/Rolemanagement/Role')}",
+                "type": "POST",
+            },
+            "columns": [
+                {
+                    "data": null,
+                    "orderable": false,  //禁止排序
+                    "title": "<input type='checkbox' id='checkall'/>",
+                },
+                {"data": "AdminName"},
+                {"data": "PhoneNo"},
+                {"data": "Email", "orderable": true, "class": 'details-control'},
+                {"data": "AdminType", "orderable": false, "class": 'details-control'},
+                {"data": "WhichBuilding", "orderable": false, "class": 'details-control'}
+            ],
+            "columnDefs": [
+                {
+                    "targets": 0, //改写哪一列
+                    "render": function ( data, type, row, meta ) {
+                        return "<input type='checkbox' name='Boxes' id='row_"+row.AdminId+"' />";
                     }
-                    //显示更新失败对话框
-                    else{
-                        $("#error_log_danger").empty();
-                        m+="<button class='close' type='button'  data-close='alert'></button><span>"+data.mesg+"</span>"
-                        $("#error_log_danger").append(m);
-                        $(".error-alert_danger").show(100);
+                },
+                {
+                    "targets": 4, //改写哪一列
+                    "render": function ( data, type, row, meta ) {
+                        if(data == 0){
+                            return "<span class='label label-sm label-success'>超级管理员</span>";
+                        }
+                        else if(data == 1){
+                            return "<span class='label label-sm label-success'>宿舍管理员</span>";
+                        }
+//                        return "<input type='checkbox' name='Boxes' id='row_"+row.id+"' />";
+                    }
+                },
+                {
+                    "targets": 5, //改写哪一列
+                    "render": function ( data, type, row, meta ) {
+                        if(data == null){
+                            return "<span class='label label-sm label-warning'>非宿舍管理员</span>";
+                        }
+                        else{
+                            return "<span class='label label-sm label-success'>"+data+"宿舍管理员</span>";
+                        }
                     }
                 }
+            ],
 
 
-            });
-        }
-    }
+        });
+        /******初始化DataTable*****************************************************************************/
+        //checkbox 全选/取消全选
+        $("#checkall").on("click", function () {
+            if ($(this).prop("checked") === true) {
+                $("input[name='Boxes']").prop("checked", $(this).prop("checked"));
+                $('#DataTable tbody tr').addClass('selected');
+            } else {
+                $("input[name='Boxes']").prop("checked", false);
+                $('#DataTable tbody tr').removeClass('selected');
+            }
+        });
+    });
+
+
+
 </script>
 {/block}
