@@ -26,7 +26,7 @@ class Index extends Controller
         if( isset($_POST['remember']) && $_POST['remember'] == 1 ){
             $db_admin=db('admininfo')
                 ->where('AdminName',$_POST['username'])
-                ->where('AdminPassword',$_POST['password'])
+                ->where('AdminPassword',md5($_POST['password']))
                 ->find();
             if($db_admin == null){
                 $this->assign('common_nf','0');

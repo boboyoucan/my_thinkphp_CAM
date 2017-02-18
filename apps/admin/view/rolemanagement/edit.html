@@ -1,0 +1,108 @@
+{__NOLAYOUT__}
+<!--target="targetIfr"-->
+<form id="form" data-target="targetIfr" method="post" action="/{$Request.module}/{$Request.controller}/{$Request.action}" submit="ajax" data-validate="true" class="form-horizontal">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"  style="height:400px;">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        {$data['AdminId']?'修改':'添加'}账号
+                    </h4>
+                </div>
+                <input type="hidden" name="AdminId" value="{$data.AdminId ?? ''}">
+                <div class="modal-body">
+
+                    <div class="portlet-body form">
+
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">用户名称</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-user"></i>
+                                                        </span>
+                                        <input type="text" class="form-control" maxlength="11" placeholder="至多11个字符" required="" name="AdminName" value="{$data.AdminName ?? ''}"> </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">手机号码</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-phone"></i>
+                                                        </span>
+                                        <input type="tel" class="form-control mobile" required name="PhoneNo" maxlength="11" placeholder="手机号码" value="{$data.PhoneNo ?? ''}"> </div>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label class="col-md-3 control-label">登录密码</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="password" name="Password" id="Password" class="form-control" placeholder="登录密码">
+                                        <span class="input-group-addon">
+                                                            <i class="fa fa-lock"></i>
+                                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">确认密码</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="password"  name="RePassword" class="form-control equalto" required="" data-rule-equalto="#Password" data-msg-equalto="密码不一致" aria-required="true" placeholder="确认密码">
+                                        <span class="input-group-addon">
+                                                            <i class="fa fa-lock"></i>
+                                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">电子邮箱</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </span>
+                                        <input type="email" class="form-control" placeholder="邮箱" name="Email" value="{$data.Email ?? ''}"> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">用户角色</label>
+                                <div class="col-md-6">
+                                    <select class="form-control" name="AdminType" id="AdminType" onchange="if(this.value ==1) document.getElementById('WhichBuilding').style.display='';else document.getElementById('WhichBuilding').style.display='none';" value="{$data.AdminType ?? ''}">
+                                        <option value="0">超级管理员</option>
+                                        <option value="1">宿舍管理员</option>
+                                        <option value="2">老师</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group" id="WhichBuilding" style="display: none">
+                                <label class="col-md-3 control-label">宿舍楼</label>
+                                <div class="col-md-6">
+                                    <select class="form-control" name="WhichBuilding" value="{$data.WhichBuilding ?? ''}">
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        保存
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<iframe name="targetIfr" style="display:none"></iframe>
