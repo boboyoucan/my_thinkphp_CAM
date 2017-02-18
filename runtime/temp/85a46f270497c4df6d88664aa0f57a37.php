@@ -1,8 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1484574598;s:23:"public/header/head.html";i:1484752477;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:55:"/mnt/www/html/myphpweb/apps/index/view/index/index.html";i:1487259050;s:23:"public/header/head.html";i:1487259051;}*/ ?>
 
 <link href="__PUBLIC__/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/global/plugins/bootstrap/css/bootstrap-table.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
 <!-- END GLOBAL MANDATORY STYLES -->
@@ -32,6 +33,7 @@
 <!-- BEGIN CORE PLUGINS -->
 <script src="__PUBLIC__/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="__PUBLIC__/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/global/plugins/bootstrap/js/bootstrap-table.js" type="text/javascript"></script>
 <script src="__PUBLIC__/global/plugins/js.cookie.min.js" type="text/javascript"></script>
 <script src="__PUBLIC__/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
 <script src="__PUBLIC__/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
@@ -39,6 +41,8 @@
 <script src="__PUBLIC__/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <script src="__PUBLIC__/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
+
+
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <script src="__PUBLIC__/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
 <script src="__PUBLIC__/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
@@ -49,6 +53,8 @@
 <script src="__PUBLIC__/global/scripts/app.min.js" type="text/javascript"></script>
 <!-- END THEME GLOBAL SCRIPTS -->
 <script src="__PUBLIC__/global/scripts/addtable.js" type="text/javascript"></script>
+<script src="__PUBLIC__/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="__PUBLIC__/global/plugins/datatables/datatables.js" type="text/javascript"></script>
 
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
