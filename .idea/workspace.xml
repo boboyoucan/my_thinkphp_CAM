@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/controller/Index.php" afterPath="$PROJECT_DIR$/apps/index/controller/Index.php" />
     </list>
     <ignored path="myphpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -767,7 +766,7 @@
       <workItem from="1487151791298" duration="8062000" />
       <workItem from="1487208225716" duration="26156000" />
       <workItem from="1487295396967" duration="32533000" />
-      <workItem from="1487378739170" duration="23971000" />
+      <workItem from="1487378739170" duration="23985000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -1021,11 +1020,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487410156736</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="使用 bootstrap table用户角色改写">
+      <created>1487410394786</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1487410394786</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306403000" />
+    <option name="totallyTimeSpent" value="306417000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
