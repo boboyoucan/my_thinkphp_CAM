@@ -766,7 +766,7 @@
       <workItem from="1487151791298" duration="8062000" />
       <workItem from="1487208225716" duration="26156000" />
       <workItem from="1487295396967" duration="32533000" />
-      <workItem from="1487378739170" duration="23985000" />
+      <workItem from="1487378739170" duration="23990000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -1027,11 +1027,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487410394786</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="使用 bootstrap table用户角色改写">
+      <created>1487410402482</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1487410402482</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306417000" />
+    <option name="totallyTimeSpent" value="306422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
