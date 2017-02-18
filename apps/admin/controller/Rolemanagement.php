@@ -79,9 +79,9 @@ class  Rolemanagement extends Checklogin
      *****************************************/
 
     public function edit($AdminId = 0){
-        $data = request()->param();
-        $AdminId = intval($data['AdminId']);
-        if(empty($id)){
+        $Admin= request()->param();
+        $AdminId = intval($Admin);
+        if(empty($AdminId)){
             return info('数据ID异常',0);
         }
         if(request()->isPost()){
