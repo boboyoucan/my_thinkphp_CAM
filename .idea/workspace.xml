@@ -1,37 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="使用 bootstrap table">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/admin/view/rolemanagement/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/admin/view/rolemanagement/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/Sorting icons.psd" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/Sorting icons.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_disabled.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_enabled.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_enabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_enabled_hover.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/back_enabled_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/favicon.ico" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_disabled.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_enabled.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_enabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_enabled_hover.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/forward_enabled_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_asc.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_asc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_asc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_both.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_both.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_desc.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_desc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_desc_disabled.png" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/images/sort_desc_disabled.png" />
+    <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/common.php" afterPath="$PROJECT_DIR$/apps/admin/common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/model/Rolemanagement.php" afterPath="$PROJECT_DIR$/apps/admin/model/Rolemanagement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/index/controller/Index.php" afterPath="$PROJECT_DIR$/apps/index/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/header/head.html" afterPath="$PROJECT_DIR$/public/header/head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.all.min.js" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.css" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.js" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.min.css" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.min.js" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" />
     </list>
     <ignored path="myphpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,10 +46,13 @@
         <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="661">
-              <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="51" />
+              <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="51" />
               <folding>
+                <marker date="1487399053791" expanded="true" signature="64:3321" ph="{...}" />
                 <marker date="1487399053791" expanded="true" signature="5545:5831" ph="..." />
                 <marker date="1487399053791" expanded="true" signature="5904:5962" ph="..." />
+                <marker date="1487399053791" expanded="true" signature="8249:8639" ph="{...}" />
+                <marker date="1487399053791" expanded="true" signature="8702:10083" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -109,45 +84,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rolemanagement.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rolemanagement.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/admin/model/Rolemanagement.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#34#51#0#PHP" expanded="true" />
-                <marker date="1487409661927" expanded="true" signature="413:450" ph="select count... admininfo" />
-                <marker date="1487409661927" expanded="true" signature="413:451" ph="select count... admininfo" />
-                <marker date="1487409661927" expanded="true" signature="509:586" ph="select id AS... admininfo" />
-                <marker date="1487409661927" expanded="true" signature="509:595" ph="select id AS... admininfo" />
-                <marker date="1487409661927" expanded="true" signature="509:605" ph="select id AS... admininfo" />
-                <marker date="1487409661927" expanded="true" signature="509:616" ph="select id AS... admininfo" />
-                <marker date="1487409661927" expanded="true" signature="1259:1355" ph="insert into admininfo... " />
-                <marker date="1487409661927" expanded="true" signature="1259:1488" ph="insert into admininfo... " />
-                <marker date="1487409661927" expanded="true" signature="1550:1737" ph="insert into admininfo... " />
-                <marker date="1487409661927" expanded="true" signature="1550:1738" ph="insert into admininfo... " />
-                <marker date="1487409661927" expanded="true" signature="2313:2537" ph="update admin... " />
-                <marker date="1487409661927" expanded="true" signature="2313:2546" ph="update admin... " />
-                <marker date="1487409661927" expanded="true" signature="2313:2565" ph="update admin... " />
-                <marker date="1487409661927" expanded="true" signature="2313:2567" ph="update admin... " />
-                <marker date="1487409661927" expanded="true" signature="2319:2537" ph="insert into admininfo... " />
-                <marker date="1487409661927" expanded="true" signature="2627:2819" ph="update admin... " />
-                <marker date="1487409661927" expanded="true" signature="2627:2855" ph="insert into admininfo... " />
+                <marker date="1487410220790" expanded="true" signature="413:450" ph="select count... admininfo" />
+                <marker date="1487410220790" expanded="true" signature="413:451" ph="select count... admininfo" />
+                <marker date="1487410220790" expanded="true" signature="509:586" ph="select id AS... admininfo" />
+                <marker date="1487410220790" expanded="true" signature="509:595" ph="select id AS... admininfo" />
+                <marker date="1487410220790" expanded="true" signature="509:605" ph="select id AS... admininfo" />
+                <marker date="1487410220790" expanded="true" signature="509:616" ph="select id AS... admininfo" />
+                <marker date="1487410220790" expanded="true" signature="1259:1355" ph="insert into admininfo... " />
+                <marker date="1487410220790" expanded="true" signature="1259:1488" ph="insert into admininfo... " />
+                <marker date="1487410220790" expanded="true" signature="1550:1737" ph="insert into admininfo... " />
+                <marker date="1487410220790" expanded="true" signature="1550:1738" ph="insert into admininfo... " />
+                <marker date="1487410220790" expanded="true" signature="2313:2537" ph="update admin... " />
+                <marker date="1487410220790" expanded="true" signature="2313:2546" ph="update admin... " />
+                <marker date="1487410220790" expanded="true" signature="2313:2565" ph="update admin... " />
+                <marker date="1487410220790" expanded="true" signature="2313:2567" ph="update admin... " />
+                <marker date="1487410220790" expanded="true" signature="2319:2537" ph="insert into admininfo... " />
+                <marker date="1487410220790" expanded="true" signature="2627:2819" ph="update admin... " />
+                <marker date="1487410220790" expanded="true" signature="2627:2855" ph="insert into admininfo... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="29" column="25" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="235">
+              <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
               <folding>
-                <marker date="1487405199334" expanded="true" signature="2794:3238" ph="insert into studentinfo... " />
-                <marker date="1487405199334" expanded="true" signature="3609:3665" ph="select Stude... studentinfo" />
-                <marker date="1487405199334" expanded="true" signature="5621:5668" ph="select id fr... studentinfo" />
-                <marker date="1487405199334" expanded="true" signature="5749:5836" ph="update stude... " />
+                <marker date="1487410375832" expanded="true" signature="2799:3243" ph="insert into studentinfo... " />
+                <marker date="1487410375832" expanded="true" signature="3614:3670" ph="select Stude... studentinfo" />
+                <marker date="1487410375832" expanded="true" signature="5626:5673" ph="select id fr... studentinfo" />
+                <marker date="1487410375832" expanded="true" signature="5754:5841" ph="update stude... " />
               </folding>
             </state>
           </provider>
@@ -157,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1160">
-              <caret line="100" column="28" lean-forward="true" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+              <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -244,11 +219,11 @@
         <option value="$PROJECT_DIR$/apps/admin/view/rolemanagement/add.html" />
         <option value="$PROJECT_DIR$/apps/admin/common.php" />
         <option value="$PROJECT_DIR$/public/static/assets/global/scripts/main.js" />
-        <option value="$PROJECT_DIR$/apps/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/apps/admin/view/rolemanagement/edit.html" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php" />
         <option value="$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html" />
         <option value="$PROJECT_DIR$/apps/admin/model/Rolemanagement.php" />
+        <option value="$PROJECT_DIR$/apps/index/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -792,7 +767,7 @@
       <workItem from="1487151791298" duration="8062000" />
       <workItem from="1487208225716" duration="26156000" />
       <workItem from="1487295396967" duration="32533000" />
-      <workItem from="1487378739170" duration="23697000" />
+      <workItem from="1487378739170" duration="23971000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -1039,11 +1014,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487258986539</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="使用 bootstrap table用户角色改写">
+      <created>1487410156736</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1487410156736</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306129000" />
+    <option name="totallyTimeSpent" value="306403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1056,26 +1038,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25256222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25256222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347004" sideWeight="0.5181269" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31230283" sideWeight="0.52122986" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31230283" sideWeight="0.48187312" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31230283" sideWeight="0.47877014" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.49697885" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.49697885" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1117,7 +1099,8 @@
     <MESSAGE value="实现找回密码功能" />
     <MESSAGE value="邮箱验证码优化" />
     <MESSAGE value="使用 bootstrap table" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用 bootstrap table" />
+    <MESSAGE value="使用 bootstrap table用户角色改写" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用 bootstrap table用户角色改写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1525,10 +1508,13 @@
     <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="661">
-          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="51" />
+          <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="51" />
           <folding>
+            <marker date="1487399053791" expanded="true" signature="64:3321" ph="{...}" />
             <marker date="1487399053791" expanded="true" signature="5545:5831" ph="..." />
             <marker date="1487399053791" expanded="true" signature="5904:5962" ph="..." />
+            <marker date="1487399053791" expanded="true" signature="8249:8639" ph="{...}" />
+            <marker date="1487399053791" expanded="true" signature="8702:10083" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1544,47 +1530,47 @@
     <entry file="file://$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1160">
-          <caret line="100" column="28" lean-forward="true" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+          <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <marker date="1487405199334" expanded="true" signature="2794:3238" ph="insert into studentinfo... " />
-            <marker date="1487405199334" expanded="true" signature="3609:3665" ph="select Stude... studentinfo" />
-            <marker date="1487405199334" expanded="true" signature="5621:5668" ph="select id fr... studentinfo" />
-            <marker date="1487405199334" expanded="true" signature="5749:5836" ph="update stude... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/admin/model/Rolemanagement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#34#51#0#PHP" expanded="true" />
-            <marker date="1487409661927" expanded="true" signature="413:450" ph="select count... admininfo" />
-            <marker date="1487409661927" expanded="true" signature="413:451" ph="select count... admininfo" />
-            <marker date="1487409661927" expanded="true" signature="509:586" ph="select id AS... admininfo" />
-            <marker date="1487409661927" expanded="true" signature="509:595" ph="select id AS... admininfo" />
-            <marker date="1487409661927" expanded="true" signature="509:605" ph="select id AS... admininfo" />
-            <marker date="1487409661927" expanded="true" signature="509:616" ph="select id AS... admininfo" />
-            <marker date="1487409661927" expanded="true" signature="1259:1355" ph="insert into admininfo... " />
-            <marker date="1487409661927" expanded="true" signature="1259:1488" ph="insert into admininfo... " />
-            <marker date="1487409661927" expanded="true" signature="1550:1737" ph="insert into admininfo... " />
-            <marker date="1487409661927" expanded="true" signature="1550:1738" ph="insert into admininfo... " />
-            <marker date="1487409661927" expanded="true" signature="2313:2537" ph="update admin... " />
-            <marker date="1487409661927" expanded="true" signature="2313:2546" ph="update admin... " />
-            <marker date="1487409661927" expanded="true" signature="2313:2565" ph="update admin... " />
-            <marker date="1487409661927" expanded="true" signature="2313:2567" ph="update admin... " />
-            <marker date="1487409661927" expanded="true" signature="2319:2537" ph="insert into admininfo... " />
-            <marker date="1487409661927" expanded="true" signature="2627:2819" ph="update admin... " />
-            <marker date="1487409661927" expanded="true" signature="2627:2855" ph="insert into admininfo... " />
+            <marker date="1487410220790" expanded="true" signature="413:450" ph="select count... admininfo" />
+            <marker date="1487410220790" expanded="true" signature="413:451" ph="select count... admininfo" />
+            <marker date="1487410220790" expanded="true" signature="509:586" ph="select id AS... admininfo" />
+            <marker date="1487410220790" expanded="true" signature="509:595" ph="select id AS... admininfo" />
+            <marker date="1487410220790" expanded="true" signature="509:605" ph="select id AS... admininfo" />
+            <marker date="1487410220790" expanded="true" signature="509:616" ph="select id AS... admininfo" />
+            <marker date="1487410220790" expanded="true" signature="1259:1355" ph="insert into admininfo... " />
+            <marker date="1487410220790" expanded="true" signature="1259:1488" ph="insert into admininfo... " />
+            <marker date="1487410220790" expanded="true" signature="1550:1737" ph="insert into admininfo... " />
+            <marker date="1487410220790" expanded="true" signature="1550:1738" ph="insert into admininfo... " />
+            <marker date="1487410220790" expanded="true" signature="2313:2537" ph="update admin... " />
+            <marker date="1487410220790" expanded="true" signature="2313:2546" ph="update admin... " />
+            <marker date="1487410220790" expanded="true" signature="2313:2565" ph="update admin... " />
+            <marker date="1487410220790" expanded="true" signature="2313:2567" ph="update admin... " />
+            <marker date="1487410220790" expanded="true" signature="2319:2537" ph="insert into admininfo... " />
+            <marker date="1487410220790" expanded="true" signature="2627:2819" ph="update admin... " />
+            <marker date="1487410220790" expanded="true" signature="2627:2855" ph="insert into admininfo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <marker date="1487410375832" expanded="true" signature="2799:3243" ph="insert into studentinfo... " />
+            <marker date="1487410375832" expanded="true" signature="3614:3670" ph="select Stude... studentinfo" />
+            <marker date="1487410375832" expanded="true" signature="5626:5673" ph="select id fr... studentinfo" />
+            <marker date="1487410375832" expanded="true" signature="5754:5841" ph="update stude... " />
           </folding>
         </state>
       </provider>
