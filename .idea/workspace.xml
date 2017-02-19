@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/admin/view/rolemanagement/student.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/model/Rolemanagement.php" afterPath="$PROJECT_DIR$/apps/admin/model/Rolemanagement.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/header/index.html" afterPath="$PROJECT_DIR$/public/header/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.js" afterPath="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/scripts/main.js" afterPath="$PROJECT_DIR$/public/static/assets/global/scripts/main.js" />
     </list>
     <ignored path="myphpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="66" column="37" lean-forward="false" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7010">
-              <caret line="373" column="17" lean-forward="false" selection-start-line="373" selection-start-column="17" selection-end-line="373" selection-end-column="17" />
+            <state relative-caret-position="170">
+              <caret line="376" column="21" lean-forward="true" selection-start-line="376" selection-start-column="21" selection-end-line="376" selection-end-column="21" />
               <folding>
                 <marker date="1487516035823" expanded="true" signature="5593:5879" ph="..." />
                 <marker date="1487516035823" expanded="true" signature="5952:6010" ph="..." />
@@ -71,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rolemanagement.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rolemanagement.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/admin/model/Rolemanagement.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
@@ -180,11 +184,11 @@
         <option value="$PROJECT_DIR$/apps/admin/common.php" />
         <option value="$PROJECT_DIR$/public/header/index.html" />
         <option value="$PROJECT_DIR$/apps/admin/model/Rolemanagement.php" />
-        <option value="$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html" />
         <option value="$PROJECT_DIR$/apps/admin/controller/Rolemanagement.php" />
         <option value="$PROJECT_DIR$/public/static/assets/global/scripts/main.js" />
         <option value="$PROJECT_DIR$/public/static/assets/global/plugins/datatables/datatables.js" />
         <option value="$PROJECT_DIR$/apps/admin/view/rolemanagement/student.html" />
+        <option value="$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html" />
       </list>
     </option>
   </component>
@@ -774,7 +778,7 @@
       <workItem from="1487208225716" duration="26156000" />
       <workItem from="1487295396967" duration="32533000" />
       <workItem from="1487378739170" duration="27500000" />
-      <workItem from="1487467339152" duration="27474000" />
+      <workItem from="1487467339152" duration="27817000" />
     </task>
     <task id="LOCAL-00001" summary="最后一次测试">
       <created>1480219277478</created>
@@ -1105,11 +1109,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487413231556</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="添加学生角色管理模块，发现单击获取行数据方法">
+      <created>1487521248739</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1487521248740</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337406000" />
+    <option name="totallyTimeSpent" value="337749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1121,7 +1132,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25256222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1569,14 +1580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-539">
-          <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/admin/common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1590,17 +1593,6 @@
         <state relative-caret-position="-1511">
           <caret line="90" column="50" lean-forward="false" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7010">
-          <caret line="373" column="17" lean-forward="false" selection-start-line="373" selection-start-column="17" selection-end-line="373" selection-end-column="17" />
-          <folding>
-            <marker date="1487516035823" expanded="true" signature="5593:5879" ph="..." />
-            <marker date="1487516035823" expanded="true" signature="5952:6010" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1657,6 +1649,25 @@
             <marker date="1487499648872" expanded="true" signature="3979:4026" ph="select count... " />
             <marker date="1487499648872" expanded="true" signature="4086:4347" ph="select Admin... admininfo" />
             <marker date="1487499648872" expanded="true" signature="4086:4498" ph="select ST.id... studentinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/admin/view/rolemanagement/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="66" column="37" lean-forward="false" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="376" column="21" lean-forward="true" selection-start-line="376" selection-start-column="21" selection-end-line="376" selection-end-column="21" />
+          <folding>
+            <marker date="1487516035823" expanded="true" signature="5593:5879" ph="..." />
+            <marker date="1487516035823" expanded="true" signature="5952:6010" ph="..." />
           </folding>
         </state>
       </provider>
