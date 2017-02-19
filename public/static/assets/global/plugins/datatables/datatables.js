@@ -30322,7 +30322,7 @@
 	  Data = __webpack_require__(34);
 
 	  HheaTable = (function(_super) {
-	    __extends(HheaTable, _super);
+	    __fnGetNodess(HheaTable, _super);
 
 	    function HheaTable() {
 	      return HheaTable.__super__.constructor.apply(this, arguments);
@@ -72150,7 +72150,7 @@ window.pdfMake = window.pdfMake || {}; window.pdfMake.vfs = {"LICENSE.txt":"DQog
 		 *      var oTable = $('#example').dataTable();
 		 *
 		 *      // Get the nodes from the table
-		 *      var nNodes = oTable.fnGetNodes( );
+		 *      var nNodes = oTable.fnGetData( );
 		 *    } );
 		 */
 		this.fnGetNodes = function( iRow )

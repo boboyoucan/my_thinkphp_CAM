@@ -20,7 +20,11 @@ $.ajaxSetup({
         this.custom.complete = this.complete;
 
         this.success = function(data, textStatus, jqXHR) {
+            if (typeof data.msg == 'string' && data.msg != '') {
+                alertMsg(data.msg);
+            }
             var response_type = jqXHR.getResponseHeader("Content-Type");
+
             //bootstrap model获取的html代码获取
             if (this.dataType != 'json' && response_type == 'application/json; charset=utf-8') {
                 if (typeof this.custom.success == 'function') {
@@ -30,15 +34,11 @@ $.ajaxSetup({
                 return;
             }
             //datatable表格数据处理
-            if (this.dataType == 'json' && response_type == 'text/html; charset=UTF-8' || response_type == 'text/html' ) {
+            if (this.dataType == 'json' && response_type == 'text/html; charset=utf-8' || response_type == 'text/html' ) {
                 if (typeof this.custom.success == 'function') {
                     this.custom.success(data, textStatus, jqXHR);
                 }
                 return;
-            }
-
-            if (typeof data.msg == 'string' && data.msg != '') {
-                alertMsg(data.msg);
             }
 
             if (data.url !='') {
@@ -288,5 +288,128 @@ function zh_validator() {
         min: $.validator.format("请输入不小于 {0} 的数值")
     });
 }
-//wqeweqw
+
+/**
+ * 处理添加，编辑操作
+ * @param url 操作地址
+ * @param data 数据
+ * @constructor
+ *
+ */
+function OpenModal(url,data) {
+    if(data== ''){
+        data='';
+    }else{
+        data={Id:data};
+    }
+
+    $.ajax({
+        url: url,
+        waitting: true,
+        dataType: 'html',
+        data: data,
+        waitting: '正在加载，请稍后...',
+        success: function(html) {
+            var $html = $('<div class="dialogModal">' + html + '</div>');
+            var $form = $html.find('form');
+            if ($form.length == 0) {
+                var $modal = $html.find('.modal:eq(0)');
+            } else {
+                var $modal = $form.find('.modal:eq(0)');
+            }
+            $html.appendTo('body');
+
+            //检测form表单提交
+            var selector = $('body');
+            validate(selector.find('form[data-validate="true"]'));
+            var $form = selector.find('form[submit="ajax"]');
+            $form.each(function(i, item) {
+                if ($form.eq(i).data('validate') == true) {
+                    return true;
+                }
+
+                $form.eq(i).on('submit', function() {
+                    $form.eq(i).ajaxSubmit();
+                    return false;
+                });
+            });
+            $modal.modal().show();
+            //隐藏模态框 刷新表单 移除模态框等元素
+            //hide.bs.modal:当调用 hide 实例方法时触发。
+            $modal.on('hide.bs.modal', function() {
+                if ($form.length > 0 && $form.data('submited') == true) {
+                    $('#DataTable').DataTable().ajax.reload();
+                }
+                $html.remove();
+            })
+
+        }
+    });
+
+
+}
+/**
+ *
+ * @param data
+ */
+function del(data) {
+    if(confirm("此操作不可逆，您真的要删除吗？")){
+        data={AdminId:data};
+        $.ajax({
+            url: 'del',
+            waitting: true,
+            dataType: 'json',
+            data: data,
+            waitting: '正在加载，请稍后...',
+            success: function(html) {
+                //alertMsg(html.msg);
+            },
+            error: function() {
+                alertMsg('网络连接失败，请稍后再试！', 'error');
+            },
+        });
+        $('#DataTable').DataTable().ajax.reload();
+    }
+}
+//datatable的初始化设置
+function datatable_extend(){
+    $.extend( $.fn.dataTable.defaults, {
+        "processing": true,		//显示加载信息
+        "serverSide": true,		//开启服务器模式
+        "searching": false,		//开启搜索功能
+        "autoWidth": false, 	//让Datatables自动计算宽度
+        "searching": true,		//开启全局搜索功能
+        "lengthMenu": [[5, 10, 20, 30, -1], ["5", "10", "20", "30", "all"]],//改变每页显示条数列表的选项
+        "pagingType": "full_numbers",		//分页按钮种类显示选项
+        "order": [[1, "asc"]],
+        "bFilter": true, //搜索栏
+        "striped": false, // 隔行换色
+
+        //表格初始化排序【全选框不用排序】
+        "language": {
+            "processing": "玩命加载中...",
+            "lengthMenu": "显示 _MENU_ 项结果",
+            "zeroRecords": "没有匹配结果",
+
+            "search": "搜索:",
+            "url": "",
+            "emptyTable": "表中数据为空",
+            "loadingRecords": "正在加载数据...",
+
+            //下面三者构成了总体的左下角的内容。
+            "info": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+            "infoEmpty": "显示第 0 至 0 项结果，共 0 项",
+            "infoFiltered": "(由 _MAX_ 项结果过滤)",
+            //"infoPostFix": "",
+
+            "paginate": {
+                "first": "首页",
+                "previous": "上一页",
+                "next": "下一页",
+                "last": "尾页"
+            },
+        },
+    });
+}
+
 

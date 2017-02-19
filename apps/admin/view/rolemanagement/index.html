@@ -5,7 +5,7 @@
 <div class="page-bar">
     <ul class="page-breadcrumb">
         <li>
-            <a href="{:url('admin/academyinfo/academyinfo')}">角色管理</a>
+            <a href="{:url('admin/Rolemanagement/index')}">角色管理</a>
             <i class="fa fa-circle"></i>
         </li>
         <li>
@@ -68,13 +68,14 @@
             "processing": true,		//显示加载信息
             "serverSide": true,		//开启服务器模式
             "searching": false,		//开启搜索功能
-            "autoWidth": true, 	//让Datatables自动计算宽度
+            "autoWidth": false, 	//让Datatables自动计算宽度
             "searching": true,		//开启全局搜索功能
             "lengthMenu": [[5, 10, 20, 30, -1], ["5", "10", "20", "30" , "all"]],//改变每页显示条数列表的选项
             "pagingType": "full_numbers",		//分页按钮种类显示选项
             "order": [[1, "asc"]],
             "bFilter": true, //搜索栏
             "striped": false, // 隔行换色
+            'click-row.bs.table': 'onClickRow',
             //表格初始化排序【全选框不用排序】
             "language": {
                 "processing": "玩命加载中...",
@@ -163,7 +164,16 @@
                     "visible":false //隐藏列
                 },
             ],
-
+            "onClickRow": function(row, $element) {
+                this.scrollPosition = $('#DataTable').DataTable('getScrollPosition');
+                var result = $('#DataTable').DataTable.triggerHandler('clickRow', [row, this]);
+                this.enabledEdit = $('#DataTable').DataTable.data('edit') || false;
+                if (result !== false && this.enabledEdit) {
+                    this.editRow(row);
+                }
+                $element.addClass('info').siblings().removeClass('info');
+                this.currentRow = row;
+            },
         });
         /******初始化DataTable*****************************************************************************/
         //checkbox 全选/取消全选
@@ -178,88 +188,6 @@
         });
     });
 
-    /**
-     * 处理添加，编辑操作
-     * @param url 操作地址
-     * @param data 数据
-     * @constructor
-     *
-     */
-   function OpenModal(url,data) {
-       if(data== ''){
-           data='';
-       }else{
-           data={AdminId:data};
-       }
-
-        $.ajax({
-            url: url,
-            waitting: true,
-            dataType: 'html',
-            data: data,
-            waitting: '正在加载，请稍后...',
-            success: function(html) {
-                var $html = $('<div class="dialogModal">' + html + '</div>');
-                var $form = $html.find('form');
-                if ($form.length == 0) {
-                    var $modal = $html.find('.modal:eq(0)');
-                } else {
-                    var $modal = $form.find('.modal:eq(0)');
-                }
-                $html.appendTo('body');
-
-                //检测form表单提交
-                var selector = $('body');
-                validate(selector.find('form[data-validate="true"]'));
-                var $form = selector.find('form[submit="ajax"]');
-                $form.each(function(i, item) {
-                    if ($form.eq(i).data('validate') == true) {
-                        return true;
-                    }
-
-                    $form.eq(i).on('submit', function() {
-                        $form.eq(i).ajaxSubmit();
-                        return false;
-                    });
-                });
-                $modal.modal().show();
-                //隐藏模态框 刷新表单 移除模态框等元素
-                //hide.bs.modal:当调用 hide 实例方法时触发。
-                $modal.on('hide.bs.modal', function() {
-                    if ($form.length > 0 && $form.data('submited') == true) {
-                        $('#DataTable').DataTable().ajax.reload();
-                    }
-                    $html.remove();
-                })
-
-            }
-        });
-
-
-    }
-    /**
-     *
-     * @param data
-     */
-    function del(data) {
-        if(confirm("此操作不可逆，您真的要删除吗？")){
-            data={AdminId:data};
-            $.ajax({
-                url: 'del',
-                waitting: true,
-                dataType: 'json',
-                data: data,
-                waitting: '正在加载，请稍后...',
-                success: function(html) {
-                    alertMsg(html.msg);
-                },
-                error: function() {
-                    alertMsg('网络连接失败，请稍后再试！', 'error');
-                },
-            });
-            $('#DataTable').DataTable().ajax.reload();
-        }
-    }
 
 
 </script>

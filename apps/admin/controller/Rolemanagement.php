@@ -78,17 +78,17 @@ class  Rolemanagement extends Checklogin
      *方法：角色管理首页数据编辑
      *****************************************/
 
-    public function edit($AdminId = 0){
-        $Admin= request()->param();
-        $AdminId = intval($Admin);
-        if(empty($AdminId)){
+    public function edit($Id = 0){
+        $Id = intval($Id);
+        if(empty($Id)){
             return info('数据ID异常',0);
         }
         if(request()->isPost()){
+            $data= request()->param();
             $edit = model('Rolemanagement')->edit($data);
             return $edit;
         }
-        $data = db('admininfo')->where('AdminId',$AdminId)->find();
+        $data = db('admininfo')->where('AdminId',$Id)->find();
         $this->assign('data',$data);
         return $this->fetch('edit');
     }
@@ -103,5 +103,75 @@ class  Rolemanagement extends Checklogin
         return $add;
     }
 
+    public function student()
+    {
+        return $this->fetch('student');
+    }
+    public function StudentRole()
+    {
+        //$search:全局查找条件
+        $search= !empty($_REQUEST['search']['value']) ?  $_REQUEST['search']['value'] : '';
+        //拼接查找的sql
+        $like = "'%".$search."%'";
+        $Where ="  ((StudentNo LIKE BINARY ".$like.") or (StudentName LIKE BINARY ".$like.") or (Sex LIKE BINARY ".$like.") or (Nationality LIKE BINARY ".$like.") or (Birthday LIKE BINARY ".$like.") or (PhoneNo LIKE BINARY ".$like.") or (Email LIKE BINARY ".$like.") or (Valuables LIKE BINARY ".$like.") or (EntranceTime LIKE BINARY ".$like."))";
+
+        //分页$start:数据开始;$length:数据长度
+        $start = $_REQUEST['start'];//从多少开始
+        $length = $_REQUEST['length'];//数据长度
+        $limitSql = '';
+        $limitFlag = isset($_REQUEST['start']) && $length != -1 ;
+        if ($limitFlag ) {
+            //intval函数将变量转成整数类型
+            $limitSql = " LIMIT ".intval($start).", ".intval($length);
+        }
+
+        //排序
+        $order_column = $_REQUEST['order']['0']['column'];//哪一列排序，从0开始
+        $order_dir = $_REQUEST['order']['0']['dir'];//ase desc 升序或者降序
+        //拼接排序sql
+        $orderSql = "";
+        if(isset($order_column)){
+            $i = intval($order_column);
+            switch($i){
+                case 2;$orderSql = " order by StudentNo ".$order_dir;break;
+                case 3;$orderSql = " order by StudentName ".$order_dir;break;
+                case 4;$orderSql = " order by Sex ".$order_dir;break;
+                case 5;$orderSql = " order by Nationality ".$order_dir;break;
+                case 6;$orderSql = " order by Birthday ".$order_dir;break;
+                case 7;$orderSql = " order by PhoneNo ".$order_dir;break;
+                case 8;$orderSql = " order by Email ".$order_dir;break;
+                case 7;$orderSql = " order by Valuables ".$order_dir;break;
+                case 7;$orderSql = " order by EntranceTime ".$order_dir;break;
+                default;$orderSql = '';
+            }
+        }
+        $datas = model('Rolemanagement')->StudentRole($Where,$limitSql,$orderSql);
+        //获取Datatables发送的参数 必要
+        $data['draw'] = !empty($_REQUEST['draw']) ?  $_REQUEST['draw'] : 1;
+        $data['recordsTotal'] = $datas['sum']['0']['sum'];
+        $data['recordsFiltered'] = $datas['sum']['0']['sum'];
+        $data['data'] = $datas['data'];
+        echo json_encode($data,JSON_UNESCAPED_UNICODE);exit;
+    }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月17日
+     *方法：角色管理学生首页数据编辑
+     *****************************************/
+
+    public function StudentEdit($Id = 0){
+        $Id = intval($Id);
+        if(empty($Id)){
+            return info('数据ID异常',0);
+        }
+        if(request()->isPost()){
+            $data= request()->param();
+            $edit = model('Rolemanagement')->edit($data);
+            return $edit;
+        }
+        $data = db('admininfo')->where('AdminId',$Id)->find();
+        $this->assign('data',$data);
+        return $this->fetch('edit');
+    }
 }
 

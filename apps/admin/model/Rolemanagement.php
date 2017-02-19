@@ -82,8 +82,9 @@ class  Rolemanagement extends Model
         if($AdminId ==''){
             return info('数据id异常',0);
         }
+
         $res=db('admininfo')->where('AdminId',$AdminId)->find();
-        if($res==1 ){
+        if($res != null){
             $del=db('admininfo')->where('AdminId',$AdminId)->delete();
             if($del==1 ){
                 return info('删除成功！',1);
@@ -94,6 +95,21 @@ class  Rolemanagement extends Model
         }else{
             return info('要删除的对象不存在！',0);
         }
+    }
+
+
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月16日
+     *方法：角色管理学生首页数据bootstrap table 显示
+     *****************************************/
+    public function StudentRole($search,$limitSql,$orderSql)
+    {
+        $data['sum']=db('studentinfo')->query("select count(*) as sum from studentinfo  where ".$search);
+        $data['data']=db('studentinfo')->query("select ST.id,ST.StudentNo,ST.StudentName,ST.Sex,ST.Nationality,ST.Birthday,ST.PhoneNo,ST.Email,ST.Valuables, concat(DO.Building,'-',DO.Unit,'-',DO.DormitoryNo) as Dormitory, concat(MA.MajorName,'-',CL.ClassName) as Class,ST.EntranceTime,ST.Role from studentinfo AS ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId  and ".$search.$orderSql.$limitSql);
+//        echo "select ST.id,ST.StudentNo,ST.StudentName,ST.Sex,ST.Nationality,ST.Birthday,ST.PhoneNo,ST.Email,ST.Valuables, concat(DO.Building,'-',DO.Unit,'-',DO.DormitoryNo) as Dormitory, concat(MA.MajorName,'-',CL.ClassName) as Class,ST.EntranceTime,ST.Role from studentinfo AS ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId  and ".$search.$orderSql.$limitSql;
+//        exit;
+        return $data;
     }
 }
 
