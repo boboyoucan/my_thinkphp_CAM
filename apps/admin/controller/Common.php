@@ -22,14 +22,21 @@ class Common extends Controller
         return $Classinfo;
 
     }
-    //公共方法 班级列表
+    //公共方法 贵重物品列表
     public function ValuablesInfo($StudentNo){
         $valuables=db('studentinfo')->query("select Valuables from studentinfo where StudentNo='$StudentNo'");
         return $valuables;
     }
+    //公共方法宿舍信息
     public function DormitoryInfo(){
         $dormitoryinfo=db('dormitoryinfo')->query("select DormitoryId,Building,Unit,DormitoryNo from dormitoryinfo order by Building,Unit,DormitoryNo ASC");
         return $dormitoryinfo;
+    }
+
+    //公共方法宿舍几栋信息
+    public function BuildingInfo(){
+        $BuildingInfo=db('dormitoryinfo')->query("select Building from dormitoryinfo order by Building group by Building ");
+        return $BuildingInfo;
     }
     //分页方法
     public function paging($count,$page,$pagesize){

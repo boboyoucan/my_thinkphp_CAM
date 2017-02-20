@@ -1,0 +1,209 @@
+<!--target="targetIfr"-->
+<form id="form" data-target="targetIfr" method="post" action="/{$Request.module}/{$Request.controller}/{$Request.action}" submit="ajax" data-validate="true" class="form-horizontal">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"  style="height:400px;">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        {$data['id']?'修改':'添加'}账号
+                    </h4>
+                </div>
+                <input type="hidden" name="Id" value="{$data.id ?? ''}">
+                <div class="modal-body">
+
+                    <div class="portlet-body form">
+
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label class=" col-md-2 control-label">姓名</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-font"></i></span>
+                                        <input class="form-control placeholder-no-fix" required type="text" placeholder="姓名" name="StudentName" value="{$data.StudentName ?? ''}"> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">性别</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-odnoklassniki"></i>
+                                        </span>
+                                        <select name="Sex" required id="sex_list" class="select2 form-control" value="{$data.Sex ?? ''}">
+                                            <option value="" selected="{$data.Sex ? 'selected' : ''}">选择性别</option>
+                                            <option value="男" selected="{$data.Sex == "男" ? 'selected' : ''}">男</option>
+                                            <option value="女" selected="{$data.Sex == "女" ? 'selected' : ''}">女</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">民族</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                     <span class="input-group-addon">
+                                         <i class="fa fa-user-secret"></i></span>
+                                        <input class="form-control placeholder-no-fix" required type="text" placeholder="民族" name="Nationality" value="{$data.Nationality ?? ''}"> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                <label class="control-label col-md-2">生日</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">
+                                             <i class="fa fa-calendar-check-o"></i></span>
+                                        <input class="form-control placeholder-no-fix" type="text" onfocus="(this.type='date')" placeholder="生日" value="{$data.Birthday ?? ''}" name="Birthday"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                <label class="control-label col-md-2">电话</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-phone"></i></span>
+                                        <input class="form-control placeholder-no-fix mobile" required type="text" placeholder="电话" value="{$data.PhoneNo ?? ''}" name="PhoneNo"> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                <label class="control-label col-md-2">邮箱</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">
+                                             <i class="fa fa-envelope"></i></span>
+                                        <input class="form-control placeholder-no-fix email" required type="text" value="{$data.Email ?? ''}" placeholder="邮箱" name="Email"> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                <label class="control-label col-md-2">贵重物品</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                          <span class="input-group-addon">
+                                              <i class="fa fa-cubes"></i></span>
+                                        <input class="form-control placeholder-no-fix"  required type="text" placeholder="贵重物品" value="{$data.Valuables ?? ''}" name="Valuables"> </div>
+                                </div></div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">宿舍</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">
+                                             <i class="fa fa-institution"></i></span>
+                                        <select name="Dormitory" id="dormitory_list" value="{$data.DId ?? ''}"  required class="select2 form-control">
+                                            <option value="">选择宿舍</option>
+                                        </select>
+                                    </div></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">学院</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-mortar-board"></i></span>
+                                        <select name="Academy" id="academy_list"  required class="select2 form-control" onchange="chage_major()">
+                                            <option value="">选择学院</option>
+                                        </select>
+                                    </div></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">专业</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">
+                                             <i class="fa fa-mortar-board"></i></span>
+                                        <select name="Major" id="major_list"  required class="select2 form-control" onchange="chage_class()">
+                                            <option value="">选择专业</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">班级</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-mortar-board"></i></span>
+                                        <select name="Class" id="class_list"  value="{$data.CId ?? ''}" required class="select2 form-control">
+                                            <option value="">选择班级</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                                <label class="control-label col-md-2">入学时间</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar-check-o"></i></span>
+                                        <input class="form-control placeholder-no-fix" type="text" onfocus="(this.type='date')" placeholder="入学时间" value="{$data.EntranceTime ?? ''}" name="EntranceTime"> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">宿舍角色</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-mortar-board"></i></span>
+                                        <select name="Role" id="Role_list" value="{$data.Role ?? ''}" class="select2 form-control">
+                                            <option value="" selected="{$data.Role=='' ? 'selected' : ''}">选择宿舍角色（不选是普通成员）</option>
+                                            <option value="1" selected="{$data.Role=='1' ? 'selected' : ''}">舍长</option>
+                                            <option value="2" selected="{$data.Role=='2' ? 'selected' : ''}">宿舍成员</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                            <p> 输入您的登录用户信息: </p>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">学号</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">
+                                             <i class="fa fa-user"></i></span>
+                                        <input class="form-control studentno placeholder-no-fix" value="{$data.StudentNo ?? ''}" required type="text" placeholder="学号" name="StudentNo"> </div>
+                                </div></div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">密码</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                         <span class="input-group-addon">
+                                             <i class="fa fa-lock"></i></span>
+                                        <input class="form-control placeholder-no-fix" type="password" id="Password" placeholder="密码" name="Password"> </div>
+                                </div></div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">确认密码</label>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-check"></i></span>
+                                        <input class="form-control placeholder-no-fix" type="password"  data-rule-equalto="#Password" placeholder="确认密码" name="RePassword"> </div>
+                                </div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="submit" class="btn btn-primary">
+                    保存
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+</form>
+<iframe name="targetIfr" style="display:none"></iframe>
+<script>
+    //页面加载后执行
+    $(function() {
+        var ajaxurl1 = "{:url('admin/common/AcademyInfo')}";
+        var ajaxurl2 = "{:url('admin/common/DormitoryInfo')}";
+        get_Academy_Dormitory(ajaxurl1, ajaxurl2);
+    });
+</script>

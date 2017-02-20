@@ -17,7 +17,7 @@ class  Rolemanagement extends Model
     public function index($search,$limitSql,$orderSql)
     {
         $data['sum']=db('admininfo')->query("select count(*) as sum from admininfo ".$search);
-        $data['data']=db('admininfo')->query("select AdminId,AdminName,PhoneNo,Email,AdminType,WhichBuilding from admininfo".$search.$orderSql.$limitSql);
+        $data['data']=db('admininfo')->query("select AdminId as id,AdminName,PhoneNo,Email,AdminType,WhichBuilding from admininfo".$search.$orderSql.$limitSql);
         return $data;
     }
     /*****************************************
@@ -61,9 +61,9 @@ class  Rolemanagement extends Model
         }
         $data['Password'] = md5($data['Password']);
         if($data['AdminType']==1){
-            $res=db('admininfo')->execute("update admininfo set AdminName='{$data['AdminName']}',AdminPassword='{$data['Password']}',PhoneNo='{$data['PhoneNo']}',Email='{$data['Email']}',AdminType='{$data['AdminType']}',WhichBuilding='{$data['WhichBuilding']}' where AdminId='{$data['AdminId']}'");
+            $res=db('admininfo')->execute("update admininfo set AdminName='{$data['AdminName']}',AdminPassword='{$data['Password']}',PhoneNo='{$data['PhoneNo']}',Email='{$data['Email']}',AdminType='{$data['AdminType']}',WhichBuilding='{$data['WhichBuilding']}' where AdminId='{$data['Id']}'");
         }else{
-            $res=db('admininfo')->execute("update admininfo set AdminName='{$data['AdminName']}',AdminPassword='{$data['Password']}',PhoneNo='{$data['PhoneNo']}',Email='{$data['Email']}',AdminType='{$data['AdminType']}',WhichBuilding='' where AdminId='{$data['AdminId']}'");
+            $res=db('admininfo')->execute("update admininfo set AdminName='{$data['AdminName']}',AdminPassword='{$data['Password']}',PhoneNo='{$data['PhoneNo']}',Email='{$data['Email']}',AdminType='{$data['AdminType']}',WhichBuilding='' where AdminId='{$data['Id']}'");
         }
         if($res == 1){
             return info('编辑成功！',1);
@@ -111,5 +111,76 @@ class  Rolemanagement extends Model
 //        exit;
         return $data;
     }
+
+
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月17日
+     *方法：角色管理首页数据添加
+     *****************************************/
+
+    public function StudentAdd(array $data = []){
+        if($data['RePassword'] != $data['Password']){
+            return info('两次密码不一致！',0);
+        }
+        $db_student=db('studentinfo')
+            ->where('StudentName',$data['StudentName'])
+            ->find();
+        if($db_student != null){
+            return info('用户已存在！',0);
+        }
+        $data['Password'] = md5($data['Password']);
+        $res=db('studentinfo')->execute("insert into studentinfo (StudentNo, StudentName, Password, Sex, Nationality, Birthday, PhoneNo, Email, Valuables, DId, CId, EntranceTime, Role) values ('{$data['StudentNo']}','{$data['StudentName']}','{$data['Password']}','{$data['Sex']}','{$data['Nationality']}','{$data['Birthday']}','{$data['PhoneNo']}','{$data['Email']}','{$data['Valuables']}','{$data['Dormitory']}','{$data['Class']}','{$data['EntranceTime']}','{$data['Role']}')");
+        if($res == 1){
+            return info('添加成功！',1);
+        }else{
+            return info('添加失败！',0);
+        }
+    }
+
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月20日
+     *方法：角色管理学生角色首页数据编辑
+     *****************************************/
+
+    public function StudentEdit(array $data = [])
+    {
+        if($data['RePassword'] != $data['Password']){
+            return info('两次密码不一致！',0);
+        }
+        $data['Password'] = md5($data['Password']);
+        $res=db('studentinfo')->execute("update studentinfo set StudentNo='{$data['StudentNo']}',StudentName='{$data['StudentName']}',Password='{$data['Password']}',Sex='{$data['Sex']}', Nationality='{$data['Nationality']}', Birthday='{$data['Birthday']}', PhoneNo='{$data['PhoneNo']}',Email='{$data['Email']}',Valuables='{$data['Valuables']}',DId='{$data['Dormitory']}' ,CId='{$data['Class']}' where id='{$data['Id']}'");
+        if($res == 1){
+            return info('编辑成功！',1);
+        }else{
+            return info('编辑失败！',0);
+        }
+    }
+
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月20日
+     *方法：角色管理学生角色首页数据删除
+     *****************************************/
+
+    public function StudentDelete($data){
+        $Id= intval($data);
+        if($Id ==''){
+            return info('数据id异常',0);
+        }
+        $res=db('studentinfo')->where('id',$Id)->find();
+        if($res != null){
+            $del=db('studentinfo')->where('id',$Id)->delete();
+            if($del==1 ){
+                return info('删除成功！',1);
+            }else{
+                return info('删除失败！',0);
+            }
+        }else{
+            return info('要删除的对象不存在！',0);
+        }
+    }
+
 }
 

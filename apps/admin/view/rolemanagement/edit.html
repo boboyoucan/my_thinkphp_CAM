@@ -11,7 +11,7 @@
                         {$data['AdminId']?'修改':'添加'}账号
                     </h4>
                 </div>
-                <input type="hidden" name="AdminId" value="{$data.AdminId ?? ''}">
+                <input type="hidden" name="Id" value="{$data.AdminId ?? ''}">
                 <div class="modal-body">
 
                     <div class="portlet-body form">
@@ -74,9 +74,9 @@
                                 <label class="col-md-3 control-label">用户角色</label>
                                 <div class="col-md-6">
                                     <select class="form-control" name="AdminType" id="AdminType" onchange="if(this.value ==1) document.getElementById('WhichBuilding').style.display='';else document.getElementById('WhichBuilding').style.display='none';" value="{$data.AdminType ?? ''}">
-                                        <option value="0">超级管理员</option>
-                                        <option value="1">宿舍管理员</option>
-                                        <option value="2">老师</option>
+                                        <option value="0" selected="{$data.AdminType=='0' ? 'selected' : ''}">超级管理员</option>
+                                        <option value="1" selected="{$data.AdminType=='1' ? 'selected' : ''}">宿舍管理员</option>
+                                        <option value="2" selected="{$data.AdminType=='2' ? 'selected' : ''}">老师</option>
                                     </select>
                                 </div>
                             </div>

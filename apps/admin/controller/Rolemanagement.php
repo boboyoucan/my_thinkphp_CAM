@@ -56,6 +56,8 @@ class  Rolemanagement extends Checklogin
         $data['recordsTotal'] = $datas['sum']['0']['sum'];
         $data['recordsFiltered'] = $datas['sum']['0']['sum'];
         $data['data'] = $datas['data'];
+        //定义编码
+        //header( 'Content-Type:text/html;charset=utf-8');
         echo json_encode($data,JSON_UNESCAPED_UNICODE);exit;
     }
     /*****************************************
@@ -70,7 +72,7 @@ class  Rolemanagement extends Checklogin
             $add =model('Rolemanagement')->add($data);
              return $add;
         }
-        return $this->fetch('add');
+        return $this->fetch('edit');
     }
     /*****************************************
      * 作者：王波文
@@ -98,9 +100,9 @@ class  Rolemanagement extends Checklogin
      *方法：角色管理首页数据删除
      *****************************************/
 
-    public function del($AdminId){
-        $add =model('Rolemanagement')->del($AdminId);
-        return $add;
+    public function del($Id){
+        $del =model('Rolemanagement')->del($Id);
+        return $del;
     }
 
     public function student()
@@ -153,6 +155,21 @@ class  Rolemanagement extends Checklogin
         $data['data'] = $datas['data'];
         echo json_encode($data,JSON_UNESCAPED_UNICODE);exit;
     }
+
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月17日
+     *方法：角色管理首页数据添加
+     *****************************************/
+
+    public function StudentAdd(){
+        if( request()->isPost() ){
+            $data = request()->param();
+            $add =model('Rolemanagement')->StudentAdd($data);
+            return $add;
+        }
+        return $this->fetch('StudentEdit');
+    }
     /*****************************************
      * 作者：王波文
      * 时间：2017年2月17日
@@ -166,12 +183,23 @@ class  Rolemanagement extends Checklogin
         }
         if(request()->isPost()){
             $data= request()->param();
-            $edit = model('Rolemanagement')->edit($data);
+            $edit = model('Rolemanagement')->StudentEdit($data);
             return $edit;
         }
-        $data = db('admininfo')->where('AdminId',$Id)->find();
+        $data = db('studentinfo')->where('id',$Id)->find();
         $this->assign('data',$data);
-        return $this->fetch('edit');
+        return $this->fetch('StudentEdit');
     }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月20日
+     *方法：角色管理学生角色首页数据删除
+     *****************************************/
+
+    public function StudentDelete($Id){
+        $del =model('Rolemanagement')->StudentDelete($Id);
+        return $del;
+    }
+
 }
 

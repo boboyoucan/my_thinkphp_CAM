@@ -26,12 +26,14 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="btn-group">
-
-                        <button  type="button" onclick="OpenModal('add','')" class="btn btn-default" >
+                        <button type="button" onclick="OpenModal('StudentAdd','Add')" class="btn btn-default" >
                             <i class="fa fa-plus" aria-hidden="true"></i>添加
                         </button>
-                        <button class="btn btn-default"  onclick="OpenModal('edit')" data-toggle="modal" data-target="#myModal">
+                        <button type="button" class="btn btn-default"  onclick="OpenModal('StudentEdit','Edit')" >
                             <i class="fa fa-edit" aria-hidden="true"> </i>编辑
+                        </button>
+                        <button class="btn btn-default"  onclick="OpenModal('StudentDelete','Delete')">
+                            <i class="fa fa-trash" aria-hidden="true"> </i>删除
                         </button>
                     </div>
 
@@ -56,7 +58,7 @@
                         <th>班级</th>
                         <th>入学年份</th>
                         <th>角色</th>
-                        <th>操作</th>
+                        <!--<th>操作</th>-->
                     </tr>
                     </thead>
                 </table>
@@ -66,7 +68,6 @@
 </div>
 <script type="text/javascript">
     $(function() {
-
         /******初始化DataTable*****************************************************************************/
         //继承datatable的初始化设置
         datatable_extend();
@@ -95,7 +96,7 @@
                 {"data": "Class", "orderable": false, "class": 'details-control'},
                 {"data": "EntranceTime", "orderable": true},
                 {"data": "Role"},
-                {"data": null, "orderable": false}
+//                {"data": null, "orderable": false}
             ],
             //自定义列
             "columnDefs": [
@@ -146,30 +147,42 @@
                         }
                     }
                 },
-                {
-                    "targets": 14, //改写哪一列
-                    "render": function ( data, type, row, meta ) {
-                        return '<a type="button"  onclick="OpenModal(\'StudentEdit\','+row.id+')" class="fa fa-edit">编辑</a> <a type="button" class="fa fa-trash danger" href="#" onclick="del('+row.id+')">删除</a>';
-                    }
-                },
+//                {
+//                    "targets": 14, //改写哪一列
+//                    "render": function ( data, type, row, meta ) {
+//                        return '<a type="button"  onclick="OpenModal(\'StudentEdit\','+row.id+')" class="fa fa-edit">编辑</a> <a type="button" class="fa fa-trash danger" href="#" onclick="del('+row.id+')">删除</a>';
+//                    }
+//                },
 //
             ],
-            "initComplete": function () {
-                var api = this.api();
-                api.$('tr').click( function () {
-//                    $('#DataTable tbody').on( 'click', 'tr', function () {
-                    if ( $(this).hasClass('selected') ) {
-                        $(this).removeClass('selected');
+            "sDom": 'T<"clear">lfrtip',
+            "oTableTools": {
+                "aButtons": [
+                    {
+                        "sExtends": "text",
+                        "fnClick": function( nButton, oConfig ) {
+                            this.fnPrint( true, oConfig );
+                        }
                     }
-                    else {
-                        table.$('tr.selected').removeClass('selected');
-                        $(this).addClass('selected');
-                        //获取行数据
-                        var data = table.fnGetData(table.$('tr.selected').get(0));
-                         alert(data.StudentNo);
-                    }
-                } );
+                ]
             }
+//            "initComplete": function () {
+//                var api = this.api();
+//                api.$('tr').click( function () {
+////                    $('#DataTable tbody').on( 'click', 'tr', function () {
+//                    if ( $(this).hasClass('selected') ) {
+//                        $(this).removeClass('selected');
+//                    }
+//                    else {
+//                        table.$('tr.selected').removeClass('selected');
+//                        $(this).addClass('selected');
+//                        //获取行数据
+////                        var data = table.fnGetData(table.$('tr.selected').get(0));
+////                         alert(data.StudentNo);
+//                    }
+//                } );
+//            },
+
         });
         /******初始化DataTable*****************************************************************************/
         //checkbox 全选/取消全选
@@ -184,31 +197,19 @@
         });
     });
 
-
     /**
-     *删除操作
-     * @param data
+     * 选择学院时触发学院对应的专业
      */
-    function del(data) {
-        if(confirm("此操作不可逆，您真的要删除吗？")){
-            data={AdminId:data};
-            $.ajax({
-                url: 'del',
-                waitting: true,
-                dataType: 'json',
-                data: data,
-                waitting: '正在加载，请稍后...',
-                success: function(html) {
-                    //alertMsg(html.msg);
-                },
-                error: function() {
-                    alertMsg('网络连接失败，请稍后再试！', 'error');
-                },
-            });
-            $('#DataTable').DataTable().ajax.reload();
-        }
+    function chage_major(){
+        var ajaxurl="{:url('admin/common/MajorInfo')}";
+        chage_Major(ajaxurl);
     }
-
-
+    /**
+     * 选择专业时触发专业对应的班级
+     */
+    function chage_class() {
+        var ajaxurl = "{:url('admin/common/ClassInfo')}";
+        chage_Class(ajaxurl);
+    }
 </script>
 {/block}

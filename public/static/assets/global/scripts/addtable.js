@@ -86,4 +86,114 @@ function cancel(i){
 
 
 
+/**
+ * 点击注册按钮出发加载学院、宿舍
+ */
+function get_Academy_Dormitory (ajaxurl1,ajaxurl2) {
+    //加载学院
+    $.ajax({
+        cache:false,
+        type:"POST",
+        url:ajaxurl1,
+        dataType:"json",
+        data:'',
+        timeout:30000,
+        success:function(data){
+            $("#academy_list").empty();
+            var count = data.length;
+            var i = 0;
+            var b="<option value=''>选择学院</option>";
+            for(i=0;i<count;i++){
+                b+="<option value='"+data[i].AcademyId+"'>"+data[i].AcademyName+"</option>";
+            }
+            $("#academy_list").append(b);
+        },
+        error:function(){
+            alertMsg('出现错误，请重试！！！','error');
+        }
+    });
+    //加载宿舍
+    $.ajax({
+        cache:false,
+        type:"POST",
+        url:ajaxurl2,
+        dataType:"json",
+        data:'',
+        timeout:30000,
+        success:function(data){
+            $("#dormitory_list").empty();
+            var count = data.length;
+            var i = 0;
+            var b="<option value=''>选择宿舍</option>";
+            for(i=0;i<count;i++){
+                if(data[i].Unit ==''){
+                    b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].DormitoryNo+"室</option>";
+                }else{
+                    b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].Unit+"单元"+data[i].DormitoryNo+"室</option>";
+                }
+            }
+            $("#dormitory_list").append(b);
+        },
+        error:function(){
+            alertMsg('出现错误，请重试！！！','error');
+        },
+    });
+
+}
+/**
+ * 选择学院时触发学院对应的专业
+ */
+function chage_Major(ajaxurl) {
+    var academy=document.getElementById("academy_list").value;
+    data={'academy':academy};
+    $.ajax({
+        cache:false,
+        type:"POST",
+        url:ajaxurl,
+        dataType:"json",
+        data:data,
+        timeout:30000,
+        error:function(){
+           alertMsg('出现错误，请重试！！！','error');
+        },
+        success:function(data){
+            $("#major_list").empty();
+            var count = data.length;
+            var i = 0;
+            var b="<option value=''>选择专业</option>";
+            for(i=0;i<count;i++){
+                b+="<option value='"+data[i].MajorId+"'>"+data[i].MajorName+"</option>";
+            }
+            $("#major_list").append(b);
+        }
+    });
+}
+function chage_Class(ajaxurl) {
+    var major=document.getElementById("major_list").value;
+    var data_major={'major':major};
+    $.ajax({
+        cache:false,
+        type:"POST",
+        url:ajaxurl,
+        dataType:"json",
+        data:data_major,
+        timeout:30000,
+        error:function(){
+            alert('admin/Common/MajorInfo?academy='+major);
+        },
+        success:function(data){
+            $("#class_list").empty();
+            var count = data.length;
+            var i = 0;
+            var b="<option value=''>选择班级</option>";
+            for(i=0;i<count;i++){
+                b+="<option value='"+data[i].ClassId+"'>"+data[i].ClassName+"</option>";
+            }
+            $("#class_list").append(b);
+        }
+    });
+}
+
+
+
 

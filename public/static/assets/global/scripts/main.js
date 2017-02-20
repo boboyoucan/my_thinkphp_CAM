@@ -33,6 +33,13 @@ $.ajaxSetup({
                 }
                 return;
             }
+            //注册页面的学院，专业，宿舍的数据返回
+            if (this.dataType == 'json' && response_type == 'application/json; charset=utf-8' || response_type == 'application/json; charset=UTF-8') {
+                if (typeof this.custom.success == 'function') {
+                    this.custom.success(data, textStatus, jqXHR);
+                }
+                return;
+            }
             //datatable表格数据处理
             if (this.dataType == 'json' && response_type == 'text/html; charset=utf-8' || response_type == 'text/html' || response_type == 'text/html; charset=UTF-8' ) {
                 if (typeof this.custom.success == 'function') {
@@ -255,6 +262,11 @@ function zh_validator() {
         var tel = /^1[3|4|5|7|8]\d{9}$/;
         return this.optional(element) || (tel.test(value));
     }, "请输入有效的手机号码");
+    //验证学号
+    jQuery.validator.addMethod("studentno", function(value, element) {
+        var tel = /^[2|3|4|5|6][0|1|2|3|4]\d{9}$/;
+        return this.optional(element) || (tel.test(value));
+    }, "请输入有效的学号");
 
     // 验证身份证号
     jQuery.validator.addMethod("cardid", function(value, element) {
@@ -290,19 +302,50 @@ function zh_validator() {
 }
 
 /**
- * 处理添加，编辑操作
+ * 处理添加、编辑、删除操作
  * @param url 操作地址
  * @param data 数据
  * @constructor
  *
  */
-function OpenModal(url,data) {
-    if(data== ''){
-        data='';
+function OpenModal(url,action) {
+    if(action == 'Edit' || action == 'Delete'){
+        var table = $('#DataTable').dataTable();
+        if( table.$('tr').hasClass('selected')){
+            //获取行数据
+            var data_row = table.fnGetData(table.$('tr.selected').get(0));
+            data = {Id:data_row.id};
+        }else{
+            alertMsg('请先选择要操作的数据!','danger');
+            return false;
+        }
+        //删除操作ajax提交
+        if(action == 'Delete'){
+            if(!confirm("此操作不可逆，您真的要删除吗？")){
+                return;
+            }
+            else{
+                $.ajax({
+                    url: url,
+                    waitting: true,
+                    dataType: 'json',
+                    data: data,
+                    waitting: '正在加载，请稍后...',
+                    success: function(html) {
+                        //alertMsg(html.msg);
+                    },
+                    error: function() {
+                        alertMsg('网络连接失败，请稍后再试！', 'error');
+                    },
+                });
+                $('#DataTable').DataTable().ajax.reload();
+                return;
+            }
+        }
     }else{
-        data={Id:data};
+        data = '';
     }
-
+    //添加和编辑操作ajax
     $.ajax({
         url: url,
         waitting: true,
@@ -348,29 +391,29 @@ function OpenModal(url,data) {
 
 
 }
-/**
- *
- * @param data
- */
-function del(data) {
-    if(confirm("此操作不可逆，您真的要删除吗？")){
-        data={AdminId:data};
-        $.ajax({
-            url: 'del',
-            waitting: true,
-            dataType: 'json',
-            data: data,
-            waitting: '正在加载，请稍后...',
-            success: function(html) {
-                //alertMsg(html.msg);
-            },
-            error: function() {
-                alertMsg('网络连接失败，请稍后再试！', 'error');
-            },
-        });
-        $('#DataTable').DataTable().ajax.reload();
-    }
-}
+// /**
+//  *
+//  * @param data
+//  */
+// function del(data) {
+//     if(confirm("此操作不可逆，您真的要删除吗？")){
+//         data={AdminId:data};
+//         $.ajax({
+//             url: 'del',
+//             waitting: true,
+//             dataType: 'json',
+//             data: data,
+//             waitting: '正在加载，请稍后...',
+//             success: function(html) {
+//                 //alertMsg(html.msg);
+//             },
+//             error: function() {
+//                 alertMsg('网络连接失败，请稍后再试！', 'error');
+//             },
+//         });
+//         $('#DataTable').DataTable().ajax.reload();
+//     }
+// }
 //datatable的初始化设置
 function datatable_extend(){
     $.extend( $.fn.dataTable.defaults, {
@@ -379,11 +422,11 @@ function datatable_extend(){
         "searching": false,		//开启搜索功能
         "autoWidth": false, 	//让Datatables自动计算宽度
         "searching": true,		//开启全局搜索功能
+        "select": true,           //开启行选择
         "lengthMenu": [[5, 10, 20, 30, -1], ["5", "10", "20", "30", "all"]],//改变每页显示条数列表的选项
         "pagingType": "full_numbers",		//分页按钮种类显示选项
         "order": [[1, "asc"]],
-        "bFilter": true, //搜索栏
-        "striped": false, // 隔行换色
+        "bFilter": false, //过滤功能
 
         //表格初始化排序【全选框不用排序】
         "language": {
@@ -392,6 +435,7 @@ function datatable_extend(){
             "zeroRecords": "没有匹配结果",
 
             "search": "搜索:",
+            "sSearchPlaceholder": "输入需要搜索的关键字",//输入框内提示
             "url": "",
             "emptyTable": "表中数据为空",
             "loadingRecords": "正在加载数据...",
@@ -401,7 +445,6 @@ function datatable_extend(){
             "infoEmpty": "显示第 0 至 0 项结果，共 0 项",
             "infoFiltered": "(由 _MAX_ 项结果过滤)",
             //"infoPostFix": "",
-
             "paginate": {
                 "first": "首页",
                 "previous": "上一页",

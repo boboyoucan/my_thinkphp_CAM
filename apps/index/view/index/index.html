@@ -68,7 +68,7 @@
         </div>
         <div class="create-account">
             <p> 还没有账号 ?&nbsp;
-                <a onclick="get_Academy_Dormitory()" id="register-btn"> 注册 </a>
+                <a onclick="get_academy_dormitory()" id="register-btn"> 注册 </a>
             </p>
         </div>
         <!--&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp   &nbsp<p style="font-size: small">违规登记</p><br>-->
@@ -191,7 +191,7 @@
             <label class="control-label visible-ie8 visible-ie9">学院</label>
             <div class="input-icon">
                 <i class="fa fa-mortar-board"></i>
-                <select name="Academy" id="academy_list" class="select2 form-control" onchange="chage_Major()" >
+                <select name="Academy" id="academy_list" class="select2 form-control" onchange="chage_major()" >
                     <option value="">选择学院</option>
                 </select></div>
         </div>
@@ -199,7 +199,7 @@
             <label class="control-label visible-ie8 visible-ie9">专业</label>
             <div class="input-icon">
                 <i class="fa fa-mortar-board"></i>
-                <select name="Major" id="major_list" class="select2 form-control" onchange="chage_Class()">
+                <select name="Major" id="major_list" class="select2 form-control" onchange="chage_class()">
                     <option value="">选择专业</option>
                 </select></div>
         </div>
@@ -258,7 +258,7 @@
 </div>
 <!-- END LOGIN -->
 <!-- BEGIN COPYRIGHT -->
-<div class="copyright"> <?php echo date('Y');?> &copy; wangbowen - 高校公寓管理系统. </div>
+<div class="copyright"> 2016 - <?php echo date('Y');?> &copy; wangbowen - 高校公寓管理系统. </div>
 </body>
 
 </html>
@@ -269,108 +269,24 @@
     /**
      * 点击注册按钮出发加载学院、宿舍
      */
-    function get_Academy_Dormitory() {
-        //加载学院
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"{:url('admin/common/AcademyInfo')}",
-            dataType:"json",
-            //data:['academy','$academy'],
-            timeout:30000,
-            error:function(){
-                alert('admin/Common/AcademyInfo');
-            },
-            success:function(data){
-                $("#academy_list").empty();
-                var count = data.length;
-                var i = 0;
-                var b="<option value=''>选择学院</option>";
-                for(i=0;i<count;i++){
-                    b+="<option value='"+data[i].AcademyId+"'>"+data[i].AcademyName+"</option>";
-                }
-                $("#academy_list").append(b);
-            }
-        });
-        //加载宿舍
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"{:url('admin/common/DormitoryInfo')}",
-            dataType:"json",
-            //data:['academy','$academy'],
-            timeout:30000,
-            error:function(){
-                alert('admin/Common/DormitoryInfo');
-            },
-            success:function(data){
-                $("#dormitory_list").empty();
-                var count = data.length;
-                var i = 0;
-                var b="<option value=''>选择宿舍</option>";
-                for(i=0;i<count;i++){
-                    if(data[i].Unit ==''){
-                        b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].DormitoryNo+"室</option>";
-                    }else{
-                        b+="<option value='"+data[i].DormitoryId+"'>"+data[i].Building+"栋"+data[i].Unit+"单元"+data[i].DormitoryNo+"室</option>";
-                    }
-                }
-                $("#dormitory_list").append(b);
-            }
-        });
-
+    function get_academy_dormitory() {
+        var ajaxurl1 = "{:url('admin/common/AcademyInfo')}";
+        var ajaxurl2 = "{:url('admin/common/DormitoryInfo')}";
+        get_Academy_Dormitory(ajaxurl1, ajaxurl2);
     }
     /**
      * 选择学院时触发学院对应的专业
      */
-    function chage_Major() {
-        var academy=document.getElementById("academy_list").value;
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"{:url('admin/common/MajorInfo')}?academy="+academy,
-            dataType:"json",
-            data:['academy','$academy'],
-            timeout:30000,
-            error:function(){
-                alert('admin/Common/MajorInfo?academy='+academy);
-            },
-            success:function(data){
-                $("#major_list").empty();
-                var count = data.length;
-                var i = 0;
-                var b="<option value=''>选择专业</option>";
-                for(i=0;i<count;i++){
-                    b+="<option value='"+data[i].MajorId+"'>"+data[i].MajorName+"</option>";
-                }
-                $("#major_list").append(b);
-            }
-        });
+    function chage_major(){
+        var ajaxurl="{:url('admin/common/MajorInfo')}";
+        chage_Major(ajaxurl);
     }
-    function chage_Class() {
-        var major=document.getElementById("major_list").value;
-        $.ajax({
-            cache:false,
-            type:"POST",
-            url:"{:url('admin/common/ClassInfo')}?major="+major,
-            dataType:"json",
-            data:{'major':major},
-            timeout:30000,
-            error:function(){
-                alert('admin/Common/MajorInfo?academy='+major);
-            },
-            success:function(data){
-                $("#class_list").empty();
-                var count = data.length;
-                var i = 0;
-                var b="<option value=''>选择班级</option>";
-                for(i=0;i<count;i++){
-                    b+="<option value='"+data[i].ClassId+"'>"+data[i].ClassName+"</option>";
-                }
-                $("#class_list").append(b);
-            }
-        });
+    function chage_class(){
+        var ajaxurl="{:url('admin/common/ClassInfo')}";
+        chage_Class(ajaxurl);
     }
+
+
     //发送邮箱验证码
     function forget_password(){
         if($('.forget-form').validate().form()){
