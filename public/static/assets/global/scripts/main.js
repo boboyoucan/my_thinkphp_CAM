@@ -34,7 +34,7 @@ $.ajaxSetup({
                 return;
             }
             //datatable表格数据处理
-            if (this.dataType == 'json' && response_type == 'text/html; charset=utf-8' || response_type == 'text/html' ) {
+            if (this.dataType == 'json' && response_type == 'text/html; charset=utf-8' || response_type == 'text/html' || response_type == 'text/html; charset=UTF-8' ) {
                 if (typeof this.custom.success == 'function') {
                     this.custom.success(data, textStatus, jqXHR);
                 }
