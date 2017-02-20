@@ -30322,7 +30322,7 @@
 	  Data = __webpack_require__(34);
 
 	  HheaTable = (function(_super) {
-	    __fnGetNodess(HheaTable, _super);
+          __extends(HheaTable, _super);
 
 	    function HheaTable() {
 	      return HheaTable.__super__.constructor.apply(this, arguments);
