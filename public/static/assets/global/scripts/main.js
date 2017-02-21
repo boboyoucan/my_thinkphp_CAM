@@ -6,13 +6,11 @@ $(function () {
     //定时刷新刷新页面处理方法
     $("select[name='refresh']").on('change',function () {
         var time=$(this).val();
-        if(time ==0){
+        if(time == 0 ){
             var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time);
-            for(i=0;i<times;i++){
+            for(i=0;i<=times;i++){
                 clearInterval(i);
             }
-
-            return;
         }
         else{
             var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time);
@@ -482,5 +480,18 @@ function datatable_extend(){
         },
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
