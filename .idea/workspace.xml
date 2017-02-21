@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd29a14e-ea7b-44d1-b324-586ec7d04232" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/admin/view/valuablesinfo/view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php" afterPath="$PROJECT_DIR$/apps/admin/controller/Valuablesinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/model/Valuablesinfo.php" afterPath="$PROJECT_DIR$/apps/admin/model/Valuablesinfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/rolemanagement/add.html" afterPath="$PROJECT_DIR$/apps/admin/view/rolemanagement/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/rolemanagement/edit.html" afterPath="$PROJECT_DIR$/apps/admin/view/rolemanagement/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/admin/view/valuablesinfo/index.html" afterPath="$PROJECT_DIR$/apps/admin/view/valuablesinfo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/header/index.html" afterPath="$PROJECT_DIR$/public/header/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/assets/global/scripts/main.js" afterPath="$PROJECT_DIR$/public/static/assets/global/scripts/main.js" />
     </list>
     <ignored path="myphpweb.iws" />
@@ -52,11 +45,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="159">
+              <caret line="17" column="83" lean-forward="false" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
               <folding>
-                <marker date="1487684394657" expanded="true" signature="6634:6920" ph="..." />
-                <marker date="1487684394657" expanded="true" signature="6993:7051" ph="..." />
+                <marker date="1487687350953" expanded="true" signature="6691:6977" ph="..." />
+                <marker date="1487687350953" expanded="true" signature="7050:7108" ph="..." />
               </folding>
             </state>
           </provider>
@@ -249,10 +242,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-11" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -862,14 +854,7 @@
       <workItem from="1487378739170" duration="27500000" />
       <workItem from="1487467339152" duration="27955000" />
       <workItem from="1487553264152" duration="40935000" />
-      <workItem from="1487640808428" duration="23039000" />
-    </task>
-    <task id="LOCAL-00004" summary="测试">
-      <created>1480225494543</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1480225494543</updated>
+      <workItem from="1487640808428" duration="24376000" />
     </task>
     <task id="LOCAL-00005" summary="测试">
       <created>1480226139363</created>
@@ -1207,11 +1192,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487603890925</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="main.js添加刷新表格方法和定时刷新表格方法，实现贵重物品信息的展示和贵重物品登记信息的展示">
+      <created>1487686249813</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1487686249817</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401861000" />
+    <option name="totallyTimeSpent" value="403198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1223,14 +1215,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-11" y="0" width="1382" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25256222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33911672" sideWeight="0.46559298" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34510434" sideWeight="0.46559298" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33911672" sideWeight="0.534407" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34510434" sideWeight="0.534407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1756,11 +1748,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/static/assets/global/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="159">
+          <caret line="17" column="83" lean-forward="false" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
           <folding>
-            <marker date="1487684394657" expanded="true" signature="6634:6920" ph="..." />
-            <marker date="1487684394657" expanded="true" signature="6993:7051" ph="..." />
+            <marker date="1487687350953" expanded="true" signature="6691:6977" ph="..." />
+            <marker date="1487687350953" expanded="true" signature="7050:7108" ph="..." />
           </folding>
         </state>
       </provider>

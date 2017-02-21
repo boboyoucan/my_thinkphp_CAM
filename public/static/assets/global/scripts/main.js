@@ -7,14 +7,18 @@ $(function () {
     $("select[name='refresh']").on('change',function () {
         var time=$(this).val();
         if(time ==0){
-            var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time)-1;
-            clearInterval(times+1);
-            clearInterval(times);
+            var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time);
+            for(i=0;i<times;i++){
+                clearInterval(i);
+            }
+
             return;
         }
         else{
-            var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time)-1;
-            clearInterval(times);
+            var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time);
+            for(i=0;i<times;i++){
+                clearInterval(i);
+            }
         }
 
     });
