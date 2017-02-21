@@ -1,3 +1,26 @@
+$(function () {
+    //按钮单击刷新页面
+    $("button[name='refresh']").on('click',function () {
+        $('#DataTable').DataTable().ajax.reload();
+    });
+    //定时刷新刷新页面处理方法
+    $("select[name='refresh']").on('change',function () {
+        var time=$(this).val();
+        if(time ==0){
+            var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time)-1;
+            clearInterval(times+1);
+            clearInterval(times);
+            return;
+        }
+        else{
+            var times=setInterval("$('#DataTable').DataTable().ajax.reload()",time)-1;
+            clearInterval(times);
+        }
+
+    });
+})
+
+
 /**
  * Created by wbw on 2017/2/18.
  */
@@ -425,7 +448,8 @@ function datatable_extend(){
         "select": true,           //开启行选择
         "lengthMenu": [[5, 10, 20, 30, -1], ["5", "10", "20", "30", "all"]],//改变每页显示条数列表的选项
         "pagingType": "full_numbers",		//分页按钮种类显示选项
-        "order": [[1, "asc"]],
+        "order": [[1, "asc"]], //默认用那列排序
+        "iDisplayLength": 5,//jquery datatable默认每页显示多少条数据
         "bFilter": false, //过滤功能
 
         //表格初始化排序【全选框不用排序】

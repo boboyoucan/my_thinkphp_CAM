@@ -5,7 +5,7 @@ class Valuablesinfo extends Model
 {
 /*****************************************
  * 作者：王波文
- * 时间：2017年1月15日
+ * 时间：2017年2月21日
  *方法：贵重物品登记管理页面
  *****************************************/
     public function index($Where,$limitSql,$orderSql)
@@ -16,19 +16,52 @@ class Valuablesinfo extends Model
         }
         //判断为宿舍管理员的动作
         elseif (session('type')==1){
-            $do=db('admininfo')->query("select WhichBuilding from admininfo where id=".''.session('id'));
+            $do=db('admininfo')->query("select WhichBuilding from admininfo where AdminId=".''.session('id'));
             $where="DO.Building=".''.$do[0]['WhichBuilding'];
         }
         //判断为学生时的动作
         elseif(session('type')==3){
             $where="ST.id=".''.session('id');
         }
-        $data['sum']=db('valuablesinfo')->query("select count(*) as sum from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId AND ".$Where);
-        $data['data']=db('valuablesinfo')->query("select ST.StudentName,concat(MA.MajorName,'-',CL.ClassName) as Major,concat(DO.Building,'-',DO.Unit,'-',DO.DormitoryNo) as Dormitory,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and $where and ".$Where.$limitSql.$orderSql);
+        $data['sum']=db('valuablesinfo')->query("select count(*) as sum from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId AND ".$where.' and '.$Where);
+//        var_dump("select count(*) as sum from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId AND ".$where.' and '.$Where);
+//        exit;
+        $data['data']=db('valuablesinfo')->query("select ST.StudentNo,ST.StudentName,concat(MA.MajorName,'-',CL.ClassName) as Major,concat(DO.Building,'-',DO.Unit,'-',DO.DormitoryNo) as Dormitory,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and $where and ".$Where.$orderSql.$limitSql);
+//        var_dump("select ST.StudentName,concat(MA.MajorName,'-',CL.ClassName) as Major,concat(DO.Building,'-',DO.Unit,'-',DO.DormitoryNo) as Dormitory,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and $where and ".$Where.$limitSql.$orderSql);
+//        exit;
         return $data;
        }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月21日
+     *方法：贵重物品查看页面
+     *****************************************/
+    public function ViewTable($Where,$limitSql,$orderSql)
+    {
+        //判断为管理员动作
+        if(session('type')==0){
+            $where="1=1";
+        }
+        //判断为宿舍管理员的动作
+        elseif (session('type')==1){
+            $do=db('admininfo')->query("select WhichBuilding from admininfo where AdminId=".''.session('id'));
+            $where="DO.Building=".''.$do[0]['WhichBuilding'];
+        }
+        //判断为学生时的动作
+        elseif(session('type')==3){
+            $where="ST.id=".''.session('id');
+        }
+        $data['sum']=db('studentinfo')->query("select count(*) as sum from studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId AND ".$where.' and '.$Where);
+//        var_dump("select count(*) as sum from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId AND ".$where.' and '.$Where);
+//        exit;
+        $data['data']=db('studentinfo')->query("select ST.id as Id,ST.StudentNo,ST.StudentName,concat(MA.MajorName,'-',CL.ClassName) as Major,concat(DO.Building,'-',DO.Unit,'-',DO.DormitoryNo) as Dormitory,ST.PhoneNo from studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and $where and ".$Where.$orderSql.$limitSql);
+//        var_dump("select ST.StudentName,concat(MA.MajorName,'-',CL.ClassName) as Major,concat(DO.Building,'-',DO.Unit,'-',DO.DormitoryNo) as Dormitory,VA.ValuablesName,VA.RegistrationTime,VA.ValuablesId,ST.PhoneNo from valuablesinfo as VA JOIN studentinfo as ST JOIN classinfo as CL JOIN majorinfo as MA JOIN dormitoryinfo as DO where VA.Uid=ST.id and ST.CId=CL.ClassId and CL.MId=MA.MajorId and ST.DId=DO.DormitoryId and $where and ".$Where.$limitSql.$orderSql);
+//        exit;
+        return $data;
+    }
 
-/*****************************************
+
+    /*****************************************
  * 作者：王波文
  * 时间：2017年1月16日
  *方法：贵重物品查看页面

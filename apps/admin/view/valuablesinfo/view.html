@@ -1,6 +1,5 @@
 {extend name="public/header/index.html" /}
 {block name="content"}
-<!--<meta http-equiv="refresh" content="20"> 设置每隔20秒刷新页面-->
 <div class="page-bar">
     <ul class="page-breadcrumb">
         <li>
@@ -8,7 +7,7 @@
             <i class="fa fa-circle"></i>
         </li>
         <li>
-            <span>贵重物品登记管理</span>
+            <span>贵重物品查看</span>
         </li>
     </ul>
     <div class="page-toolbar">
@@ -22,40 +21,24 @@
 <div class="portlet light portlet-fit portlet-datatable bordered" id="form_wizard_1">
     <div class="portlet-body">
         <div id="sample_2_wrapper" class="dataTables_wrapper no-footer">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="btn-group">
+            <!--<div class="row">-->
+                <!--<div class="col-md-6 col-sm-6">-->
+                    <!--<div class="btn-group">-->
 
-                        <button  type="button" onclick="OpenModal('add','Add')" class="btn btn-default" >
-                            <i class="fa fa-plus" aria-hidden="true"></i>添加
-                        </button>
-                        <button class="btn btn-default"  onclick="OpenModal('edit','Edit')" data-toggle="modal" data-target="#myModal">
-                            <i class="fa fa-edit" aria-hidden="true"> </i>编辑
-                        </button>
-                        <button class="btn btn-default"  onclick="OpenModal('del','Delete')" data-toggle="modal" data-target="#myModal">
-                            <i class="fa fa-trash" aria-hidden="true"> </i>删除
-                        </button>
+                        <!--<button  type="button" onclick="OpenModal('add','Add')" class="btn btn-default" >-->
+                            <!--<i class="fa fa-plus" aria-hidden="true"></i>添加-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-default"  onclick="OpenModal('edit','Edit')" data-toggle="modal" data-target="#myModal">-->
+                            <!--<i class="fa fa-edit" aria-hidden="true"> </i>编辑-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-default"  onclick="OpenModal('del','Delete')" data-toggle="modal" data-target="#myModal">-->
+                            <!--<i class="fa fa-trash" aria-hidden="true"> </i>删除-->
+                        <!--</button>-->
+                    <!--</div>-->
 
-                    </div>
+                <!--</div>-->
 
-                </div>
-
-            </div>
-            <div class="columns columns-right btn-group pull-right ">
-                <button class="btn btn-default btn-lg" type="button" name="refresh"  id="refresh" title="刷新">
-                    <i class="glyphicon glyphicon-refresh icon-refresh ">
-                    </i>
-
-                </button>
-                <div class="keep-open btn-group" title="选择刷新页面">
-                    <select class="select2 form-control" name="refresh" value="">
-                        <option value="0">设定x秒刷新</option>
-                        <option value="5000">5秒自动刷新页面</option>
-                        <option value="10000">10秒自动刷新页面</option>
-                        <option  value="30000">30秒自动刷新页面</option>
-                    </select>
-                </div>
-            </div>
+            <!--</div>-->
             <div class="table-scrollable">
                 <table class="table table-striped table-bordered table-hover table-checkable order-column dataTable no-footer" id="DataTable">
                     <thead>
@@ -66,10 +49,7 @@
                         <th>姓名</th>
                         <th>专业-班级</th>
                         <th>宿舍</th>
-                        <th>贵重物品</th>
                         <th>联系电话</th>
-                        <th>登记时间</th>
-
                     </tr>
                     </thead>
                 </table>
@@ -79,15 +59,13 @@
 </div>
 <script type="text/javascript">
     $(function() {
-        //设置定时刷新，myrefresh为定时刷新执行的函数，2000为2秒
-        //setInterval(myrefresh,30000);
         /******初始化DataTable*****************************************************************************/
         //继承datatable的初始化设置
         datatable_extend();
         var table = $('#DataTable').dataTable({
-            "order": [[8, "desc"]],//默认已那个排序
+            "order": [[2, "desc"]],//默认已那个排序
             "ajax": {
-                "url": "{:url('admin/Valuablesinfo/IndexTable')}",
+                "url": "{:url('admin/Valuablesinfo/ViewTable')}",
                 "type": "POST",
             },
             //定义列数据来源
@@ -97,22 +75,19 @@
                     "orderable": false,  //禁止排序
                     "title": "<input type='checkbox' id='checkall'/>",
                 },
-                {"data": "ValuablesId"},
+                {"data": "Id"},
                 {"data": "StudentNo"},
                 {"data": "StudentName"},
                 {"data": "Major"},
                 {"data": "Dormitory", "orderable": true, "class": 'details-control'},
-                {"data": "ValuablesName", "orderable": false, "class": 'details-control'},
                 {"data": "PhoneNo"},
-                {"data": "RegistrationTime", "orderable": true, "class": 'details-control'},
-
             ],
             //自定义列
             "columnDefs": [
                 {
                     "targets": 0, //改写哪一列
                     "render": function ( data, type, row, meta ) {
-                        return "<input type='checkbox' name='Boxes' id='row_"+row.AdminId+"' />";
+                        return "<input type='checkbox' name='Boxes' id='row_"+row.Id+"' />";
                     }
                 },
                 {
@@ -132,10 +107,8 @@
                 $('#DataTable tbody tr').removeClass('selected');
             }
         });
-
-
-
     });
+
 
 
 </script>
