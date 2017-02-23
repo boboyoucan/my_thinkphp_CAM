@@ -123,6 +123,7 @@ class Valuablesinfo extends Checklogin
      *****************************************/
     public function ValuablesRegistr(){
 
+        return $this->fetch("valuablesregistr");
     }
 
 

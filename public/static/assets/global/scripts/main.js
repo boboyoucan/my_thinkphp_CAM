@@ -3,6 +3,8 @@ $(function () {
     $("button[name='refresh']").on('click',function () {
         $('#DataTable').DataTable().ajax.reload();
     });
+    //设置定时刷新，myrefresh为定时刷新执行的函数，3000为2秒
+    //setInterval(myrefresh,30000);
     //定时刷新刷新页面处理方法
     $("select[name='refresh']").on('change',function () {
         var time=$(this).val();
@@ -334,7 +336,7 @@ function zh_validator() {
  *
  */
 function OpenModal(url,action) {
-    if(action == 'Edit' || action == 'Delete'){
+    if(action == 'Edit' || action == 'Delete' || action == 'Check'){
         var table = $('#DataTable').dataTable();
         if( table.$('tr').hasClass('selected')){
             //获取行数据
@@ -395,7 +397,6 @@ function OpenModal(url,action) {
                 if ($form.eq(i).data('validate') == true) {
                     return true;
                 }
-
                 $form.eq(i).on('submit', function() {
                     $form.eq(i).ajaxSubmit();
                     return false;

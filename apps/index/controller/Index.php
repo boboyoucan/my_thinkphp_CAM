@@ -30,6 +30,7 @@ class Index extends Controller
                 ->find();
             if($db_admin == null){
                 $this->assign('common_nf','0');
+                //return info('登录123',1);
                 return $this->fetch('index/index');
             }
             else{
@@ -38,6 +39,7 @@ class Index extends Controller
                 session('id',$db_admin['AdminId']);
                 //session('wb',$db_admin['WhichBuilding']);
                 return $this->redirect('Admin/index/index');
+
                }
         }
         //remember=3没设置表示登录类型为学生
@@ -93,10 +95,10 @@ class Index extends Controller
                 session('type','3');
                 $this->redirect("admin/index/index");
             }else{
-                echo "注册失败";
+               return info("注册失败",0);
             }
         }else{
-            echo "非法访问";
+            return info("非法访问",0);
         }
     }
     public function sendMail($email){

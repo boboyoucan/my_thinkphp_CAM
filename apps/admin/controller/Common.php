@@ -84,5 +84,6 @@ class Common extends Controller
         }
         return $page_assign;
     }
+
 }
 

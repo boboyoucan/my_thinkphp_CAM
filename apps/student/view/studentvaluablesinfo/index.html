@@ -26,10 +26,6 @@
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->
 <div class="content">
-    <div class="alert alert-danger display-hide" id="message_danger">
-    </div>
-    <div class="alert alert-info display-hide" id="message_info">
-    </div>
         <h3 style="text-align: center"> 贵重物品登记</h3>
         <div class="form-group">
             <div class="input-icon">
@@ -100,21 +96,10 @@
             data: data_Valuables,
             timeout:30000,
             error:function(){
-                alert('student/studentvaluablesinfo/valuablesregistration');
+                alertMsg(data.msg,'info');
             },
             success:function(data){
-                m="";
-                if(data.flag ==1){
-                    $("#message_info").empty();
-                    m+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
-                    $("#message_info").append(m);
-                    $("#message_info").show(100);
-                }else{
-                    $("#message_danger").empty();
-                    m+="<button class='close' data-close='alert'></button><span> "+data.mes+"</span>";
-                    $("#message_danger").append(m);
-                    $("#message_danger").show(100);
-                }
+                alertMsg(data.msg,'info');
             }
         });
     }
