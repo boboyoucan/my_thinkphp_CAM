@@ -47,7 +47,9 @@ $.ajaxSetup({
         this.custom.complete = this.complete;
 
         this.success = function(data, textStatus, jqXHR) {
+            // data = $.parseJSON(data);
             if (typeof data.msg == 'string' && data.msg != '') {
+
                 alertMsg(data.msg);
             }
             var response_type = jqXHR.getResponseHeader("Content-Type");
@@ -336,7 +338,7 @@ function zh_validator() {
  *
  */
 function OpenModal(url,action) {
-    if(action == 'Edit' || action == 'Delete' || action == 'Check'){
+    if(action == 'Edit' || action == 'Delete' || action == 'Check' || action == 'UnCheck'){
         var table = $('#DataTable').dataTable();
         if( table.$('tr').hasClass('selected')){
             //获取行数据
@@ -346,9 +348,15 @@ function OpenModal(url,action) {
             alertMsg('请先选择要操作的数据!','danger');
             return false;
         }
+        if(action == 'UnCheck'){
+            if(data_row.CheckState==0){
+                alertMsg('该数据暂未审核，不能取消审核！','danger');
+                return false;
+            }
+        }
         //删除操作ajax提交
-        if(action == 'Delete'){
-            if(!confirm("此操作不可逆，您真的要删除吗？")){
+        if(action == 'Delete' || action == 'UnCheck'){
+            if(!confirm("此操作不可逆，您真的要操作吗？")){
                 return;
             }
             else{

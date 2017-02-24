@@ -1,0 +1,55 @@
+{__NOLAYOUT__}
+<!--target="targetIfr"-->
+<form id="form" data-target="targetIfr" method="post" action="/{$Request.module}/{$Request.controller}/{$Request.action}" submit="ajax" data-validate="true" class="form-horizontal">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"  style="height:400px;">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Admin添加账号
+                    </h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="portlet-body form">
+
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">宿舍</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-institution"></i>
+                                                        </span>
+                                        <input type="text" class="form-control" maxlength="11" placeholder="格式:11-2-717" required="" name="Dormitory" > </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">报修内容</label>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+
+                                        <!--<input type="tel" class="form-control mobile" required name="PhoneNo" maxlength="11" placeholder="手机号码"> -->
+                                        </div>
+                                        <textarea class="textarea" name="RepairContent" required="" placeholder="输入报修内容" style="margin: 0px; min-width: 248px; min-height: 76px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        添加
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<iframe name="targetIfr" style="display:none"></iframe>

@@ -8,6 +8,11 @@ class Repairinfo extends Checklogin
         return $this->fetch('index');
 
     }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月23日
+     *方法：报修首页数据bootstrap table 显示
+     *****************************************/
     public function Repair(){
         //$search:全局查找条件
         $search= !empty($_REQUEST['search']['value']) ?  $_REQUEST['search']['value'] : '';
@@ -31,11 +36,10 @@ class Repairinfo extends Checklogin
         if(isset($order_column)){
             $i = intval($order_column);
             switch($i){
-                case 2;$orderSql = " order by StudentNo ".$order_dir;break;
-                case 3;$orderSql = " order by StudentName ".$order_dir;break;
-                case 4;$orderSql = " order by MajorName ".$order_dir;break;
-                case 5;$orderSql = " order by Building ".$order_dir;break;
-                case 6;$orderSql = " order by PhoneNo ".$order_dir;break;
+                case 2;$orderSql = " order by DormitoryNo ".$order_dir;break;
+                case 3;$orderSql = " order by RepairContent ".$order_dir;break;
+                case 4;$orderSql = " order by RepairTime ".$order_dir;break;
+                case 5;$orderSql = " order by CheckState ".$order_dir;break;
                 default;$orderSql = '';
             }
         }
@@ -48,12 +52,21 @@ class Repairinfo extends Checklogin
         echo json_encode($data,JSON_UNESCAPED_UNICODE);
 
     }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月23日
+     *方法：报修管理,审核处理
+     *****************************************/
     public function Check($Id = 0){
         $Id =intval($Id);
         if(empty($Id)){
             return info('数据id异常',0);
         }
+
         if(request()->isPost()){
+            if(session('type')== 3){
+                return info('您没有操作权限',0);
+            }
             $datas = model('Repairinfo')->Check();
             return $datas;
         }
@@ -63,7 +76,59 @@ class Repairinfo extends Checklogin
         $data['CheckSuggest']=$da['CheckSuggest'];
         $this->assign('data',$data);
         return $this->fetch("check");
+    }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月24日
+     *方法：报修管理,取消审核处理
+     *****************************************/
+    public function Uncheck($Id){
+        $del =model('Repairinfo')->UnCheck($Id);
+        return $del;
+    }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月24日
+     *方法：报修管理删除
+     * 参数：$Id post的报修唯一标示id
+     *****************************************/
 
+    public function del($Id){
+        $del =model('Repairinfo')->del($Id);
+        return $del;
+    }
+    /*****************************************
+     * 作者：王波文
+     * 时间：2017年2月24日
+     *方法：报修管理添加
+     * 参数：null
+     *****************************************/
+    public function add(){
+        if(request()->isPost()){
+            $data = request()->param();
+            $add=model('Repairinfo')->add($data);
+            return $add;
+        }
+        if(session('type')==0 || session('type')==1){
+            return $this->fetch('adminadd');
+        }
+        elseif(session('type')==3){
+            return $this->fetch('studentadd');
+        }
+    }
+    public function edit($Id=0){
+        $Id=intval($Id);
+        if(empty($Id)){
+            return info('数据id异常',0);
+        }
+        if(request()->isPost()){
+            $data=request()->param();
+            $edit=model('Repairinfo')->edit($data);
+            return $edit;
+        }
+        $data=db('repairinfo')->where('RepairId',$Id)->find();
+        $this->assign('data',$data);
+        return $this->fetch('edit');
     }
 }
 
