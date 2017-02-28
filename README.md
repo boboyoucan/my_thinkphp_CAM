@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ThinkPHP 5.0
 ===============
 
@@ -127,3 +128,7 @@ All rights reserved。
 ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
 
 更多细节参阅 [LICENSE.txt](LICENSE.txt)
+=======
+# my_thinkphp_CAM
+我的毕业设计高校公寓管理系统
+>>>>>>> 911675c8f2bd8df9204c9de341feec6c4e7037e5
